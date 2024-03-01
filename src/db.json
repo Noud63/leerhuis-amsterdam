@@ -1,0 +1,119 @@
+{ "activities": 
+    [
+      {
+        "id": 0,
+        "title": "De zin van Sabbat",
+        "date": "17-1, 24-1, 31-1 en 7-2",
+        "time": "20:00 - 22:00 uur",
+        "description": [
+          "Hoe vinden we een ritme van activiteiten en rust in tijden van persoonlijke overbelasting door onze 24/7 economie en grenzeloze eisen aan onszelf?",
+          " Sabbat - als oefening in dankbaarheid en vertrouwen. Als verzet tegen verslaving. Als rust voor alle leven. Als schuilplaats van de liefde.",
+          " Op vier woensdagavonden zoeken we een gesprek over sabbat aan de hand van inspirerende teksten uit de joodse en christelijke traditie en van ",
+          "hedendaagse spirituele, sociale en ecologische denkers."
+        ],
+        "led_by": "Johan Visser en\r Gerben van Manen",
+        "image": "sabbat.png",
+        "starting_data": "17-1-2024"
+      },
+      {
+        "id": 1,
+        "title": "Bijbels Leerhuis",
+        "date": "17-1, 24-1, 31-1 en 7-2",
+        "time": "20:00 - 22:00 uur",
+        "description": [],
+        "led_by": "Johan Visser en\r Gerben van Manen",
+        "image": "bijbelsleerhuis.png",
+        "starting_data": "17-1-2024"
+      },
+      {
+        "id": 2,
+        "title": "Bijbels ABC",
+        "date": "12-2, 26-2, 11-3",
+        "time": "20:00 - 22:00 uur",
+        "description": "",
+        "led_by": "Gerben van Manen en Wilken van Veen",
+        "image": "miskotte.jpg",
+        "starting_data": "12-2-2024"
+      },
+      {
+        "id": 3,
+        "title": "De Moderne Theologen",
+        "date": "30-1, 26-3, 30-4 en 25-6",
+        "time": "19:00 - 22:00 uur",
+        "description": "",
+        "led_by": "Johan Visser en Gerben van Manen",
+        "image": "modernetheologen.jpg",
+        "starting_data": "30-1-2024"
+      },
+      {
+        "id": 4,
+        "title": "Groen Geloven in Mokum",
+        "date": "17-1, 24-1, 31-1 en 7-2",
+        "time": "20:00 - 22:00 uur",
+        "description": "",
+        "led_by": "Johan Visser en Gerben van Manen",
+        "image": "groengeloven.jpg",
+        "starting_data": "17-1-2024"
+      },
+      {
+        "id": 5,
+        "title": "Literaire Kring",
+        "date": "17-1, 24-1, 31-1 en 7-2",
+        "time": "20:00 - 22:00 uur",
+        "description": "",
+        "led_by": "Johan Visser\n en Gerben van Manen",
+        "image": "vandis.jpg",
+        "starting_data": "17-1-2024"
+      },
+      {
+        "id": 6,
+        "title": "Leesgroep Miskotte",
+        "date": "17-1, 24-1, 31-1 en 7-2",
+        "time": "20:00 - 22:00 uur",
+        "description": "",
+        "led_by": "Johan Visser en Gerben van Manen",
+        "image": "leesgroep_miskotte.jpg",
+        "starting_data": "17-1-2024"
+      },
+      {
+        "id": 7,
+        "title": "Palestijnse Christenen",
+        "date": "12-2, 26-2, 11-3",
+        "time": "20:00 - 22:00 uur",
+        "description": "",
+        "led_by": "Gerben van Manen en Wilken van Veen",
+        "image": "miskotte.jpg",
+        "starting_data": "12-2-2024"
+      },
+      {
+        "id": 8,
+        "title": "Vierentwintig uurs Retraite",
+        "date": "30-1, 26-3, 30-4 en 25-6",
+        "time": "19:00 - 22:00 uur",
+        "description": "",
+        "led_by": "Johan Visser en Gerben van Manen",
+        "image": "modernetheologen.jpg",
+        "starting_data": "30-1-2024"
+      },
+      {
+        "id": 9,
+        "title": "Zwart/wit",
+        "date": "17-1, 24-1, 31-1 en 7-2",
+        "time": "20:00 - 22:00 uur",
+        "description": "",
+        "led_by": "Johan Visser en Gerben van Manen",
+        "image": "groengeloven.jpg",
+        "starting_data": "17-1-2024"
+      },
+      {
+        "id": 10,
+        "title": "Actiedag kerk en klimaat",
+        "date": "17-1, 24-1, 31-1 en 7-2",
+        "time": "20:00 - 22:00 uur",
+        "description": "",
+        "led_by": "Johan Visser\n en Gerben van Manen",
+        "image": "vandis.jpg",
+        "starting_data": "17-1-2024"
+      }
+    ]
+}
