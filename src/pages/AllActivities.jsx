@@ -2,7 +2,6 @@ import React from "react";
 // import calendar from "../assets/icons/calendar-icon.svg";
 // import BackButton from "../components/BackButton";
 import { Link } from "react-router-dom";
-import logo from "../assets/icons/leerhuislogo.png";
 import getJsonData from "../utils/getJsonData";
 import { useLoaderData } from "react-router-dom";
 
@@ -12,10 +11,10 @@ export const loader = () => {
 };
 
 const AllActivities = () => {
+
   const url = window.location.pathname;
 
   const data = useLoaderData();
-  console.log(data)
 
   return (
     <div className="w-full flex pt-[150px] flex-row m-auto max-calendar:w-[85%] bg-[url('./assets/images/map_adam2.png')] bg-no-repeat bg-right-bottom">
@@ -30,7 +29,7 @@ const AllActivities = () => {
         <div className="w-[85%] grid grid-cols-4 gap-8 max-2xl:grid-cols-3">
           {data?.map((act) => (
             <div className="w-full min-h-full rounded-2xl" key={act.id}>
-              <div className="calendar_item w-full h-full bg-gray-100 rounded-xl flex flex-col justify-between relative">
+              <div className="calendar_item w-full h-full bg-gray-100/60 rounded-xl flex flex-col justify-between relative">
                 <div className="p-4">
                   <span className="border-b border-black flex justify-between font-bold text-xl pb-2">
                     {act.title}
@@ -62,7 +61,7 @@ const AllActivities = () => {
                 </div>
 
                 <Link
-                  to={`infocalendaritem/${act.id}`}
+                  to={`calendaritem/${act.id}`}
                   className="w-full flex justify-center items-center absolute bottom-0 z-10 bg-black/50 py-4 rounded-b-lg"
                 >
                   <button

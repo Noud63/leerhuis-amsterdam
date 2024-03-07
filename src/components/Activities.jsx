@@ -36,7 +36,6 @@ const Activities = () => {
          setSlice(1);
        }
 
-       console.log(width);
      }, [width]);
 
      
@@ -92,7 +91,7 @@ return (
               </div>
 
               <Link
-                to={`infocalendaritem/${act.id}`}
+                to={`calendaritem/${act.id}`}
                 className="w-full flex justify-center items-center absolute bottom-0 z-10 bg-black/50 py-4 rounded-b-lg"
               >
                 <button

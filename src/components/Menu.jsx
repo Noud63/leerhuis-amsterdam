@@ -16,7 +16,16 @@ const Menu = () => {
         <span className="cursor-pointer">Home</span>
       </NavLink>
 
+      <NavLink
+          to="/overonspage"
+          className={({ isActive }) => [
+            isActive
+              ? "border-b-2 border-black"
+              : "border-b-2 border-transparent",
+          ]}
+        >
       <span>Over ons</span>
+      </NavLink>
 
       {/* <NavLink
           to="/contact"
@@ -29,10 +38,18 @@ const Menu = () => {
       <span>Contact</span>
       {/* </NavLink> */}
 
-      <span>Activiteiten</span>
-      <span>Aktueel</span>
+      <NavLink
+        to="/allactivities"
+        className={({ isActive }) => [
+          isActive
+            ? "border-b-2 border-black"
+            : "border-b-2 border-transparent",
+        ]}
+      >
+        <span>Activiteiten</span>
+      </NavLink>
 
-      
+      <span>Aktueel</span>
     </div>
   );
 }

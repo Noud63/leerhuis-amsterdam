@@ -5,7 +5,10 @@ import Layout from './components/Layout';
 import './index.css'
 import Activities, { loader } from "./components/Activities"
 import Root from './components/Root';
+import CalendarItem from './pages/CalendarItem';
 import AllActivities from './pages/AllActivities';
+import OveronsPage from "./pages/OveronsPage";
+
 
 const router = createBrowserRouter([
   {
@@ -20,6 +23,18 @@ const router = createBrowserRouter([
         path: "/allactivities",
         loader: loader,
         element: <AllActivities />,
+      },
+      {
+        path: "/overonspage",
+        element: <OveronsPage />,
+      },
+      {
+        path: "/calendaritem/:id",
+        element: <CalendarItem />,
+      },
+      {
+        path: "/allactivities/calendaritem/:id",
+        element: <CalendarItem />,
       },
     ],
   },

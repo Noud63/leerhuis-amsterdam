@@ -8,27 +8,23 @@ import instaDark from "../assets/icons/insta_darkmode.png";
 import twitter from "../assets/icons/twitter.png";
 import twitterDark from "../assets/icons/twitter_darkmode.png";
 import mail from "../assets/icons/mail.png"
-import { FacebookIcon, LinkedinIcon, XIcon, EmailIcon } from 'react-share';
+import { FacebookIcon, LinkedinIcon, XIcon} from 'react-share';
 
 const Socials = () => {
   return (
-    <div className="min-h-full flex justify-center items-center max-socials:hidden ">
-      <div>
-        <div className="pb-2 pr-2">
-          <FacebookIcon round={true} size={32} />
-        </div>
-        <div div className="">
-          <XIcon round={true} size={32} />
-        </div>
+    <div className="min-h-full flex flex-col justify-center items-center max-socials:hidden ">
+      <div className="flex flex-row pb-2">
+        <FacebookIcon round={true} size={32} className="mr-2" />
+
+        <XIcon round={true} size={32} className="mr-2" />
       </div>
 
-      <div>
-        <div className="pr-2 pb-2">
-          <img src={mail} alt="mail" className="w-[32px]"/>
+      <div className="flex flex-row">
+        <div className="mr-2">
+          <img src={mail} alt="mail" className="w-[32px]" />
         </div>
-        <div className="">
-          <LinkedinIcon round={true} size={32} />
-        </div>
+
+        <LinkedinIcon round={true} size={32} className="mr-2" />
       </div>
 
       {/* <img

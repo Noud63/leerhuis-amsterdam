@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 
 const scroll = () => {
+
 const [scrolled, setScrolled] = useState(false);
 
 const handleScroll = () => {
