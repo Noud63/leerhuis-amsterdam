@@ -5,7 +5,7 @@ const [scrolled, setScrolled] = useState(false);
 
 const handleScroll = () => {
   const offset = window.scrollY;
-  offset > 50 ? setScrolled(true) : setScrolled(false);
+  offset > 10 ? setScrolled(true) : setScrolled(false);
 };
 
 useEffect(() => {

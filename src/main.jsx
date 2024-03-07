@@ -5,6 +5,7 @@ import Layout from './components/Layout';
 import './index.css'
 import Activities, { loader } from "./components/Activities"
 import Root from './components/Root';
+import AllActivities from './pages/AllActivities';
 
 const router = createBrowserRouter([
   {
@@ -13,11 +14,15 @@ const router = createBrowserRouter([
       {
         path: "/",
         loader: loader,
-        element: <Root/>
-      }
+        element: <Root />,
+      },
+      {
+        path: "/allactivities",
+        loader: loader,
+        element: <AllActivities />,
+      },
     ],
   },
- 
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

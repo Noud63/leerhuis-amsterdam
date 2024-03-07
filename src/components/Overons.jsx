@@ -5,21 +5,18 @@ import { Link } from "react-router-dom";
 
 const Overons = () => {
   return (
-    <div className="w-full flex items-center px-8 mt-20 z-10 relative max-lg:px-8 max-xmd:mt-12 pb-0 max-xxsm:mt-8 max-bracket:px-4">
-      <div className="absolute bottom-0 left-0 w-full flex justify-center -z-[999] dark:hidden">
-        <img src="/images/white_circle.png" alt="" className="w-full" />
-      </div>
+    <div className="w-full h-[700px] flex items-center px-8 mt-4 z-10 relative max-lg:px-8 max-xmd:mt-12 pb-0 max-xxsm:mt-8 max-bracket:px-4 bg-zinc-800">
       <div className="w-full">
         <div className="overons flex flex-col">
-          <div className="w-full flex flex-row justify-between text-red-900 font-normal gap-12 rounded-lg z-5 max-lg:flex-col">
+          <div className="w-full flex flex-row justify-between text-white font-normal gap-12 rounded-lg z-5 max-lg:flex-col">
             <div className="flex flex-1 flex-col leading-2 text-lg max-lg:w-full pb-16 max-lg:pb-4">
-              <div className="flex justify-between border-b border-red-900 mb-8">
-                <span className="flex text-[#793a2a] text-xl font-semibold pb-2">
+              <div className="flex justify-between border-b border-white mb-8">
+                <span className="flex text-[#fff] text-xl font-semibold pb-2 pt-2">
                   # Over het Leerhuis
                 </span>
               </div>
 
-              <div className="w-full flex flex-col items-center justify-center">
+              <div className="w-full h-full flex flex-col items-center justify-center">
                 <span className="flex text-xl font-semibold pb-4 italic">
                   "Leven in een complexe wereld"
                 </span>
@@ -37,23 +34,23 @@ const Overons = () => {
 
               <Link
                 to=""
-                className="w-full flex justify-center mt-12 border-b border-red-900 pb-12"
+                className="w-full flex justify-center mt-12 border-b border-white pb-12"
               >
                 <button
                   type="button"
-                  className="btn w-[150px] rounded-full bg-gradient-to-t from-amber-950 to-yellow-700 justify-center items-center text-[#ece2d9] gap-2 pb-1 leading-8"
+                  className="btn w-[150px] rounded-full justify-center items-center text-[#fff] border-2 border-white gap-2 pb-1 leading-8 pt-1 text-md font-semibold"
                 >
                   Lees meer
                 </button>
               </Link>
             </div>
-            <div className="globe min-h-full max-w-full flex justify-center items-center text-md">
+            {/* <div className="globe min-h-full max-w-full flex justify-center items-center text-md">
               <img
                 src={books}
                 alt="books"
                 className="globe object-cover w-[400px] mr-16"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
