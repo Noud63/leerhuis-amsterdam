@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import gathering from "../assets/images/gathering.png"
+import gathering from "../assets/images/gathering.jpg"
 
 const OveronsPage = () => {
   return (
-    <div className="w-full flex items-center px-8 relative max-lg:px-8 pb-0 max-bracket:px-4 ">
+    <div className="w-full flex items-center px-8 relative max-lg:px-8 pb-0 max-bracket:px-4">
       <div className="w-full">
         <div className="overons flex flex-col">
           <div className="w-full flex flex-row justify-between text-black font-normal gap-12 rounded-lg z-5 max-lg:flex-col">
-            <div className="flex pt-[185px] flex-1 flex-col leading-2 text-lg max-lg:w-full pb-16">
+            <div className="flex pt-[185px] flex-1 flex-col leading-2 text-lg max-lg:w-full pb-16 max-xxsm:pt-[160px]">
               <div className="flex justify-between border-b border-black mb-8">
                 <span className="flex text-[#000] text-xl font-semibold pb-2 pt-2">
                   # Over het Leerhuis
@@ -53,9 +53,9 @@ const OveronsPage = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-full flex justify-center items-center text-md">
+              {/* <div className="w-full flex justify-center items-center text-md">
                 <img src={gathering} alt="" className="rounded-xl shadow-lg" />
-              </div>
+              </div> */}
 
               <Link
                 to="/"

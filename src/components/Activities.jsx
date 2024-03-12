@@ -26,13 +26,13 @@ const Activities = () => {
      }, []);
 
      useEffect(() => {
-       if (width !== null && width > 1500) {
+       if (width !== null && width >= 1500) {
          setSlice(4);
-       } else if (width !== null && width <= 1500 && width > 1300) {
+       } else if (width !== null && width < 1500 && width >= 1280) {
          setSlice(3);
-       } else if (width !== null && width <= 1300 && width > 850) {
+       } else if (width !== null && width < 1280 && width >= 850) {
          setSlice(2);
-       } else if (width !== null && width <= 850) {
+       } else if (width !== null && width < 850) {
          setSlice(1);
        }
 
@@ -40,10 +40,10 @@ const Activities = () => {
 
      
 return (
-  <div className="w-[full] flex flex-row m-auto px-8 pt-[150px] text-black max-xxsm:px-4">
+  <div className="w-[full] flex flex-row m-auto px-8 pt-[140px] text-black max-xxsm:px-4">
     <div className="w-full flex flex-1 justify-center items-center flex-col">
-      <div className="w-full flex flex-row gap-2 pl-0 mb-6 border-b border-black pb-2 pt-12">
-        <span className="text-xl font-semibold pt-1 max-xsm:text-xl">
+      <div className="w-full flex flex-row gap-2 pl-0 mb-6 border-b border-black pb-2 pt-12 max-xxsm:pt-8">
+        <span className="text-2xl font-semibold pt-1 text-black">
           # Activiteiten Kalender 2024
         </span>
       </div>
@@ -55,18 +55,18 @@ return (
         </span>
       </div>
       <div
-        className={`w-[85%] grid grid-cols-4 max-xxxl:grid-cols-3 max-xxl:grid-cols-2 max-xmd:grid-cols-1 max-xxsm:w-full gap-4 mt-4`}
+        className={`w-[85%] grid grid-cols-4 max-xxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 max-xxsm:w-full gap-4 mt-4`}
       >
         {data?.slice(0, slice).map((act) => (
           <div className="w-full min-h-full rounded-2xl" key={act.id}>
-            <div className="calendar_item w-full h-full bg-gray-100 rounded-xl flex flex-col justify-between relative">
+            <div className="calendar_item w-full h-full bg-white rounded-xl flex flex-col justify-between relative">
               <div className="p-4">
                 <span className="border-b border-black flex justify-between font-bold text-xl pb-2">
                   {act.title}
                 </span>
               </div>
 
-              <div className="flex flex-col gap-2 p-4">
+              <div className="flex flex-col gap-2 px-4">
                 <div className="w-full">
                   <span className="font-semibold">Start : </span>
                   {new Date(act.starting_date).toLocaleDateString()}
@@ -112,7 +112,7 @@ return (
         <Link to="allactivities">
           <button
             type="button"
-            className="btn w-[150px] rounded-full justify-center items-center text-[#000] border-2 border-black gap-2 pb-1 leading-8 pt-1 text-md font-semibold"
+            className="btn w-[150px] rounded-full justify-center items-center text-[#000] border-2  border-gray-400 gap-2 pb-1 leading-8 pt-1 text-md font-semibold"
           >
             Alle activiteiten
           </button>

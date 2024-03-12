@@ -1,52 +1,63 @@
 import React from 'react'
 import bracket from "../assets/images/curlybracket_black.png"
-import wandelaars from "../assets/images/wandelaars1.png"
+import logo from "../assets/images/logo.png"
 import Socials from './Socials'
 import Menu from './Menu'
 import scroll from "../utils/scroll";
 import hamburger from "../assets/icons/hamburger2.png";
+import { Link } from 'react-router-dom'
 
-const Header = () => {
+const Header = ({showMenuOverlay}) => {
 
   const scrolled = scroll();
+  
+ return (
+   <div className="w-full min-h-full max-w-[2000px] relative">
+     <div
+       className={`${
+         scrolled ? "-translate-y-full" : "translate-y-0"
+       }  header fixed top-0 w-full flex flex-col justify-between text-black  z-10 border-b border-blue-800/50  
+                     transform ease-in-out duration-500  bg-gradient-to-b from-slate-800/50`}
+     >
+       <div
+         className="w-full h-[30px] flex justify-center items-center text-sm text-white/80 tracking-wider
+         bg-gradient-to-r from-black via-yellow-800  to-black"
+       >
+         <span>Leerhuis Amsterdam : voor zinvol samenleven</span>
+       </div>
 
-return (
-  <div
-    className={`${
-      scrolled ? "-translate-y-full" : "translate-y-0"
-    }  header fixed top-0 w-full max-w-[2000px] flex flex-row justify-between text-black p-4 px-8 z-10  
-                    border-b border-gray-400 transform ease-in-out duration-500 max-xxsm:px-2`}
-  >
-    <div className="h-full max-w-[350px] flex flex-row gap-8 max-xxsm:gap-2">
-      <div className="flex flex-col pb-2 items-center">
-        <div className="h-[38px] flex justify-center text-[1.8rem] font-papyrus">
-          Leerhuis Amsterdam
-        </div>
-        <div className="flex justify-center text-[1rem] font-papyrus font-semibold tracking-wider">
-          voor zinvol samenleven
-        </div>
-        <div className="w-full max-w-[280px]">
-          <img src={wandelaars} alt="" className="mt-2" />
-        </div>
-      </div>
+       <div className="h-full flex flex-row justify-between">
+         <Link to="/">
+           <div className="h-full flex flex-row gap-6 max-xxsm:gap-2 py-4 pl-8 max-xxsm:pl-4">
+             <img src={logo} alt="logo" className="w-[220px] h-[80px]" />
 
-      <div className="max-xxxsm:hidden">
-        <img src={bracket} alt="" className="h-full w-[32px]" />
-      </div>
-    </div>
+             <div className="">
+               <img
+                 src={bracket}
+                 alt=""
+                 className="h-full w-[22px] max-mini:hidden"
+               />
+             </div>
+           </div>
+         </Link>
 
-    <Menu />
+         <Menu />
 
-    <Socials />
+         <Socials />
 
-    <div className="w-auto min-h-full flex items-center justify-center menu:hidden">
-      {/* <span className="text-lg">Menu</span> */}
-      <div>
-        <img src={hamburger} alt="hamburger" className="w-16" />
-      </div>
-    </div>
-  </div>
-);
+         <div
+           className="cursor-pointer min-h-full flex items-center justify-center xmd:hidden mr-8 max-xxsm:mr-4"
+           onClick={showMenuOverlay}
+         >
+           <div className="flex justify-center items-center flex-col">
+             <img src={hamburger} alt="hamburger" className="w-12" />
+             <span className="text-md font-semibold">menu</span>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ );
 }
 
 export default Header

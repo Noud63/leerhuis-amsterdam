@@ -2,6 +2,25 @@
     [
       {
         "id": 0,
+        "title": "De zin van Sabbat",
+        "date": {
+          "day": "Maandag",
+          "dates": ["17-1,", "24-1,", "31-1,", "en 7-2"]
+        },
+        "time": "20:00 - 22:00 uur",
+        "description": [
+          "Hoe vinden we een ritme van activiteiten en rust in tijden van persoonlijke overbelasting door onze 24/7 economie en grenzeloze eisen aan onszelf?",
+          " Sabbat - als oefening in dankbaarheid en vertrouwen. Als verzet tegen verslaving. Als rust voor alle leven. Als schuilplaats van de liefde.",
+          " Op vier woensdagavonden zoeken we een gesprek over sabbat aan de hand van inspirerende teksten uit de joodse en christelijke traditie en van",
+          " hedendaagse spirituele, sociale en ecologische denkers."
+        ],
+        "led_by": "Johan Visser en Gerben van Manen",
+        "image": "sabbat.png",
+        "starting_date": "2024-01-17",
+        "closing_date": "2024-02-07"
+      },
+      {
+        "id": 1,
         "title": "Bijbels Leerhuis",
         "date": {
           "day": "Donderdag",
@@ -26,26 +45,6 @@
         "starting_date": "2024-01-25",
         "closing_date": "2024-06-13"
       },
-      {
-        "id": 1,
-        "title": "De zin van Sabbat",
-        "date": {
-          "day": "Maandag",
-          "dates": ["17-1,", "24-1,", "31-1,", "en 7-2"]
-        },
-        "time": "20:00 - 22:00 uur",
-        "description": [
-          "Hoe vinden we een ritme van activiteiten en rust in tijden van persoonlijke overbelasting door onze 24/7 economie en grenzeloze eisen aan onszelf?",
-          " Sabbat - als oefening in dankbaarheid en vertrouwen. Als verzet tegen verslaving. Als rust voor alle leven. Als schuilplaats van de liefde.",
-          " Op vier woensdagavonden zoeken we een gesprek over sabbat aan de hand van inspirerende teksten uit de joodse en christelijke traditie en van",
-          " hedendaagse spirituele, sociale en ecologische denkers."
-        ],
-        "led_by": "Johan Visser en Gerben van Manen",
-        "image": "sabbat.png",
-        "starting_date": "2024-01-17",
-        "closing_date": "2024-02-07"
-      },
-
       {
         "id": 2,
         "title": "Bijbels ABC",
