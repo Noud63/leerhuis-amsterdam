@@ -9,7 +9,9 @@ const BackButton = (url) => {
     if (
       url.url.slice(0, -1) === "/calendaritem/" ||
       url.url === "/allactivities" ||
-      url.url === "/aktueel" || url.url === "/overonspage" ||
+      url.url === "/aktueel" || 
+      url.url === "/overonspage" || 
+      url.url === "/contact" ||
       url.url === "/"
     ) {
       setPath("/");

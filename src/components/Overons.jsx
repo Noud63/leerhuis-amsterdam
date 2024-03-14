@@ -4,13 +4,13 @@ import gathering from "../assets/images/gathering.png"
 
 const Overons = () => {
   return (
-    <div className="w-full flex items-center mt-0 justify-center px-8 z-10 relative max-lg:px-8 max-bracket:px-4 max-xxsm:px-4">
+    <div className="w-full flex items-center mt-0 justify-center px-8 z-10 relative max-lg:px-8 max-bracket:px-4 max-xxsm:px-4 bg-stone-700/60 py-12">
       <div className="w-full">
         <div className="overons flex flex-col ">
-          <div className="flex flex-row justify-between text-black font-normal rounded-lg z-5 max-lg:flex-col ">
+          <div className="flex flex-row justify-between text-white font-normal rounded-lg z-5 max-lg:flex-col ">
             <div className="flex flex-1 flex-col justify-center items-center leading-2 pb-8 text-lg max-lg:w-full">
-              <div className="w-full flex justify-between border-b border-black mb-8">
-                <span className="flex text-black text-2xl font-semibold pb-4">
+              <div className="w-full flex justify-between border-b border-white mb-8">
+                <span className="flex text-white text-2xl font-semibold pb-4">
                   # Over het Leerhuis
                 </span>
               </div>
@@ -48,11 +48,11 @@ const Overons = () => {
 
               <Link
                 to="/overonspage"
-                className="w-full flex justify-center mt-12 max-xxl:mt-8"
+                className="w-full flex justify-center mt-20 max-xxl:mt-16"
               >
                 <button
                   type="button"
-                  className="btn w-[150px] rounded-full justify-center items-center text-black border-2 border-neutral-400 gap-2 pb-1 leading-8 pt-1 font-semibold"
+                  className="btn w-[150px] rounded-full justify-center items-center text-white border-2 border-white gap-2 pb-1 leading-8 pt-1 font-semibold"
                 >
                   Lees meer
                 </button>

@@ -18,8 +18,8 @@ const Header = ({showMenuOverlay}) => {
      <div
        className={`${
          scrolled ? "-translate-y-full" : "translate-y-0"
-       }  header fixed top-0 w-full flex flex-col justify-between text-black  z-10 border-b border-blue-800/50  
-                     transform ease-in-out duration-500  `}
+       }  header fixed top-0 w-full flex flex-col justify-between text-black  z-10 border-b border-neutral-800/70  
+            transform ease-in-out duration-500`}
      >
        <div
          className="w-full h-[30px] flex justify-center items-center text-sm text-white/90 tracking-wider
@@ -43,11 +43,7 @@ const Header = ({showMenuOverlay}) => {
            </div>
          </Link>
 
-         <Menu
-           color="black"
-           style={style}
-           border="border-b-2 border-black"
-         />
+         <Menu color="black" style={style} border="border-b-2 border-black" />
 
          <Socials />
 
