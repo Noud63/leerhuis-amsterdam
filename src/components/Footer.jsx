@@ -1,25 +1,19 @@
-import React from 'react'
-import logo from "../assets/images/logo_white.png"
-import Socials from './Socials';
-import Menu from './Menu';
-import insta from "../assets/icons/insta_gray.png"
-import facebook from "../assets/icons/facebook_gray.png"
-import twitter from "../assets/icons/twitter_gray.png"
-import linkedin from "../assets/icons/linkedin_gray.png"
+import React from "react";
+import logo from "../assets/images/logo_white.png";
+import Menu from "./Menu";
+import insta from "../assets/icons/insta_gray.png";
+import facebook from "../assets/icons/facebook_gray.png";
+import twitter from "../assets/icons/twitter_gray.png";
+import linkedin from "../assets/icons/linkedin_gray.png";
 
 const Footer = () => {
-
-  const style = "flex flex-col max-footer:flex-row max-xsm:gap-6 max-xxxsm:font-normal text-base";
+  const style =
+    "flex flex-col max-footer:flex-row max-xsm:gap-6 max-xxxsm:font-normal text-base max-xxxsm:grid grid-cols-2 max-xxxsm:gap-3";
 
   return (
-    <div className="w-full h-[600px] bg-stone-900 flex flex-row justify-around items-center relative pb-40 pt-20 max-footer:flex-col max-footer:pt-16">
+    <div className="w-full h-[600px] bg-stone-900 flex flex-row justify-around items-center relative pb-40 pt-20 max-footer:flex-col max-footer:pt-16 max-xxxsm:h-[650px]">
       <div className="h-full flex-1 flex items-center justify-center max-footer:py-8">
-        <Menu
-          color="white"
-          style={style}
-          noHomeLink
-          border="border-none"
-        />
+        <Menu color="white" style={style} noHomeLink border="border-none" />
       </div>
       <div className="h-full w-[600px] border-x border-white flex flex-col items-center justify-between pt-6 max-footer:border-none max-footer:py-4 max-footer:w-full">
         <img src={logo} alt="logo" className="w-full max-w-[300px] h-auto" />
@@ -42,6 +36,6 @@ const Footer = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;

@@ -1,9 +1,7 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-
-const Menu = ({color, style, noHomeLink, border}) => {
-  
+const Menu = ({ color, style, noHomeLink, border }) => {
   return (
     <div
       className={`menu flex justify-center items-center text-lg font-semibold gap-16 text-${color} ${style}`}
@@ -21,43 +19,51 @@ const Menu = ({color, style, noHomeLink, border}) => {
         ""
       )}
 
-      <NavLink
-        to="/overonspage"
-        className={({ isActive }) => [
-          isActive ? `${border}` : "border-b-2 border-none",
-        ]}
-      >
-        <span>Over ons</span>
-      </NavLink>
+      <div className="flex justify-center">
+        <NavLink
+          to="/overonspage"
+          className={({ isActive }) => [
+            isActive ? `${border}` : "border-b-2 border-none",
+          ]}
+        >
+          <span>Over ons</span>
+        </NavLink>
+      </div>
 
-      <NavLink
-        to="/contact"
-        className={({ isActive }) => [
-          isActive ? `${border}` : "border-b-2 border-none",
-        ]}
-      >
-        <span>Contact</span>
-      </NavLink>
+      <div className="flex justify-center">
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => [
+            isActive ? `${border}` : "border-b-2 border-none",
+          ]}
+        >
+          <span>Contact</span>
+        </NavLink>
+      </div>
 
-      <NavLink
-        to="/allactivities"
-        className={({ isActive }) => [
-          isActive ? `${border}` : "border-b-2 border-none",
-        ]}
-      >
-        <span>Activiteiten</span>
-      </NavLink>
+      <div className="flex justify-center">
+        <NavLink
+          to="/allactivities"
+          className={({ isActive }) => [
+            isActive ? `${border}` : "border-b-2 border-none",
+          ]}
+        >
+          <span>Activiteiten</span>
+        </NavLink>
+      </div>
 
-      <NavLink
-        to="/aktueel"
-        className={({ isActive }) => [
-          isActive ? `${border}` : "border-b-2 border-none",
-        ]}
-      >
-        <span>Aktueel</span>
-      </NavLink>
+      <div className="flex justify-center">
+        <NavLink
+          to="/aktueel"
+          className={({ isActive }) => [
+            isActive ? `${border}` : "border-b-2 border-none",
+          ]}
+        >
+          <span>Aktueel</span>
+        </NavLink>
+      </div>
     </div>
   );
-}
+};
 
-export default Menu
+export default Menu;

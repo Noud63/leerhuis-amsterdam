@@ -1,27 +1,26 @@
 import React from "react";
-import books from "../assets/images/books.png"
 import { Link } from "react-router-dom";
 import gathering from "../assets/images/gathering.png"
 
 const Overons = () => {
   return (
-    <div
-      className="w-full flex items-center justify-center px-8 mt-4 z-10 relative max-lg:px-8 max-xmd:mt-12 pb-0 max-xxsm:mt-8 max-bracket:px-4 
-   bg-stone-900/50"
-    >
+    <div className="w-full flex items-center mt-0 justify-center px-8 z-10 relative max-lg:px-8 max-bracket:px-4 max-xxsm:px-4">
       <div className="w-full">
         <div className="overons flex flex-col ">
-          <div className="w-full flex flex-row justify-between text-white font-normal gap-12 rounded-lg z-5 max-lg:flex-col ">
-            <div className="flex flex-1 flex-col justify-center items-center leading-2 pb-16 text-lg max-lg:w-full border-b border-white mb-24">
-              <div className="w-full flex justify-between border-b border-white mb-8">
-                <span className="flex text-white text-2xl font-semibold pt-12 pb-4">
+          <div className="flex flex-row justify-between text-black font-normal rounded-lg z-5 max-lg:flex-col ">
+            <div className="flex flex-1 flex-col justify-center items-center leading-2 pb-8 text-lg max-lg:w-full">
+              <div className="w-full flex justify-between border-b border-black mb-8">
+                <span className="flex text-black text-2xl font-semibold pb-4">
                   # Over het Leerhuis
                 </span>
               </div>
 
-              <div className="w-full max-w-[1100px] flex flex-col items-end justify-center py-8 relative mt-12 max-xmd:flex-row max-xmd:items-center max-xmd:mt-0 max-xmd:py-0">
-                <div className="w-full max-w-[600px] flex justify-center max-xmd:flex-col">
-                  <div className="w-full max-w-[600px] mb-12 mt-7 max-xmd:mt-0 max-xmd:mb-0">
+              <div
+                className="w-full max-w-[1100px] flex flex-col items-end justify-center py-8 relative mt-10 max-xxl:mt-0 
+              max-xmd:flex-row max-xmd:items-center max-xmd:mt-0 max-xmd:py-0 max-xxsm:max-w-full"
+              >
+                <div className="w-full max-w-[700px] flex justify-center max-xmd:flex-col max-xxsm:w-full">
+                  <div className="w-full max-w-[700px] mb-12 mt-7 max-xmd:mt-0 max-xmd:mb-0">
                     <div className="overons_text w-full italic max-lg:w-full bg-white rounded-xl text-black px-8 pt-6 pb-8 max-xmd:rounded-b-none">
                       <span className="flex justify-center text-xl font-semibold pb-2 text-amber-600">
                         "Leven in een complexe wereld"
@@ -49,11 +48,11 @@ const Overons = () => {
 
               <Link
                 to="/overonspage"
-                className="w-full flex justify-center mt-12"
+                className="w-full flex justify-center mt-12 max-xxl:mt-8"
               >
                 <button
                   type="button"
-                  className="btn w-[150px] rounded-full justify-center items-center  text-white border-2 border-white gap-2 pb-1 leading-8 pt-1 text-md font-normal"
+                  className="btn w-[150px] rounded-full justify-center items-center text-black border-2 border-neutral-400 gap-2 pb-1 leading-8 pt-1 font-semibold"
                 >
                   Lees meer
                 </button>
