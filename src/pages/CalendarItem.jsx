@@ -13,6 +13,7 @@ import {
   XIcon,
   LinkedinIcon,
 } from "react-share";
+import BackButton from '../components/BackButton';
 
 
 const CalendarItem = () => {
@@ -143,8 +144,9 @@ useEffect(()=> {
               </div>
             </div>
           </div>
-          <Link
-            to="/"
+
+          {/* <Link
+            to={-1}
             className="w-full flex justify-center mt-12"
           >
             <button
@@ -153,9 +155,9 @@ useEffect(()=> {
             >
               Terug
             </button>
-          </Link>
+          </Link> */}
 
-          {/* <BackButton url={url} /> */}
+          <BackButton url={url} />
         </div>
       </div>
     </div>

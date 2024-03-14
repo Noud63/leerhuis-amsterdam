@@ -4,6 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import getJsonData from "../utils/getJsonData";
 import { useLoaderData } from "react-router-dom";
+import BackButton from "../components/BackButton";
 
 export const loader = () => {
   const data = getJsonData();
@@ -62,6 +63,7 @@ const AllActivities = () => {
 
                 <Link
                   to={`calendaritem/${act.id}`}
+                  
                   className="w-full flex justify-center items-center absolute bottom-0 z-10 bg-black/50 py-4 rounded-b-lg"
                 >
                   <button
@@ -78,7 +80,7 @@ const AllActivities = () => {
           ))}
         </div>
 
-        {/* <BackButton url={url} /> */}
+        <BackButton url={url} />
       </div>
     </div>
   );

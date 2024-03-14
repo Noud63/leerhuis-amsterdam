@@ -10,6 +10,8 @@ import { Link } from 'react-router-dom'
 const Header = ({showMenuOverlay}) => {
 
   const scrolled = scroll();
+
+  const style ="gap-16 max-xxl:gap-8 max-socials:justify-end max-socials:mr-8 max-xmd:hidden"
   
  return (
    <div className="w-full min-h-full max-w-[2000px] relative">
@@ -17,10 +19,10 @@ const Header = ({showMenuOverlay}) => {
        className={`${
          scrolled ? "-translate-y-full" : "translate-y-0"
        }  header fixed top-0 w-full flex flex-col justify-between text-black  z-10 border-b border-blue-800/50  
-                     transform ease-in-out duration-500  bg-gradient-to-b from-slate-800/50`}
+                     transform ease-in-out duration-500  `}
      >
        <div
-         className="w-full h-[30px] flex justify-center items-center text-sm text-white/80 tracking-wider
+         className="w-full h-[30px] flex justify-center items-center text-sm text-white/90 tracking-wider
          bg-gradient-to-r from-black via-yellow-800  to-black"
        >
          <span>Leerhuis Amsterdam : voor zinvol samenleven</span>
@@ -41,7 +43,11 @@ const Header = ({showMenuOverlay}) => {
            </div>
          </Link>
 
-         <Menu />
+         <Menu
+           color="black"
+           style={style}
+           border="border-b-2 border-black"
+         />
 
          <Socials />
 

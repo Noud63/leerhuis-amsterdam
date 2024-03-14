@@ -9,7 +9,7 @@ import CalendarItem from './pages/CalendarItem';
 import AllActivities from './pages/AllActivities';
 import OveronsPage from "./pages/OveronsPage";
 import Contact from './pages/Contact';
-
+import Aktueel from './pages/Aktueel';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/aktueel",
+        element: <Aktueel />,
       },
     ],
   },

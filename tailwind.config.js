@@ -9,6 +9,7 @@ export default {
       screens: {
         xxxl: "1500px",
         xxl: "1300px",
+        footer:"1150px",
         socials: "1050px",
         menu: "950px",
         xmd: "850px",

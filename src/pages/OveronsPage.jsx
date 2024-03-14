@@ -1,16 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import gathering from "../assets/images/gathering.jpg"
+import BackButton from '../components/BackButton';
 
 const OveronsPage = () => {
+
+  const url = window.location.pathname
+
   return (
     <div className="w-full flex items-center px-8 relative max-lg:px-8 pb-0 max-bracket:px-4">
       <div className="w-full">
         <div className="overons flex flex-col">
           <div className="w-full flex flex-row justify-between text-black font-normal gap-12 rounded-lg z-5 max-lg:flex-col">
-            <div className="flex pt-[185px] flex-1 flex-col leading-2 text-lg max-lg:w-full pb-16 max-xxsm:pt-[160px]">
+            <div className="flex pt-[185px] flex-1 flex-col leading-2 text-lg max-lg:w-full pb-20 max-xxsm:pt-[160px]">
               <div className="flex justify-between border-b border-black mb-8">
-                <span className="flex text-[#000] text-xl font-semibold pb-2 pt-2">
+                <span className="flex text-[#000] text-2xl font-semibold pb-2 pt-2">
                   # Over het Leerhuis
                 </span>
               </div>
@@ -19,7 +22,7 @@ const OveronsPage = () => {
                 <span className="flex text-xl font-semibold pb-4 italic">
                   "Leven in een complexe wereld"
                 </span>
-                <div className="w-full max-w-[900px] italic max-lg:w-full px-0 pb-8">
+                <div className="w-full max-w-[900px] italic max-lg:w-full px-0">
                   <p>Het Leerhuis Amsterdam richt zich op zinvol samen leven in een
                   complexe wereld die ons voor veel vragen stelt.
                   <br /> Vanuit de Bijbel en andere bronnen voor oriëntatie en
@@ -57,7 +60,7 @@ const OveronsPage = () => {
                 <img src={gathering} alt="" className="rounded-xl shadow-lg" />
               </div> */}
 
-              <Link
+              {/* <Link
                 to="/"
                 className="w-full flex justify-center mt-12 border-b border-black pb-12"
               >
@@ -68,7 +71,9 @@ const OveronsPage = () => {
                 >
                   Terug
                 </button>
-              </Link>
+              </Link> */}
+
+              <BackButton url={url} />
             </div>
           </div>
         </div>

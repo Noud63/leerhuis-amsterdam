@@ -48,7 +48,7 @@ return (
         </span>
       </div>
       <div className="w-[85%] mb-4 pl-0 max-calendargrid:w-[95%] max-xxsm:w-full">
-        <span className="text-lg font-normal">
+        <span className="text-lg font-normal max-xsm:text-base">
           Het Leerhuis Amsterdam organiseert bijeenkomsten, dialogen en
           cursussen, in de Muiderkerk. <br />
           Schrijf je in voor een of meerdere activiteiten.

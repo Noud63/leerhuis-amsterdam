@@ -7,9 +7,9 @@ const MenuOverlay = ({showMenu, closeMenuOverlay}) => {
     
 return (
   <div
-    className={`${showMenu ? "translate-x-0" : "translate-x-full"} 
+    className={`${showMenu ? "translate-x-0" : "translate-x-[330px]"} 
              overlay fixed h-full backdrop-blur-lg top-0 right-0 bottom-0 
-           bg-white/50 z-[999] w-full max-w-[320px] transition ease-in duration-200`}
+           bg-white/50 z-[999] w-full max-w-[320px] transition ease-in duration-300`}
     onClick={closeMenuOverlay}
   >
     <div

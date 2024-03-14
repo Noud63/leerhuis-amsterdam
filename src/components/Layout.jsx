@@ -3,10 +3,12 @@ import Header from './Header'
 import Footer from './Footer'
 import { Outlet } from 'react-router-dom'
 import Socials from './Socials'
-import { NavLink } from 'react-router-dom'
+import ScrollToTop from '../utils/ScrollToTop'
 import MenuOverlay from './MenuOverlay'
+import { ScrollRestoration } from "react-router-dom";
 
 const Layout = () => {
+
 
 const [showMenu, setShowMenu] = useState(false);
 
@@ -32,9 +34,11 @@ const showMenuOverlay = () => {
 
         <Outlet />
         <Footer />
+     
       </div>
 
-      <MenuOverlay showMenu={showMenu} closeMenuOverlay={closeMenuOverlay}/>
+      <MenuOverlay showMenu={showMenu} closeMenuOverlay={closeMenuOverlay} />
+     
     </div>
   );
 }
