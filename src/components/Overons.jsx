@@ -19,8 +19,8 @@ const Overons = () => {
                 className="w-full max-w-[1100px] flex flex-col items-end justify-center py-8 relative mt-10 max-xxl:mt-0 
               max-xmd:flex-row max-xmd:items-center max-xmd:mt-0 max-xmd:py-0 max-xxsm:max-w-full"
               >
-                <div className="w-full max-w-[700px] flex justify-center max-xmd:flex-col max-xxsm:w-full">
-                  <div className="w-full max-w-[700px] mb-12 mt-7 max-xmd:mt-0 max-xmd:mb-0">
+                <div className="w-full max-w-[700px] flex justify-center max-xmd:flex-col max-xmd:max-w-full">
+                  <div className="w-full mb-12 mt-7 max-xmd:mt-0 max-xmd:mb-0">
                     <div className="overons_text w-full italic max-lg:w-full bg-white rounded-xl text-black px-8 pt-6 pb-8 max-xmd:rounded-b-none">
                       <span className="flex justify-center text-xl font-semibold pb-2 text-amber-600">
                         "Leven in een complexe wereld"
@@ -40,7 +40,7 @@ const Overons = () => {
                     <img
                       src={gathering}
                       alt=""
-                      className="gathering rounded-t-xl rounded-b-xl w-full max-w-[700px] shadow-lg max-xmd:rounded-t-none max-xmd:rounded-b-xl"
+                      className="gathering rounded-t-xl rounded-b-xl w-full max-w-[700px] shadow-lg max-xmd:rounded-t-none max-xmd:rounded-b-xl max-xmd:max-w-full"
                     />
                   </div>
                 </div>
