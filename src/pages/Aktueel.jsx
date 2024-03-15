@@ -8,7 +8,7 @@ const Aktueel = () => {
   return (
     <div className="h-screen flex flex-col justify-center items-center">
       <div className="text-lg px-4">
-        <span>Eerst volgende en/of lopende activiteit</span>
+        <span>Eerst volgende activiteit, lopende activiteit en andere aktuele zaken</span>
       </div>
 
       <BackButton url={url} />

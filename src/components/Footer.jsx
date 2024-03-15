@@ -32,7 +32,10 @@ const Footer = () => {
         <img src={linkedin} alt="" className="w-[35px]" />
       </div>
       <div className="w-full absolute bottom-0 left-0 text-white/50 flex justify-center bg-black py-4">
-        &copy;noudvandun webdevelopment
+        <a href="https://appcollection.netlify.app/" target="_blank">
+          {" "}
+          &copy;noudvandun webdevelopment
+        </a>
       </div>
     </div>
   );

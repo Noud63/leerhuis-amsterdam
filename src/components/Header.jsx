@@ -19,7 +19,7 @@ const Header = ({showMenuOverlay}) => {
        className={`${
          scrolled ? "-translate-y-full" : "translate-y-0"
        }  header fixed top-0 w-full flex flex-col justify-between text-black  z-10 border-b border-neutral-800/70  
-            transform ease-in-out duration-500`}
+        bg-gradient-to-b from-yellow-800/0 transform ease-in-out duration-500`}
      >
        <div
          className="w-full h-[30px] flex justify-center items-center text-sm text-white/90 tracking-wider

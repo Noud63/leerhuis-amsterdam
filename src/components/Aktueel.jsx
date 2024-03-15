@@ -16,7 +16,7 @@ const Aktueel = () => {
           <Link to="/aktueel">
             <button
               type="button"
-              className="btn w-[150px] rounded-full justify-center items-center text-[#000] border-2  border-neutral-400 gap-2 pb-1 leading-8 pt-1 text-md font-semibold"
+              className="btn w-[150px] rounded-full justify-center items-center text-[#000] border-2 border-neutral-400 gap-2 pb-1 leading-8 pt-1 text-md font-semibold"
             >
               aktuele zaken
             </button>

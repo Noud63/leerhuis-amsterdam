@@ -40,7 +40,7 @@ const Activities = () => {
 
      
 return (
-  <div className="w-[full] flex flex-row m-auto px-8 pt-[140px] text-black max-xxsm:px-4">
+  <div className="w-[full] flex flex-row m-auto px-8 pt-[130px] text-black max-xxsm:px-4">
     <div className="w-full flex flex-1 justify-center items-center flex-col">
       <div className="w-full flex flex-row gap-2 pl-0 mb-6 border-b border-black pb-2 pt-12 max-xxsm:pt-8">
         <span className="text-2xl font-semibold pt-1 text-black">
@@ -59,7 +59,7 @@ return (
       >
         {data?.slice(0, slice).map((act) => (
           <div className="w-full min-h-full rounded-2xl" key={act.id}>
-            <div className="calendar_item w-full h-full bg-white rounded-xl flex flex-col justify-between relative">
+            <div className="calendar_item w-full h-full bg-gradient-to-t from-stone-300 to-white rounded-xl flex flex-col justify-between relative">
               <div className="p-4">
                 <span className="border-b border-black flex justify-between font-bold text-xl pb-2">
                   {act.title}
