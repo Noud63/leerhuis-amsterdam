@@ -5,10 +5,8 @@ import { Outlet } from 'react-router-dom'
 import Socials from './Socials'
 import ScrollToTop from '../utils/ScrollToTop'
 import MenuOverlay from './MenuOverlay'
-import { ScrollRestoration } from "react-router-dom";
 
 const Layout = () => {
-
 
 const [showMenu, setShowMenu] = useState(false);
 
@@ -16,17 +14,14 @@ const [showMenu, setShowMenu] = useState(false);
    setShowMenu(false);
  };
 
- console.log(showMenu);
-
 const showMenuOverlay = () => {
   setShowMenu(true);
 };
 
-
-  return (
+return (
     <div className="w-full max-w-[2000px] mx-auto relative">
       <div className="w-full bg-gradient-to-r from-neutral-800/0  to-blue-800/0">
-        <div className="fixed top-0 w-full max-w-[2000px] min-h-screen bg-[url('./assets/images/map_adam1.jpg')] bg-no-repeat bg-top bg-cover -z-[999] opacity-20" />
+        <div className="fixed top-0 w-full max-w-[2000px] min-h-screen bg-[url('./assets/images/map_adam1.jpg')] bg-no-repeat bg-top bg-cover -z-[999] opacity-30" />
         <Header showMenuOverlay={showMenuOverlay} />
         <div className="socials h-[30px] flex-row justify-center items-center gap-2 hidden">
           <Socials />
@@ -38,7 +33,7 @@ const showMenuOverlay = () => {
       </div>
 
       <MenuOverlay showMenu={showMenu} closeMenuOverlay={closeMenuOverlay} />
-     
+     <ScrollToTop />
     </div>
   );
 }

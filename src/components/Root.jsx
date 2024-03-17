@@ -12,7 +12,7 @@ const Root = () => {
       <Overons />
       <Aktueel />
       <Contact />
-      <ScrollToTop />
+      
     </>
   );
 }

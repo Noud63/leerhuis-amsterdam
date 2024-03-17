@@ -43,7 +43,7 @@ useEffect(()=> {
     <div className="w-full flex items-center flex-row max-calendar:h-auto">
       <div className="flex flex-1 pt-[180px] flex-col items-center max-calendar:mt-12 max-xsm:pt-[170px]">
         <div className="w-full max-w-[700px] mb-32 flex flex-col items-center px-2">
-          <div className="w-full flex justify-start text-xl font-semibold mb-8 border-b border-black pb-2">
+          <div className="w-full flex justify-start text-xl font-semibold mb-4 border-b border-black pb-2">
             # Over {item.title}
           </div>
 

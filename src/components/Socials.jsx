@@ -11,6 +11,7 @@ import mail from "../assets/icons/mail.png"
 import linkedIn from "../assets/icons/linkedin_color.png"
 import facebook from "../assets/icons/facebook_color.png"
 import { FacebookIcon, LinkedinIcon, XIcon} from 'react-share';
+import { Link } from 'react-router-dom';
 
 const Socials = () => {
   return (
@@ -20,9 +21,11 @@ const Socials = () => {
         <div className="mr-2">
           <img src={facebook} alt="mail" className="w-[30px] drop-shadow-lg" />
         </div>
-        <div className="mr-2">
-          <img src={mail} alt="mail" className="w-[30px] drop-shadow-lg" />
-        </div>
+        <Link to="/contact">
+          <div className="mr-2">
+            <img src={mail} alt="mail" className="w-[30px] drop-shadow-lg" />
+          </div>
+        </Link>
       </div>
 
       <div className="flex flex-row">

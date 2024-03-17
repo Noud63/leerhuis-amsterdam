@@ -4,7 +4,7 @@ import gathering from "../assets/images/gathering.png"
 
 const Overons = () => {
   return (
-    <div className="w-full flex items-center mt-0 justify-center px-8 z-10 relative max-lg:px-8 max-bracket:px-4 max-xxsm:px-4 bg-stone-700/60 py-12 ">
+    <div className="w-full flex items-center mt-0 justify-center px-8 z-10 relative max-lg:px-8 max-bracket:px-4 max-xxsm:px-4 bg-stone-700/60 py-12 max-xxxsm:px-2">
       <div className="w-full">
         <div className="overons flex flex-col">
           <div className="flex flex-row justify-between text-white font-normal rounded-lg z-5 max-lg:flex-col ">
@@ -20,19 +20,21 @@ const Overons = () => {
               max-xmd:flex-row max-xmd:items-center max-xmd:mt-0 max-xmd:py-0 max-xxsm:max-w-full"
               >
                 <div className="w-full max-w-[700px] flex justify-center max-xmd:flex-col max-xmd:max-w-full">
-                  <div className="w-full mb-12 mt-7 max-xmd:mt-0 max-xmd:mb-0">
-                    <div className="overons_text w-full italic max-lg:w-full bg-white rounded-xl text-black px-8 pt-6 pb-8 max-xmd:rounded-b-none">
+                  <div className="w-full mb-12 mt-10 max-xmd:mt-0 max-xmd:mb-0">
+                    <div className="overons_text w-full max-lg:w-full bg-white rounded-xl text-black px-8 pt-6 pb-8 max-xmd:rounded-b-none max-xxxsm:px-4">
                       <span className="flex justify-center text-xl font-semibold pb-2 text-amber-600">
-                        "Leven in een complexe wereld"
+                        Leven in een complexe wereld
                       </span>
-                      Het Leerhuis Amsterdam richt zich op zinvol samen leven in
-                      een complexe wereld die ons voor veel vragen stelt.
-                      <br /> Vanuit de Bijbel en andere bronnen voor oriëntatie
-                      en de hedendaagse wereld van kunst en cultuur zoeken wij
-                      hierover het gesprek.
-                      <br /> We organiseren daarom bijeenkomsten, dialogen en
-                      cursussen, in de Muiderkerk, waarin deze werelden elkaar
-                      ontmoeten.
+                      <span className="">
+                        Het Leerhuis Amsterdam richt zich op zinvol samen leven
+                        in een complexe wereld die ons voor veel vragen stelt.
+                        <br /> Vanuit de Bijbel en andere bronnen voor
+                        oriëntatie en de hedendaagse wereld van kunst en cultuur
+                        zoeken wij hierover het gesprek.
+                        <br /> We organiseren daarom bijeenkomsten, dialogen en
+                        cursussen, in de Muiderkerk, waarin deze werelden elkaar
+                        ontmoeten.
+                      </span>
                     </div>
                   </div>
 

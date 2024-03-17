@@ -4,8 +4,8 @@
         "id": 0,
         "title": "De zin van Sabbat",
         "date": {
-          "day": "Maandag",
-          "dates": ["17-1,", "24-1,", "31-1,", "en 7-2"]
+          "day": "Woensdag",
+          "dates": ["17-1,", "24-1,", "31-1,", "7-2,", "7-5,", "21-5,", "4-6", "en 11-6"]
         },
         "time": "20:00 - 22:00 uur",
         "description": [
@@ -17,7 +17,7 @@
         "led_by": "Johan Visser en Gerben van Manen",
         "image": "sabbat.png",
         "starting_date": "2024-01-17",
-        "closing_date": "2024-02-07"
+        "closing_date": "2024-06-011"
       },
       {
         "id": 1,

@@ -7,13 +7,13 @@ const OveronsPage = () => {
   const url = window.location.pathname;
 
   return (
-    <div className="w-full flex items-center px-8 relative max-lg:px-8 pb-0 max-bracket:px-4">
+    <div className="w-full flex items-center px-8 relative pb-0 max-xxxsm:px-4">
       {/* <div className="absolute right-0 top-0 w-full min-max-full min-h-screen bg-[url('./assets/images/bg_blur3.jpg')] bg-no-repeat bg-center bg-cover opacity-10"></div> */}
       <div className="w-full">
         <div className="overons flex flex-col">
           <div className="w-full flex flex-row justify-between text-black font-normal gap-12 rounded-lg z-5 max-lg:flex-col">
             <div className="flex pt-[170px] flex-1 flex-col leading-2 text-lg max-lg:w-full pb-20 max-xxsm:pt-[160px]">
-              <div className="flex justify-between border-b border-black mb-8">
+              <div className="flex justify-between border-b border-black mb-8 max-mini:mb-4">
                 <span className="flex text-[#000] text-2xl font-semibold pb-2 pt-2">
                   # Over het Leerhuis
                 </span>
@@ -21,10 +21,10 @@ const OveronsPage = () => {
 
               <div className="w-full h-full flex flex-row items-center justify-center max-xxl:flex-col">
                 <div>
-                  <span className="flex justify-center text-xl text-orange-700 font-semibold pb-4 italic">
-                    "Leven in een complexe wereld"
+                  <span className="flex justify-center text-xl text-orange-700 font-semibold pb-4 max-xxxsm:justify-start">
+                    Leven in een complexe wereld
                   </span>
-                  <div className="w-full max-w-[900px] italic max-lg:w-full px-0">
+                  <div className="w-full max-w-[900px] max-lg:w-full px-0">
                     <p>
                       Het Leerhuis Amsterdam richt zich op zinvol samen leven in
                       een complexe wereld die ons voor veel vragen stelt.
@@ -68,22 +68,6 @@ const OveronsPage = () => {
                   />
                 </div>
               </div>
-              {/* <div className="w-full flex justify-center items-center text-md">
-                <img src={gathering} alt="" className="rounded-xl shadow-lg" />
-              </div> */}
-
-              {/* <Link
-                to="/"
-                className="w-full flex justify-center mt-12 border-b border-black pb-12"
-              >
-                <button
-                  type="button"
-                  className="btn w-[150px] rounded-full justify-center items-center text-[#000] border-2 
-                  border-black gap-2 pb-1 leading-8 pt-1 text-md font-semibold cursor-pointer"
-                >
-                  Terug
-                </button>
-              </Link> */}
 
               <BackButton url={url} />
             </div>
