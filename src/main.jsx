@@ -8,7 +8,8 @@ import Root from './components/Root';
 import CalendarItem from './pages/CalendarItem';
 import AllActivities from './pages/AllActivities';
 import OveronsPage from "./pages/OveronsPage";
-import Contact from './pages/Contact';
+import ContactForm from './pages/ContactForm';
+import ContactPage from './pages/ContactPage';
 import Aktueel from './pages/Aktueel';
 import Subscribe from './pages/Subscribe';
 
@@ -39,8 +40,12 @@ const router = createBrowserRouter([
         element: <CalendarItem />,
       },
       {
-        path: "/contact",
-        element: <Contact />,
+        path: "/contactform",
+        element: <ContactForm />,
+      },
+      {
+        path: "/contactpage",
+        element: <ContactPage />,
       },
       {
         path: "/aktueel",

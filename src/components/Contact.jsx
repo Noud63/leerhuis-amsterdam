@@ -36,7 +36,7 @@ const Contact = () => {
             <span className="">Bel naar: 06 10325127</span>
             <span className="">Mail naar: leerhuisamsterdam@gmail.com</span>
             <span className="mb-2">Of klik op onderstaande link:</span>
-            <Link to="/contact">
+            <Link to="/contactform">
               <button
                 type="button"
                 className="btn w-[150px] rounded-full justify-center items-center  text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 pb-2 pt-2 text-md font-normal"

@@ -21,7 +21,7 @@ const Socials = () => {
         <div className="mr-2">
           <img src={facebook} alt="mail" className="w-[30px] drop-shadow-lg" />
         </div>
-        <Link to="/contact">
+        <Link to="/contactform">
           <div className="mr-2">
             <img src={mail} alt="mail" className="w-[30px] drop-shadow-lg" />
           </div>

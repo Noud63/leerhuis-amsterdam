@@ -32,7 +32,7 @@ const Menu = ({ color, style, noHomeLink, border }) => {
 
       <div className="flex justify-center">
         <NavLink
-          to="/contact"
+          to="/contactpage"
           className={({ isActive }) => [
             isActive ? `${border}` : "border-b-2 border-none",
           ]}

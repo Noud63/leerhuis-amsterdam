@@ -3,10 +3,10 @@ import emailjs from "@emailjs/browser";
 import ringbinder from "../assets/images/ringbinder.png"
 
 const serviceId =  import.meta.env.VITE_REACT_APP_MY_SERVICE_ID;
-const templateId =  import.meta.env.VITE_REACT_APP_MY_TEMPLATE_ID;
+const templateId =  import.meta.env.VITE_REACT_APP_MY_TEMPLATE_ID_2;
 const publicKey=  import.meta.env.VITE_REACT_APP_MY_PUBLIC_KEY;
 
-const ContactUs = () => {
+const ContactForm = () => {
 
   const form = useRef();
   const [status, setStatus] = useState("Verstuur");
@@ -40,10 +40,10 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="w-full flex justify-center mt-[190px] pr-8 pl-12 max-sm:pr-2 max-sm:pl-6 max-sm:mt-[160px]">
+    <div className="w-full min-h-screen flex justify-center mt-[190px] pr-8 pl-12 max-sm:pr-2 max-sm:pl-6 max-sm:mt-[160px]">
       <div
-        className="contact_form w-full max-w-[580px] flex flex-col justify-start items-center 
-         bg-white px-16 pt-12 pb-16 mb-20 rounded-xl max-sm:px-4 relative"
+        className="contact_form w-full h-[600px] max-w-[580px] flex flex-col justify-start items-center 
+         bg-white px-16 pt-12 rounded-xl max-sm:px-4 relative"
       >
         <div className="absolute z-[999] -left-[30px] top-0 bottom-0 max-sm:-left-[20px] overflow-hidden">
           <img
@@ -108,4 +108,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default ContactForm;

@@ -2,6 +2,11 @@ import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import ringbinder from "../assets/images/ringbinder.png";
 
+const serviceId = import.meta.env.VITE_REACT_APP_MY_SERVICE_ID;
+const templateId = import.meta.env.VITE_REACT_APP_MY_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_REACT_APP_MY_PUBLIC_KEY;
+
+
 const Subscribe = () => {
 
   const form = useRef();
@@ -19,34 +24,27 @@ const Subscribe = () => {
     e.preventDefault();
     setStatus("Aan het verzenden....");
 
-    emailjs
-      .sendForm(
-        "service_uajwvyh",
-        "template_7uflv8h",
-        form.current,
-        "user_hmFUVd309vqUiRXCpAWNG"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setStatus("Message successfully sent!");
-          let timer = setTimeout(() => {
-            setStatus("Verstuur");
-            clearTimeout(timer);
-          }, 5000);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+      (result) => {
+        console.log(result.text);
+        setStatus("Succesvol verstuurd!");
+        let timer = setTimeout(() => {
+          setStatus("Verstuur");
+          clearTimeout(timer);
+        }, 5000);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
     form.current.reset();
   };
 
   return (
-    <div className="w-full flex justify-center mt-[190px] pr-8 pl-12 max-sm:pr-2 max-sm:pl-6 max-sm:mt-[160px]">
+    <div className="w-full h-screen flex justify-center mt-[190px] pr-8 pl-12 max-sm:pr-2 max-sm:pl-6 max-sm:mt-[160px]">
       <div
-        className="contact_form w-full max-w-[580px] flex flex-col justify-start items-center 
-         bg-white px-16 pt-12 pb-16 mb-20 rounded-xl max-sm:px-4 relative"
+        className="contact_form h-[600px] w-full max-w-[580px] flex flex-col justify-start items-center 
+         bg-white px-16 pt-12 rounded-xl max-sm:px-4 relative"
       >
         <div className="absolute z-[999] -left-[30px] top-0 bottom-0 max-sm:-left-[20px] overflow-hidden">
           <img
@@ -63,13 +61,14 @@ const Subscribe = () => {
         <div className="w-full flex text-2xl font-semibold justify-center text-black pb-6">
           Inschrijving
         </div>
-        <form ref={form} onSubmit={""} autoComplete="off" className="w-full">
+
+        <form ref={form} onSubmit={sendEmail} autoComplete="off" className="w-full">
           <div className="w-full border-b border-t border-black">
             <label htmlFor="name">Naam:</label>
             <input
               id="name"
               type="text"
-              name="naam"
+              name="from_name"
               placeholder="voornaam en achternaam"
               required
               className="py-4 pl-2"
@@ -80,7 +79,7 @@ const Subscribe = () => {
             <input
               id="e-mail"
               type="email"
-              name="email"
+              name="from_email"
               placeholder="geldig emailadres"
               required
               className="py-4 pl-2"
@@ -98,11 +97,11 @@ const Subscribe = () => {
             />
           </div>
           <div className="w-full border-b border-black mb-2">
-            <label htmlFor="message">Kenmerk:</label>
+            <label htmlFor="kenmerk">Kenmerk:</label>
             <input
-              id="message"
+              id="kenmerk"
               type="text"
-              name="itemId"
+              name="from_kenmerk"
               value={ID}
               required
               className="w-[80px] bg-transparent py-4 pl-2"
