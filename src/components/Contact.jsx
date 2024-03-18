@@ -1,26 +1,55 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Map from "./Map";
 
 const Contact = () => {
   return (
-    <div className="w-[full] h-[700px] flex flex-row m-auto px-8 text-black max-xxsm:px-4">
-      <div className="w-full flex flex-col">
-        <div className="w-full flex flex-row gap-2 pl-0 mb-6 border-b border-black pb-2 pt-10 max-xxsm:pt-8">
-          <span className="text-2xl font-semibold pt-1 text-black">
-            # Contact
-          </span>
+    <div className="w-full h-auto flex flex-col px-8 text-black max-xxsm:px-4 max-xxxsm:p-2">
+      <div className="w-full flex gap-2 mb-6 border-b border-black pb-2 pt-10 max-xxsm:pt-8">
+        <span className="text-2xl font-semibold pt-1 text-black">
+          # Contact
+        </span>
+      </div>
+
+      <div className="contact_info w-full flex flex-row p-8 bg-white rounded-xl mb-20 max-socials:flex-col max-xxsm:px-4 max-xxsm:pt-6">
+        <div className="flex flex-col w-2/3 max-socials:w-full">
+          <div className="flex flex-col text-base mb-4 gap-1">
+            <span className="text-lg font-semibold text-orange-700 mb-2">
+              Het Leerhuis is gevestigd in de Muiderkerk:
+            </span>
+
+            <span>Leerhuis Amsterdam</span>
+            <span>Linnaeusstraat 37</span>
+            <span>1093EG Amsterdam</span>
+            {/* <span>06 10325127</span>   
+                  <span>leerhuisamsterdam@gmail.com</span>    */}
+          </div>
+
+          <div className=" flex flex-col mt-2 gap-2 max-socials:mb-8">
+            <span className="text-lg font-semibold text-orange-700">
+              Heeft u vragen, zijn dingen niet helemaal duidelijk of heeft u een
+              voorstel?
+              <br />
+              Laat het ons weten.
+            </span>
+            <span className="text-lg font-semibold text-orange-700 "></span>
+            <span className="">Bel naar: 06 10325127</span>
+            <span className="">Mail naar: leerhuisamsterdam@gmail.com</span>
+            <span className="mb-2">Of klik op onderstaande link:</span>
+            <Link to="/contact">
+              <button
+                type="button"
+                className="btn w-[150px] rounded-full justify-center items-center  text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 pb-2 pt-2 text-md font-normal"
+              >
+                Mail ons
+              </button>
+            </Link>
+          </div>
         </div>
 
-        <div className="w-full h-full flex flex-col justify-center items-center mt-16 gap-10 mb-20">
-          <span>Hier contact informatie en link naar contact formulier</span>
-          <Link to="/contact">
-            <button
-              type="button"
-              className="btn w-[150px] rounded-full justify-center items-center text-[#000] border-2  border-neutral-400 gap-2 pb-1 leading-8 pt-1 text-md font-semibold"
-            >
-              Mail ons
-            </button>
-          </Link>
+        <div className="map_box w-1/2 h-[355px] bg-white p-2 max-socials:w-full">
+          <Map />
+          <div className="text-black pt-2">Locatie Leerhuis Amsterdam</div>
         </div>
       </div>
     </div>

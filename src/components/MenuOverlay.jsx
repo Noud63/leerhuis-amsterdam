@@ -47,7 +47,7 @@ return (
         to="/contact"
         className={({ isActive }) => [
           isActive
-            ? "border-b-2 border-red-800"
+            ? "border-b-2 border-black"
             : "border-b-2 border-transparent",
         ]}
       >

@@ -13,7 +13,7 @@ const Menu = ({ color, style, noHomeLink, border }) => {
             isActive ? `${border}` : "border-b-2 border-none",
           ]}
         >
-          <span className="cursor-pointer">Home</span>
+          <span className="cursor-pointer">Start</span>
         </NavLink>
       ) : (
         ""

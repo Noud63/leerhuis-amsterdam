@@ -119,11 +119,11 @@ useEffect(()=> {
               <div className="w-full px-4">
                 {" "}
                 <span className="font-bold">Kenmerk :</span>{" "}
-                {id <= 9 ? `LA-AC0${Number(id) + 1}` : `LA-AC${Number(id) + 1}`}
+                {item.itemId}
               </div>
 
               <Link
-                to={`/contact`}
+                to={`/subscribe/${item.itemId}`}
                 className="w-full flex justify-center mt-6 mb-4"
               >
                 <button
@@ -144,18 +144,6 @@ useEffect(()=> {
               </div>
             </div>
           </div>
-
-          {/* <Link
-            to={-1}
-            className="w-full flex justify-center mt-12"
-          >
-            <button
-              type="button"
-              className="btn w-[150px] rounded-full justify-center items-center  text-black border-2 border-black gap-2 pb-1 leading-8 pt-1 text-md font-normal"
-            >
-              Terug
-            </button>
-          </Link> */}
 
           <BackButton url={url} />
         </div>

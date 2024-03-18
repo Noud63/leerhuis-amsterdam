@@ -10,6 +10,7 @@ import AllActivities from './pages/AllActivities';
 import OveronsPage from "./pages/OveronsPage";
 import Contact from './pages/Contact';
 import Aktueel from './pages/Aktueel';
+import Subscribe from './pages/Subscribe';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/aktueel",
         element: <Aktueel />,
+      },
+      {
+        path: "/subscribe/:id",
+        element: <Subscribe />,
       },
     ],
   },

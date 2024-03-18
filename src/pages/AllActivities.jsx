@@ -18,16 +18,16 @@ const AllActivities = () => {
   const data = useLoaderData();
 
   return (
-    <div className="w-full flex pt-[140px] flex-row m-auto max-calendar:w-[85%] bg-[url('./assets/images/map_adam2.png')] bg-no-repeat bg-right-bottom">
+    <div className="w-full flex pt-[140px] flex-row m-auto bg-[url('./assets/images/map_adam2.png')] bg-no-repeat bg-right-bottom">
       <div className="w-full flex flex-1 justify-center items-center flex-col mb-40">
-        <div className="w-[85%] flex flex-row gap-2 mb-8 pt-12 max-calendar:w-full border-b border-black max-xxsm:pt-8">
+        <div className="w-[85%] flex flex-row gap-2 mb-8 pt-12 max-calendar:w-full border-b border-black max-xxsm:pt-8 max-xxxsm:w-[95%]">
           {/* <img src={calendar} alt="calendar" className="w-[28px]" /> */}
           <span className="text-2xl font-semibold pb-2">
             # Alle activiteiten
           </span>
         </div>
 
-        <div className="w-[85%] grid grid-cols-4 max-xxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8 ">
+        <div className="w-[85%] grid grid-cols-4 max-xxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8 max-xxxsm:w-[95%]">
           {data?.map((act) => (
             <div className="w-full min-h-full rounded-2xl" key={act.id}>
               <div className="calendar_item w-full h-full bg-gradient-to-t from-stone-300 to-white rounded-xl flex flex-col justify-between relative">

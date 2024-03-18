@@ -17,7 +17,8 @@
         "led_by": "Johan Visser en Gerben van Manen",
         "image": "sabbat.png",
         "starting_date": "2024-01-17",
-        "closing_date": "2024-06-011"
+        "closing_date": "2024-06-011",
+        "itemId": "LA-AC01"
       },
       {
         "id": 1,
@@ -43,7 +44,8 @@
         "led_by": "Wout van der Spek, Wilken van veen",
         "image": "bijbelsleerhuis.jpg",
         "starting_date": "2024-01-25",
-        "closing_date": "2024-06-13"
+        "closing_date": "2024-06-13",
+        "itemId": "LA-AC02"
       },
       {
         "id": 2,
@@ -59,7 +61,8 @@
         "led_by": "Gerben van Manen en Wilken van Veen",
         "image": "bijbelsabc.jpg",
         "starting_date": "2024-02-12",
-        "closing_date": "2024-03-11"
+        "closing_date": "2024-03-11",
+        "itemId": "LA-AC03"
       },
       {
         "id": 3,
@@ -78,7 +81,8 @@
         "led_by": "Wilken Veen",
         "image": "modernetheologen.jpg",
         "starting_date": "2024-01-30",
-        "closing_date": "2024-06-25"
+        "closing_date": "2024-06-25",
+        "itemId": "LA-AC04"
       },
       {
         "id": 4,
@@ -92,7 +96,8 @@
         "led_by": "Johan Visser en Gerben van Manen",
         "image": "groengeloven.jpg",
         "starting_date": "2024-01-30",
-        "closing_date": "2024-06-25"
+        "closing_date": "2024-06-25",
+        "itemId": "LA-AC05"
       },
       {
         "id": 5,
@@ -106,7 +111,8 @@
         "led_by": "Johan Visser\n en Gerben van Manen",
         "image": "vandis.jpg",
         "starting_date": "2024-01-30",
-        "closing_date": "2024-06-25"
+        "closing_date": "2024-06-25",
+        "itemId": "LA-AC06"
       },
       {
         "id": 6,
@@ -120,7 +126,8 @@
         "led_by": "Johan Visser en Gerben van Manen",
         "image": "leesgroep_miskotte.jpg",
         "starting_date": "2024-01-30",
-        "closing_date": "2024-06-25"
+        "closing_date": "2024-06-25",
+        "itemId": "LA-AC07"
       },
       {
         "id": 7,
@@ -134,7 +141,8 @@
         "led_by": "Gerben van Manen en Wilken van Veen",
         "image": "palchrist.jpg",
         "starting_date": "2024-01-30",
-        "closing_date": "2024-06-25"
+        "closing_date": "2024-06-25",
+        "itemId": "LA-AC08"
       },
       {
         "id": 8,
@@ -148,7 +156,8 @@
         "led_by": "Johan Visser en Gerben van Manen",
         "image": "lioba.jpg",
         "starting_date": "2024-01-30",
-        "closing_date": "2024-06-25"
+        "closing_date": "2024-06-25",
+        "itemId": "LA-AC09"
       },
       {
         "id": 9,
@@ -162,7 +171,8 @@
         "led_by": "Clifton Walker en Greteke de Vries",
         "image": "zwartwit.jpg",
         "starting_date": "2024-01-30",
-        "closing_date": "2024-06-25"
+        "closing_date": "2024-06-25",
+        "itemId": "LA-AC10"
       },
       {
         "id": 10,
@@ -173,7 +183,8 @@
         "led_by": "?",
         "image": "actiedag.jpg",
         "starting_date": "2024-06-01",
-        "closing_date": "2024-06-01"
+        "closing_date": "2024-06-01",
+        "itemId": "LA-AC11"
       }
     ]
 }

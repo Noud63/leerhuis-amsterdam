@@ -1,11 +1,19 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import ringbinder from "../assets/images/ringbinder.png"
+import ringbinder from "../assets/images/ringbinder.png";
 
-const ContactUs = () => {
+const Subscribe = () => {
 
   const form = useRef();
+
   const [status, setStatus] = useState("Verstuur");
+  const [ID, setID] = useState("");
+
+  const itemId = window.location.pathname;
+
+  useEffect(() => {
+    setID(itemId.split("/")[2]);
+  }, [itemId]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -53,49 +61,58 @@ const ContactUs = () => {
           />
         </div>
         <div className="w-full flex text-2xl font-semibold justify-center text-black pb-6">
-          Laat een bericht achter
+          Inschrijving
         </div>
         <form ref={form} onSubmit={""} autoComplete="off" className="w-full">
           <div className="w-full border-b border-t border-black">
+            <label htmlFor="name">Naam:</label>
             <input
+              id="name"
               type="text"
               name="naam"
-              placeholder="Naam"
+              placeholder="voornaam en achternaam"
               required
-              className="py-4 placeholder:text-gray-500 pl-2"
+              className="py-4 pl-2"
             />
           </div>
           <div className="w-full border-b border-black mb-2">
+            <label htmlFor="e-mail">Email:</label>
             <input
+              id="e-mail"
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="geldig emailadres"
               required
-              className="py-4 placeholder:text-gray-500 pl-2"
+              className="py-4 pl-2"
             />
           </div>
-          {/* <div className="w-full border-b border-black mb-2">
+          <div className="w-full border-b border-black mb-2">
+            <label htmlFor="partake">Datum:</label>
             <input
+              id="partake"
               type="text"
-              name="kenmerk"
-              placeholder="kenmerk"
+              name="date"
+              placeholder="deelname datum"
               required
-              className="bg-transparent py-4 placeholder:text-gray-500 pl-2"
+              className="py-4 pl-2"
             />
-          </div> */}
-          <div className="w-full mb-4 mt-4">
-            <textarea
-              name="bericht"
-              placeholder="Hier je bericht...."
+          </div>
+          <div className="w-full border-b border-black mb-2">
+            <label htmlFor="message">Kenmerk:</label>
+            <input
+              id="message"
+              type="text"
+              name="itemId"
+              value={ID}
               required
-              className="w-full bg-transparent h-[200px] border border-black p-2 placeholder:text-gray-500"
+              className="w-[80px] bg-transparent py-4 pl-2"
             />
           </div>
           <div className="w-full flex justify-center">
             <button
               type="submit"
               value="send"
-              className="w-full max-w-[180px] rounded-full py-3 text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 mt-4"
+              className="w-[180px] rounded-full bg-yellow-800 py-3 text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 mt-4"
             >
               {status}
             </button>
@@ -106,4 +123,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Subscribe;

@@ -19,7 +19,7 @@ const OveronsPage = () => {
                 </span>
               </div>
 
-              <div className="w-full h-full flex flex-row items-center justify-center max-xxl:flex-col">
+              <div className="w-full h-full flex flex-row items-start justify-center max-xxl:flex-col">
                 <div>
                   <span className="flex justify-center text-xl text-orange-700 font-semibold pb-4 max-xxxsm:justify-start">
                     Leven in een complexe wereld
@@ -57,10 +57,19 @@ const OveronsPage = () => {
                       wanneer het past.
                       <br />
                       We kijken naar jullie uit!
+                      <br/><br/>
+                      De commissie van het Leerhuis:<br/>
+                      Rijk van Ark<br/>
+                      Liemo de Boer<br/>
+                      Corinne Egberts<br/>
+                      Gerben van Manen<br/>
+                      Anneke Nolet<br/>
+                      Wilken Veen<br/>
+                      Greteke de Vries
                     </p>
                   </div>
                 </div>
-                <div>
+                <div className="">
                   <img
                     src={globe}
                     alt="globe"
@@ -68,7 +77,7 @@ const OveronsPage = () => {
                   />
                 </div>
               </div>
-
+      
               <BackButton url={url} />
             </div>
           </div>

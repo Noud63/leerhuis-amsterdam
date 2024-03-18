@@ -11,7 +11,8 @@ const Header = ({showMenuOverlay}) => {
 
   const scrolled = scroll();
 
-  const style ="gap-16 max-xxl:gap-8 max-socials:justify-end max-socials:mr-8 max-xmd:hidden"
+  const style =
+    "gap-16 max-xxl:gap-8 max-socials:justify-end max-socials:mr-8 max-xmd:hidden";
   
  return (
    <div className="w-full min-h-full max-w-[2000px] relative">
@@ -23,14 +24,14 @@ const Header = ({showMenuOverlay}) => {
      >
        <div
          className="w-full h-[30px] flex justify-center items-center text-sm text-white/90 tracking-wider
-         bg-gradient-to-r from-black via-yellow-800 to-black"
+         bg-gradient-to-r from-yellow-950 via-yellow-800 to-yellow-950"
        >
          <span>Leerhuis Amsterdam : voor zinvol samenleven</span>
        </div>
 
        <div className="h-full flex flex-row justify-between">
          <Link to="/">
-           <div className="h-full flex flex-row gap-6 max-xxsm:gap-2 py-4 pl-8 max-xxsm:pl-4">
+           <div className="h-full flex flex-row gap-6 max-xxsm:gap-2 py-4 pl-8 max-xxsm:pl-4 max-xxxsm:pl-2">
              <img src={logo} alt="logo" className="w-[220px] h-[80px]" />
 
              <div className="">
@@ -48,7 +49,7 @@ const Header = ({showMenuOverlay}) => {
          <Socials />
 
          <div
-           className="cursor-pointer min-h-full flex items-center justify-center xmd:hidden mr-8 max-xxsm:mr-4"
+           className="cursor-pointer min-h-full flex items-center justify-center xmd:hidden mr-8 max-xxsm:mr-4 max-xxxsm:mr-2"
            onClick={showMenuOverlay}
          >
            <div className="flex justify-center items-center flex-col">
