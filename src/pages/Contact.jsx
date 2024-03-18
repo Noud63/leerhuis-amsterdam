@@ -2,6 +2,10 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ringbinder from "../assets/images/ringbinder.png"
 
+const serviceId =  import.meta.env.VITE_REACT_APP_MY_SERVICE_ID;
+const templateId =  import.meta.env.VITE_REACT_APP_MY_TEMPLATE_ID;
+const publicKey=  import.meta.env.VITE_REACT_APP_MY_PUBLIC_KEY;
+
 const ContactUs = () => {
 
   const form = useRef();
@@ -13,15 +17,15 @@ const ContactUs = () => {
 
     emailjs
       .sendForm(
-        "service_uajwvyh",
-        "template_7uflv8h",
+        serviceId,
+       templateId,
         form.current,
-        "user_hmFUVd309vqUiRXCpAWNG"
+        publicKey
       )
       .then(
         (result) => {
-          console.log(result.text);
-          setStatus("Message successfully sent!");
+          console.log(result);
+          setStatus("Succesvol verstuurd!");
           let timer = setTimeout(() => {
             setStatus("Verstuur");
             clearTimeout(timer);
@@ -31,6 +35,7 @@ const ContactUs = () => {
           console.log(error.text);
         }
       );
+      
     form.current.reset();
   };
 
@@ -55,11 +60,16 @@ const ContactUs = () => {
         <div className="w-full flex text-2xl font-semibold justify-center text-black pb-6">
           Laat een bericht achter
         </div>
-        <form ref={form} onSubmit={""} autoComplete="off" className="w-full">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          autoComplete="off"
+          className="w-full"
+        >
           <div className="w-full border-b border-t border-black">
             <input
               type="text"
-              name="naam"
+              name="from_name"
               placeholder="Naam"
               required
               className="py-4 placeholder:text-gray-500 pl-2"
@@ -68,24 +78,16 @@ const ContactUs = () => {
           <div className="w-full border-b border-black mb-2">
             <input
               type="email"
-              name="email"
+              name="from_email"
               placeholder="Email"
               required
               className="py-4 placeholder:text-gray-500 pl-2"
             />
           </div>
-          {/* <div className="w-full border-b border-black mb-2">
-            <input
-              type="text"
-              name="kenmerk"
-              placeholder="kenmerk"
-              required
-              className="bg-transparent py-4 placeholder:text-gray-500 pl-2"
-            />
-          </div> */}
+          
           <div className="w-full mb-4 mt-4">
             <textarea
-              name="bericht"
+              name="message"
               placeholder="Hier je bericht...."
               required
               className="w-full bg-transparent h-[200px] border border-black p-2 placeholder:text-gray-500"
