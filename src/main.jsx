@@ -52,6 +52,10 @@ const router = createBrowserRouter([
         element: <Aktueel />,
       },
       {
+        path: "/aktueel/calendaritem/:id",
+        element: <CalendarItem />,
+      },
+      {
         path: "/subscribe/:id",
         element: <Subscribe />,
       },

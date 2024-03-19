@@ -4,7 +4,7 @@ import Map from "./Map";
 
 const Contact = () => {
   return (
-    <div className="w-full h-auto flex flex-col px-8 text-black max-xxsm:px-4 max-xxxsm:p-2" id="contact">
+    <div className="w-full h-auto flex flex-col px-8 text-black max-xxsm:px-4 max-xxxsm:px-2">
       <div className="w-full flex gap-2 mb-6 border-b border-black pb-2 pt-10 max-xxsm:pt-8">
         <span className="text-2xl font-semibold pt-1 text-black">
           # Contact
@@ -36,7 +36,7 @@ const Contact = () => {
             <span className="">Bel naar: 06 10325127</span>
             <span className="">Mail naar: leerhuisamsterdam@gmail.com</span>
             <span className="mb-2">Of klik op onderstaande link:</span>
-            <Link to="/contactform">
+            <Link to="/contactform" className="w-[150px]">
               <button
                 type="button"
                 className="btn w-[150px] rounded-full justify-center items-center  text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 pb-2 pt-2 text-md font-normal"

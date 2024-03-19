@@ -3,7 +3,7 @@ import Contact from '../components/Contact'
 
 const ContactPage = () => {
   return (
-    <div className="w-full h-screen mt-[130px]">
+    <div className="w-full min-h-screen mt-[126px]">
       <Contact />
     </div>
   );

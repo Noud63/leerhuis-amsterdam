@@ -18,10 +18,9 @@ const AllActivities = () => {
   const data = useLoaderData();
 
   return (
-    <div className="w-full flex pt-[140px] flex-row m-auto bg-[url('./assets/images/map_adam2.png')] bg-no-repeat bg-right-bottom">
-      <div className="w-full flex flex-1 justify-center items-center flex-col mb-40">
-        <div className="w-[85%] flex flex-row gap-2 mb-8 pt-12 max-calendar:w-full border-b border-black max-xxsm:pt-8 max-xxxsm:w-[95%]">
-          {/* <img src={calendar} alt="calendar" className="w-[28px]" /> */}
+    <div className="w-full flex pt-[170px] flex-row bg-[url('./assets/images/map_adam2.png')] bg-no-repeat bg-right-bottom">
+      <div className="w-full flex justify-center items-center flex-col mb-40">
+        <div className="w-[95%] flex flex-row mb-8 border-b border-black">
           <span className="text-2xl font-semibold pb-2">
             # Alle activiteiten
           </span>

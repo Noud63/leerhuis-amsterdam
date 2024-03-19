@@ -102,7 +102,7 @@ const Subscribe = () => {
               id="kenmerk"
               type="text"
               name="from_kenmerk"
-              value={ID}
+              defaultValue={ID}
               required
               className="w-[80px] bg-transparent py-4 pl-2"
             />

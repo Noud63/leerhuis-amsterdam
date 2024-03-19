@@ -5,7 +5,7 @@
         "title": "De zin van Sabbat",
         "date": {
           "day": "Woensdag",
-          "dates": ["17-1,", "24-1,", "31-1,", "7-2,", "7-5,", "21-5,", "4-6", "en 11-6"]
+          "dates": ["2024-01-17", "2024-01-24", "2024-01-31", "2024-02-07", "2024-05-07", "2024-05-21", "2024-06-04", "2024-06-11"]
         },
         "time": "20:00 - 22:00 uur",
         "description": [
@@ -26,14 +26,14 @@
         "date": {
           "day": "Donderdag",
           "dates": [
-            "25-1,",
-            "8-2,",
-            "22-2,",
-            "14-3,",
-            "11-4,",
-            "25-4,",
-            "23-5,",
-            "en 13-6"
+            "2024-01-25",
+            "2024-02-08",
+            "2024-02-22",
+            "2024-03-14",
+            "2024-04-11",
+            "2024-04-25",
+            "2024-05-23",
+            "2024-06-13"
           ]
         },
         "time": "20:00 - 22:00 uur",
@@ -50,7 +50,7 @@
       {
         "id": 2,
         "title": "Bijbels ABC",
-        "date": { "day": "Maandag", "dates": ["12-2,", "26-2,", "en 11-3"] },
+        "date": { "day": "Maandag", "dates": ["2024-02-12", "2024-02-26", "2024-03-11"] },
         "time": "20:00 - 22:00 uur",
         "description": [
           "In de tweede wereld oorlog schreef de theoloog Kornelis Heiko Miskotte (1894-1976) zijn Bijbels ABC.",
@@ -69,7 +69,7 @@
         "title": "De Moderne Theologen",
         "date": {
           "day": "Dinsdag",
-          "dates": ["30-1,", "27-2", "26-3,", "30-4,", "28-5", "en 25-6"]
+          "dates": ["2024-01-30", "2024-02-27", "2024-03-26", "2024-04-30", "2024-05-28", "2024-06-25"]
         },
         "time": "19:00 - 22:00 uur",
         "description": [
@@ -88,8 +88,8 @@
         "id": 4,
         "title": "Groen Geloven in Mokum",
         "date": {
-          "day": "Dinsdag",
-          "dates": ["30-1,", "26-3,", "30-4,", "en 25-6"]
+          "day": "Woensdag",
+          "dates": ["2024-04-10", "2024-04-17", "2024-04-24"]
         },
         "time": "20:00 - 22:00 uur",
         "description": "",
@@ -103,8 +103,8 @@
         "id": 5,
         "title": "Literaire Kring",
         "date": {
-          "day": "Dinsdag",
-          "dates": ["30-1,", "26-3,", "30-4,", "en 25-6"]
+          "day": "Maandag",
+          "dates": ["2024-03-04", "2024-03-25", "2024-04-15", "2024-05-06"]
         },
         "time": "20:00 - 22:00 uur",
         "description": "",
@@ -118,12 +118,12 @@
         "id": 6,
         "title": "Leesgroep Miskotte",
         "date": {
-          "day": "Dinsdag",
-          "dates": ["30-1,", "26-3,", "30-4,", "en 25-6"]
+          "day": "Woensdag",
+          "dates": ["2024-01-10", "2024-02-07", "2024-03-06", "2024-04-03", "2024-05-08"]
         },
-        "time": "20:00 - 22:00 uur",
+        "time": "09:00 - 10:00 uur",
         "description": "",
-        "led_by": "Johan Visser en Gerben van Manen",
+        "led_by": "Maarten Dekker en Gerben van Manen",
         "image": "leesgroep_miskotte.jpg",
         "starting_date": "2024-01-30",
         "closing_date": "2024-06-25",
@@ -133,12 +133,12 @@
         "id": 7,
         "title": "Palestijnse Christenen",
         "date": {
-          "day": "Dinsdag",
-          "dates": ["30-1,", "26-3,", "30-4,", "en 25-6"]
+          "day": "Zaterdag",
+          "dates": ["2024-02-03"]
         },
-        "time": "20:00 - 22:00 uur",
+        "time": "15:00 - 17:00 uur",
         "description": "",
-        "led_by": "Gerben van Manen en Wilken van Veen",
+        "led_by": "Remco van Mulligen",
         "image": "palchrist.jpg",
         "starting_date": "2024-01-30",
         "closing_date": "2024-06-25",
@@ -148,12 +148,12 @@
         "id": 8,
         "title": "Vierentwintig uurs Retraite",
         "date": {
-          "day": "Dinsdag",
-          "dates": ["30-1,", "26-3,", "30-4,", "en 25-6"]
+          "day": "Vrijdag en zaterdag",
+          "dates": ["2024-05-10", "2024-05-11"]
         },
-        "time": "19:00 - 22:00 uur",
+        "time": "16:00",
         "description": "",
-        "led_by": "Johan Visser en Gerben van Manen",
+        "led_by": "Liemo de Boer",
         "image": "lioba.jpg",
         "starting_date": "2024-01-30",
         "closing_date": "2024-06-25",
@@ -163,10 +163,10 @@
         "id": 9,
         "title": "Zwart/wit",
         "date": {
-          "day": "Dinsdag",
-          "dates": ["30-1,", "26-3,", "30-4,", "en 25-6"]
+          "day": "Vrijdag",
+          "dates": ["2024-04-19", "2024-05-24", "2024-06-07", "2024-06-21"]
         },
-        "time": "20:00 - 22:00 uur",
+        "time": "19:30 - 21:30 uur",
         "description": "",
         "led_by": "Clifton Walker en Greteke de Vries",
         "image": "zwartwit.jpg",
@@ -177,7 +177,7 @@
       {
         "id": 10,
         "title": "Actiedag kerk en klimaat",
-        "date": { "day": "Zaterdag", "dates": ["1-6"] },
+        "date": { "day": "Zaterdag", "dates": ["2024-01-06"] },
         "time": "?",
         "description": "?",
         "led_by": "?",

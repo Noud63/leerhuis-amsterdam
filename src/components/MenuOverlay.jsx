@@ -16,7 +16,7 @@ return (
       className="cursor-pointer flex justify-center pt-4"
       onClick={closeMenuOverlay}
     >
-      <img src={close} alt="close" className="w-8"/>
+      <img src={close} alt="close" className="w-8" />
     </div>
 
     <div className="menu flex flex-col justify-center items-center text-lg font-semibold gap-12 mt-8">
@@ -44,7 +44,7 @@ return (
       </NavLink>
 
       <NavLink
-        to="/contact"
+        to="/contactpage"
         className={({ isActive }) => [
           isActive
             ? "border-b-2 border-black"
@@ -65,7 +65,16 @@ return (
         <span>Activiteiten</span>
       </NavLink>
 
-      <span>Aktueel</span>
+      <NavLink
+        to="/aktueel"
+        className={({ isActive }) => [
+          isActive
+            ? "border-b-2 border-black"
+            : "border-b-2 border-transparent",
+        ]}
+      >
+        <span>Aktueel</span>
+      </NavLink>
     </div>
   </div>
 );

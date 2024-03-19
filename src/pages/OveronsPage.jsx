@@ -7,14 +7,13 @@ const OveronsPage = () => {
   const url = window.location.pathname;
 
   return (
-    <div className="w-full flex items-center px-8 relative pb-0 max-xxxsm:px-4">
-      {/* <div className="absolute right-0 top-0 w-full min-max-full min-h-screen bg-[url('./assets/images/bg_blur3.jpg')] bg-no-repeat bg-center bg-cover opacity-10"></div> */}
+    <div className="w-full flex pt-[170px] items-center px-8 relative max-xxxsm:px-4">
       <div className="w-full min-h-screen">
         <div className="overons flex flex-col">
           <div className="w-full flex flex-row justify-between text-black font-normal gap-12 rounded-lg z-5 max-lg:flex-col">
-            <div className="flex pt-[170px] flex-1 flex-col leading-2 text-lg max-lg:w-full pb-20 max-xxsm:pt-[160px]">
+            <div className="flex flex-1 flex-col leading-2 text-lg max-lg:w-full pb-20">
               <div className="flex justify-between border-b border-black mb-8 max-mini:mb-4">
-                <span className="flex text-[#000] text-2xl font-semibold pb-2 pt-2">
+                <span className="flex text-[#000] text-2xl font-semibold pb-2">
                   # Over het Leerhuis
                 </span>
               </div>
@@ -24,7 +23,7 @@ const OveronsPage = () => {
                   <span className="flex justify-center text-xl text-orange-700 font-semibold pb-4 max-xxxsm:justify-start">
                     Leven in een complexe wereld
                   </span>
-                  <div className="w-full max-w-[900px] max-lg:w-full px-0 max-xxl:w-full">
+                  <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full">
                     <p>
                       Het Leerhuis Amsterdam richt zich op zinvol samen leven in
                       een complexe wereld die ons voor veel vragen stelt.

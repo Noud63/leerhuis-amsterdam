@@ -29,6 +29,7 @@ const item = activities.activities[id]
 
 const givenDate = new Date(item.closing_date).getTime();
 const now = new Date().getTime();
+// console.log("one week later:" + (now + 604800000))
 
 useEffect(()=> {
  if (givenDate <= now) {
@@ -97,7 +98,7 @@ useEffect(()=> {
                 <div className="w-full flex flex-row flex-wrap">
                   <span>{item.date.day}:&nbsp;</span>
                   {item.date.dates.map((date, index) => (
-                    <span key={index}>{date}&nbsp;</span>
+                    <span key={index}>{new Date(date).toLocaleDateString().slice(0, -5)},&nbsp;</span>
                   ))}
                 </div>
               </div>

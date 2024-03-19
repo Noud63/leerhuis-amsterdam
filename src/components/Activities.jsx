@@ -40,10 +40,10 @@ const Activities = () => {
 
      
 return (
-  <div className="w-[full] flex flex-row m-auto px-8 mt-[130px] text-black max-xxsm:px-4 max-xxxsm:p-2 max-xxxsm:mt-[120px]">
+  <div className="w-[full] flex flex-row m-auto px-8 mt-[170px] text-black max-xxsm:px-4 max-xxxsm:px-2">
     <div className="w-full flex flex-1 justify-center items-center flex-col">
-      <div className="w-full flex flex-row gap-2 pl-0 mb-6 border-b border-black pb-2 pt-12 max-xxsm:pt-8">
-        <span className="text-2xl font-semibold pt-1 text-black">
+      <div className="w-full flex flex-row gap-2  mb-6 border-b border-black pb-2 ">
+        <span className="text-2xl font-semibold text-black">
           # Activiteiten Kalender 2024
         </span>
       </div>
