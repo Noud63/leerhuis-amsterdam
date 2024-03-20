@@ -25,3 +25,5 @@ export const filterByDate = () => {
 };
 
 filterByDate()
+
+console.log(filteredDates)
