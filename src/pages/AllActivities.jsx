@@ -1,14 +1,13 @@
 import React from "react";
-// import calendar from "../assets/icons/calendar-icon.svg";
-// import BackButton from "../components/BackButton";
 import { Link } from "react-router-dom";
-import getJsonData from "../utils/getJsonData";
+// import getJsonData from "../utils/getJsonData";
+import { upcomingActivities} from "../utils/filterByDate"
 import { useLoaderData } from "react-router-dom";
 import BackButton from "../components/BackButton";
 
 export const loader = () => {
-  const data = getJsonData();
-  return data;
+  // const data = getJsonData()
+  return upcomingActivities;
 };
 
 const AllActivities = () => {
@@ -16,6 +15,7 @@ const AllActivities = () => {
   const url = window.location.pathname;
 
   const data = useLoaderData();
+  console.log(data)
 
   return (
     <div className="w-full flex pt-[170px] flex-row">

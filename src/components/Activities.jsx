@@ -1,12 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
-import getJsonData from "../utils/getJsonData";
+// import getJsonData from "../utils/getJsonData";
+import { upcomingActivities } from '../utils/filterByDate';
 import { useLoaderData } from "react-router-dom";
 
 
 export const loader = () => {
-  const data = getJsonData();
-  return data;
+  // const data = getJsonData();
+  return upcomingActivities
 };
 
 

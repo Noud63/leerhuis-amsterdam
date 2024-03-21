@@ -6,17 +6,22 @@ const nextWeek = now + 604800000;
 
 // Filter activities that are expired
 export const filteredExpiredActivities = [];
+export const upcomingActivities = []
 
 export const filterActivitiesInThePast = () => {
   activities.activities.forEach((act) => {
       if(new Date(act.closing_date).getTime() < now){
         filteredExpiredActivities.push(act)
       }
+      if (new Date(act.closing_date).getTime() >= now) {
+        upcomingActivities.push(act);
+      }
   });
 };
 
 filterActivitiesInThePast();
 console.log(filteredExpiredActivities);
+console.log(upcomingActivities);
 
 
 //------------ 1 ------------ // 
