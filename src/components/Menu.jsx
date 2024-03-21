@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Menu = ({ color, style, noHomeLink, border }) => {
+const Menu = ({ color, style, border }) => {
   return (
     <div
-      className={`menu flex justify-center items-center text-lg font-semibold gap-16 text-${color} ${style}`}
+      className={`menu flex justify-center items-center text-lg font-semibold gap-9 text-${color} ${style}`}
     >
-      {!noHomeLink ? (
+      <div className="flex justify-center">
         <NavLink
           to="/"
           className={({ isActive }) => [
@@ -15,9 +15,7 @@ const Menu = ({ color, style, noHomeLink, border }) => {
         >
           <span className="cursor-pointer">Start</span>
         </NavLink>
-      ) : (
-        ""
-      )}
+      </div>
 
       <div className="flex justify-center">
         <NavLink
