@@ -1,5 +1,5 @@
 import React from "react";
-import { filteredActivitiesByDate } from "../utils/filterByDate";
+import { filteredActivitiesByWeek } from "../utils/filterByDate";
 import activities from"../db.json"
 import { Link } from "react-router-dom";
 
@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Aktueel = () => {
   const url = window.location.pathname;
 
-  const sortedFilteredDates = filteredActivitiesByDate.toSorted(
+  const sortedFilteredDates = filteredActivitiesByWeek.toSorted(
     (a, b) => new Date(a.date) - new Date(b.date)
   );
 

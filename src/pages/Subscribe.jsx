@@ -12,6 +12,7 @@ const Subscribe = () => {
   const form = useRef();
 
   const [status, setStatus] = useState("Verstuur");
+  const [message, setMessage] = useState("")
   const [ID, setID] = useState("");
 
   const itemId = window.location.pathname;
@@ -28,10 +29,12 @@ const Subscribe = () => {
       (result) => {
         console.log(result.text);
         setStatus("Succesvol verstuurd!");
+        setMessage("Bedankt voor je inschrijving!")
         let timer = setTimeout(() => {
           setStatus("Verstuur");
+          setMessage("");
           clearTimeout(timer);
-        }, 5000);
+        }, 3000);
       },
       (error) => {
         console.log(error.text);
@@ -41,7 +44,7 @@ const Subscribe = () => {
   };
 
   return (
-    <div className="w-full flex justify-center mt-[190px] pr-8 pl-12 max-sm:pr-2 max-sm:pl-6 max-sm:mt-[160px]">
+    <div className="w-full h-screen flex justify-center mt-[190px] pr-8 pl-12 max-sm:pr-2 max-sm:pl-6 max-sm:mt-[160px]">
       <div
         className="contact_form h-auto w-full max-w-[580px] flex flex-col justify-start items-center 
          bg-white px-16 py-12 rounded-xl max-sm:px-4 relative mb-28"
@@ -62,13 +65,14 @@ const Subscribe = () => {
           <span className="text-2xl font-semibold">Inschrijving</span>
           <div className="w-full text-[16px] justify-start my-4">
             <span>
-              Om je in te schrijven geld een bijdrage van &euro;5,
-              zoom-groepen zijn gratis. Voor wie de eigen bijdragen te hoog is,
-              laat het ons weten, of aan de gespreksleider of stuur een mail.
+              Om je in te schrijven geld een bijdrage van &euro;5, zoom-groepen
+              zijn gratis. Voor wie de eigen bijdragen te hoog is, laat het ons
+              weten, of aan de gespreksleider of stuur een mail.
               <br />
               Betalen kan met pinpas of per bank.
               <br />
-              Maak &euro;5,- over op rekeningnummer:<br/>
+              Maak &euro;5,- over op rekeningnummer:
+              <br />
             </span>
             <span className="font-semibold">
               NL32INGB0000449815 t.n.v. PROTESTANTSE GEMEENTE IN ZAKE T&E
@@ -130,11 +134,12 @@ const Subscribe = () => {
             <button
               type="submit"
               value="send"
-              className="w-[180px] rounded-full bg-yellow-800 py-3 text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 mt-4"
+              className="btn_orange w-[180px] rounded-full bg-yellow-800 py-3 text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 mt-8"
             >
               {status}
             </button>
           </div>
+          <div className="w-full flex justify-center text-lg mt-4">{message}</div>
         </form>
       </div>
     </div>

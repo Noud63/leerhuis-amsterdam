@@ -1,14 +1,13 @@
 import React from 'react'
 import BackButton from '../components/BackButton';
-import { filteredActivitiesByDate } from "../utils/filterByDate";
-import activities from "../db.json"
+import { filteredActivitiesByWeek } from "../utils/filterByDate";
 import { Link } from 'react-router-dom';
 
 const Aktueel = () => {
 
 const url = window.location.pathname;
 
-const sortedFilteredDates = filteredActivitiesByDate.toSorted(
+const sortedFilteredDates = filteredActivitiesByWeek.toSorted(
   (a, b) => new Date(a.date) - new Date(b.date)
 );
 // console.log(sortedFilteredDates)

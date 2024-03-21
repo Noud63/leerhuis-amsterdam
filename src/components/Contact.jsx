@@ -40,7 +40,7 @@ const Contact = () => {
             <Link to="/contactform" className="w-[150px]">
               <button
                 type="button"
-                className="btn w-[150px] rounded-full justify-center items-center  text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 pb-2 pt-2 text-md font-normal"
+                className="btn_orange w-[150px] rounded-full justify-center items-center  text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 pb-2 pt-2 text-md font-normal"
               >
                 Mail ons
               </button>

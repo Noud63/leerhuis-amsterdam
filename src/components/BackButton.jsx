@@ -12,6 +12,7 @@ const BackButton = (url) => {
       url.url === "/aktueel" || 
       url.url === "/overonspage" || 
       url.url === "/contact" ||
+      url.url === "/subscriptionrules" ||
       url.url === "/"
     ) {
       setPath("/");

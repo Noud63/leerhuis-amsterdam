@@ -51,8 +51,12 @@ input {
   box-shadow: 0px 1px 4px rgb(0,0,0, .3);
 }
 
+.btn_orange {
+  box-shadow: 0px 1px 4px rgb(0,0,0, .3);
+}
+
 .contact_info {
-box-shadow: 0px 1px 4px rgb(0,0,0, .4);
+box-shadow: 0px 1px 3px rgb(0,0,0, .4);
 }
 
 .calendar_item {

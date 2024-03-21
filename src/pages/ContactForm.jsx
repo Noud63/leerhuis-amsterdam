@@ -97,7 +97,7 @@ const ContactForm = () => {
             <button
               type="submit"
               value="send"
-              className="w-full max-w-[180px] rounded-full py-3 text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 mt-4"
+              className="btn_orange w-full max-w-[180px] rounded-full py-3 text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 mt-4"
             >
               {status}
             </button>
