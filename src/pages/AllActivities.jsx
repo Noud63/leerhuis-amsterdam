@@ -18,7 +18,7 @@ const AllActivities = () => {
   const data = useLoaderData();
 
   return (
-    <div className="w-full flex pt-[170px] flex-row bg-[url('./assets/images/map_adam2.png')] bg-no-repeat bg-right-bottom">
+    <div className="w-full flex pt-[170px] flex-row">
       <div className="w-full flex justify-center items-center flex-col mb-40">
         <div className="w-[95%] flex flex-row mb-8 border-b border-black">
           <span className="text-2xl font-semibold pb-2">
@@ -28,8 +28,8 @@ const AllActivities = () => {
 
         <div className="w-[85%] grid grid-cols-4 max-xxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8 max-xxxsm:w-[95%]">
           {data?.map((act) => (
-            <div className="w-full min-h-full rounded-2xl" key={act.id}>
-              <div className="calendar_item w-full h-full bg-gradient-to-t from-stone-300 to-white rounded-xl flex flex-col justify-between relative">
+            <div className="w-full min-h-full" key={act.id}>
+              <div className="calendar_item w-full h-full rounded-t-2xl bg-gradient-to-t from-stone-300 to-white flex flex-col justify-between relative">
                 <div className="p-4">
                   <span className="border-b border-black flex justify-between font-bold text-xl pb-2">
                     {act.title}
@@ -52,17 +52,17 @@ const AllActivities = () => {
                   </div>
                 </div>
 
-                <div className="w-full flex justify-center items-center mt-4 rounded-b-lg">
+                <div className="w-full flex justify-center items-center mt-4">
                   <img
                     src={`/images/${act.image}`}
                     alt=""
-                    className="w-full h-auto rounded-b-lg"
+                    className="w-full h-auto"
                   />
                 </div>
 
                 <Link
                   to={`calendaritem/${act.id}`}
-                  className="w-full flex justify-center items-center absolute bottom-0 z-10 bg-black/50 py-4 rounded-b-lg"
+                  className="w-full flex justify-center items-center absolute bottom-0 z-10 bg-black/50 py-4"
                 >
                   <button
                     type="button"

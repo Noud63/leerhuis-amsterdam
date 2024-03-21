@@ -45,16 +45,16 @@ const ContactForm = () => {
         className="contact_form w-full h-[600px] max-w-[580px] flex flex-col justify-start items-center 
          bg-white px-16 pt-12 rounded-xl max-sm:px-4 relative"
       >
-        <div className="absolute z-[999] -left-[30px] top-0 bottom-0 max-sm:-left-[20px] overflow-hidden">
+        <div className="absolute w-[40px] z-[999] -left-[30px] top-0 bottom-0 max-sm:-left-[20px] overflow-hidden">
           <img
             src={ringbinder}
             alt=""
-            className="w-[40px] h-full max-sm:w-[30px] max-sm:h-auto"
+            className="max-sm:w-[30px] max-sm:h-auto"
           />
           <img
             src={ringbinder}
             alt=""
-            className="w-[40px] h-full max-sm:w-[30px] max-sm:h-auto"
+            className="max-sm:w-[30px] max-sm:h-auto"
           />
         </div>
         <div className="w-full flex text-2xl font-semibold justify-center text-black pb-6">

@@ -4,7 +4,7 @@ import gathering from "../assets/images/gathering.png"
 
 const Overons = () => {
   return (
-    <div className="w-full flex items-center mt-0 justify-center px-8 z-10 relative max-lg:px-8 max-bracket:px-4 max-xxsm:px-4 bg-neutral-400/60 py-12 max-xxxsm:px-2 ">
+    <div className="w-full flex items-center mt-0 justify-center px-8 z-10 relative max-lg:px-8 max-bracket:px-4 max-xxsm:px-4 bg-neutral-400/40 py-12 max-xxxsm:px-2 ">
       <div className="w-full">
         <div className="overons flex flex-col">
           <div className="flex flex-row justify-between font-normal rounded-lg z-5 max-lg:flex-col ">

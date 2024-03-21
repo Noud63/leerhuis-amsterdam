@@ -41,28 +41,47 @@ const Subscribe = () => {
   };
 
   return (
-    <div className="w-full h-screen flex justify-center mt-[190px] pr-8 pl-12 max-sm:pr-2 max-sm:pl-6 max-sm:mt-[160px]">
+    <div className="w-full flex justify-center mt-[190px] pr-8 pl-12 max-sm:pr-2 max-sm:pl-6 max-sm:mt-[160px]">
       <div
-        className="contact_form h-[600px] w-full max-w-[580px] flex flex-col justify-start items-center 
-         bg-white px-16 pt-12 rounded-xl max-sm:px-4 relative"
+        className="contact_form h-auto w-full max-w-[580px] flex flex-col justify-start items-center 
+         bg-white px-16 py-12 rounded-xl max-sm:px-4 relative mb-28"
       >
-        <div className="absolute z-[999] -left-[30px] top-0 bottom-0 max-sm:-left-[20px] overflow-hidden">
+        <div className="absolute w-[40px] z-[999] -left-[30px] top-0 bottom-0 max-sm:-left-[20px] overflow-hidden">
           <img
             src={ringbinder}
             alt=""
-            className="w-[40px] h-full max-sm:w-[30px] max-sm:h-auto"
+            className="max-sm:w-[30px] max-sm:h-auto"
           />
           <img
             src={ringbinder}
             alt=""
-            className="w-[40px] h-full max-sm:w-[30px] max-sm:h-auto"
+            className="max-sm:w-[30px] max-sm:h-auto"
           />
         </div>
-        <div className="w-full flex text-2xl font-semibold justify-center text-black pb-6">
-          Inschrijving
+        <div className="w-full flex flex-col items-center justify-center text-black pb-2">
+          <span className="text-2xl font-semibold">Inschrijving</span>
+          <div className="w-full text-[16px] justify-start my-4">
+            <span>
+              Om je in te schrijven geld een bijdrage van &euro;5,
+              zoom-groepen zijn gratis. Voor wie de eigen bijdragen te hoog is,
+              laat het ons weten, of aan de gespreksleider of stuur een mail.
+              <br />
+              Betalen kan met pinpas of per bank.
+              <br />
+              Maak &euro;5,- over op rekeningnummer:<br/>
+            </span>
+            <span className="font-semibold">
+              NL32INGB0000449815 t.n.v. PROTESTANTSE GEMEENTE IN ZAKE T&E
+            </span>
+          </div>
         </div>
 
-        <form ref={form} onSubmit={sendEmail} autoComplete="off" className="w-full">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          autoComplete="off"
+          className="w-full"
+        >
           <div className="w-full border-b border-t border-black">
             <label htmlFor="name">Naam:</label>
             <input

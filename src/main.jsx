@@ -12,6 +12,7 @@ import ContactForm from './pages/ContactForm';
 import ContactPage from './pages/ContactPage';
 import Aktueel from './pages/Aktueel';
 import Subscribe from './pages/Subscribe';
+import SubscriptionRules from './pages/SubscriptionRules';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         path: "/allactivities",
         loader: loader,
         element: <AllActivities />,
+      },
+      {
+        path: "/subscriptionRules",
+        element: <SubscriptionRules />,
       },
       {
         path: "/overonspage",

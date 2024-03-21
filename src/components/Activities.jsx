@@ -35,8 +35,7 @@ const Activities = () => {
        } else if (width !== null && width < 850) {
          setSlice(1);
        }
-
-     }, [width]);
+}, [width]);
 
      
 return (
@@ -51,15 +50,18 @@ return (
         <span className="text-lg font-normal max-xsm:text-base">
           Het Leerhuis Amsterdam organiseert bijeenkomsten, dialogen en
           cursussen, in de Muiderkerk. <br />
-          Schrijf je in voor een of meerdere activiteiten.
+          Schrijf je in voor een of meerdere activiteiten.<br/>Hoe je je inschrijft, lees je{" "}
+          <Link to="/subscriptionrules">
+            <span className="text-lg text-red-800 font-semibold underline">hier.</span>
+          </Link>
         </span>
       </div>
       <div
         className={`w-[85%] grid grid-cols-4 max-xxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 max-xmd:w-[100%] gap-4 mt-4`}
       >
         {data?.slice(0, slice).map((act) => (
-          <div className="w-full min-h-full rounded-2xl" key={act.id}>
-            <div className="calendar_item w-full h-full bg-gradient-to-t from-stone-300 to-white rounded-xl flex flex-col justify-between relative">
+          <div className="w-full min-h-full rounded-t-2xl" key={act.id}>
+            <div className="calendar_item w-full h-full bg-gradient-to-t from-stone-300 to-white rounded-t-2xl flex flex-col justify-between relative">
               <div className="p-4">
                 <span className="border-b border-black flex justify-between font-bold text-xl pb-2">
                   {act.title}
@@ -82,17 +84,17 @@ return (
                 </div>
               </div>
 
-              <div className="w-full flex justify-center items-center mt-4 rounded-b-lg">
+              <div className="w-full flex justify-center items-center mt-4 ">
                 <img
                   src={`/images/${act.image}`}
                   alt=""
-                  className="w-full h-auto rounded-b-lg"
+                  className="w-full h-auto"
                 />
               </div>
 
               <Link
                 to={`calendaritem/${act.id}`}
-                className="w-full flex justify-center items-center absolute bottom-0 z-10 bg-black/50 py-4 rounded-b-lg"
+                className="w-full flex justify-center items-center absolute bottom-0 z-10 bg-black/50 py-4 "
               >
                 <button
                   type="button"

@@ -1,13 +1,17 @@
 import React from 'react'
 import BackButton from '../components/BackButton';
-import { filteredDates } from '../utils/filterByDate';
+import { filteredActivitiesByDate } from "../utils/filterByDate";
+import activities from "../db.json"
 import { Link } from 'react-router-dom';
 
 const Aktueel = () => {
 
 const url = window.location.pathname;
 
-const sortedFilteredDates = filteredDates.toSorted((a, b) => new Date(a.date) - new Date(b.date));
+const sortedFilteredDates = filteredActivitiesByDate.toSorted(
+  (a, b) => new Date(a.date) - new Date(b.date)
+);
+// console.log(sortedFilteredDates)
 
 return (
   <div className="w-full h-screen mt-[170px] flex flex-row justify-center items-start px-8 max-xxxsm:px-2 mb-20">
@@ -25,18 +29,18 @@ return (
         {sortedFilteredDates?.map((act) => (
           <div
             className="flex flex-row mb-2 py-3 px-2 bg-gray-200 items-center"
-            key={act.act.itemId}
+            key={act.id}
           >
             <div className="flex items-center">
               {new Date(act.date).toLocaleDateString().slice(0, -5)}
             </div>
 
             <div className="flex flex-1 text-lg font-semibold mx-auto ml-2 max-xxxsm:text-base">
-              {act.act.title}
+              {act.title}
             </div>
 
             {/* <div className="mr-4 border border-red-800">{act.act.time}</div> */}
-            <Link to={`/aktueel/calendaritem/${act.act.id}`}>
+            <Link to={`/aktueel/calendaritem/${act.id}`}>
               <button
                 type="button"
                 className="flex items-center text-orange-800 font-semibold border-2 border-gray-400 rounded-full bg-white px-4 py-1"

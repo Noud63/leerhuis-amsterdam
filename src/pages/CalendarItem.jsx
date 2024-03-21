@@ -48,8 +48,8 @@ useEffect(()=> {
             # Over {item.title}
           </div>
 
-          <div className="calendar_item w-full rounded-2xl">
-            <div className="bg-[#fff] rounded-xl text-[#000] pt-4 flex flex-col">
+          <div className="calendar_item w-full rounded-t-2xl">
+            <div className="bg-[#fff] text-[#000]  rounded-t-2xl pt-4 flex flex-col">
               {expired ? (
                 <div className="flex justify-end font-bold mx-4">
                   <span className="text-2xl max-xsm:text-xl">
@@ -98,7 +98,9 @@ useEffect(()=> {
                 <div className="w-full flex flex-row flex-wrap">
                   <span>{item.date.day}:&nbsp;</span>
                   {item.date.dates.map((date, index) => (
-                    <span key={index}>{new Date(date).toLocaleDateString().slice(0, -5)},&nbsp;</span>
+                    <span key={index}>
+                      {new Date(date).toLocaleDateString().slice(0, -5)},&nbsp;
+                    </span>
                   ))}
                 </div>
               </div>
@@ -119,8 +121,7 @@ useEffect(()=> {
               </div>
               <div className="w-full px-4">
                 {" "}
-                <span className="font-bold">Kenmerk :</span>{" "}
-                {item.itemId}
+                <span className="font-bold">Kenmerk :</span> {item.itemId}
               </div>
 
               <Link
@@ -140,7 +141,7 @@ useEffect(()=> {
                 <img
                   src={`/images/${item.image}`}
                   alt=""
-                  className="w-full h-auto rounded-b-xl"
+                  className="w-full h-auto"
                 />
               </div>
             </div>
