@@ -13,6 +13,7 @@ import ContactPage from './pages/ContactPage';
 import Aktueel from './pages/Aktueel';
 import Subscribe from './pages/Subscribe';
 import SubscriptionRules from './pages/SubscriptionRules';
+import Archief from './pages/Archief';
 
 const router = createBrowserRouter([
   {
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
       {
         path: "/aktueel/calendaritem/:id",
         element: <CalendarItem />,
+      },
+      {
+        path: "/archief",
+        element: <Archief />,
       },
       {
         path: "/subscribe/:id",

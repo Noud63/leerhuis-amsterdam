@@ -12,7 +12,7 @@ const Header = ({showMenuOverlay}) => {
   const scrolled = scroll();
 
   const style =
-    "gap-16 max-xxl:gap-8 max-socials:justify-end max-socials:mr-8 max-xmd:hidden";
+    "gap-16 max-xxl:gap-8 max-socials:justify-end max-socials:mr-8 max-footer:hidden";
   
  return (
    <div className="w-full min-h-full max-w-[2000px] relative">
@@ -49,7 +49,7 @@ const Header = ({showMenuOverlay}) => {
          <Socials />
 
          <div
-           className="cursor-pointer min-h-full flex items-center justify-center xmd:hidden mr-8 max-xxsm:mr-4 max-xxxsm:mr-2"
+           className="cursor-pointer min-h-full flex items-center justify-center footer:hidden mr-8 max-xxsm:mr-4 max-xxxsm:mr-2"
            onClick={showMenuOverlay}
          >
            <div className="flex justify-center items-center flex-col">

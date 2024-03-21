@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 
 const Socials = () => {
   return (
-    <div className="min-h-full flex flex-row justify-center items-center max-socials:hidden mr-4">
+    <div className="min-h-full flex flex-row justify-center items-center mr-4 max-footer:mr-0 max-xsm:hidden">
       <div className="flex flex-row pb-0">
         {/* <FacebookIcon round={true} size={30} className="mr-2" /> */}
         <div className="mr-2">

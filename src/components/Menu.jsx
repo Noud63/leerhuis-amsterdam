@@ -62,6 +62,17 @@ const Menu = ({ color, style, noHomeLink, border }) => {
           <span>Aktueel</span>
         </NavLink>
       </div>
+
+      <div className="flex justify-center">
+        <NavLink
+          to="/archief"
+          className={({ isActive }) => [
+            isActive ? `${border}` : "border-b-2 border-none",
+          ]}
+        >
+          <span>Archief</span>
+        </NavLink>
+      </div>
     </div>
   );
 };
