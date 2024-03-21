@@ -21,7 +21,7 @@ const SubscriptionRules = () => {
             NL32INGB0000449815 t.n.v. PROTESTANTSE GEMEENTE IN ZAKE T&E
           </span>
           <div className="w-full flex justify-center mt-8">
-            <span> Bedankt voor je inschrijving en tot ziens!</span>
+            <span>Graag tot ziens!</span>
           </div>
         </div>
       </div>
