@@ -14,7 +14,7 @@ const Aktueel = () => {
   return (
     <div className="w-full flex flex-col px-8 pt-16 max-xxsm:px-2">
       <div className="w-full flex mb-6 border-b border-black pb-2 mt-0">
-        <span className="text-2xl font-semibold  text-black"># Aktueel</span>
+        <span className="text-2xl font-semibold  text-black"># Actueel</span>
       </div>
 
       <div className="contact_info flex w-full justify-start bg-white px-8 pt-8 pb-12 rounded-xl max-xxxsm:px-4">
@@ -26,7 +26,7 @@ const Aktueel = () => {
           </div>
           {sortedFilteredDates?.map((act) => (
             <div
-              className="flex flex-row mb-2 py-2 px-2 bg-neutral-400/30 items-center"
+              className="actueel flex flex-row mb-2 py-2 px-2 bg-neutral-400/30 items-center"
               key={act.id}
             >
               <div className="flex items-center">

@@ -16,7 +16,7 @@ return (
   <div className="w-full h-screen mt-[170px] flex flex-row justify-center items-start px-8 max-xxxsm:px-2 mb-20">
     <div className="contact_info h-full w-full max-w-[600px] bg-white px-8 pt-8 rounded-xl max-xxxsm:px-4">
       <div className="w-full flex mb-6 border-b border-black pb-2">
-        <span className="text-2xl font-semibold  text-black"># Aktueel</span>
+        <span className="text-2xl font-semibold  text-black"># Actueel</span>
       </div>
       <div className="text-lg mb-6">
         <span className="text-xl text-orange-800 font-semibold border-b border-orange-800 pb-2">
@@ -27,7 +27,7 @@ return (
       <div className="">
         {sortedFilteredDates?.map((act) => (
           <div
-            className="flex flex-row mb-2 py-3 px-2 bg-gray-200 items-center"
+            className="actueel flex flex-row mb-2 py-3 px-2 bg-gray-200 items-center"
             key={act.id}
           >
             <div className="flex items-center">

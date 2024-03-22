@@ -16,7 +16,7 @@ const Overons = () => {
               </div>
 
               <div
-                className="w-full max-w-[1100px] flex flex-col items-end justify-center py-8 relative mt-10 max-xxl:mt-0 
+                className="w-full max-w-[1100px] flex flex-col items-end justify-center py-8 relative mt-10
               max-xmd:flex-row max-xmd:items-center max-xmd:mt-0 max-xmd:py-0 max-xxsm:max-w-full"
               >
                 <div className="w-full max-w-[700px] flex justify-center max-xmd:flex-col max-xmd:max-w-full">

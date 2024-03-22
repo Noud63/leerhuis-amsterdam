@@ -57,7 +57,7 @@ const Menu = ({ color, style, border }) => {
             isActive ? `${border}` : "border-b-2 border-none",
           ]}
         >
-          <span>Aktueel</span>
+          <span>Actueel</span>
         </NavLink>
       </div>
 
