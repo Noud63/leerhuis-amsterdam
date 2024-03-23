@@ -26,14 +26,13 @@ const Overons = () => {
                         Leven in een complexe wereld
                       </span>
                       <span className="">
-                        Het Leerhuis Amsterdam richt zich op zinvol samen leven
-                        in een complexe wereld die ons voor veel vragen stelt.
-                        <br /> Vanuit de Bijbel en andere bronnen voor
-                        oriëntatie en de hedendaagse wereld van kunst en cultuur
-                        zoeken wij hierover het gesprek.
-                        <br /> We organiseren daarom bijeenkomsten, dialogen en
-                        cursussen, in de Muiderkerk, waarin deze werelden elkaar
-                        ontmoeten.
+                        Leerhuis Amsterdam nodigt kerkelijke en niet-kerkelijke
+                        Amsterdammers uit om elkaar te ontmoeten rond de
+                        belangrijke thema's van deze tijd. We organiseren
+                        cursussen en inspiratiedagen die gaan over zinvol en
+                        verantwoordelijk samenleven. Via ontmoeting en moedige
+                        gesprekken zoeken we verdieping en verbreding. Wees
+                        welkom!
                       </span>
                     </div>
                   </div>

@@ -7,7 +7,7 @@ const OveronsPage = () => {
   const url = window.location.pathname;
 
   return (
-    <div className="w-full flex pt-[170px] items-center px-8 relative max-xxxsm:px-4">
+    <div className="w-full flex pt-[180px] items-center px-8 relative max-xxxsm:px-4">
       <div className="w-full min-h-screen">
         <div className="overons flex flex-col">
           <div className="w-full flex flex-row justify-between text-black font-normal gap-12 rounded-lg z-5 max-lg:flex-col">
@@ -25,14 +25,12 @@ const OveronsPage = () => {
                   </span>
                   <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full">
                     <p>
-                      Het Leerhuis Amsterdam richt zich op zinvol samen leven in
-                      een complexe wereld die ons voor veel vragen stelt.
-                      <br /> Vanuit de Bijbel en andere bronnen voor oriëntatie
-                      en de hedendaagse wereld van kunst en cultuur zoeken wij
-                      hierover het gesprek.
-                      <br /> We organiseren daarom bijeenkomsten, dialogen en
-                      cursussen, in de Muiderkerk, waarin deze werelden elkaar
-                      ontmoeten.
+                      Leerhuis Amsterdam nodigt kerkelijke en niet-kerkelijke
+                      Amsterdammers uit om elkaar te ontmoeten rond de
+                      belangrijke thema's van deze tijd. We organiseren
+                      cursussen en inspiratiedagen die gaan over zinvol en
+                      verantwoordelijk samenleven. Via ontmoeting en moedige
+                      gesprekken zoeken we verdieping en verbreding. 
                       <br />
                       Leerhuis Amsterdam nodigt je uit voor 'moedige
                       egesprekken' met het oog op vragen, over hoe we met elkaar

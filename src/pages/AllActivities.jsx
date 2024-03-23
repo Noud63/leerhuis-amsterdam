@@ -18,7 +18,7 @@ const AllActivities = () => {
   console.log(data)
 
   return (
-    <div className="w-full flex pt-[170px] flex-row">
+    <div className="w-full flex pt-[180px] flex-row">
       <div className="w-full flex justify-center items-center flex-col mb-40">
         <div className="w-[95%] flex flex-row mb-8 border-b border-black">
           <span className="text-2xl font-semibold pb-2">
@@ -31,7 +31,7 @@ const AllActivities = () => {
             <div className="w-full min-h-full" key={act.id}>
               <div className="calendar_item w-full h-full rounded-t-2xl bg-gradient-to-t from-stone-300 to-white flex flex-col justify-between relative">
                 <div className="p-4">
-                  <span className="border-b border-black flex justify-between font-bold text-xl pb-2">
+                  <span className="border-b border-black flex justify-between font-semibold font-papyrus text-xl pb-2">
                     {act.title}
                   </span>
                 </div>
@@ -60,19 +60,16 @@ const AllActivities = () => {
                   />
                 </div>
 
-                <Link
-                  to={`calendaritem/${act.id}`}
-                  className="w-full flex justify-center items-center absolute bottom-0 z-10 bg-black/50 py-4"
-                >
-                  <button
-                    type="button"
-                    className="w-[150px] p-1 text-[#000] rounded-full"
-                  >
-                    <div className="flex flex-row justify-center items-center rounded-full p-1 border-2 border-white text-white gap-2">
-                      <span>Lees meer</span>
-                    </div>
-                  </button>
-                </Link>
+                <div className="bg-gradient-to-t from-slate-900/90 to-slate-900/50 flex justify-center py-6 absolute bottom-0 left-0 w-full">
+                  <Link to={`/aktueel/calendaritem/${act.id}`}>
+                    <button
+                      type="button"
+                      className="flex items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full px-8 py-1 hover:px-10 transform ease-in-out duration-500"
+                    >
+                      Lees meer
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           ))}

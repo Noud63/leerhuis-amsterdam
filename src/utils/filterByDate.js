@@ -20,8 +20,8 @@ export const filterActivitiesInThePast = () => {
 };
 
 filterActivitiesInThePast();
-console.log(filteredExpiredActivities);
-console.log(upcomingActivities);
+// console.log(filteredExpiredActivities);
+// console.log(upcomingActivities);
 
 
 //------------ 1 ------------ // 
@@ -35,13 +35,14 @@ export const filterByDate = () => {
 
     dates.forEach((date) => {
       if (
-        new Date(date).getTime() > now &&
-        new Date(date).getTime() < nextWeek
+        new Date(date).getTime() >= now &&
+        new Date(date).getTime() <= nextWeek
       ) {
         filteredActivitiesByWeek.push({
           id: act.id,
-          date,
+          date: date,
           title: act.title,
+          image: act.image
         });
       }
     });
@@ -49,7 +50,7 @@ export const filterByDate = () => {
 };
 
 filterByDate();
-console.log(filteredActivitiesByWeek);
+// console.log(filteredActivitiesByWeek);
 
 
 //------------ 2 ------------ // 

@@ -40,7 +40,7 @@ const Activities = () => {
 
      
 return (
-  <div className="w-[full] flex flex-row m-auto px-8 mt-[170px] text-black max-xxsm:px-4 max-xxxsm:px-2 pb-8">
+  <div className="w-[full] flex flex-row m-auto px-8 mt-[180px] text-black max-xxsm:px-4 max-xxxsm:px-2 pb-8">
     <div className="w-full flex flex-1 justify-center items-center flex-col">
       <div className="w-full flex flex-row gap-2  mb-6 border-b border-black pb-2 ">
         <span className="text-2xl font-semibold text-black">
@@ -51,9 +51,13 @@ return (
         <span className="text-lg font-normal max-xsm:text-base">
           Het Leerhuis Amsterdam organiseert bijeenkomsten, dialogen en
           cursussen, in de Muiderkerk. <br />
-          Schrijf je in voor een of meerdere activiteiten.<br/>Hoe je je inschrijft, lees je{" "}
+          Schrijf je in voor een of meerdere activiteiten.
+          <br />
+          Hoe je je inschrijft, lees je{" "}
           <Link to="/subscriptionrules">
-            <span className="text-lg text-red-800 font-semibold underline">hier.</span>
+            <span className="text-lg text-red-800 font-semibold underline">
+              hier.
+            </span>
           </Link>
         </span>
       </div>
@@ -62,9 +66,9 @@ return (
       >
         {data?.slice(0, slice).map((act) => (
           <div className="w-full min-h-full rounded-t-2xl" key={act.id}>
-            <div className="calendar_item w-full h-full bg-gradient-to-t from-stone-300 to-white rounded-t-2xl flex flex-col justify-between relative">
+            <div className="calendar_item w-full h-full bg-white rounded-t-2xl flex flex-col justify-between relative">
               <div className="p-4">
-                <span className="border-b border-black flex justify-between font-bold text-xl pb-2">
+                <span className="border-b border-black flex justify-between font-papyrus font-semibold text-xl pb-2">
                   {act.title}
                 </span>
               </div>
@@ -93,19 +97,16 @@ return (
                 />
               </div>
 
-              <Link
-                to={`calendaritem/${act.id}`}
-                className="w-full flex justify-center items-center absolute bottom-0 z-10 bg-black/50 py-4 "
-              >
-                <button
-                  type="button"
-                  className="w-[150px] p-1 text-[#000] rounded-full"
-                >
-                  <div className="flex flex-row justify-center items-center rounded-full p-1 border-2 border-white text-white gap-2">
-                    <span>Lees meer</span>
-                  </div>
-                </button>
-              </Link>
+              <div className="bg-gradient-to-t from-slate-900/90 to-slate-900/50 flex justify-center py-6 absolute bottom-0 left-0 w-full">
+                <Link to={`/aktueel/calendaritem/${act.id}`}>
+                  <button
+                    type="button"
+                    className="flex items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full px-8 py-1 hover:px-10 transform ease-in-out duration-500"
+                  >
+                    Lees meer
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         ))}

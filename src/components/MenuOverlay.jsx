@@ -75,6 +75,17 @@ return (
       >
         <span>Aktueel</span>
       </NavLink>
+
+      <NavLink
+        to="/archief"
+        className={({ isActive }) => [
+          isActive
+            ? "border-b-2 border-black"
+            : "border-b-2 border-transparent",
+        ]}
+      >
+        <span>archief</span>
+      </NavLink>
     </div>
   </div>
 );

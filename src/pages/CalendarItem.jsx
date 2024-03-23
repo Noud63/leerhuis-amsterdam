@@ -59,11 +59,11 @@ useEffect(()=> {
               ) : (
                 ""
               )}
-              <div className="h-[50px] border-b border-t border-[#000] gap-2 flex justify-between items-end font-bold mb-2 text-xl py-2 mx-4 mt-4 overflow-hidden relative">
+              <div className="h-[50px] border-b border-t border-[#000] gap-2 flex justify-between items-end font-semibold font-papyrus mb-2 text-2xl py-2 mx-4 mt-4 overflow-hidden relative">
                 {item.title}
                 <div className="group">
                   <div className="flex flex-row gap-2 font-normal">
-                    <span className="text-orange-600">Deel</span>
+                    <span className="text-orange-600 font-sans text-lg">Deel</span>
                     <img
                       src={share}
                       alt="share"

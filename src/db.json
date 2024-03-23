@@ -90,7 +90,7 @@
         "itemId": "LA-AC02"
       },
       {
-        "id": 4,
+        "id": 5,
         "title": "Bijbels ABC",
         "date": {
           "day": "Maandag",
@@ -110,7 +110,7 @@
         "itemId": "LA-AC03"
       },
       {
-        "id": 5,
+        "id": 6,
         "title": "De Moderne Theologen",
         "date": {
           "day": "Dinsdag",
@@ -137,7 +137,7 @@
         "itemId": "LA-AC04"
       },
       {
-        "id": 6,
+        "id": 7,
         "title": "Literaire Kring",
         "date": {
           "day": "Maandag",
@@ -152,7 +152,7 @@
         "itemId": "LA-AC06"
       },
       {
-        "id": 7,
+        "id": 8,
         "title": "Leesgroep Miskotte",
         "date": {
           "day": "Woensdag",
@@ -173,7 +173,7 @@
         "itemId": "LA-AC07"
       },
       {
-        "id": 8,
+        "id": 9,
         "title": "Palestijnse Christenen",
         "date": {
           "day": "Zaterdag",

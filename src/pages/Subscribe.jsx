@@ -44,7 +44,7 @@ const Subscribe = () => {
   };
 
   return (
-    <div className="w-full h-screen flex justify-center mt-[190px] pr-8 pl-12 max-sm:pr-2 max-sm:pl-6 max-sm:mt-[160px]">
+    <div className="w-full h-auto flex justify-center mt-[190px] pr-8 pl-12 max-sm:pr-2 max-sm:pl-6 max-sm:mt-[160px]">
       <div
         className="contact_form h-auto w-full max-w-[580px] flex flex-col justify-start items-center 
          bg-white px-16 py-12 rounded-xl max-sm:px-4 relative mb-28"
