@@ -1,12 +1,13 @@
 import React from 'react'
 import BackButton from '../components/BackButton';
+import { Link } from 'react-router-dom';
 
 const SubscriptionRules = () => {
-
+ 
     const url = window.location.pathname
   return (
-    <div className="w-full mx-auto flex justify-center">
-      <div className="contact_info w-full max-w-[700px] flex h-screen mt-[170px] flex-col items-center bg-white rounded-2xl text-black pb-2 p-8 mb-20 mx-2">
+    <div className="w-full h-auto mx-auto flex justify-center">
+      <div className="contact_info w-full max-w-[700px] flex h-auto mt-[170px] flex-col items-center bg-white rounded-2xl text-black pb-44 p-8 mb-44 mx-2 relative">
         <span className="w-full flex justify-center text-2xl font-semibold border-b border-black pb-2">
           Inschrijving
         </span>
@@ -15,7 +16,12 @@ const SubscriptionRules = () => {
             Om je in te schrijven geldt een bijdrage van &euro;5, zoom-groepen
             zijn gratis. <br />
             Voor wie de eigen bijdragen te hoog is, laat het ons weten, of aan
-            de gespreksleider of stuur een mail.
+            de gespreksleider of stuur een{" "}
+            <Link to="/contactform">
+              <span className="text-lg text-red-800 font-semibold underline">
+                mail.
+              </span>
+            </Link>
             <br />
             Betalen kan met pinpas of per bank.
             <br />
@@ -30,7 +36,9 @@ const SubscriptionRules = () => {
             <span>Graag tot ziens!</span>
           </div>
         </div>
-        <BackButton url={url} />
+        <div className="absolute bottom-0 w-full bg-gradient-to-t from-yellow-950/5 flex justify-center items-center pb-20 rounded-b-2xl border-b border-stone-500">
+          <BackButton url={url} />
+        </div>
       </div>
     </div>
   );

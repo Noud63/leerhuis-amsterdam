@@ -51,7 +51,7 @@ return (
                 className="w-full max-w-[550px]"
               />
             </div>
-            <div className="bg-gradient-to-t from-slate-900/90 to-slate-900/50 w flex justify-center py-6 absolute bottom-0 left-0 w-full">
+            <div className="bg-gradient-to-t from-slate-900 to-slate-900/50 w flex justify-center py-6 absolute bottom-0 left-0 w-full">
               <Link to={`/aktueel/calendaritem/${act.id}`}>
                 <button
                   type="button"
@@ -61,6 +61,7 @@ return (
                 </button>
               </Link>
             </div>
+            <div className="bg-slate-600 h-4"></div>
           </div>
         ))}
       </div>

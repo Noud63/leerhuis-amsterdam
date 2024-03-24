@@ -18,7 +18,7 @@ const Aktueel = () => {
         <span className="text-2xl font-semibold  text-black"># Actueel</span>
       </div>
 
-      <div className="actueel_info flex w-full justify-center bg-white px-8 pt-8 pb-12 rounded-xl max-xxxsm:px-4">
+      <div className="actueel_info flex w-full justify-center  px-8 pt-8 pb-12 rounded-xl max-xxxsm:px-4 bg-gradient-to-t from-stone-100 to-white">
         <div className="w-full pb-6 ">
           <div className="w-full max-w-[1135px] flex flex-row mx-auto justify-center gap-8 flex-wrap mt-4">
             <div className="w-full flex text-lg border-b border-slate-700">
@@ -39,7 +39,7 @@ const Aktueel = () => {
                   <div className="flex flex-1 text-xl font-semibold font-papyrus mx-auto">
                     {act.title}
                   </div>
-                  <div className="flex items-center text-lg text-orange-700 font-semibold">
+                  <div className="flex items-center text-lg text-slate-700 font-semibold">
                     {new Date(act.date).toLocaleDateString().slice(0, -5)}
                   </div>
                 </div>
@@ -50,7 +50,7 @@ const Aktueel = () => {
                     className="w-full max-w-[550px]"
                   />
                 </div>
-                <div className="bg-gradient-to-t from-slate-900/90 to-slate-900/50 w flex justify-center py-6 absolute bottom-0 left-0 w-full">
+                <div className="bg-gradient-to-t from-slate-900 to-slate-900/50 w flex justify-center py-6 absolute bottom-0 left-0 w-full">
                   <Link to={`/aktueel/calendaritem/${act.id}`}>
                     <button
                       type="button"
@@ -60,6 +60,7 @@ const Aktueel = () => {
                     </button>
                   </Link>
                 </div>
+                <div className="bg-slate-600 h-4"></div>
               </div>
             ))}
           </div>

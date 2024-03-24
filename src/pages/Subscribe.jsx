@@ -48,7 +48,7 @@ const Subscribe = () => {
       <div
         className="contact_form h-auto w-full max-w-[580px] flex flex-col justify-start items-center 
          bg-white px-16 py-12 rounded-xl max-sm:px-4 relative mb-28"
-      >
+        >
         <div className="absolute w-[40px] z-[999] -left-[30px] top-0 bottom-0 max-sm:-left-[20px] overflow-hidden">
           <img
             src={ringbinder}
