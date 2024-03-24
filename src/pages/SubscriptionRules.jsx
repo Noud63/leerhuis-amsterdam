@@ -11,8 +11,8 @@ const SubscriptionRules = () => {
           Inschrijving
         </span>
         <div className="w-full flex-col flex text-[16px] justify-center my-4">
-          <span className="tracking-wide leading-relaxed">
-            Om je in te schrijven geldt een bijdrage van &euro; 5, zoom-groepen
+          <span className="tracking-wide leading-8">
+            Om je in te schrijven geldt een bijdrage van &euro;5, zoom-groepen
             zijn gratis. <br />
             Voor wie de eigen bijdragen te hoog is, laat het ons weten, of aan
             de gespreksleider of stuur een mail.

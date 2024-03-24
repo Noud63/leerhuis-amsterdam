@@ -64,7 +64,7 @@ const Subscribe = () => {
         <div className="w-full flex flex-col items-center justify-center text-black pb-2">
           <span className="text-2xl font-semibold">Inschrijving</span>
           <div className="w-full text-[16px] justify-start my-4">
-            <span>
+            <span className="">
               Om je in te schrijven geld een bijdrage van &euro;5, zoom-groepen
               zijn gratis. Voor wie de eigen bijdragen te hoog is, laat het ons
               weten, of aan de gespreksleider of stuur een mail.

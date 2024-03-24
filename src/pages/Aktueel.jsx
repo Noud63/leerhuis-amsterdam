@@ -20,27 +20,27 @@ return (
       <div className="w-full flex mb-6 border-b border-black pb-2">
         <span className="text-2xl font-semibold  text-black"># Actueel</span>
       </div>
-      <div className="text-lg mb-6 border-b border-orange-800 ">
-        <span className="w-full flex justify-between items-center text-lg text-orange-800 font-semibold pb-1">
-          Deze week van: {" "}
-          <span className="text-base">
-            {new Date().toLocaleDateString()} tot{" "}
-            {new Date(now + 604800000).toLocaleDateString()}
+      <div className="text-lg border border-slate-700">
+        <span className="w-full flex items-center text-lg p-2 text-slate-800 font-semibold">
+          Deze week van &nbsp;
+          <span className="">
+            {new Date().toLocaleDateString().slice(0, -5)} tot{" "}
+            {new Date(now + 604800000).toLocaleDateString().slice(0, -5)}
           </span>
         </span>
       </div>
 
-      <div className="w-full max-w-full flex flex-col justify-center gap-8 mt-10 flex-wrap ">
+      <div className="w-full max-w-full flex flex-col justify-center flex-wrap ">
         {sortedFilteredDates?.map((act) => (
-          <div className="actueel flex flex-col mb-8 rounded-t-lg bg-gradient-to-t from-stone-200 to-white relative">
+          <div className="actueel flex flex-col rounded-t-lg mt-8 bg-gradient-to-t from-stone-400 to-white relative">
             <div
-              className="flex flex-row py-3 px-3 text-black items-center bg-white"
+              className="flex flex-row py-3 px-3 text-black items-center"
               key={act.id}
             >
               <div className="flex flex-1 text-xl font-semibold font-papyrus mx-auto">
                 {act.title}
               </div>
-              <div className="flex items-center text-lg">
+              <div className="flex items-center text-xl font-semibold text-orange-700">
                 {new Date(act.date).toLocaleDateString().slice(0, -5)}
               </div>
             </div>

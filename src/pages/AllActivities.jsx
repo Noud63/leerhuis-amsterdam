@@ -70,6 +70,7 @@ const AllActivities = () => {
                     </button>
                   </Link>
                 </div>
+                <div className="bg-slate-600 h-4"></div>
               </div>
             </div>
           ))}

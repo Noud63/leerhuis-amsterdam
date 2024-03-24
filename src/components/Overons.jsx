@@ -20,7 +20,7 @@ const Overons = () => {
               max-xmd:flex-row max-xmd:items-center max-xmd:mt-0 max-xmd:py-0 max-xxsm:max-w-full"
               >
                 <div className="w-full max-w-[700px] flex justify-center max-xmd:flex-col max-xmd:max-w-full">
-                  <div className="w-full mb-12 mt-10 max-xmd:mt-0 max-xmd:mb-0">
+                  <div className="w-full mb-12 mt-12 max-xmd:mt-0 max-xmd:mb-0">
                     <div className="overons_text w-full max-lg:w-full bg-white rounded-xl text-black px-8 pt-6 pb-8 max-xmd:rounded-b-none max-xxxsm:px-4">
                       <span className="flex justify-center text-xl font-semibold pb-2 text-amber-600">
                         Leven in een complexe wereld

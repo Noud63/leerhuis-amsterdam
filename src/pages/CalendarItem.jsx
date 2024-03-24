@@ -59,7 +59,8 @@ useEffect(()=> {
               ) : (
                 ""
               )}
-              <div className="h-[50px] border-b border-t border-[#000] gap-2 flex justify-between items-end font-semibold font-papyrus mb-2 text-2xl py-2 mx-4 mt-4 overflow-hidden relative">
+              <div className="h-[50px] border-b border-t border-[#000] gap-2 flex justify-between items-end font-semibold 
+              font-papyrus mb-2 text-2xl py-2 mx-4 mt-4 overflow-hidden relative max-mini:text-xl">
                 {item.title}
                 <div className="group">
                   <div className="flex flex-row gap-2 font-normal">
