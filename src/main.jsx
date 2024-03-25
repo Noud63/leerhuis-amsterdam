@@ -4,14 +4,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from './components/Layout';
 import './index.css'
 import Activities, { loader } from "./components/Activities"
-import Archief from "./pages/Archief"
+import Archief, {archiveLoader} from "./pages/Archief"
 import Root from './components/Root';
 import CalendarItem from './pages/CalendarItem';
 import AllActivities from './pages/AllActivities';
 import OveronsPage from "./pages/OveronsPage";
 import ContactForm from './pages/ContactForm';
 import ContactPage from './pages/ContactPage';
-import Aktueel from './pages/Aktueel';
+import Aktueel, {currentLoader} from './pages/Aktueel';
 import Subscribe from './pages/Subscribe';
 import SubscriptionRules from './pages/SubscriptionRules';
 
@@ -56,6 +56,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/aktueel",
+        loader: currentLoader,
         element: <Aktueel />,
       },
       {
@@ -64,7 +65,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/archief",
-        // loader: loader2,
+        loader: archiveLoader,
         element: <Archief />,
       },
       {

@@ -4,14 +4,14 @@ import {filteredExpiredActivities} from "../utils/filterByDate"
 import { useLoaderData } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
-// export const loader2 = () => {
-//   return filteredExpiredActivities;
-// };
+export const archiveLoader = () => {
+  return filteredExpiredActivities;
+};
 
 const Archief = () => {
 
-  // const data = useLoaderData();
-  // console.log(data)
+  const data = useLoaderData();
+  console.log(data)
   const url = window.location.pathname
 
   return (
@@ -22,7 +22,7 @@ const Archief = () => {
         </div>
 
         <div className="w-full max-w-full flex flex-col justify-center flex-wrap ">
-          {filteredExpiredActivities?.map((act) => (
+          {data?.map((act) => (
             <div
               className="actueel flex flex-col rounded-t-lg mt-8 bg-gradient-to-t from-stone-400 to-white relative "
               key={act.id}
