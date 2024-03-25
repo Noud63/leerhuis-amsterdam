@@ -1,13 +1,15 @@
 import activities from "../db.json";
 
-const now = new Date().getTime();
+const now = new Date().getTime() - 86400000;
 const nextWeek = now + 604800000;
 
-
-// Filter activities that are expired
+// Filtered activities that are expired
 export const filteredExpiredActivities = [];
+
+//Filtered activities that are upcoming
 export const upcomingActivities = []
 
+//Filter activities
 export const filterActivitiesInThePast = () => {
   activities.activities.forEach((act) => {
       if(new Date(act.closing_date).getTime() < now){
@@ -20,11 +22,9 @@ export const filterActivitiesInThePast = () => {
 };
 
 filterActivitiesInThePast();
-// console.log(filteredExpiredActivities);
-// console.log(upcomingActivities);
 
 
-//------------ 1 ------------ // 
+// ------------ 1 ------------ // 
 
 //Filter activities by coming week
 export const filteredActivitiesByWeek = [];
@@ -34,15 +34,15 @@ export const filterByDate = () => {
     const dates = act.date.dates;
 
     dates.forEach((date) => {
+     
       if (
-        new Date(date).getTime() >= now &&
-        new Date(date).getTime() <= nextWeek
+        (new Date(date).getTime() >= now && new Date(date).getTime() < nextWeek)
       ) {
         filteredActivitiesByWeek.push({
           id: act.id,
           date: date,
           title: act.title,
-          image: act.image
+          image: act.image,
         });
       }
     });
@@ -50,10 +50,9 @@ export const filterByDate = () => {
 };
 
 filterByDate();
-// console.log(filteredActivitiesByWeek);
 
 
-//------------ 2 ------------ // 
+// ------------ 2 ------------ // 
 
 // --Returns only the activities! -- //
 
@@ -61,7 +60,7 @@ filterByDate();
 //   return activities.activities.filter((activity) => {
 //     return activity.date.dates.some(
 //       (date) =>{
-// if(new Date(date).getTime() > now && new Date(date).getTime() < nextWeek){
+// if(new Date(date).getTime() >= now && new Date(date).getTime() < nextWeek){
   
 //   return  activity ;
 //       }
@@ -74,7 +73,7 @@ filterByDate();
 // console.log(filteredByDates(activities))
 
 
-//------------ 3 ------------ //
+// ------------ 3 ChatGpt------------ //
 
 // ---------------- Get the current date --------------- //
 // const today = new Date();
@@ -83,7 +82,7 @@ filterByDate();
 // const oneWeekFromNow = new Date(today);
 // oneWeekFromNow.setDate(oneWeekFromNow.getDate() + 7);
 
-// ---------------- Filter activities within a week from now ------------------- //
+// //---------------- Filter activities within a week from now ------------------- //
 // const activitiesWithinWeek = activities.activities.filter(activity => {
 //     const activityDates = activity.date.dates.map(date => new Date(date));
 //     console.log(activityDates)
@@ -91,7 +90,7 @@ filterByDate();
 //     return activityDates.some(date => date >= today && date <= oneWeekFromNow);
 // });
 
-// ---------------- Function to separate relevant dates as an array of objects ---------------------- //
+// //---------------- Function to separate relevant dates as an array of objects ---------------------- //
 // const separateRelevantDates = activity => {
 //     const relevantDates = activity.date.dates.filter(date => {
 //         const activityDate = new Date(date);
@@ -100,24 +99,25 @@ filterByDate();
 
 //     return relevantDates.map(date => {
 //         return {
-//             id: activity.id,
-//             title: activity.title,
-//             date: date
+//           id: activity.id,
+//           title: activity.title,
+//           date: date,
+//           image: activity.image,
 //         };
 //     });
 // };
 
-// ----------- Array to hold separated relevant dates ----------------- //
-// const separatedRelevantDates = [];
+// //----------- Array to hold separated relevant dates ----------------- //
+// export const filteredActivitiesByWeek = [];
 
 // // Iterate through filtered activities and separate relevant dates
 // activitiesWithinWeek.forEach(activity => {
 //   console.log(separateRelevantDates(activity));
-//     separatedRelevantDates.push(...separateRelevantDates(activity));
+//     filteredActivitiesByWeek.push(...separateRelevantDates(activity));
 // });
 
-// Output the separated relevant dates
-// console.log(separatedRelevantDates);
+// //Output the separated relevant dates
+// console.log(filteredActivitiesByWeek);
 
 
 

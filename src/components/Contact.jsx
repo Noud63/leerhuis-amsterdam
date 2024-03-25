@@ -11,7 +11,7 @@ const Contact = () => {
         </span>
       </div>
 
-      <div className="contact_info w-full flex flex-row p-8 bg-white rounded-xl mb-20 max-socials:flex-col max-xxsm:px-4 max-xxsm:pt-6">
+      <div className="contact_info w-full flex flex-row px-8 pt-8 pb-12 bg-white rounded-xl mb-20 max-socials:flex-col max-xxsm:px-4 max-xxsm:pt-6">
         
         <div className="flex flex-col w-2/3 max-socials:w-full">
           <div className="flex flex-col text-base mb-4 gap-1">
@@ -37,7 +37,7 @@ const Contact = () => {
             <span className="">Bel naar: 06 10325127</span>
             <span className="">Mail naar: leerhuisamsterdam@gmail.com</span>
             <span className="mb-2">Of klik op onderstaande link:</span>
-            <Link to="/contactform" className="w-[150px]">
+            <Link to="/contactform" className="w-[150px] mt-4">
               <button
                 type="button"
                 className="btn_orange w-[150px] rounded-full justify-center items-center  text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 pb-2 pt-2 text-md font-normal"
@@ -48,7 +48,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="map_box w-1/2 h-[350px] bg-white p-2 max-socials:w-full z-10">
+        <div className="map_box w-1/2 h-[430px] bg-white p-2 max-socials:w-full z-10">
           <Map />
           <div className="text-black pt-2">
             Locatie Leerhuis Amsterdam

@@ -19,17 +19,16 @@ import BackButton from '../components/BackButton';
 const CalendarItem = () => {
   const currentUrl = window.location.href
 
-const { id } = useParams()
+  const { id } = useParams()
 
-const [expired, setExpired] = useState(false)
+  const [expired, setExpired] = useState(false)
 
-const url = window.location.pathname
+  const url = window.location.pathname
 
-const item = activities.activities[id]
+  const item = activities.activities[id]
 
-const givenDate = new Date(item.closing_date).getTime();
-const now = new Date().getTime();
-// console.log("one week later:" + (now + 604800000))
+  const givenDate = new Date(item.closing_date).getTime();
+  const now = new Date().getTime();
 
 useEffect(()=> {
  if (givenDate <= now) {

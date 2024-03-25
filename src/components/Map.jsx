@@ -23,7 +23,7 @@ const Map = () => {
       center={positionMap}
       zoom={12}
       scrollWheelZoom={true}
-      style={{ height: "300px" }}
+      style={{ height: "380px" }}
     >
       <TileLayer
         attribution='<a href="https://www.openstreetmap.org">&copy; OpenStreetMap</a>'

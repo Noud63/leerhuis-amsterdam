@@ -18,23 +18,25 @@ const Aktueel = () => {
         <span className="text-2xl font-semibold  text-black"># Actueel</span>
       </div>
 
-      <div className="actueel_info flex w-full justify-center  px-8 pt-8 pb-12 rounded-xl max-xxxsm:px-4 bg-gradient-to-t from-stone-100 to-white">
-        <div className="w-full pb-6 ">
-          <div className="w-full max-w-[1135px] flex flex-row mx-auto justify-center gap-8 flex-wrap mt-4">
-            <div className="w-full flex text-lg border-b border-slate-700">
-              <span className="w-full flex flex-row items-center text-lg text-slate-800 font-semibold pb-2 max-xxxsm:flex-col max-xxxsm:items-start">
-                <span className="">Deze week: </span>
-                <span className="ml-2 max-xxxsm:ml-0">
-                  {new Date().toLocaleDateString().slice(0, -5)} tot{" "}
-                  {new Date(now + 604800000).toLocaleDateString().slice(0, -5)}
-                </span>
-              </span>
-            </div>
+      <div className="actueel_info flex w-full justify-center flex-col px-8 pt-8 pb-12 rounded-xl max-xxxsm:px-4 bg-white">
+        <div className="w-full flex text-lg border-b border-slate-700">
+          <span className="w-full flex flex-row items-center text-lg text-slate-800 font-semibold pb-2 max-xxxsm:flex-col max-xxxsm:items-start">
+            <span className="">Deze week: </span>
+            <span className="ml-2 max-xxxsm:ml-0">
+              {new Date().toLocaleDateString().slice(0, -5)} tot{" "}
+              {new Date(now + 604800000).toLocaleDateString().slice(0, -5)}
+            </span>
+          </span>
+        </div>
+        <div className="w-full pb-6">
+          <div className="min-w-[400px] mx-auto flex flex-row justify-around gap-8 flex-wrap mt-8">
             {sortedFilteredDates?.map((act) => (
-              <div className="actueel flex flex-col mb-12 rounded-t-lg bg-gradient-to-t from-stone-400 to-white relative">
+              <div
+                className="actueel flex flex-col mb-12 rounded-t-lg bg-gradient-to-t from-stone-400 to-white relative"
+                key={act.id}
+                 >
                 <div
-                  className="flex flex-row py-3 px-3 text-black items-center "
-                  key={act.id}
+                  className="flex flex-row py-3 px-3 text-black items-center"
                 >
                   <div className="flex flex-1 text-xl font-semibold font-papyrus mx-auto">
                     {act.title}

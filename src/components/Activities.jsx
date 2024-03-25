@@ -1,12 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
-// import getJsonData from "../utils/getJsonData";
 import { upcomingActivities } from '../utils/filterByDate';
 import { useLoaderData } from "react-router-dom";
 
 
 export const loader = () => {
-  // const data = getJsonData();
   return upcomingActivities
 };
 
@@ -98,7 +96,7 @@ return (
               </div>
 
               <div className="bg-gradient-to-t from-slate-900 to-slate-900/50 flex justify-center py-6 absolute bottom-0 left-0 w-full">
-                <Link to={`/aktueel/calendaritem/${act.id}`}>
+                <Link to={`/calendaritem/${act.id}`}>
                   <button
                     type="button"
                     className="flex items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full px-8 py-1 hover:px-10 transform ease-in-out duration-500"

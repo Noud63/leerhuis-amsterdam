@@ -10,7 +10,6 @@ const url = window.location.pathname;
 const sortedFilteredDates = filteredActivitiesByWeek.toSorted(
   (a, b) => new Date(a.date) - new Date(b.date)
 );
-console.log(sortedFilteredDates)
 
 const now = new Date().getTime();
 
@@ -32,11 +31,11 @@ return (
 
       <div className="w-full max-w-full flex flex-col justify-center flex-wrap ">
         {sortedFilteredDates?.map((act) => (
-          <div className="actueel flex flex-col rounded-t-lg mt-8 bg-gradient-to-t from-stone-400 to-white relative">
-            <div
-              className="flex flex-row py-3 px-3 text-black items-center"
-              key={act.id}
-            >
+          <div
+            className="actueel flex flex-col rounded-t-lg mt-8 bg-gradient-to-t from-stone-400 to-white relative "
+            key={act.id}
+          >
+            <div className="flex flex-row py-3 px-3 text-black items-center">
               <div className="flex flex-1 text-xl font-semibold font-papyrus mx-auto">
                 {act.title}
               </div>

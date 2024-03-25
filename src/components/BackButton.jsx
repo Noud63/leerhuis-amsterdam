@@ -24,6 +24,9 @@ const BackButton = (url) => {
     if(url.url.slice(0, 22) === "/aktueel/calendaritem/"){
       setPath("/aktueel");
     }
+    if (url.url.slice(0, 22) === "/archief/calendaritem/") {
+      setPath("/archief");
+    }
   }, [path]);
 
   return (
