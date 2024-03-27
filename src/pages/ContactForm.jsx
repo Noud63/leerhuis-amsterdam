@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ringbinder from "../assets/images/ringbinder.png"
+import BackButton from "../components/BackButton";
+import { useLocation } from "react-router-dom";
 
 const serviceId =  import.meta.env.VITE_REACT_APP_MY_SERVICE_ID;
 const templateId =  import.meta.env.VITE_REACT_APP_MY_TEMPLATE_ID_2;
@@ -8,12 +10,14 @@ const publicKey=  import.meta.env.VITE_REACT_APP_MY_PUBLIC_KEY;
 
 const ContactForm = () => {
 
+  const url= useLocation().pathname
+
   const form = useRef();
   const [status, setStatus] = useState("Verstuur");
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setStatus("Aan het verzenden....");
+    setStatus("Wordt verzonden...");
 
     emailjs
       .sendForm(
@@ -25,7 +29,7 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log(result);
-          setStatus("Succesvol verstuurd!");
+          setStatus("Verstuurd!");
           let timer = setTimeout(() => {
             setStatus("Verstuur");
             clearTimeout(timer);
@@ -84,7 +88,7 @@ const ContactForm = () => {
               className="py-4 placeholder:text-gray-500 pl-2"
             />
           </div>
-          
+
           <div className="w-full mb-4 mt-4">
             <textarea
               name="message"
@@ -97,12 +101,13 @@ const ContactForm = () => {
             <button
               type="submit"
               value="send"
-              className="btn_orange w-full max-w-[180px] rounded-full py-3 text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 mt-4"
+              className="btn_orange w-full max-w-[160px] rounded-full py-3 text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 mt-4"
             >
               {status}
             </button>
           </div>
         </form>
+        <BackButton url={url} />
       </div>
     </div>
   );

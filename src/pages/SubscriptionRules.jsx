@@ -11,21 +11,21 @@ const SubscriptionRules = () => {
         <span className="w-full flex justify-center text-2xl font-semibold border-b border-black pb-2">
           Inschrijving
         </span>
-        <div className="w-full flex-col flex text-[16px] justify-center my-4">
-          <span className="tracking-wide leading-8">
-            Om je in te schrijven geldt een bijdrage van &euro;5, zoom-groepen
-            zijn gratis. <br />
-            Voor wie de eigen bijdragen te hoog is, laat het ons weten, of aan
-            de gespreksleider of stuur een{" "}
+        <div className="w-full flex-col flex text-[16px] justify-center my-4 leading-8">
+          <span className="tracking-wide ">
+            Iedere cursusavond kost 5 euro, tenzij anders vermeld.
+            <br />
+            Zoomgroepen zijn gratis. <br />
+            Voor wie de eigen bijdragen te hoog is, laat het ons weten, stuur
+            een{" "}
             <Link to="/contactform">
               <span className="text-lg text-red-800 font-semibold underline">
                 mail.
               </span>
             </Link>
             <br />
-            Betalen kan met pinpas of per bank.
-            <br />
-            Maak &euro;5,- over op rekeningnummer:
+            Betalen kan per bank. Maak €5,- per cursusavond over op
+            rekeningnummer:
             <br />
           </span>
           <span className="font-semibold">

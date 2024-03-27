@@ -14,6 +14,7 @@ const BackButton = (url) => {
       url.url === "/contact" ||
       url.url === "/subscriptionrules" ||
       url.url === "/archief" ||
+      url.url === "/contactform" ||
       url.url === "/"
     ) {
       setPath("/");

@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import ringbinder from "../assets/images/ringbinder.png";
+import { Link } from "react-router-dom";
 
 const serviceId = import.meta.env.VITE_REACT_APP_MY_SERVICE_ID;
 const templateId = import.meta.env.VITE_REACT_APP_MY_TEMPLATE_ID;
@@ -48,7 +49,7 @@ const Subscribe = () => {
       <div
         className="contact_form h-auto w-full max-w-[580px] flex flex-col justify-start items-center 
          bg-white px-16 py-12 rounded-xl max-sm:px-4 relative mb-28"
-        >
+      >
         <div className="absolute w-[40px] z-[999] -left-[30px] top-0 bottom-0 max-sm:-left-[20px] overflow-hidden">
           <img
             src={ringbinder}
@@ -64,18 +65,25 @@ const Subscribe = () => {
         <div className="w-full flex flex-col items-center justify-center text-black pb-2">
           <span className="text-2xl font-semibold">Inschrijving</span>
           <div className="w-full text-[16px] justify-start my-4">
-            <span className="">
-              Om je in te schrijven geld een bijdrage van &euro;5, zoom-groepen
-              zijn gratis. Voor wie de eigen bijdragen te hoog is, laat het ons
-              weten, of aan de gespreksleider of stuur een mail.
+            <span className="tracking-wide ">
+              Iedere cursusavond kost 5 euro, tenzij anders vermeld.
               <br />
-              Betalen kan met pinpas of per bank.
+              zoomgroepen zijn gratis. <br />
+              Voor wie de eigen bijdragen te hoog is, laat het ons weten, stuur
+              een{" "}
+              <Link to="/contactform">
+                <span className="text-lg text-red-800 font-semibold underline">
+                  mail.
+                </span>
+              </Link>
               <br />
-              Maak &euro;5,- over op rekeningnummer:
+              Betalen kan per bank. Maak €5,- per cursusavond over op
+              rekeningnummer:
               <br />
             </span>
             <span className="font-semibold">
-              NL32INGB0000449815 t.n.v. PROTESTANTSE GEMEENTE IN ZAKE T&E
+              NL&nbsp;32&nbsp;INGB&nbsp;0000449815 t.n.v. PROTESTANTSE GEMEENTE
+              IN ZAKE T&E
             </span>
           </div>
         </div>
@@ -139,7 +147,9 @@ const Subscribe = () => {
               {status}
             </button>
           </div>
-          <div className="w-full flex justify-center text-lg mt-4">{message}</div>
+          <div className="w-full flex justify-center text-lg mt-4">
+            {message}
+          </div>
         </form>
       </div>
     </div>

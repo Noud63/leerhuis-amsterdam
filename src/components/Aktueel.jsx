@@ -1,6 +1,6 @@
 import React from "react";
 import { filteredActivitiesByWeek } from "../utils/filterByDate";
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData, useLocation } from "react-router-dom";
 
 
 export const currentLoader = () => {
@@ -11,7 +11,7 @@ const Aktueel = () => {
 
   let data = useLoaderData()
 
-  const url = window.location.pathname;
+  const url = useLocation().pathname;
 
   data = filteredActivitiesByWeek.toSorted(
     (a, b) => new Date(a.date) - new Date(b.date)
@@ -37,14 +37,17 @@ const Aktueel = () => {
         </div>
         <div className="w-full pb-6">
           <div className="min-w-[400px] mx-auto flex flex-row justify-around gap-8 flex-wrap mt-8">
+            {data.length === 0 && (
+              <div className="w-full flex justify-center mt-20 mb-24 text-xl font-semibold text-orange-700">
+                Geen activiteiten!
+              </div>
+            )}
             {data?.map((act) => (
               <div
                 className="actueel flex flex-col mb-12 rounded-t-lg bg-gradient-to-t from-stone-400 to-white relative"
                 key={act.id}
-                 >
-                <div
-                  className="flex flex-row py-3 px-3 text-black items-center"
-                >
+              >
+                <div className="flex flex-row py-3 px-3 text-black items-center">
                   <div className="flex flex-1 text-xl font-semibold font-papyrus mx-auto">
                     {act.title}
                   </div>

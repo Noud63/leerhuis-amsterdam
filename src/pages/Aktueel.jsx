@@ -1,7 +1,8 @@
 import React from 'react'
 import BackButton from '../components/BackButton';
 import { filteredActivitiesByWeek } from "../utils/filterByDate";
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData, useLocation } from "react-router-dom";
+import { firstActivities } from '../utils/filterByDate';
 
 export const currentLoader = () => {
   return filteredActivitiesByWeek;
@@ -11,12 +12,13 @@ const Aktueel = () => {
 
  let data = useLoaderData();
 
- const url = window.location.pathname;
+const url = useLocation().pathname;
 
  data = filteredActivitiesByWeek.toSorted(
    (a, b) => new Date(a.date) - new Date(b.date)
  );
 
+ console.log(firstActivities)
 
 const now = new Date().getTime();
 
@@ -36,7 +38,8 @@ return (
         </span>
       </div>
 
-      <div className="w-full max-w-full flex flex-col justify-center flex-wrap ">
+      <div className="w-full max-w-full flex flex-col justify-center flex-wrap">
+        {data.length === 0 && <div className="w-full flex justify-center mt-12 text-xl font-semibold text-orange-700">Geen activiteiten!</div>}
         {data?.map((act) => (
           <div
             className="actueel flex flex-col rounded-t-lg mt-8 bg-gradient-to-t from-stone-400 to-white relative "

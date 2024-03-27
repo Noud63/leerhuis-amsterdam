@@ -2,46 +2,74 @@
     [
       {
         "id": 0,
-        "title": "Actiedag kerk en klimaat",
+        "title": "Groen geloven, Inspiratiemiddag",
         "date": { "day": "Zaterdag", "dates": ["2024-01-06"] },
-        "time": "?",
-        "description": "?",
-        "led_by": "?",
+        "time": "12:30 - 17:30",
+        "contribution": "Vrijwillige bijdrage",
+        "description": [
+          "Groen Geloven in Mokum. Hoop voor de aarde; een inspiratiemiddag voor kerk en stad.\n",
+          " Inspiratie door :\n",
+          " Remco Daalder, bioloog, stadsecoloog en schrijver van natuurboeken.\n",
+          " Carola Dahmen, PKN-predikant en eco-feministisch theoloog.\n",
+          " Eelco Schuijl, aanjager duurzame transformatie bij de PKA.\n",
+          " En door pitches en workshops door natuurliefhebbers en klimaatactivisten.\n",
+          " We sluiten af met een hoopvolle viering.\n",
+          " Moderator is Susanne Heering, programmamaker bij AT5.",
+          " \nInformatie: Greteke de Vries, leerhuisamsterdam@gmail.com of\n",
+          " Janneke Wolters, info@protestantsamsterdam.nl.\n",
+          " Websites vanaf 15 april: www.leerhuisamsterdam.nl en www.protestantsamsterdam.nl.",
+          " Opgave is mogelijk vanaf 15 april."],
+        "led_by": "Leerhuis en PKA",
         "image": "actiedag.jpg",
+        "subscription": "vanaf 15 april",
         "starting_date": "2024-06-01",
         "closing_date": "2024-06-01",
-        "itemId": "LA-AC11"
+        "itemId": "LA-AC01"
       },
       {
         "id": 1,
-        "title": "Zwart/wit",
-        "date": {
-          "day": "Vrijdag",
-          "dates": ["2024-04-19", "2024-05-24", "2024-06-07", "2024-06-21"]
-        },
-        "time": "19:30 - 21:30 uur",
-        "description": "",
-        "led_by": "Clifton Walker en Greteke de Vries",
-        "image": "zwartwit.jpg",
-        "starting_date": "2024-01-30",
-        "closing_date": "2024-06-25",
-        "itemId": "LA-AC10"
-      },
-      {
-        "id": 2,
         "title": "Groen Geloven in Mokum",
         "date": {
           "day": "Woensdag",
           "dates": ["2024-04-10", "2024-04-17", "2024-04-24"]
         },
         "time": "20:00 - 22:00 uur",
-        "description": "",
-        "led_by": "Johan Visser en Gerben van Manen",
+        "contribution": "5 euro per bijeenkomst (voor wie de eigen bijdrage te hoog is: laat het weten aan de gespreksleider of via het emailadres).",
+        "description": [
+          "Groen geloven in Mokum - Eco-theologie in de Amsterdamse context.\n",
+          " In deze cursus gaan we op zoek naar veranderingen in denken en theologie; hoe anders kijken we nu naar natuur, aarde, schepping, God en mens?\n",
+          "Ook praktische en ethische vragen rond duurzaamheid komen aan de orde; wat laat en doe jij om jouw voetafdruk zo klein mogelijk te houden?\n",
+          "Kunnen we in de kerk de schepping nog vieren?\n",
+          "Hoe ziet zo'n gemeenschap waar duurzaamheid centraal staat eruit?"
+        ],
+        "led_by": "Annemarie van Wijngaarden en Ditske Tanja",
         "image": "groengeloven.jpg",
+        "starting_date": "2024-04-10",
+        "closing_date": "2024-06-25",
+        "itemId": "LA-AC03"
+      },
+      {
+        "id": 2,
+        "title": "Zwart/wit",
+        "date": {
+          "day": "Vrijdag",
+          "dates": ["2024-04-19", "2024-05-24", "2024-06-07", "2024-06-21"]
+        },
+        "time": "19:30 - 21:30 uur",
+        "contribution": "5 euro per bijeenkomst (voor wie de eigen bijdrage te hoog is: laat het weten aan de gespreksleider of via het emailadres).",
+        "description": [
+          "Opnieuw een leesproject samen met de Koningskerk waar zwart en wit spreekt over ons gedeeld slavernij/koloniaal verleden en de nawerking daarvan.\n",
+          "We lezen en bespreken dit keer het boekje Hindostaanse migratiegeschiedenis in kort bestek (1873-2015).\n",
+          "We verwachten dat deelnemers het boekje kopen en tijdens de eerste bijeenkomst de eerste hoofdstukken hebben gelezen.\n\n",
+          "Plaats: de eerste en derde keer in de Koningskerk, Ostwaldstraat 1 (Watergraafsmeer), de tweede en de vierde keer in de Muiderkerk.\n\n"
+        ],
+        "led_by": "Clifton Walker en Greteke de Vries",
+        "image": "zwartwit.jpg",
         "starting_date": "2024-01-30",
         "closing_date": "2024-06-25",
-        "itemId": "LA-AC05"
+        "itemId": "LA-AC02"
       },
+
       {
         "id": 3,
         "title": "De zin van Sabbat",
@@ -50,6 +78,7 @@
           "dates": ["2024-05-07", "2024-05-21", "2024-06-04", "2024-06-11"]
         },
         "time": "20:00 - 22:00 uur",
+        "contribution": "5 euro per bijeenkomst (voor wie de eigen bijdrage te hoog is: laat het weten aan de gespreksleider of via het emailadres).",
         "description": [
           "Hoe vinden we een ritme van activiteiten en rust in tijden van persoonlijke overbelasting door onze 24/7 economie en grenzeloze eisen aan onszelf?",
           " Sabbat - als oefening in dankbaarheid en vertrouwen. Als verzet tegen verslaving. Als rust voor alle leven. Als schuilplaats van de liefde.",
@@ -58,9 +87,9 @@
         ],
         "led_by": "Johan Visser en Gerben van Manen",
         "image": "sabbat.png",
-        "starting_date": "2024-01-17",
+        "starting_date": "2024-05-07",
         "closing_date": "2024-06-011",
-        "itemId": "LA-AC01"
+        "itemId": "LA-AC04"
       },
       {
         "id": 4,
@@ -79,15 +108,16 @@
           ]
         },
         "time": "20:00 - 22:00 uur",
+        "contribution": "5 euro per bijeenkomst (voor wie de eigen bijdrage te hoog is: laat het weten aan de gespreksleider of via het emailadres).",
         "description": [
           "We lezen met elkaar bijbel. We doen aan close reading, dat betekent dat we heel goed kijken wat er staat en hoe dat begrepen moet worden, ",
-          "maar ook wat deze teksten in ons heden-daagse leven voor ons kunnen beteken. Vanaf januari lezen we De Brief aan de Hebreeën. "
+          "maar ook wat deze teksten in ons heden-daagse leven voor ons kunnen beteken.\nVanaf januari lezen we De Brief aan de Hebreeën. "
         ],
         "led_by": "Wout van der Spek, Wilken van veen",
         "image": "bijbelsleerhuis.jpg",
         "starting_date": "2024-01-25",
         "closing_date": "2024-06-13",
-        "itemId": "LA-AC02"
+        "itemId": "LA-AC05"
       },
       {
         "id": 5,
@@ -97,6 +127,7 @@
           "dates": ["2024-02-12", "2024-02-26", "2024-03-11"]
         },
         "time": "20:00 - 22:00 uur",
+        "contribution": "5 euro per bijeenkomst (voor wie de eigen bijdrage te hoog is: laat het weten aan de gespreksleider of via het emailadres).",
         "description": [
           "In de tweede wereld oorlog schreef de theoloog Kornelis Heiko Miskotte (1894-1976) zijn Bijbels ABC.",
           " Hij wilde een 'betere weerstand' opbouwen tegen het nationaalsocialisme en de jodenvervolging.",
@@ -107,7 +138,7 @@
         "image": "bijbelsabc.jpg",
         "starting_date": "2024-02-12",
         "closing_date": "2024-03-11",
-        "itemId": "LA-AC03"
+        "itemId": "LA-AC06"
       },
       {
         "id": 6,
@@ -124,17 +155,18 @@
           ]
         },
         "time": "19:00 - 22:00 uur",
+        "contribution": "5 euro per bijeenkomst (voor wie de eigen bijdrage te hoog is: laat het weten aan de gespreksleider of via het emailadres).",
         "description": [
-          "In 2022 verscheen het boek 'De Moderne Theologen' onder redactie van Marcel Poorthuis en Wilken Veen.",
+          "In 2022 verscheen het boek 'De Moderne Theologen' onder redactie van Marcel Poorthuis en Wilken Veen.\n",
           " Daarin worden 90 theologen aan de orde gesteld ( met steeds een korte inleiding en een voor die theoloog karakteristieke tekst ).",
-          " Vooral christelijke theologen, maar ook joodse en islamitische religieuze denkers en een enkele boeddhist.",
+          " Vooral christelijke theologen, maar ook joodse en islamitische religieuze denkers en een enkele boeddhist.\n",
           " We kiezen met elkaar steeds een paar theologen, die we willen bespreken."
         ],
         "led_by": "Wilken Veen",
         "image": "modernetheologen.jpg",
         "starting_date": "2024-01-30",
         "closing_date": "2024-06-25",
-        "itemId": "LA-AC04"
+        "itemId": "LA-AC07"
       },
       {
         "id": 7,
@@ -143,17 +175,21 @@
           "day": "Maandag",
           "dates": ["2024-03-04", "2024-03-25", "2024-04-15", "2024-05-06"]
         },
-        "time": "20:00 - 22:00 uur",
-        "description": "",
-        "led_by": "Johan Visser\n en Gerben van Manen",
+        "time": "14:00 - 16:00 uur",
+        "contribution": "5 euro per bijeenkomst (voor wie de eigen bijdrage te hoog is: laat het weten aan de gespreksleider of via het emailadres).",
+        "description": ["Zinvol samenleven heeft onder meer te maken met verantwoordelijkheid dragen voor het leven van onszelf en anderen, ook met het oog op de volgende generaties.\n",
+                        "Hiervoor ontdekken wij, mensen, in onze families van herkomst onze persoonlijke mogelijkheden, obstakels en bronnen van hoop, die doorwerken in ons maatschappelijk leven.\n",
+                        "Na 'Dat beloof ik' van Roxane van Ieperen lezen en bespreken we opnieuw een literair werk waarin de auteur de eigen jeugd onderzoekt:\n",
+                         "'Naar zachtheid en een warm omhelzen' van Adriaan van Dis"],
+        "led_by": "Hanneke meulink-korf en Greteke de Vries",
         "image": "vandis.jpg",
         "starting_date": "2024-01-30",
         "closing_date": "2024-06-25",
-        "itemId": "LA-AC06"
+        "itemId": "LA-AC08"
       },
       {
         "id": 8,
-        "title": "Leesgroep Miskotte",
+        "title": "Leesgroep Miskotte - Dagboek van een student",
         "date": {
           "day": "Woensdag",
           "dates": [
@@ -165,12 +201,19 @@
           ]
         },
         "time": "09:00 - 10:00 uur",
-        "description": "",
-        "led_by": "Maarten Dekker en Gerben van Manen",
+        "contribution": "5 euro per bijeenkomst (voor wie de eigen bijdrage te hoog is: laat het weten aan de gespreksleider of via het emailadres).",
+        "description": ["In een online leesgroep duiken we maandelijks in de mystieke en maatschappelijke bevindingen van theologisch student Kornelis Heiko Miskotte (1894 - 1976).\n",
+                        "Na 'Uit het dagboek van een student' lezen en bespreken we andere teksten uit deel 14 van zijn 'Verzameld werk, Mystiek en bevinding': met het oog op onze eigen tijd en ervaring.\n",
+                        "De groep is voor wie het steeds weer actuele werk van Miskotte al waardeert én voor wie het nog niet of nauwelijks kent.\n",
+                        "In dit project werkt Leerhuis Amsterdam samen met de Miskotte Stichting en De Nieuwe Bijbelschool.\n\n",
+                        "Informatie en aanmelding: gg_vanmanen@hotmail.com.\n", 
+                        "Vanaf dit adres wordt maandelijks een link en een digitale tekst toegezonden.\n\n"
+                      ],
+        "led_by": "Willem Maarten Dekker en Gerben van Manen",
         "image": "leesgroep_miskotte.jpg",
         "starting_date": "2024-01-30",
         "closing_date": "2024-06-25",
-        "itemId": "LA-AC07"
+        "itemId": "LA-AC09"
       },
       {
         "id": 9,
@@ -180,12 +223,15 @@
           "dates": ["2024-02-03"]
         },
         "time": "15:00 - 17:00 uur",
-        "description": "",
+        "contribution": "5 euro per bijeenkomst (voor wie de eigen bijdrage te hoog is: laat het weten aan de gespreksleider of via het emailadres).",
+        "description": ["Uitgangspunt is het boek van de palestijnse bevrijdingstheoloog Munther Isaac.\n",
+                        "Zijn boek 'The Other Side of the Wall - A Palestinian Christian Narrative of Lament and Hope' is vertaald in het Nederlands.\n",
+                        "In het blad Volzin nr 11 van november 2023 staat een interview met Munther Isaac"],
         "led_by": "Remco van Mulligen",
         "image": "palchrist.jpg",
         "starting_date": "2024-02-03",
         "closing_date": "2024-02-03",
-        "itemId": "LA-AC08"
+        "itemId": "LA-AC10"
       }
     ]
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import BackButton from '../components/BackButton';
 import {filteredExpiredActivities} from "../utils/filterByDate"
 import { useLoaderData } from "react-router-dom";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export const archiveLoader = () => {
   return filteredExpiredActivities;
@@ -11,8 +11,10 @@ export const archiveLoader = () => {
 const Archief = () => {
 
   const data = useLoaderData();
-  console.log(data)
-  const url = window.location.pathname
+  // const url = window.location.pathname
+
+  const url = useLocation().pathname
+  // console.log(url2)
 
   return (
     <div className="w-full min-h-screen mt-[170px] flex flex-row justify-center items-start px-8 max-xxxsm:px-2 mb-44">

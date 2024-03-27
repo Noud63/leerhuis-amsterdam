@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {useLocation } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import globe from "../assets/images/globe2.png";
 
 const OveronsPage = () => {
-  const url = window.location.pathname;
-
+  const url = useLocation().pathname;
   return (
     <div className="w-full flex pt-[180px] items-center px-8 relative max-xxxsm:px-4">
       <div className="w-full min-h-screen">
@@ -31,29 +30,7 @@ const OveronsPage = () => {
                       cursussen en inspiratiedagen die gaan over zinvol en
                       verantwoordelijk samenleven. Via ontmoeting en moedige
                       gesprekken zoeken we verdieping en verbreding. 
-                      <br />
-                      Leerhuis Amsterdam nodigt je uit voor 'moedige
-                      egesprekken' met het oog op vragen, over hoe we met elkaar
-                      zinvol kunnen samenleven .<br />
-                      Rond de bespreking van een boek of een thema ontstaat voor
-                      een tijdje een gemeenschap. Daarin hebben we aandacht voor
-                      ieders geloof, spiritualiteit, filosofisch en
-                      levensbeschouwend perspectief. Verras elkaar met je
-                      leergierigheid, je vrijmoedig dóórvragen en soms ook met
-                      je levenservaringen, wanneer je die wilt delen.
-                      <br />
-                      Betekenis vinden, op ideeën komen, door ontmoeting en
-                      dialoog. Daar draait het om. En mogelijk heb je er ook wat
-                      aan in gesprekken met vrienden, familie, tijdens je werk,
-                      bij je morele en politieke keuzes of in je
-                      geloofsgemeenschap. Zo'n zinvolle doorwerking van wat we
-                      met en van elkaar leren zou mooi zijn!
-                      <br />
-                      Trouwens: heb je zélf een onderwerp dat je wilt bespreken
-                      met anderen, laat het ons weten, dan kijken we of en
-                      wanneer het past.
-                      <br />
-                      We kijken naar jullie uit!
+                     
                       <br />
                       <br />
                       De commissie van het Leerhuis:

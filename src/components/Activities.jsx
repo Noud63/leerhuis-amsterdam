@@ -48,7 +48,8 @@ return (
       <div className="w-[85%] mb-4 pl-0 max-xxsm:w-full">
         <span className="text-lg font-normal max-xsm:text-base">
           Het Leerhuis Amsterdam organiseert bijeenkomsten, dialogen en
-          cursussen, in de Muiderkerk. <br />
+          cursussen. <br />
+          De bijeenkomsten vinden plaats in de Muiderkerk tenzij anders vermeld.<br />
           Schrijf je in voor een of meerdere activiteiten.
           <br />
           Hoe je je inschrijft, lees je{" "}

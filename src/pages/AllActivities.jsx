@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { upcomingActivities} from "../utils/filterByDate"
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useLocation } from "react-router-dom";
 import BackButton from "../components/BackButton";
 
 export const loader = () => {
@@ -10,7 +10,7 @@ export const loader = () => {
 
 const AllActivities = () => {
 
-  const url = window.location.pathname;
+const url = useLocation().pathname;
 
   const data = useLoaderData();
   console.log(data)

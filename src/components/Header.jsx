@@ -26,7 +26,7 @@ const Header = ({showMenuOverlay}) => {
          className="w-full h-[30px] flex justify-center items-center text-sm text-white/90 tracking-wider
          bg-gradient-to-r from-yellow-950 via-yellow-800 to-yellow-950"
        >
-         <span>Leerhuis Amsterdam : voor zinvol samenleven</span>
+         <span>Leerhuis Amsterdam - voor zinvol samenleven</span>
        </div>
 
        <div className="h-full flex flex-row justify-between">

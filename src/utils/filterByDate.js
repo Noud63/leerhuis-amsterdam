@@ -24,6 +24,25 @@ export const filterActivitiesInThePast = () => {
 filterActivitiesInThePast();
 
 
+export const firstActivities = []
+
+export const firstActivityAfterAWeek = () => {
+  activities.activities.forEach((act) => {
+    if (
+      new Date(act.starting_date).getTime() >= nextWeek - 604800000 &&
+      new Date(act.starting_date).getTime() <= nextWeek + 604800000
+    ) {
+      console.log(act);
+      firstActivities.push(act);
+    }
+  });
+};
+
+firstActivityAfterAWeek();
+
+
+
+
 // ------------ 1 ------------ // 
 
 //Filter activities by coming week
@@ -50,6 +69,8 @@ export const filterByDate = () => {
 };
 
 filterByDate();
+
+
 
 
 // ------------ 2 ------------ // 

@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import activities from "../db.json";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import share from "../assets/icons/share.png";
 import {
   FacebookShareButton,
@@ -23,9 +23,9 @@ const CalendarItem = () => {
 
   const [expired, setExpired] = useState(false)
 
-  const url = window.location.pathname
-
+  const url = useLocation().pathname;
   const item = activities.activities[id]
+  console.log(activities.activities[0]);
 
   const givenDate = new Date(item.closing_date).getTime();
   const now = new Date().getTime();
@@ -58,12 +58,16 @@ useEffect(()=> {
               ) : (
                 ""
               )}
-              <div className="h-[50px] border-b border-t border-[#000] gap-2 flex justify-between items-end font-semibold 
-              font-papyrus mb-2 text-2xl py-2 mx-4 mt-4 overflow-hidden relative max-mini:text-xl">
+              <div
+                className="h-[50px] border-b border-t border-[#000] gap-2 flex justify-between items-end font-semibold 
+              font-papyrus mb-2 text-2xl py-2 mx-4 mt-4 overflow-hidden relative max-mini:text-xl"
+              >
                 {item.title}
                 <div className="group">
                   <div className="flex flex-row gap-2 font-normal">
-                    <span className="text-orange-600 font-sans text-lg">Deel</span>
+                    <span className="text-orange-600 font-sans text-lg">
+                      Deel
+                    </span>
                     <img
                       src={share}
                       alt="share"
@@ -113,11 +117,16 @@ useEffect(()=> {
               </div>
               <div className="w-full px-4 mb-2">
                 <span className="font-bold">Beschrijving : </span>
-                <br />"{item.description}"
+                <br />
+                <span className="whitespace-pre-line">{item.description}</span>
               </div>
               <div className="w-full px-4 mb-2">
                 {" "}
                 <span className="font-bold">O.l.v :</span> {item.led_by}
+              </div>
+              <div className="w-full px-4 mb-2">
+                {" "}
+                <span className="font-bold">Bijdrage:</span> {item.contribution}
               </div>
               <div className="w-full px-4">
                 {" "}
