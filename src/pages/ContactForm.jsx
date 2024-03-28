@@ -4,9 +4,9 @@ import ringbinder from "../assets/images/ringbinder.png"
 import BackButton from "../components/BackButton";
 import { useLocation } from "react-router-dom";
 
-const serviceId =  import.meta.env.VITE_REACT_APP_MY_SERVICE_ID;
-const templateId =  import.meta.env.VITE_REACT_APP_MY_TEMPLATE_ID_2;
-const publicKey=  import.meta.env.VITE_REACT_APP_MY_PUBLIC_KEY;
+const serviceId = import.meta.env.VITE_REACT_APP_LA_SERVICE_ID;
+const templateId = import.meta.env.VITE_REACT_APP_LA_CONTACT_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_REACT_APP_LA_PUBLIC_KEY;
 
 const ContactForm = () => {
 
@@ -74,16 +74,26 @@ const ContactForm = () => {
             <input
               type="text"
               name="from_name"
-              placeholder="Naam"
+              placeholder="Voornaam + achternaam"
               required
               className="py-4 placeholder:text-gray-500 pl-2"
             />
           </div>
-          <div className="w-full border-b border-black mb-2">
+          <div className="w-full border-b border-black">
             <input
               type="email"
               name="from_email"
-              placeholder="Email"
+              placeholder="Geldig email adres"
+              required
+              className="py-4 placeholder:text-gray-500 pl-2"
+            />
+          </div>
+
+          <div className="w-full border-b border-black mb-8">
+            <input
+              type="text"
+              name="from_subject"
+              placeholder="Onderwerp"
               required
               className="py-4 placeholder:text-gray-500 pl-2"
             />

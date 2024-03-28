@@ -27,16 +27,16 @@ const Aktueel = () => {
 
       <div className="actueel_info flex w-full justify-center flex-col px-8 pt-8 pb-12 rounded-xl max-xxxsm:px-4 bg-white">
         <div className="w-full flex text-lg border-b border-slate-700">
-          <span className="w-full flex flex-row items-center text-lg text-slate-800 font-semibold pb-2 max-xxxsm:flex-col max-xxxsm:items-start">
-            <span className="">Deze week: </span>
-            <span className="ml-2 max-xxxsm:ml-0">
+          <span className="w-full flex flex-row items-center text-lg text-slate-800 font-semibold pb-2 max-xxxsm:items-start">
+            <span className="mr-1">Deze week:</span>
+            <span className="ml-1 max-xxxsm:ml-0">
               {new Date().toLocaleDateString().slice(0, -5)} tot{" "}
               {new Date(now + 604800000).toLocaleDateString().slice(0, -5)}
             </span>
           </span>
         </div>
         <div className="w-full pb-6">
-          <div className="min-w-[400px] mx-auto flex flex-row justify-around gap-8 flex-wrap mt-8">
+          <div className="min-w-[300px] mx-auto flex flex-row justify-around gap-8 flex-wrap mt-8">
             {data.length === 0 && (
               <div className="w-full flex justify-center mt-20 mb-24 text-xl font-semibold text-orange-700">
                 Geen activiteiten!
@@ -51,7 +51,7 @@ const Aktueel = () => {
                   <div className="flex flex-1 text-xl font-semibold font-papyrus mx-auto">
                     {act.title}
                   </div>
-                  <div className="flex items-center text-lg text-slate-700 font-semibold">
+                  <div className="flex items-center text-lg text-yellow-600 font-semibold">
                     {new Date(act.date).toLocaleDateString().slice(0, -5)}
                   </div>
                 </div>

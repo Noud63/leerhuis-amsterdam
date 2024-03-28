@@ -25,7 +25,6 @@ const CalendarItem = () => {
 
   const url = useLocation().pathname;
   const item = activities.activities[id]
-  console.log(activities.activities[0]);
 
   const givenDate = new Date(item.closing_date).getTime();
   const now = new Date().getTime();
@@ -44,7 +43,15 @@ useEffect(()=> {
       <div className="flex flex-1 pt-[180px] flex-col items-center max-calendar:mt-12 max-xsm:pt-[170px]">
         <div className="w-full max-w-[700px] mb-32 flex flex-col items-center px-2">
           <div className="w-full flex justify-start text-xl font-semibold mb-4 border-b border-black pb-2">
-            # Over {item.title}
+            # Over
+            {Array.isArray(item.title) ? (
+              <div>
+                <span>{item.title[0]}</span>
+                <span className="max-xxsm:hidden">{item.title[1]}</span>
+              </div>
+            ) : (
+              <span>{item.title}</span>
+            )}
           </div>
 
           <div className="calendar_item w-full rounded-t-2xl">
@@ -62,7 +69,14 @@ useEffect(()=> {
                 className="h-[50px] border-b border-t border-[#000] gap-2 flex justify-between items-end font-semibold 
               font-papyrus mb-2 text-2xl py-2 mx-4 mt-4 overflow-hidden relative max-mini:text-xl"
               >
-                {item.title}
+                {Array.isArray(item.title) ? (
+                  <div>
+                    <span>{item.title[0]}</span>
+                    <span className="max-xxsm:hidden">{item.title[1]}</span>
+                  </div>
+                ) : (
+                  <span>{item.title}</span>
+                )}
                 <div className="group">
                   <div className="flex flex-row gap-2 font-normal">
                     <span className="text-orange-600 font-sans text-lg">

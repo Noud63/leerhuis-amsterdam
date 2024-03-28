@@ -49,7 +49,8 @@ return (
         <span className="text-lg font-normal max-xsm:text-base">
           Het Leerhuis Amsterdam organiseert bijeenkomsten, dialogen en
           cursussen. <br />
-          De bijeenkomsten vinden plaats in de Muiderkerk tenzij anders vermeld.<br />
+          De bijeenkomsten vinden plaats in de Muiderkerk tenzij anders vermeld.
+          <br />
           Schrijf je in voor een of meerdere activiteiten.
           <br />
           Hoe je je inschrijft, lees je{" "}
@@ -68,12 +69,13 @@ return (
             <div className="calendar_item w-full h-full bg-white rounded-t-2xl flex flex-col justify-between relative">
               <div className="p-4">
                 <span className="border-b border-black flex justify-between font-papyrus font-semibold text-xl pb-2">
-                  {act.title}
+                  <span>{act.title}</span>
+                 
                 </span>
               </div>
 
-              <div className="flex flex-col gap-2 px-4">
-                <div className="w-full">
+              <div className="h-[110px] flex flex-col gap-2 pl-4">
+                <div className="w-full mt-2">
                   <span className="font-semibold">Start : </span>
                   {new Date(act.starting_date).toLocaleDateString()}
                 </div>

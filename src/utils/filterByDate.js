@@ -24,13 +24,15 @@ export const filterActivitiesInThePast = () => {
 filterActivitiesInThePast();
 
 
+
+// Announced only if there are no activities this week
 export const firstActivities = []
 
 export const firstActivityAfterAWeek = () => {
   activities.activities.forEach((act) => {
     if (
-      new Date(act.starting_date).getTime() >= nextWeek - 604800000 &&
-      new Date(act.starting_date).getTime() <= nextWeek + 604800000
+      (new Date(act.starting_date).getTime() < nextWeek + 604800000) &&
+      (new Date(act.starting_date).getTime() >= nextWeek)
     ) {
       console.log(act);
       firstActivities.push(act);

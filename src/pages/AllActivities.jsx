@@ -34,8 +34,8 @@ const url = useLocation().pathname;
                   </span>
                 </div>
 
-                <div className="flex flex-col gap-2 pl-4">
-                  <div className="w-full">
+                <div className="h-[110px] flex flex-col gap-2 pl-4">
+                  <div className="w-full mt-2">
                     <span className="font-semibold">Start : </span>
                     {new Date(act.starting_date).toLocaleDateString()}
                   </div>

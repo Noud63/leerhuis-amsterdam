@@ -11,7 +11,7 @@ const SubscriptionRules = () => {
         <span className="w-full flex justify-center text-2xl font-semibold border-b border-black pb-2">
           Inschrijving
         </span>
-        <div className="w-full flex-col flex text-[16px] justify-center my-4 leading-8">
+        <div className="w-full flex-col flex text-[18px] justify-center my-4 leading-8">
           <span className="tracking-wide ">
             Iedere cursusavond kost 5 euro, tenzij anders vermeld.
             <br />

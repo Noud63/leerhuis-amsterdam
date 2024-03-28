@@ -16,7 +16,7 @@ export default {
         xsm: "700px",
         xxsm: "530px",
         xxxsm: "450px",
-        mini: "380px"
+        mini: "400px"
       },
     },
   },

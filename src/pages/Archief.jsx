@@ -22,7 +22,8 @@ const Archief = () => {
         <div className="w-full flex mb-0 border-b border-black pb-2">
           <span className="text-2xl font-semibold  text-black"># Archief</span>
         </div>
-
+         <div className="mt-4">Activiteiten die reeds hebben plaatsgevonden.
+          <br/>Inschrijven is helaas niet meer mogelijk</div>
         <div className="w-full max-w-full flex flex-col justify-center flex-wrap ">
           {data?.map((act) => (
             <div

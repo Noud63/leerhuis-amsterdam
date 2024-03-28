@@ -1,11 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import ringbinder from "../assets/images/ringbinder.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-const serviceId = import.meta.env.VITE_REACT_APP_MY_SERVICE_ID;
-const templateId = import.meta.env.VITE_REACT_APP_MY_TEMPLATE_ID;
-const publicKey = import.meta.env.VITE_REACT_APP_MY_PUBLIC_KEY;
+const serviceId = import.meta.env.VITE_REACT_APP_LA_SERVICE_ID;
+const templateId = import.meta.env.VITE_REACT_APP_LA_INSCHRIJVING_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_REACT_APP_LA_PUBLIC_KEY;
 
 
 const Subscribe = () => {
@@ -17,6 +17,8 @@ const Subscribe = () => {
   const [ID, setID] = useState("");
 
   const itemId = window.location.pathname;
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     setID(itemId.split("/")[2]);
@@ -34,6 +36,7 @@ const Subscribe = () => {
         let timer = setTimeout(() => {
           setStatus("Verstuur");
           setMessage("");
+          navigate("/");
           clearTimeout(timer);
         }, 3000);
       },
@@ -41,6 +44,7 @@ const Subscribe = () => {
         console.log(error.text);
       }
     );
+       
     form.current.reset();
   };
 
