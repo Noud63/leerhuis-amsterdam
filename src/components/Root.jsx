@@ -4,16 +4,16 @@ import Activities from './Activities'
 import Contact from './Contact';
 import ScrollToTop from '../utils/ScrollToTop';
 import Aktueel from './Aktueel';
+import { Outlet } from 'react-router-dom';
 
 const Root = () => {
   return (
     <>
-      <Activities />
-      <Overons />
-      <Aktueel />
-      <Contact />
-      
-    </>
+    <Activities />
+    <Overons />
+    <Aktueel />
+    <Contact />
+      </>
   );
 }
 

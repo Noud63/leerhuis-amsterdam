@@ -19,12 +19,12 @@ import BackButton from '../components/BackButton';
 const CalendarItem = () => {
   const currentUrl = window.location.href
 
-  const { id } = useParams()
+  const { calendaritem_id } = useParams()
 
   const [expired, setExpired] = useState(false)
 
   const url = useLocation().pathname;
-  const item = activities.activities[id]
+  const item = activities.activities[calendaritem_id];
 
   const givenDate = new Date(item.closing_date).getTime();
   const now = new Date().getTime();

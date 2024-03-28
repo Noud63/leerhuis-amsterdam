@@ -39,11 +39,11 @@ const router = createBrowserRouter([
         element: <OveronsPage />,
       },
       {
-        path: "/calendaritem/:id",
+        path: "/calendaritem/:calendaritem_id",
         element: <CalendarItem />,
       },
       {
-        path: "/allactivities/calendaritem/:id",
+        path: "/allactivities/calendaritem/:calendaritem_id",
         element: <CalendarItem />,
       },
       {
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
         element: <Aktueel />,
       },
       {
-        path: "/aktueel/calendaritem/:id",
+        path: "/aktueel/calendaritem/:calendaritem_id",
         element: <CalendarItem />,
       },
       {
@@ -69,7 +69,7 @@ const router = createBrowserRouter([
         element: <Archief />,
       },
       {
-        path: "/archief/calendarItem/:id",
+        path: "/archief/calendarItem/:calendaritem_id",
         element: <CalendarItem />,
       },
       {

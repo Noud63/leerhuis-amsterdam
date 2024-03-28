@@ -10,7 +10,7 @@ export const filteredExpiredActivities = [];
 export const upcomingActivities = []
 
 //Filter activities
-export const filterActivitiesInThePast = () => {
+const filterActivitiesInThePast = () => {
   activities.activities.forEach((act) => {
       if(new Date(act.closing_date).getTime() < now){
         filteredExpiredActivities.push(act)
@@ -24,11 +24,10 @@ export const filterActivitiesInThePast = () => {
 filterActivitiesInThePast();
 
 
-
 // Announced only if there are no activities this week
 export const firstActivities = []
 
-export const firstActivityAfterAWeek = () => {
+const firstActivityAfterAWeek = () => {
   activities.activities.forEach((act) => {
     if (
       (new Date(act.starting_date).getTime() < nextWeek + 604800000) &&
@@ -43,14 +42,12 @@ export const firstActivityAfterAWeek = () => {
 firstActivityAfterAWeek();
 
 
-
-
 // ------------ 1 ------------ // 
 
 //Filter activities by coming week
 export const filteredActivitiesByWeek = [];
 
-export const filterByDate = () => {
+const filterByDate = () => {
   activities.activities.forEach((act) => {
     const dates = act.date.dates;
 
