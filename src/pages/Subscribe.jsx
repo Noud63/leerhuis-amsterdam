@@ -1,7 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import ringbinder from "../assets/images/ringbinder.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation, useParams } from "react-router-dom";
+import BackButton from "../components/BackButton";
 
 const serviceId = import.meta.env.VITE_REACT_APP_LA_SERVICE_ID;
 const templateId = import.meta.env.VITE_REACT_APP_LA_INSCHRIJVING_TEMPLATE_ID;
@@ -9,20 +10,21 @@ const publicKey = import.meta.env.VITE_REACT_APP_LA_PUBLIC_KEY;
 
 
 const Subscribe = () => {
-
   const form = useRef();
 
   const [status, setStatus] = useState("Verstuur");
-  const [message, setMessage] = useState("")
+  const [message, setMessage] = useState("");
   const [ID, setID] = useState("");
 
-  const itemId = window.location.pathname;
+  const { id } = useParams();
+
+  const url = useLocation().pathname;
 
   const navigate = useNavigate();
 
   useEffect(() => {
-    setID(itemId.split("/")[2]);
-  }, [itemId]);
+    setID(id.slice(6, url.length));
+  }, [url]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -32,7 +34,7 @@ const Subscribe = () => {
       (result) => {
         console.log(result.text);
         setStatus("Succesvol verstuurd!");
-        setMessage("Bedankt voor je inschrijving!")
+        setMessage("Bedankt voor je inschrijving!");
         let timer = setTimeout(() => {
           setStatus("Verstuur");
           setMessage("");
@@ -44,15 +46,15 @@ const Subscribe = () => {
         console.log(error.text);
       }
     );
-       
+
     form.current.reset();
   };
 
   return (
-    <div className="w-full h-auto flex justify-center mt-[190px] pr-8 pl-12 max-sm:pr-2 max-sm:pl-6 max-sm:mt-[160px]">
+    <div className="w-full h-auto flex justify-center flex-col mt-[190px] pr-8 pl-12 max-sm:pr-2 max-sm:pl-6 max-sm:mt-[160px] pb-20">
       <div
-        className="contact_form h-auto w-full max-w-[580px] flex flex-col justify-start items-center 
-         bg-white px-16 py-12 rounded-xl max-sm:px-4 relative mb-28"
+        className="contact_form h-auto w-full max-w-[580px] mx-auto flex flex-col justify-start items-center 
+         bg-white px-16 py-12 rounded-xl max-sm:px-4 relative"
       >
         <div className="absolute w-[40px] z-[999] -left-[30px] top-0 bottom-0 max-sm:-left-[20px] overflow-hidden">
           <img
@@ -137,7 +139,7 @@ const Subscribe = () => {
               id="kenmerk"
               type="text"
               name="from_kenmerk"
-              defaultValue={ID}
+              defaultValue={id}
               required
               className="w-[80px] bg-transparent py-4 pl-2"
             />
@@ -156,6 +158,7 @@ const Subscribe = () => {
           </div>
         </form>
       </div>
+      <BackButton url={url} id={id} ID={ID}/>
     </div>
   );
 };

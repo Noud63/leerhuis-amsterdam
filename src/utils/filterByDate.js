@@ -33,7 +33,6 @@ const firstActivityAfterAWeek = () => {
       (new Date(act.starting_date).getTime() < nextWeek + 604800000) &&
       (new Date(act.starting_date).getTime() >= nextWeek)
     ) {
-      console.log(act);
       firstActivities.push(act);
     }
   });

@@ -30,8 +30,14 @@ const Aktueel = () => {
           <span className="w-full flex flex-row items-center text-lg text-slate-800 font-semibold pb-2 max-xxxsm:items-start">
             <span className="mr-1">Deze week:</span>
             <span className="ml-1 max-xxxsm:ml-0">
-              {new Date().toLocaleDateString().slice(0, -5)} tot{" "}
-              {new Date(now + 604800000).toLocaleDateString().slice(0, -5)}
+              {new Date().toLocaleDateString("nl-NL", {
+                    month: "long",
+                    day: "numeric",
+                  })} tot{" "}
+              {new Date(now + 604800000).toLocaleDateString("nl-NL", {
+                    month: "long",
+                    day: "numeric",
+                  })}
             </span>
           </span>
         </div>
@@ -52,7 +58,11 @@ const Aktueel = () => {
                     {act.title}
                   </div>
                   <div className="flex items-center text-lg text-yellow-600 font-semibold">
-                    {new Date(act.date).toLocaleDateString().slice(0, -5)}
+                    {new Date(act.date)
+                      .toLocaleDateString("nl-NL", {
+                        month: "long",
+                        day: "numeric",
+                      })}
                   </div>
                 </div>
                 <div className="w-full">

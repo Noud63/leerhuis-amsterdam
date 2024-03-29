@@ -30,16 +30,27 @@ return (
       </div>
       <div className="text-lg border border-slate-700">
         <span className="w-full flex items-center text-lg p-2 text-slate-800 font-semibold">
-          Deze week van &nbsp;
+          Deze week:&nbsp;
           <span className="">
-            {new Date().toLocaleDateString().slice(0, -5)} tot{" "}
-            {new Date(now + 604800000).toLocaleDateString().slice(0, -5)}
+            {new Date().toLocaleDateString("nl-NL", {
+              month: "long",
+              day: "numeric",
+            })}{" "}
+            tot{" "}
+            {new Date(now + 604800000).toLocaleDateString("nl-NL", {
+              month: "long",
+              day: "numeric",
+            })}
           </span>
         </span>
       </div>
 
       <div className="w-full max-w-full flex flex-col justify-center flex-wrap">
-        {data.length === 0 && <div className="w-full flex justify-center mt-12 text-xl font-semibold text-orange-700">Geen activiteiten!</div>}
+        {data.length === 0 && (
+          <div className="w-full flex justify-center mt-12 text-xl font-semibold text-orange-700">
+            Geen activiteiten!
+          </div>
+        )}
         {data?.map((act) => (
           <div
             className="actueel flex flex-col rounded-t-lg mt-8 bg-gradient-to-t from-stone-400 to-white relative "
@@ -50,7 +61,10 @@ return (
                 {act.title}
               </div>
               <div className="flex items-center text-xl font-semibold text-orange-700">
-                {new Date(act.date).toLocaleDateString().slice(0, -5)}
+                {new Date(act.date).toLocaleDateString("nl-NL", {
+                  month: "long",
+                  day: "numeric",
+                })}
               </div>
             </div>
             <div className="w-full">
@@ -64,7 +78,7 @@ return (
               <Link to={`/aktueel/calendaritem/${act.id}`}>
                 <button
                   type="button"
-                  className="flex items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full px-12 py-1 hover:px-16 transform ease-in-out duration-500"
+                  className="w-[150px] flex justify-center items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full p-2 hover:px-16 transform ease-in-out duration-500"
                 >
                   info
                 </button>

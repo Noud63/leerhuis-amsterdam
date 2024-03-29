@@ -70,14 +70,16 @@ return (
               <div className="p-4">
                 <span className="border-b border-black flex justify-between font-papyrus font-semibold text-xl pb-2">
                   <span>{act.title}</span>
-                 
                 </span>
               </div>
 
               <div className="h-[110px] flex flex-col gap-2 pl-4">
                 <div className="w-full mt-2">
                   <span className="font-semibold">Start : </span>
-                  {new Date(act.starting_date).toLocaleDateString()}
+                  {new Date(act.starting_date).toLocaleDateString("nl-NL", {
+                    month: "long",
+                    day: "numeric",
+                  })}
                 </div>
                 <div className="w-full">
                   {" "}

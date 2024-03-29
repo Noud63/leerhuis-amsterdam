@@ -37,7 +37,10 @@ const url = useLocation().pathname;
                 <div className="h-[110px] flex flex-col gap-2 pl-4">
                   <div className="w-full mt-2">
                     <span className="font-semibold">Start : </span>
-                    {new Date(act.starting_date).toLocaleDateString()}
+                    {new Date(act.starting_date).toLocaleDateString("nl-NL", {
+                    month: "long",
+                    day: "numeric",
+                  })}
                   </div>
                   <div className="w-full">
                     {" "}

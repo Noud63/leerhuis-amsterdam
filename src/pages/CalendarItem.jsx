@@ -117,7 +117,13 @@ useEffect(()=> {
                   <span>{item.date.day}:&nbsp;</span>
                   {item.date.dates.map((date, index) => (
                     <span key={index}>
-                      {new Date(date).toLocaleDateString().slice(0, -5)},&nbsp;
+                      {new Date(date)
+                        .toLocaleDateString("nl-NL", {
+                          month: "long",
+                          day: "numeric",
+                        })
+                        }
+                      ,&nbsp;
                     </span>
                   ))}
                 </div>

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 const BackButton = (url) => {
 
+  const id = parseInt(url.ID)
+  
   const [path, setPath] = useState("");
 
   useEffect(() => {
@@ -28,6 +30,9 @@ const BackButton = (url) => {
     if (url.url.slice(0, 22) === "/archief/calendaritem/") {
       setPath("/archief");
     }
+    if (url.url === `/subscribe/${url.id}`) {
+      setPath(`/allactivities/calendaritem/${id - 1}`);
+    }
   }, [path]);
 
   return (
@@ -35,7 +40,7 @@ const BackButton = (url) => {
       <Link to={path}>
         <button
           type="button"
-          className="btn w-[150px] text-black font-semibold p-2 border-2 border-gray-400 rounded-full cursor-pointer"
+          className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
         >
           Terug
         </button>
