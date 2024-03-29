@@ -78,7 +78,7 @@ return (
               <Link to={`/aktueel/calendaritem/${act.id}`}>
                 <button
                   type="button"
-                  className="w-[150px] flex justify-center items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full p-2 hover:px-16 transform ease-in-out duration-500"
+                  className="w-[150px] flex justify-center items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full p-2"
                 >
                   info
                 </button>
