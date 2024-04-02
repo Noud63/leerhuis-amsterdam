@@ -9,11 +9,20 @@
        url('./fonts/papyrus.otf') format('otf'),
        url('./fonts/papyrus.svg') format('svg'),
        url('./fonts/papyrus.woff') format('woff'),
-       url('./fonts/papyrus.woff2') format('woff2');
+       url('./fonts/papyrus.woff2') format('woff2')
 }
 
+@font-face {
+  font-family: 'gtwalsheim';
+  src: url('./fonts/gtwalsheim.otf') format('otf'),
+ url('./fonts/gtwalsheim.woff') format('woff'),
+ url('./fonts/gtwalsheim.woff2') format('woff2'),
+  url('./fonts/gtwalsheim.ttf') format('ttf')
+}
+
+
 :root {
-      font-size:16px
+      font-size:16px;
     }
 
 body {

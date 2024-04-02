@@ -16,7 +16,6 @@ const Activities = () => {
 
      const data = useLoaderData();
      
-
      useEffect(() => {
        const handleResize = () => {
          setWidth(window.innerWidth);
@@ -100,11 +99,11 @@ return (
                 />
               </div>
 
-              <div className="bg-gradient-to-t from-slate-900 to-slate-900/50 flex justify-center py-6 absolute bottom-0 left-0 w-full">
+              <div className="bg-gradient-to-t from-slate-950 to-slate-900/40 flex justify-center py-6 absolute bottom-0 left-0 w-full">
                 <Link to={`/calendaritem/${act.id}`}>
                   <button
                     type="button"
-                    className="flex items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full px-8 py-1 hover:px-10 transform ease-in-out duration-500"
+                    className="flex items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full px-8 py-1"
                   >
                     Lees meer
                   </button>

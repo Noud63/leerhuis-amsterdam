@@ -10,11 +10,12 @@ const publicKey = import.meta.env.VITE_REACT_APP_LA_PUBLIC_KEY;
 
 
 const Subscribe = () => {
+  
   const form = useRef();
 
   const [status, setStatus] = useState("Verstuur");
   const [message, setMessage] = useState("");
-  const [ID, setID] = useState("");
+  // const [ID, setID] = useState("");
 
   const { id } = useParams();
 
@@ -22,9 +23,11 @@ const Subscribe = () => {
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    setID(id.slice(6, url.length));
-  }, [url]);
+  let itemId = id.slice(6, url.length);
+
+  // useEffect(() => {
+  //   setID(id.slice(6, url.length));
+  // }, [url, id]);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -139,7 +142,7 @@ const Subscribe = () => {
               id="kenmerk"
               type="text"
               name="from_kenmerk"
-              defaultValue={id}
+              defaultValue={itemId}
               required
               className="w-[80px] bg-transparent py-4 pl-2"
             />
@@ -158,7 +161,7 @@ const Subscribe = () => {
           </div>
         </form>
       </div>
-      <BackButton url={url} id={id} ID={ID}/>
+      <BackButton url={url} id={id} ID={itemId}/>
     </div>
   );
 };

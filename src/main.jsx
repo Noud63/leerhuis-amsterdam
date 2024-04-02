@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from './pages/Layout';
+import { createBrowserRouter, RouterProvider, HashRouter } from "react-router-dom";
+import Layout from "./pages/Layout"
 import './index.css'
 import Activities, { loader } from "./components/Activities"
 import Archief, {archiveLoader} from "./pages/Archief"

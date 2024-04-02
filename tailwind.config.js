@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         papyrus: ["papyrus"],
+        gtwalsheim: ["gtwalsheim"],
       },
       screens: {
         xxxl: "1500px",
