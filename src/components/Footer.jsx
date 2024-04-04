@@ -1,10 +1,11 @@
 import React from "react";
 import logo from "../assets/images/logo_white.png";
 import Menu from "./Menu";
-import insta from "../assets/icons/insta_gray.png";
+import mail from "../assets/icons/mail_gray.png";
 import facebook from "../assets/icons/facebook_gray.png";
 import twitter from "../assets/icons/twitter_gray.png";
 import linkedin from "../assets/icons/linkedin_gray.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const style =
@@ -19,7 +20,7 @@ const Footer = () => {
         <img src={logo} alt="logo" className="w-full max-w-[300px] h-auto" />
         <div className="w-full text-white flex flex-col items-center pb-8 tracking-widest max-footer:mt-14">
           <span>Leerhuis Amsterdam</span>
-          <span>Linaeusstraat 37</span>
+          <span>Linnaeusstraat 37</span>
           <span>1093EG Amsterdam</span>
           <span>06 10325127</span>
           <span>leerhuisamsterdam@gmail.com</span>
@@ -29,7 +30,9 @@ const Footer = () => {
       <div className="h-full flex flex-col flex-1 justify-center items-center">
         <div className="flex h-1/3 items-center justify-center gap-4 mb-20 max-footer:mt-10">
           <img src={facebook} alt="" className="w-[35px]" />
-          <img src={insta} alt="" className="w-[35px]" />
+          <Link to="/contactform">
+            <img src={mail} alt="" className="w-[35px]" />
+          </Link>
           <img src={twitter} alt="" className="w-[35px]" />
           <img src={linkedin} alt="" className="w-[35px]" />
         </div>
@@ -38,7 +41,9 @@ const Footer = () => {
           Beeld in het Leerhuis logo is vervaardigd
           <br /> door kunstenaar Ronald Tolman :
           <br />
-          <span className="w-full flex justify-center">info@ronaldtolman.nl</span>
+          <span className="w-full flex justify-center">
+            info@ronaldtolman.nl
+          </span>
         </div>
       </div>
 

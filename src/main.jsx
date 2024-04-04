@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider, HashRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./pages/Layout"
 import './index.css'
 import Activities, { loader } from "./components/Activities"
@@ -11,13 +11,15 @@ import AllActivities from './pages/AllActivities';
 import OveronsPage from "./pages/OveronsPage";
 import ContactForm from './pages/ContactForm';
 import ContactPage from './pages/ContactPage';
-import Aktueel, {currentLoader} from './pages/Aktueel';
+import Aktueel, {currentLoader} from './components/Aktueel';
+import AktueelPage from './pages/AktueelPage';
 import Subscribe from './pages/Subscribe';
 import SubscriptionRules from './pages/SubscriptionRules';
 
 
 const router = createBrowserRouter([
   {
+    path: "/",
     element: <Layout />,
     children: [
       {
@@ -55,9 +57,9 @@ const router = createBrowserRouter([
         element: <ContactPage />,
       },
       {
-        path: "/aktueel",
+        path: "/aktueelpage",
         loader: currentLoader,
-        element: <Aktueel />,
+        element: <AktueelPage />,
       },
       {
         path: "/aktueel/calendaritem/:calendaritem_id",
@@ -77,7 +79,7 @@ const router = createBrowserRouter([
         element: <Subscribe />,
       },
     ],
-  },
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

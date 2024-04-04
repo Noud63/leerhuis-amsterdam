@@ -23,7 +23,7 @@ const Overons = () => {
                   <div className="w-full mb-12 mt-12 max-xmd:mt-0 max-xmd:mb-0">
                     <div className="overons_text w-full max-lg:w-full bg-white rounded-xl text-black px-8 pt-6 pb-8 max-xmd:rounded-b-none max-xxxsm:px-4">
                       <span className="flex justify-center text-xl font-semibold pb-2 text-amber-600">
-                        Leven in een complexe wereld
+                        Leren in een complexe wereld
                       </span>
                       <span className="">
                         Leerhuis Amsterdam nodigt kerkelijke en niet-kerkelijke

@@ -2,16 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Map from "./Map";
 
-const Contact = () => {
+const Contact = ({forwardUrl}) => {
   return (
-    <div className="w-full h-auto flex flex-col px-8 text-black max-xxsm:px-4 max-xxxsm:px-2 mt-10 mb-20">
+    <div className="w-full h-auto flex flex-col px-8 text-black max-xxsm:px-4 max-xxxsm:px-2 mt-10">
       <div className="w-full flex gap-2 mb-6 border-b border-black pb-2 pt-10 max-xxsm:pt-8">
         <span className="text-2xl font-semibold pt-1 text-black">
           # Contact
         </span>
       </div>
 
-      <div className="contact_info w-full flex flex-row px-8 pt-8 pb-12 bg-white rounded-xl mb-20 max-socials:flex-col max-xxsm:px-4 max-xxsm:pt-6">
+      <div className="contact_info w-full flex flex-row px-8 pt-8 pb-12 bg-white rounded-xl mb-10 max-socials:flex-col max-xxsm:px-4 max-xxsm:pt-6">
         
         <div className="flex flex-col w-2/3 max-socials:w-full">
           <div className="flex flex-col text-base mb-4 gap-1">
@@ -22,8 +22,7 @@ const Contact = () => {
             <span>Leerhuis Amsterdam</span>
             <span>Linnaeusstraat 37</span>
             <span>1093EG Amsterdam</span>
-            {/* <span>06 10325127</span>   
-                  <span>leerhuisamsterdam@gmail.com</span>    */}
+           
           </div>
 
           <div className=" flex flex-col mt-2 gap-2 max-socials:mb-8">

@@ -20,7 +20,7 @@ const OveronsPage = () => {
               <div className="w-full  flex flex-row items-start justify-center max-xxl:flex-col max-xxl:items-center">
                 <div className="max-xxl:w-full max-xxl:flex flex-col items-center">
                   <span className="flex justify-center text-xl text-orange-700 font-semibold pb-4 max-xxxsm:justify-start">
-                    Leven in een complexe wereld
+                    Leren in een complexe wereld
                   </span>
                   <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full">
                     <p>

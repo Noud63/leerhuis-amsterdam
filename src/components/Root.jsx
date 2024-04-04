@@ -8,12 +8,12 @@ import { Outlet } from 'react-router-dom';
 
 const Root = () => {
   return (
-    <>
+    <div className="mb-20">
     <Activities />
     <Overons />
     <Aktueel />
     <Contact />
-      </>
+      </div>
   );
 }
 

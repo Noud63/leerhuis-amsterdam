@@ -44,7 +44,8 @@ firstActivityAfterAWeek();
 // ------------ 1 ------------ // 
 
 //Filter activities by coming week
-export const filteredActivitiesByWeek = [];
+
+const filteredActivitiesByWeek = [];
 
 const filterByDate = () => {
   activities.activities.forEach((act) => {
@@ -68,7 +69,10 @@ const filterByDate = () => {
 
 filterByDate();
 
-
+export const filteredByWeek = filteredActivitiesByWeek.toSorted(
+  (a, b) => new Date(a.date) - new Date(b.date)
+);
+console.log(filteredByWeek);
 
 
 // ------------ 2 ------------ // 

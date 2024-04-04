@@ -66,7 +66,7 @@ return (
       </NavLink>
 
       <NavLink
-        to="/aktueel"
+        to="/aktueelpage"
         className={({ isActive }) => [
           isActive
             ? "border-b-2 border-black"
