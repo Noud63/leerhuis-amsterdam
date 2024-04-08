@@ -16,13 +16,12 @@ const Subscribe = () => {
   const [status, setStatus] = useState("Verstuur");
   const [message, setMessage] = useState("");
 
-  const { id } = useParams();
+  const { calendaritem_id, id } = useParams();
 
   const url = useLocation().pathname;
 
   const navigate = useNavigate();
 
-  let itemId = id.slice(6, url.length) - 1;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -156,7 +155,7 @@ const Subscribe = () => {
           </div>
         </form>
       </div>
-      <BackButton url={url} id={itemId} ID={id} />
+      <BackButton url={url} id={calendaritem_id} ID={id} />
     </div>
   );
 };
