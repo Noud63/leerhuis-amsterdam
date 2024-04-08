@@ -8,6 +8,7 @@ export const currentLoader = () => {
 };
 
 const Aktueel = () => {
+  
 const now = new Date().getTime();
 
   return (
@@ -79,7 +80,7 @@ const now = new Date().getTime();
           </div>
 
           <div className="w-full flex justify-center mt-4 ">
-            <Link to="allactivities">
+            <Link to="/allactivities">
               <button
                 type="button"
                 className="btn w-[150px] rounded-full justify-center items-center text-[#000] border-2 border-gray-400 gap-2 pb-1 leading-8 pt-1 text-md font-semibold"

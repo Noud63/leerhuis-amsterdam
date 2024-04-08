@@ -2,9 +2,10 @@ import React from "react";
 import {useLocation } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import globe from "../assets/images/globe2.png";
+import { Link } from "react-router-dom";
 
 const OveronsPage = () => {
-  const url = useLocation().pathname;
+  
   return (
     <div className="w-full flex pt-[180px] items-center px-8 relative max-xxxsm:px-4">
       <div className="w-full min-h-screen">
@@ -29,8 +30,7 @@ const OveronsPage = () => {
                       belangrijke thema's van deze tijd. We organiseren
                       cursussen en inspiratiedagen die gaan over zinvol en
                       verantwoordelijk samenleven. Via ontmoeting en moedige
-                      gesprekken zoeken we verdieping en verbreding. 
-                     
+                      gesprekken zoeken we verdieping en verbreding.
                       <br />
                       <br />
                       De commissie van het Leerhuis:
@@ -60,7 +60,17 @@ const OveronsPage = () => {
                 </div>
               </div>
 
-              <BackButton url={url} />
+              <div className="w-full flex justify-center mt-16">
+                <Link to="/">
+                  <button
+                    type="button"
+                    className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
+                  >
+                    Terug
+                  </button>
+                </Link>
+              </div>
+
             </div>
           </div>
         </div>

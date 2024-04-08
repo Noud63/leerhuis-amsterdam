@@ -5,9 +5,7 @@ import { Link, useLoaderData, useLocation } from "react-router-dom";
 
 const Aktueel = () => {
   let data = useLoaderData();
-
   const url = useLocation().pathname;
-
   const now = new Date().getTime();
 
   return (
@@ -48,7 +46,7 @@ const Aktueel = () => {
                 <div className="flex flex-1 text-xl font-semibold font-papyrus mx-auto">
                   {act.title}
                 </div>
-                <div className="flex items-center text-xl font-semibold text-orange-700">
+                <div className="flex items-center text-xl font-semibold text-amber-700">
                   {new Date(act.date).toLocaleDateString("nl-NL", {
                     month: "long",
                     day: "numeric",

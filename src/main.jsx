@@ -14,10 +14,12 @@ import ContactPage from './pages/ContactPage';
 import Aktueel, {currentLoader} from './components/Aktueel';
 import AktueelPage from './pages/AktueelPage';
 import Subscribe from './pages/Subscribe';
+import LayoutHelp from './pages/LayoutHelp';
 import SubscriptionRules from './pages/SubscriptionRules';
-
+import { Outlet } from 'react-router-dom';
 
 const router = createBrowserRouter([
+ 
   {
     path: "/",
     element: <Layout />,
@@ -28,10 +30,29 @@ const router = createBrowserRouter([
         element: <Root />,
       },
       {
-        path: "/allactivities",
-        loader: loader,
-        element: <AllActivities />,
+        path: "/",
+        element: <Outlet />,
+        children: [
+          {
+            path: "/allactivities",
+            loader: loader,
+            element: <AllActivities />,
+          },
+          {
+            path: "/allactivities/calendaritem/:calendaritem_id",
+            element: <CalendarItem />,
+          },
+          {
+            path: "/allactivities/calendaritem/:calendaritem_id/subscribe/:id",
+            element: <Subscribe />,
+          },
+          {
+            path: "/allactivities/calendaritem/:calendaritem_id/subscribe/:id/contactform",
+            element: <ContactForm />,
+          },
+        ],
       },
+
       {
         path: "/subscriptionRules",
         element: <SubscriptionRules />,
@@ -45,9 +66,14 @@ const router = createBrowserRouter([
         element: <CalendarItem />,
       },
       {
-        path: "/allactivities/calendaritem/:calendaritem_id",
-        element: <CalendarItem />,
+        path: "/calendaritem/:calendaritem_id/subscribe/:id",
+        element: <Subscribe />,
       },
+      {
+        path: "/calendaritem/:calendaritem_id/subscribe/:id/contactform",
+        element: <ContactForm />,
+      },
+
       {
         path: "/contactform",
         element: <ContactForm />,
@@ -66,6 +92,14 @@ const router = createBrowserRouter([
         element: <CalendarItem />,
       },
       {
+        path: "/aktueel/calendarItem/:calendaritem_id/subscribe/:id",
+        element: <Subscribe />,
+      },
+      {
+        path: "/aktueel/calendarItem/:calendaritem_id/subscribe/:id/contactform",
+        element: <ContactForm />,
+      },
+      {
         path: "/archief",
         loader: archiveLoader,
         element: <Archief />,
@@ -74,12 +108,9 @@ const router = createBrowserRouter([
         path: "/archief/calendarItem/:calendaritem_id",
         element: <CalendarItem />,
       },
-      {
-        path: "/subscribe/:id",
-        element: <Subscribe />,
-      },
     ],
-  }
+  },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

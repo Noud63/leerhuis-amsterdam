@@ -4,13 +4,12 @@ import { upcomingActivities} from "../utils/filterByDate"
 import { useLoaderData, useLocation } from "react-router-dom";
 import BackButton from "../components/BackButton";
 
+
 export const loader = () => {
   return upcomingActivities;
 };
 
 const AllActivities = () => {
-
-const url = useLocation().pathname;
 
   const data = useLoaderData();
 
@@ -37,9 +36,9 @@ const url = useLocation().pathname;
                   <div className="w-full mt-2">
                     <span className="font-semibold">Start : </span>
                     {new Date(act.starting_date).toLocaleDateString("nl-NL", {
-                    month: "long",
-                    day: "numeric",
-                  })}
+                      month: "long",
+                      day: "numeric",
+                    })}
                   </div>
                   <div className="w-full">
                     {" "}
@@ -61,7 +60,7 @@ const url = useLocation().pathname;
                 </div>
 
                 <div className="bg-gradient-to-t from-slate-950 to-slate-900/40 flex justify-center py-6 absolute bottom-0 left-0 w-full">
-                  <Link to={`/allactivities/calendaritem/${act.id}`}>
+                  <Link to={`calendaritem/${act.id}`}>
                     <button
                       type="button"
                       className="flex items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full px-8 py-1"
@@ -76,7 +75,16 @@ const url = useLocation().pathname;
           ))}
         </div>
 
-        <BackButton url={url} />
+        <div className="w-full flex justify-center mt-16">
+          <Link to="/">
+            <button
+              type="button"
+              className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
+             >
+              Terug
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

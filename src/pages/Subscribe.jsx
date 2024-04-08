@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ringbinder from "../assets/images/ringbinder.png";
 import { Link, useNavigate, useLocation, useParams } from "react-router-dom";
@@ -15,7 +15,6 @@ const Subscribe = () => {
 
   const [status, setStatus] = useState("Verstuur");
   const [message, setMessage] = useState("");
-  // const [ID, setID] = useState("");
 
   const { id } = useParams();
 
@@ -23,11 +22,7 @@ const Subscribe = () => {
 
   const navigate = useNavigate();
 
-  let itemId = id.slice(6, url.length);
-
-  // useEffect(() => {
-  //   setID(id.slice(6, url.length));
-  // }, [url, id]);
+  let itemId = id.slice(6, url.length) - 1;
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -80,7 +75,7 @@ const Subscribe = () => {
               zoomgroepen zijn gratis. <br />
               Voor wie de eigen bijdragen te hoog is, laat het ons weten, stuur
               een{" "}
-              <Link to="/contactform">
+              <Link to={`${url}/contactform`}>
                 <span className="text-lg text-red-800 font-semibold underline">
                   mail.
                 </span>
@@ -161,7 +156,7 @@ const Subscribe = () => {
           </div>
         </form>
       </div>
-      <BackButton url={url} id={id} ID={itemId}/>
+      <BackButton url={url} id={itemId} ID={id} />
     </div>
   );
 };

@@ -11,14 +11,15 @@ export const upcomingActivities = []
 
 //Filter activities
 const filterActivitiesInThePast = () => {
-  activities.activities.forEach((act) => {
+ 
+activities.activities.forEach((act) => {
       if(new Date(act.closing_date).getTime() < now){
         filteredExpiredActivities.push(act)
       }
-      if (new Date(act.closing_date).getTime() >= now) {
-        upcomingActivities.push(act);
-      }
-  });
+         if (new Date(act.closing_date).getTime() >= now) {
+           upcomingActivities.push(act);
+         }
+       });
 };
 
 filterActivitiesInThePast();
@@ -72,7 +73,6 @@ filterByDate();
 export const filteredByWeek = filteredActivitiesByWeek.toSorted(
   (a, b) => new Date(a.date) - new Date(b.date)
 );
-console.log(filteredByWeek);
 
 
 // ------------ 2 ------------ // 

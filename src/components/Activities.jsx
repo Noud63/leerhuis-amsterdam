@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import { upcomingActivities } from '../utils/filterByDate';
 import { useLoaderData } from "react-router-dom";
+import { Suspense } from 'react';
 
 
 export const loader = () => {
@@ -62,7 +63,7 @@ return (
       </div>
       <div
         className={`w-[85%] grid grid-cols-4 max-xxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 max-xmd:w-full gap-4 mt-4`}
-      >
+         >
         {data?.slice(0, slice).map((act) => (
           <div className="w-full min-h-full rounded-t-2xl" key={act.id}>
             <div className="calendar_item w-full h-full bg-white rounded-t-2xl bg-gradient-to-t from-stone-300 to-white flex flex-col justify-between relative">
@@ -116,7 +117,7 @@ return (
       </div>
 
       <div className="w-full flex justify-center mt-16 pb-8 mb-8">
-        <Link to="allactivities">
+        <Link to="/allactivities">
           <button
             type="button"
             className="btn w-[150px] rounded-full justify-center items-center text-[#000] border-2  border-gray-400 gap-2 pb-1 leading-8 pt-1 text-md font-semibold"

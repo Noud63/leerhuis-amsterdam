@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ringbinder from "../assets/images/ringbinder.png"
 import BackButton from "../components/BackButton";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 const serviceId = import.meta.env.VITE_REACT_APP_LA_SERVICE_ID;
 const templateId = import.meta.env.VITE_REACT_APP_LA_CONTACT_TEMPLATE_ID;
@@ -10,7 +10,9 @@ const publicKey = import.meta.env.VITE_REACT_APP_LA_PUBLIC_KEY;
 
 const ContactForm = () => {
 
-  const url= useLocation().pathname
+   const url = useLocation().pathname;
+   const {calendaritem_id, id} = useParams()
+   
 
   const form = useRef();
   const [status, setStatus] = useState("Verstuur");
@@ -117,7 +119,7 @@ const ContactForm = () => {
             </button>
           </div>
         </form>
-        <BackButton url={url} />
+        <BackButton url={url} id={parseInt(calendaritem_id)} ID={id} />
       </div>
     </div>
   );

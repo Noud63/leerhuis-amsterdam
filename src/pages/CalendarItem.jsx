@@ -17,13 +17,15 @@ import BackButton from '../components/BackButton';
 
 
 const CalendarItem = () => {
+  
   const currentUrl = window.location.href
 
   const { calendaritem_id } = useParams()
 
   const [expired, setExpired] = useState(false)
 
-  const url = useLocation().pathname;
+ const url = useLocation().pathname;
+
   const item = activities.activities[calendaritem_id];
 
   const givenDate = new Date(item.closing_date).getTime();
@@ -43,7 +45,7 @@ useEffect(()=> {
       <div className="flex flex-1 pt-[180px] flex-col items-center max-calendar:mt-12 max-xsm:pt-[170px]">
         <div className="w-full max-w-[700px] mb-32 flex flex-col items-center px-2">
           <div className="w-full flex justify-start text-xl font-semibold mb-4 border-b border-black pb-2">
-            # Over
+            <span># Over</span>&nbsp;
             {Array.isArray(item.title) ? (
               <div>
                 <span>{item.title[0]}</span>
@@ -154,7 +156,7 @@ useEffect(()=> {
               </div>
 
               <Link
-                to={`/subscribe/${item.itemId}`}
+                to={`subscribe/${item.itemId}`}
                 className="w-full flex justify-center mt-6 mb-4"
               >
                 <button
@@ -176,7 +178,7 @@ useEffect(()=> {
             </div>
           </div>
 
-          <BackButton url={url} />
+          <BackButton url={url} id={calendaritem_id} ID={item.itemId} />
         </div>
       </div>
     </div>

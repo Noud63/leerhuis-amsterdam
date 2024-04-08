@@ -1,10 +1,12 @@
 import React from 'react'
 import BackButton from '../components/BackButton';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const SubscriptionRules = () => {
+
+  const url = useLocation().pathname
  
-    const url = window.location.pathname
   return (
     <div className="w-full h-auto mx-auto flex justify-center">
       <div className="contact_info w-full max-w-[700px] flex h-auto mt-[170px] flex-col items-center bg-white rounded-2xl text-black pb-44 p-8 mb-44 mx-2 relative">
