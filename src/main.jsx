@@ -3,35 +3,34 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./pages/Layout"
 import './index.css'
-import Activities, { loader } from "./components/Activities"
+import Activities, { rootLoader } from "./components/Activities"
 import Archief, {archiveLoader} from "./pages/Archief"
 import Root from './components/Root';
 import CalendarItem from './pages/CalendarItem';
-import AllActivities from './pages/AllActivities';
+import AllActivities, { loader } from './pages/AllActivities';
 import OveronsPage from "./pages/OveronsPage";
 import ContactForm from './pages/ContactForm';
 import ContactPage from './pages/ContactPage';
 import Aktueel, {currentLoader} from './components/Aktueel';
 import AktueelPage from './pages/AktueelPage';
 import Subscribe from './pages/Subscribe';
-import LayoutHelp from './pages/LayoutHelp';
+import AllActivitiesLayout from './pages/AllActivitiesLayout';
 import SubscriptionRules from './pages/SubscriptionRules';
-import { Outlet } from 'react-router-dom';
+import ErrorPage from './pages/ErrorPage';
 
 const router = createBrowserRouter([
- 
   {
     path: "/",
     element: <Layout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
-        loader: loader,
+        loader: rootLoader,
         element: <Root />,
       },
       {
-        path: "/",
-        element: <Outlet />,
+        element: <AllActivitiesLayout />,
         children: [
           {
             path: "/allactivities",
@@ -110,7 +109,6 @@ const router = createBrowserRouter([
       },
     ],
   },
-
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

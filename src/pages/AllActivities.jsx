@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { upcomingActivities} from "../utils/filterByDate"
-import { useLoaderData, useLocation } from "react-router-dom";
+import { useLoaderData, useNavigation } from "react-router-dom";
 import BackButton from "../components/BackButton";
 
 
@@ -10,7 +10,7 @@ export const loader = () => {
 };
 
 const AllActivities = () => {
-
+  
   const data = useLoaderData();
 
   return (
@@ -59,7 +59,7 @@ const AllActivities = () => {
                   />
                 </div>
 
-                <div className="bg-gradient-to-t from-slate-950 to-slate-900/40 flex justify-center py-6 absolute bottom-0 left-0 w-full">
+                <div className="bg-gradient-to-t from-slate-950 to-slate-900/40 flex justify-center items-center h-[18%] absolute bottom-0 left-0 w-full">
                   <Link to={`calendaritem/${act.id}`}>
                     <button
                       type="button"

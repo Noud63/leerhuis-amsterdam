@@ -100,7 +100,6 @@
 //     element: <Layout />,
 //     children: [
 //        {
-//         path: "/",
 //         element: <Outlet />,
 //         children: [
 //           {

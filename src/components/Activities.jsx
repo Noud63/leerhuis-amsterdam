@@ -5,7 +5,7 @@ import { useLoaderData } from "react-router-dom";
 import { Suspense } from 'react';
 
 
-export const loader = () => {
+export const rootLoader = () => {
   return upcomingActivities
 };
 

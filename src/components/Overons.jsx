@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import gathering from "../assets/images/gathering.png"
+import gathering from "../assets/images/wandelaars2.png"
 
 const Overons = () => {
   return (
@@ -16,32 +16,36 @@ const Overons = () => {
               </div>
 
               <div
-                className="w-full max-w-[1100px] flex flex-col items-end justify-center py-8 relative mt-10
-              max-xmd:flex-row max-xmd:items-center max-xmd:mt-0 max-xmd:py-0 max-xxsm:max-w-full"
+                className="w-full max-w-[1100px] flex flex-col items-center justify-center py-8 mt-10
+                   max-xmd:flex-row max-xmd:items-center max-xmd:mt-0 max-xmd:py-0 max-xxsm:max-w-full"
               >
-                <div className="w-full max-w-[700px] flex justify-center max-xmd:flex-col max-xmd:max-w-full">
-                  <div className="w-full mb-12 mt-12 max-xmd:mt-0 max-xmd:mb-0">
-                    <div className="overons_text w-full max-lg:w-full bg-white rounded-xl text-black px-8 pt-6 pb-8 max-xmd:rounded-b-none max-xxxsm:px-4">
-                      <span className="flex justify-center text-xl font-semibold pb-2 text-amber-600">
+                <div className="w-full max-w-[900px] flex flex-col justify-center max-xmd:flex-col max-xmd:max-w-full">
+                  <div className="w-full mb-20">
+                    <div className="overons_text w-full max-lg:w-full bg-gradient-to-t from-stone-100 to-white rounded-xl border-b-2 border-stone-400 text-black px-10 pt-8 pb-14 max-xxxsm:px-4">
+                      <span className="flex justify-center text-2xl font-semibold pb-4 mb-4 text-amber-600 border-b border-black">
                         Leren in een complexe wereld
                       </span>
                       <span className="">
                         Leerhuis Amsterdam nodigt kerkelijke en niet-kerkelijke
                         Amsterdammers uit om elkaar te ontmoeten rond de
-                        belangrijke thema's van deze tijd. We organiseren
-                        cursussen en inspiratiedagen die gaan over zinvol en
-                        verantwoordelijk samenleven. Via ontmoeting en moedige
-                        gesprekken zoeken we verdieping en verbreding. Wees
-                        welkom!
+                        belangrijke thema's van deze tijd.
+                        <br />
+                        We organiseren cursussen en inspiratiedagen die gaan
+                        over zinvol en verantwoordelijk samenleven.
+                        <br />
+                        Via ontmoeting en moedige gesprekken zoeken we
+                        verdieping en verbreding.
+                        <br />
+                        Wees welkom!
                       </span>
                     </div>
                   </div>
 
-                  <div className="absolute -z-10 top-0 left-0 max-xmd:relative">
+                  <div className="w-full flex justify-center">
                     <img
                       src={gathering}
                       alt=""
-                      className="gathering rounded-t-xl rounded-b-xl w-full max-w-[700px] shadow-lg max-xmd:rounded-t-none max-xmd:rounded-b-xl max-xmd:max-w-full"
+                      className="w-full max-w-[700px] max-xmd:max-w-full"
                     />
                   </div>
                 </div>
@@ -49,7 +53,7 @@ const Overons = () => {
 
               <Link
                 to="/overonspage"
-                className="flex justify-center mt-20 max-xxl:mt-16"
+                className="flex justify-center mt-8 max-xxl:mt-16 mb-8"
               >
                 <button
                   type="button"
