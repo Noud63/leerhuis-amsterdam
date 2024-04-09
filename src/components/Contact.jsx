@@ -11,8 +11,7 @@ const Contact = ({forwardUrl}) => {
         </span>
       </div>
 
-      <div className="contact_info w-full flex flex-row px-8 pt-8 pb-12 bg-white rounded-xl mb-10 max-socials:flex-col max-xxsm:px-4 max-xxsm:pt-6">
-        
+      <div className="contact_info w-full flex flex-row px-8 pt-8 pb-12 bg-gradient-to-t from-stone-100 via-white to-white border-b border-stone-400 rounded-xl mb-10 max-socials:flex-col max-xxsm:px-4 max-xxsm:pt-6">
         <div className="flex flex-col w-2/3 max-socials:w-full">
           <div className="flex flex-col text-base mb-4 gap-1">
             <span className="text-lg font-semibold text-orange-700 mb-2">
@@ -22,7 +21,6 @@ const Contact = ({forwardUrl}) => {
             <span>Leerhuis Amsterdam</span>
             <span>Linnaeusstraat 37</span>
             <span>1093EG Amsterdam</span>
-           
           </div>
 
           <div className=" flex flex-col mt-2 gap-2 max-socials:mb-8">
@@ -39,7 +37,7 @@ const Contact = ({forwardUrl}) => {
             <Link to="/contactform" className="w-[150px] mt-4">
               <button
                 type="button"
-                className="btn_orange w-[150px] rounded-full justify-center items-center  text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 pb-2 pt-2 text-md font-normal"
+                className="btn_orange w-[150px] rounded-full justify-center items-center text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 pb-2 pt-2 text-md font-normal"
               >
                 Mail ons
               </button>
@@ -49,9 +47,7 @@ const Contact = ({forwardUrl}) => {
 
         <div className="map_box w-1/2 h-[430px] bg-white p-2 max-socials:w-full z-10">
           <Map />
-          <div className="text-black pt-2">
-            Locatie Leerhuis Amsterdam
-          </div>
+          <div className="text-black pt-2">Locatie Leerhuis Amsterdam</div>
         </div>
       </div>
     </div>

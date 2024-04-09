@@ -37,11 +37,11 @@ const Footer = () => {
           <img src={linkedin} alt="" className="w-[35px]" />
         </div>
 
-        <div className="w-full h-1/3 max-w-[300px] flex flex-col justify-end text-sm items-center text-gray-400 pb-4">
+        <div className="w-full h-1/3 max-w-[300px] flex flex-col justify-end text-sm text-gray-400 pb-4">
           Beeld in het Leerhuis logo is vervaardigd
-          <br /> door kunstenaar Ronald Tolman :
+          door kunstenaar Ronald Tolman.
           <br />
-          <span className="w-full flex justify-center">
+          <span className="w-full flex">
             info@ronaldtolman.nl
           </span>
         </div>

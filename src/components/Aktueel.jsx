@@ -17,19 +17,21 @@ const now = new Date().getTime();
         <span className="text-2xl font-semibold  text-black"># Actueel</span>
       </div>
 
-      <div className="actueel_info flex w-full justify-center flex-col px-8 pt-8 pb-12 rounded-xl max-xxxsm:px-4 bg-white">
+      <div className="actueel_info flex w-full justify-center flex-col px-8 pt-8 pb-12 rounded-xl max-xxxsm:px-4 
+      bg-gradient-to-t from-stone-100 via-white to-white border-b border-stone-400">
         <div className="w-full flex text-lg border-b border-slate-700">
           <span className="w-full flex flex-row items-center text-lg text-slate-800 font-semibold pb-2 max-xxxsm:items-start">
             <span className="mr-1">Deze week:</span>
             <span className="ml-1 max-xxxsm:ml-0">
               {new Date().toLocaleDateString("nl-NL", {
-                    month: "long",
-                    day: "numeric",
-                  })} tot{" "}
+                month: "long",
+                day: "numeric",
+              })}{" "}
+              tot{" "}
               {new Date(now + 604800000).toLocaleDateString("nl-NL", {
-                    month: "long",
-                    day: "numeric",
-                  })}
+                month: "long",
+                day: "numeric",
+              })}
             </span>
           </span>
         </div>
@@ -42,7 +44,7 @@ const now = new Date().getTime();
             )}
             {filteredByWeek?.map((act) => (
               <div
-                className="actueel flex flex-col mb-12 rounded-t-lg bg-gradient-to-t from-stone-400 to-white relative"
+                className="actueel flex flex-col mb-12 rounded-t-xl bg-gradient-to-t from-stone-400 to-white relative"
                 key={act.id}
               >
                 <div className="flex flex-row py-3 px-3 text-black items-center">
@@ -50,11 +52,10 @@ const now = new Date().getTime();
                     {act.title}
                   </div>
                   <div className="flex items-center text-lg text-yellow-600 font-semibold">
-                    {new Date(act.date)
-                      .toLocaleDateString("nl-NL", {
-                        month: "long",
-                        day: "numeric",
-                      })}
+                    {new Date(act.date).toLocaleDateString("nl-NL", {
+                      month: "long",
+                      day: "numeric",
+                    })}
                   </div>
                 </div>
                 <div className="w-full">
@@ -65,7 +66,7 @@ const now = new Date().getTime();
                   />
                 </div>
                 <div className="bg-gradient-to-t from-slate-900 to-slate-900/50 w flex justify-center py-6 absolute bottom-0 left-0 w-full">
-                  <Link to={`/aktueel/calendaritem/${act.id}`}>
+                  <Link to={`/calendaritem/${act.id}`}>
                     <button
                       type="button"
                       className="w-[150px] flex justify-center items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full p-2"

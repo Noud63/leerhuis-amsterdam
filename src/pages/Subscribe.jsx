@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import ringbinder from "../assets/images/ringbinder.png";
 import { Link, useNavigate, useLocation, useParams } from "react-router-dom";
 import BackButton from "../components/BackButton";
+import at from "../assets/icons/at.png"
 
 const serviceId = import.meta.env.VITE_REACT_APP_LA_SERVICE_ID;
 const templateId = import.meta.env.VITE_REACT_APP_LA_INSCHRIJVING_TEMPLATE_ID;
@@ -48,12 +49,12 @@ const Subscribe = () => {
   };
 
   return (
-    <div className="w-full h-auto flex justify-center flex-col mt-[190px] pr-8 pl-12 max-sm:pr-2 max-sm:pl-6 max-sm:mt-[160px] pb-20">
+    <div className="w-full h-auto flex justify-center flex-col mt-[190px] pr-8 pl-12 max-sm:pr-2 max-sm:pl-6 max-sm:mt-[160px] pb-20 max-xxsm:pl-2">
       <div
         className="contact_form h-auto w-full max-w-[580px] mx-auto flex flex-col justify-start items-center 
          bg-white px-16 py-12 rounded-xl max-sm:px-4 relative"
       >
-        <div className="absolute w-[40px] z-[999] -left-[30px] top-0 bottom-0 max-sm:-left-[20px] overflow-hidden">
+        <div className="absolute w-[40px] z-[999] -left-[30px] top-0 bottom-0 max-sm:-left-[20px] overflow-hidden max-xxsm:hidden">
           <img
             src={ringbinder}
             alt=""
@@ -66,7 +67,15 @@ const Subscribe = () => {
           />
         </div>
         <div className="w-full flex flex-col items-center justify-center text-black pb-2">
-          <span className="text-2xl font-semibold">Inschrijving</span>
+          <div
+            className="w-full h-[100px] text-2xl font-semibold text-white flex justify-center items-center
+          bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 relative tracking-wider"
+          >
+            Inschrijving
+            <div className="absolute flex">
+              <img src={at} alt="" className="w-[80px] opacity-30" />
+            </div>
+          </div>
           <div className="w-full text-[16px] justify-start my-4">
             <span className="tracking-wide ">
               Iedere cursusavond kost 5 euro, tenzij anders vermeld.

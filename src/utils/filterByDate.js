@@ -42,7 +42,6 @@ const firstActivityAfterAWeek = () => {
 firstActivityAfterAWeek();
 
 
-// ------------ 1 ------------ // 
 
 //Filter activities by coming week
 
@@ -75,28 +74,6 @@ export const filteredByWeek = filteredActivitiesByWeek.toSorted(
 );
 
 
-// ------------ 2 ------------ // 
-
-// --Returns only the activities! -- //
-
-// export const filteredByDates = (activities) => {
-//   return activities.activities.filter((activity) => {
-//     return activity.date.dates.some(
-//       (date) =>{
-// if(new Date(date).getTime() >= now && new Date(date).getTime() < nextWeek){
-  
-//   return  activity ;
-//       }
-//     });
-//   });
-// };
-
-
-// filteredByDates(activities);
-// console.log(filteredByDates(activities))
-
-
-// ------------ 3 ChatGpt------------ //
 
 // ---------------- Get the current date --------------- //
 // const today = new Date();
@@ -135,12 +112,10 @@ export const filteredByWeek = filteredActivitiesByWeek.toSorted(
 
 // // Iterate through filtered activities and separate relevant dates
 // activitiesWithinWeek.forEach(activity => {
-//   console.log(separateRelevantDates(activity));
 //     filteredActivitiesByWeek.push(...separateRelevantDates(activity));
 // });
 
 // //Output the separated relevant dates
-// console.log(filteredActivitiesByWeek);
 
 
 
