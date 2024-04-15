@@ -42,7 +42,6 @@ const firstActivityAfterAWeek = () => {
 firstActivityAfterAWeek();
 
 
-
 //Filter activities by coming week
 
 const filteredActivitiesByWeek = [];

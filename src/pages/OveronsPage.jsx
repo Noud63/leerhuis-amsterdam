@@ -1,6 +1,4 @@
 import React from "react";
-import {useLocation } from "react-router-dom";
-import BackButton from "../components/BackButton";
 import globe from "../assets/images/globe2.png";
 import { Link } from "react-router-dom";
 
@@ -25,11 +23,11 @@ const OveronsPage = () => {
                   </span>
                   <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full">
                     <p>
-                      Leerhuis Amsterdam nodigt kerkelijke en niet-kerkelijke
+                      Het Leerhuis Amsterdam nodigt kerkelijke en niet-kerkelijke
                       Amsterdammers uit om elkaar te ontmoeten rond de
-                      belangrijke thema's van deze tijd. We organiseren
+                      belangrijke thema's van deze tijd.<br /> We organiseren
                       cursussen en inspiratiedagen die gaan over zinvol en
-                      verantwoordelijk samenleven. Via ontmoeting en moedige
+                      verantwoordelijk samenleven. <br />Via ontmoeting en moedige
                       gesprekken zoeken we verdieping en verbreding.
                       <br />
                       <br />

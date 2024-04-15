@@ -68,20 +68,20 @@ useEffect(()=> {
                 ""
               )}
               <div
-                className="h-[50px] border-b border-t border-[#000] gap-2 flex justify-between items-end font-semibold 
+                className="h-auto border-b border-t border-[#000] gap-2 flex justify-between items-end font-semibold 
               font-papyrus mb-2 text-2xl py-2 mx-4 mt-4 overflow-hidden relative max-mini:text-xl"
               >
                 {Array.isArray(item.title) ? (
-                  <div>
+                  <div className="flex flex-wrap">
                     <span>{item.title[0]}</span>
-                    <span className="max-xxsm:hidden">{item.title[1]}</span>
+                    <span className="">{item.title[1]}</span>
                   </div>
                 ) : (
                   <span>{item.title}</span>
                 )}
                 <div className="group">
                   <div className="flex flex-row gap-2 font-normal">
-                    <span className="text-orange-600 font-sans text-lg">
+                    <span className="text-orange-600 font-sans text-lg max-xxsm:hidden">
                       Deel
                     </span>
                     <img
@@ -149,6 +149,15 @@ useEffect(()=> {
                 {" "}
                 <span className="font-bold flex flex-wrap">Bijdrage:</span>{" "}
                 {item.contribution}
+                <br />
+                {!expired ? (
+                  <span>
+                    Voor betaalgegevens en het inschrijfformulier, klik
+                    hieronder op "Schrijf je in"
+                  </span>
+                ) : (
+                  ""
+                )}
               </div>
               <div className="w-full px-4">
                 {" "}
@@ -158,6 +167,7 @@ useEffect(()=> {
               <Link
                 to={`subscribe/${item.itemId}`}
                 className="w-full flex justify-center mt-6 mb-4"
+                
               >
                 <button
                   type="button"

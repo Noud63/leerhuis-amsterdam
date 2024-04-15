@@ -52,12 +52,12 @@ const Archief = () => {
                     </button>
                   </Link>
                 </div>
-                <div className="bg-slate-600 h-4"></div>
               </div>
             ))}
           </div>
       
         <BackButton url={url}/>
+        
       </div>
     </div>
   );

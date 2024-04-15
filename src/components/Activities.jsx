@@ -45,7 +45,7 @@ return (
           # Activiteiten Kalender 2024
         </span>
       </div>
-      <div className="w-[85%] mb-4 pl-0 max-xxsm:w-full">
+      <div className="w-[85%] mb-4 max-xmd:w-full max-xxsm:pl-3">
         <span className="text-lg font-normal max-xsm:text-base">
           Het Leerhuis Amsterdam organiseert bijeenkomsten, dialogen en
           cursussen. <br />
@@ -53,7 +53,7 @@ return (
           <br />
           Schrijf je in voor een of meerdere activiteiten.
           <br />
-          Hoe je je inschrijft, lees je{" "}
+          Hoe je je inschrijft en betaalgegevens, vindt je{" "}
           <Link to="/subscriptionrules">
             <span className="text-lg text-red-800 font-semibold underline">
               hier.
@@ -63,7 +63,7 @@ return (
       </div>
       <div
         className={`w-[85%] grid grid-cols-4 max-xxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 max-xmd:w-full gap-4 mt-4`}
-         >
+      >
         {data?.slice(0, slice).map((act) => (
           <div className="w-full min-h-full rounded-t-2xl" key={act.id}>
             <div className="calendar_item w-full h-full bg-white rounded-t-2xl bg-gradient-to-t from-stone-300 to-white flex flex-col justify-between relative">
@@ -73,7 +73,7 @@ return (
                 </span>
               </div>
 
-              <div className="h-[110px] flex flex-col gap-2 pl-4">
+              <div className="h-[110px] flex flex-col gap-2 pl-4 mb-6">
                 <div className="w-full mt-2">
                   <span className="font-semibold">Start : </span>
                   {new Date(act.starting_date).toLocaleDateString("nl-NL", {
@@ -90,6 +90,10 @@ return (
                   {" "}
                   <span className="font-semibold">O.l.v :</span> {act.led_by}
                 </div>
+                <div className="w-full">
+                  {" "}
+                  <span className="font-semibold">Kenmerk :</span> {act.itemId}
+                </div>
               </div>
 
               <div className="w-full flex justify-center items-center mt-4 ">
@@ -100,7 +104,7 @@ return (
                 />
               </div>
 
-              <div className="bg-gradient-to-t from-slate-950 to-slate-900/40 flex justify-center py-6 absolute bottom-0 left-0 w-full">
+              <div className="bg-gradient-to-t from-black to-slate-900/40 flex justify-center items-center h-[18%] absolute bottom-0 left-0 w-full">
                 <Link to={`/calendaritem/${act.id}`}>
                   <button
                     type="button"
@@ -110,7 +114,6 @@ return (
                   </button>
                 </Link>
               </div>
-              <div className="bg-slate-600 h-4"></div>
             </div>
           </div>
         ))}

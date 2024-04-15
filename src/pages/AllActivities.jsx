@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { upcomingActivities} from "../utils/filterByDate"
-import { useLoaderData, useNavigation } from "react-router-dom";
-import BackButton from "../components/BackButton";
+import { useLoaderData } from "react-router-dom";
 
 
 export const loader = () => {
@@ -32,7 +31,7 @@ const AllActivities = () => {
                   </span>
                 </div>
 
-                <div className="h-[110px] flex flex-col gap-2 pl-4">
+                <div className="h-[110px] flex flex-col gap-2 pl-4 mb-6">
                   <div className="w-full mt-2">
                     <span className="font-semibold">Start : </span>
                     {new Date(act.starting_date).toLocaleDateString("nl-NL", {
@@ -48,6 +47,11 @@ const AllActivities = () => {
                   <div className="w-full">
                     {" "}
                     <span className="font-semibold">O.l.v :</span> {act.led_by}
+                  </div>
+                  <div className="w-full">
+                    {" "}
+                    <span className="font-semibold">Kenmerk :</span>{" "}
+                    {act.itemId}
                   </div>
                 </div>
 
@@ -69,18 +73,17 @@ const AllActivities = () => {
                     </button>
                   </Link>
                 </div>
-                <div className="bg-slate-600 h-4"></div>
               </div>
             </div>
           ))}
         </div>
 
         <div className="w-full flex justify-center mt-16">
-          <Link to="/">
+          <Link to="/" >
             <button
               type="button"
               className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
-             >
+            >
               Terug
             </button>
           </Link>

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Menu = ({ color, style, border }) => {
   return (
     <div
-      className={`menu flex justify-center items-center text-lg font-semibold gap-8 text-${color} ${style}`}
+      className={`menu flex justify-center items-center text-lg font-semibold gap-6 text-${color} ${style}`}
     >
       <div className="flex justify-center">
         <NavLink

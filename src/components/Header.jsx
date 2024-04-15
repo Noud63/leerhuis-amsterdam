@@ -19,17 +19,17 @@ const Header = ({showMenuOverlay}) => {
      <div
        className={`${
          scrolled ? "-translate-y-full" : "translate-y-0"
-       }  header fixed top-0 w-full flex flex-col justify-between text-black  z-10 border-b border-neutral-800/70  
+       }  header fixed top-0 w-full max-w-[2000px]  flex flex-col justify-between text-black  z-10 border-b border-neutral-800/40  
         bg-gradient-to-b from-yellow-800/0 transform ease-in-out duration-500`}
      >
        <div
-         className="w-full h-[30px] flex justify-center items-center text-sm text-white/90 tracking-wider
+         className="w-full max-w-[2000px] h-[30px] flex justify-center items-center text-sm text-white/90 tracking-wider
          bg-gradient-to-r from-black via-yellow-800 to-black"
        >
          <span>Leerhuis Amsterdam - voor zinvol samenleven</span>
        </div>
 
-       <div className="h-full flex flex-row justify-between">
+       <div className="w-full h-full max-w-[2000px] flex flex-row justify-between">
          <Link to="/">
            <div className="h-full flex flex-row gap-6 max-xxsm:gap-2 py-4 pl-8 max-xxsm:pl-4 max-xxxsm:pl-2">
              <img src={logo} alt="logo" className="w-[220px] h-[80px]" />

@@ -17,6 +17,7 @@ import Subscribe from './pages/Subscribe';
 import AllActivitiesLayout from './pages/AllActivitiesLayout';
 import SubscriptionRules from './pages/SubscriptionRules';
 import ErrorPage from './pages/ErrorPage';
+import { Outlet } from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
@@ -53,8 +54,17 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/subscriptionRules",
-        element: <SubscriptionRules />,
+        element: <Outlet/>,
+        children: [
+          {
+            path: "/subscriptionrules",
+            element: <SubscriptionRules />,
+          },
+          {
+            path: "subscriptionrules/contactform",
+            element: <ContactForm />,
+          },
+        ],
       },
       {
         path: "/overonspage",
@@ -72,7 +82,6 @@ const router = createBrowserRouter([
         path: "/calendaritem/:calendaritem_id/subscribe/:id/contactform",
         element: <ContactForm />,
       },
-
       {
         path: "/contactform",
         element: <ContactForm />,

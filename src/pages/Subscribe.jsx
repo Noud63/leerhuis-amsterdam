@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import ringbinder from "../assets/images/ringbinder.png";
 import { Link, useNavigate, useLocation, useParams } from "react-router-dom";
 import BackButton from "../components/BackButton";
-import at from "../assets/icons/at.png"
+import pen from "../assets/icons/pen.png"
 
 const serviceId = import.meta.env.VITE_REACT_APP_LA_SERVICE_ID;
 const templateId = import.meta.env.VITE_REACT_APP_LA_INSCHRIJVING_TEMPLATE_ID;
@@ -20,6 +20,7 @@ const Subscribe = () => {
   const { calendaritem_id, id } = useParams();
 
   const url = useLocation().pathname;
+  
 
   const navigate = useNavigate();
 
@@ -66,14 +67,14 @@ const Subscribe = () => {
             className="max-sm:w-[30px] max-sm:h-auto"
           />
         </div>
-        <div className="w-full flex flex-col items-center justify-center text-black pb-2">
+        <div className="w-full flex flex-col items-center justify-center text-black pb-4">
           <div
             className="w-full h-[100px] text-2xl font-semibold text-white flex justify-center items-center
-          bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 relative tracking-wider"
+          bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 relative tracking-wider overflow-hidden"
           >
-            Inschrijving
-            <div className="absolute flex">
-              <img src={at} alt="" className="w-[80px] opacity-30" />
+            <span className="subscribe z-10">Inschrijving</span>
+            <div className="absolute -right-12 bottom-4 max-xxsm:-right-20">
+              <img src={pen} alt="" className="w-[180px] opacity-80" />
             </div>
           </div>
           <div className="w-full text-[16px] justify-start my-4">
@@ -97,6 +98,8 @@ const Subscribe = () => {
               NL&nbsp;32&nbsp;INGB&nbsp;0000449815 t.n.v. PROTESTANTSE GEMEENTE
               IN ZAKE T&E
             </span>
+            <br />
+            <span>Vermeld hierbij het kenmerk van de activiteit.</span>
           </div>
         </div>
 

@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 
 const BackButton = (url) => {
@@ -13,6 +13,9 @@ const BackButton = (url) => {
     if (
       url.url.split("/").length === 2 || url.url.split("/").length === 3) {
       setPath("/");
+    }
+    if (url.url === '/subscriptionrules/contactform') {
+      setPath("/subscriptionrules");
     }
 
     if (url.url === `/allactivities/calendaritem/${id}`) {

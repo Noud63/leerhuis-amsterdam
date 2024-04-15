@@ -69,8 +69,8 @@ const ContactForm = () => {
         </div>
         <div
           className="contact_text w-full h-[100px] flex text-2xl text-white font-semibold justify-center items-center 
-        bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 relative"
-        >
+          bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 relative"
+          >
           Laat een bericht achter
           <div className="absolute flex">
             <img src={at} alt="" className="w-[80px] opacity-30" />

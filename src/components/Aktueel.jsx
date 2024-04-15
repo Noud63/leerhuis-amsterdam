@@ -12,8 +12,8 @@ const Aktueel = () => {
 const now = new Date().getTime();
 
   return (
-    <div className="w-full flex flex-col px-8 mt-20 max-xxsm:px-2">
-      <div className="w-full flex mb-6 border-b border-black pb-2 mt-0">
+    <div className="w-full flex flex-col px-8 mt-10 max-xxsm:px-2">
+      <div className="w-full flex mb-6 border-b border-black pb-2">
         <span className="text-2xl font-semibold  text-black"># Actueel</span>
       </div>
 
@@ -71,11 +71,10 @@ const now = new Date().getTime();
                       type="button"
                       className="w-[150px] flex justify-center items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full p-2"
                     >
-                      info
+                      Lees meer
                     </button>
                   </Link>
                 </div>
-                <div className="bg-slate-600 h-4"></div>
               </div>
             ))}
           </div>
@@ -84,7 +83,7 @@ const now = new Date().getTime();
             <Link to="/allactivities">
               <button
                 type="button"
-                className="btn w-[150px] rounded-full justify-center items-center text-[#000] border-2 border-gray-400 gap-2 pb-1 leading-8 pt-1 text-md font-semibold"
+                className="btn w-[150px] rounded-full justify-center items-center text-[#000] border-2 border-black gap-2 pb-1 leading-8 pt-1 text-md font-semibold"
               >
                 Alle activiteiten
               </button>

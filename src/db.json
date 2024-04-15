@@ -2,17 +2,14 @@
     [
       {
         "id": 0,
-        "title": [
-          "Groen geloven",
-          ", Inspiratiemiddag"
-        ],
+        "title": ["Groen geloven", ", Inspiratiemiddag"],
         "title_long": [
           "Groen geloven",
           ", Inspiratiemiddag  Groen Geloven in Mokum",
           "Hoop voor de aarde; een inspiratiemiddag voor kerk en stad"
         ],
         "date": { "day": "Zaterdag", "dates": ["2024-06-01"] },
-        "time": "12:30 - 17:30",
+        "time": "12:30 - 17:30 uur",
         "contribution": "10 euro",
         "description": [
           "Het klimaat verandert. Wat kun je eraan doen? Je voelt je machteloos, verlamd, en raakt",
@@ -42,27 +39,27 @@
           " huisgenoten, je sportclub, je zangkoor. En dan kun je op 6 juni ook nog je stem uitbrengen",
           " voor de Europese verkiezingen.\n\n",
           "PROGRAMMA\n\n",
-          "12.00 inloop.\n\n",
-          "12.30 opening door Susanne Heering, Programmamaker, eindredacteur, moderator,",
+          "12.00 - Inloop.\n\n",
+          "12.30 - Opening door Susanne Heering, Programmamaker, eindredacteur, moderator,",
           " presentator AT5, NHMedia, Pakhuis de Zwijger, e.a. Zij wil “Dichtbij de gewone mens,",
           " maatschappelijke kritische vragen stellen onder de noemer: waar zijn we nu toch met zijn ",
           "allen mee bezig.”\n\n",
-          "12.45 Remco Daalder, bioloog en schrijver. Hij is een scherp formulerende ras ",
+          "12.45 - Remco Daalder, bioloog en schrijver. Hij is een scherp formulerende ras ",
           "Amsterdammer die zonder veel omhaal duidelijk vertelde hoe het er voor staat met de ",
           "natuur in de stad. Daalder werkte als beheerder in het Amsterdamse Bos en als stadsbioloog ",
           "bij de gemeente Amsterdam. Met het boek ‘De Gierzwaluw’ won hij de Jan Wolkers Prijs",
           "voor het beste natuurboek van 2014. Zijn columns over stadsnatuur die hij drie jaar lang ",
           "schreef voor NRC Handelsblad zijn gebundeld in zijn nieuwste boek ‘Stadse Beestjes’.\n\n",
-          "13.30 Carola Dahmen, eco-feministisch theoloog en predikant. Meer informatie volgt.\n\n",
-          "14.15 pauze.\n\n",
-          "14.30 Eelco Schuijl, architect, aanjager duurzame transformatie bij de Protestantse Kerk ",
+          "13.30 - Carola Dahmen, eco-feministisch theoloog en predikant. Meer informatie volgt.\n\n",
+          "14.15 - Pauze.\n\n",
+          "14.30 - Eelco Schuijl, architect, aanjager duurzame transformatie bij de Protestantse Kerk ",
           "Amsterdam. Zijn missie is helder: “het behouden van het religieus erfgoed door middel van ",
           "innovatieve duurzame transformatie. Samen een groenere toekomst voor de monumenten ",
           "en een duurzame erfenis nalaten voor de generaties.”\n\n",
-          "15.00 Pitches en workshops. Programma wordt z.s.m. bekend gemaakt.\n\n",
-          "17.00 Afsluitende viering, o.l.v. Greteke de Vries, coördinator Leerhuis Amsterdam voor ",
-           "zinvol samenleven en predikant Muiderkerk.\n\n",
-           "Informatie: Greteke de Vries, leerhuisamsterdam@gmail.com of\n",
+          "15.00 - Pitches en workshops. Programma wordt z.s.m. bekend gemaakt.\n\n",
+          "17.00 - Afsluitende viering, o.l.v. Greteke de Vries, coördinator Leerhuis Amsterdam voor ",
+          "zinvol samenleven en predikant Muiderkerk.\n\n",
+          "Informatie: Greteke de Vries, leerhuisamsterdam@gmail.com of\n",
           "Janneke Wolters, info@protestantsamsterdam.nl\n",
           "Websites: www.leerhuisamsterdam.nl en www.protestantsamsterdam.nl\n",
           "Opgave is mogelijk vanaf 15 april.\n",
@@ -91,7 +88,7 @@
           "Kunnen we in de kerk de schepping nog vieren?\n",
           "Hoe ziet zo'n gemeenschap waar duurzaamheid centraal staat eruit?"
         ],
-        "led_by": "Annemarie van Wijngaarden en Ditske Tanja",
+        "led_by": "A van Wijngaarden en Ditske Tanja",
         "image": "groengeloven3.jpg",
         "starting_date": "2024-04-10",
         "closing_date": "2024-06-25",
@@ -110,7 +107,7 @@
           "Opnieuw een leesproject samen met de Koningskerk waar zwart en wit spreekt over ons gedeeld slavernij/koloniaal verleden en de nawerking daarvan.\n",
           "We lezen en bespreken dit keer het boekje Hindostaanse migratiegeschiedenis in kort bestek (1873-2015).\n",
           "We verwachten dat deelnemers het boekje kopen en tijdens de eerste bijeenkomst de eerste hoofdstukken hebben gelezen.\n\n",
-          "Plaats: de eerste en derde keer in de Koningskerk, Ostwaldstraat 1 (Watergraafsmeer), de tweede en de vierde keer in de Muiderkerk.\n\n"
+          "Plaats: de eerste en derde keer in de Koningskerk, Ostwaldstraat 1 (Watergraafsmeer), de tweede en de vierde keer in de Muiderkerk.\n"
         ],
         "led_by": "Clifton Walker en Greteke de Vries",
         "image": "zwartwit.jpg",
@@ -118,10 +115,9 @@
         "closing_date": "2024-06-25",
         "itemId": "LA-AC03"
       },
-
       {
         "id": 3,
-        "title": "De zin van Sabbat",
+        "title": "De Zin van Sabbat",
         "date": {
           "day": "Dinsdag",
           "dates": ["2024-05-07", "2024-05-21", "2024-06-04", "2024-06-11"]
@@ -129,15 +125,15 @@
         "time": "20:00 - 22:00 uur",
         "contribution": "5 euro per bijeenkomst (voor wie de eigen bijdrage te hoog is: laat het weten aan de gespreksleider of via het emailadres).",
         "description": [
-          "Hoe vinden we een ritme van activiteiten en rust in tijden van persoonlijke overbelasting door onze 24/7 economie en grenzeloze eisen aan onszelf?",
-          " Sabbat - als oefening in dankbaarheid en vertrouwen. Als verzet tegen verslaving. Als rust voor alle leven. Als schuilplaats van de liefde.",
-          " Op vier dinsdagavonden zoeken we een gesprek over sabbat aan de hand van inspirerende teksten uit de joodse en christelijke traditie en van",
-          " hedendaagse spirituele, sociale en ecologische denkers."
+          "Opnieuw een leesproject samen met de Koningskerk waar zwart en wit spreekt over ons gedeeld slavernij/koloniaal verleden en de nawerking daarvan.\n",
+          "We lezen en bespreken dit keer het boekje Hindostaanse migratiegeschiedenis in kort bestek (1873-2015).\n",
+          "We verwachten dat deelnemers het boekje kopen en tijdens de eerste bijeenkomst de eerste hoofdstukken hebben gelezen.\n\n",
+          "Plaats: de eerste en derde keer in de Koningskerk, Ostwaldstraat 1 (Watergraafsmeer), de tweede en de vierde keer in de Muiderkerk.\n"
         ],
         "led_by": "Johan Visser en Gerben van Manen",
         "image": "sabbat.png",
         "starting_date": "2024-05-07",
-        "closing_date": "2024-06-011",
+        "closing_date": "2024-06-11",
         "itemId": "LA-AC04"
       },
       {
@@ -226,10 +222,12 @@
         },
         "time": "14:00 - 16:00 uur",
         "contribution": "5 euro per bijeenkomst (voor wie de eigen bijdrage te hoog is: laat het weten aan de gespreksleider of via het emailadres).",
-        "description": ["Zinvol samenleven heeft onder meer te maken met verantwoordelijkheid dragen voor het leven van onszelf en anderen, ook met het oog op de volgende generaties.\n",
-                        "Hiervoor ontdekken wij, mensen, in onze families van herkomst onze persoonlijke mogelijkheden, obstakels en bronnen van hoop, die doorwerken in ons maatschappelijk leven.\n",
-                        "Na 'Dat beloof ik' van Roxane van Ieperen lezen en bespreken we opnieuw een literair werk waarin de auteur de eigen jeugd onderzoekt:\n",
-                         "'Naar zachtheid en een warm omhelzen' van Adriaan van Dis"],
+        "description": [
+          "Zinvol samenleven heeft onder meer te maken met verantwoordelijkheid dragen voor het leven van onszelf en anderen, ook met het oog op de volgende generaties.\n",
+          "Hiervoor ontdekken wij, mensen, in onze families van herkomst onze persoonlijke mogelijkheden, obstakels en bronnen van hoop, die doorwerken in ons maatschappelijk leven.\n",
+          "Na 'Dat beloof ik' van Roxane van Ieperen lezen en bespreken we opnieuw een literair werk waarin de auteur de eigen jeugd onderzoekt:\n",
+          "'Naar zachtheid en een warm omhelzen' van Adriaan van Dis"
+        ],
         "led_by": "Hanneke Meulink-Korf en Greteke de Vries",
         "image": "vandis.jpg",
         "starting_date": "2024-03-04",
@@ -251,13 +249,14 @@
         },
         "time": "09:00 - 10:00 uur",
         "contribution": "5 euro per bijeenkomst (voor wie de eigen bijdrage te hoog is: laat het weten aan de gespreksleider of via het emailadres).",
-        "description": ["In een online leesgroep duiken we maandelijks in de mystieke en maatschappelijke bevindingen van theologisch student Kornelis Heiko Miskotte (1894 - 1976).\n",
-                        "Na 'Uit het dagboek van een student' lezen en bespreken we andere teksten uit deel 14 van zijn 'Verzameld werk, Mystiek en bevinding': met het oog op onze eigen tijd en ervaring.\n",
-                        "De groep is voor wie het steeds weer actuele werk van Miskotte al waardeert én voor wie het nog niet of nauwelijks kent.\n",
-                        "In dit project werkt Leerhuis Amsterdam samen met de Miskotte Stichting en De Nieuwe Bijbelschool.\n\n",
-                        "Informatie en aanmelding: gg_vanmanen@hotmail.com.\n", 
-                        "Vanaf dit adres wordt maandelijks een link en een digitale tekst toegezonden.\n\n"
-                      ],
+        "description": [
+          "In een online leesgroep duiken we maandelijks in de mystieke en maatschappelijke bevindingen van theologisch student Kornelis Heiko Miskotte (1894 - 1976).\n",
+          "Na 'Uit het dagboek van een student' lezen en bespreken we andere teksten uit deel 14 van zijn 'Verzameld werk, Mystiek en bevinding': met het oog op onze eigen tijd en ervaring.\n",
+          "De groep is voor wie het steeds weer actuele werk van Miskotte al waardeert én voor wie het nog niet of nauwelijks kent.\n",
+          "In dit project werkt Leerhuis Amsterdam samen met de Miskotte Stichting en De Nieuwe Bijbelschool.\n\n",
+          "Informatie en aanmelding: gg_vanmanen@hotmail.com.\n",
+          "Vanaf dit adres wordt maandelijks een link en een digitale tekst toegezonden.\n\n"
+        ],
         "led_by": "Willem M Dekker en Gerben van Manen",
         "image": "leesgroep_miskotte.jpg",
         "starting_date": "2024-01-10",
@@ -273,9 +272,11 @@
         },
         "time": "15:00 - 17:00 uur",
         "contribution": "5 euro per bijeenkomst (voor wie de eigen bijdrage te hoog is: laat het weten aan de gespreksleider of via het emailadres).",
-        "description": ["Uitgangspunt is het boek van de palestijnse bevrijdingstheoloog Munther Isaac.\n",
-                        "Zijn boek 'The Other Side of the Wall - A Palestinian Christian Narrative of Lament and Hope' is vertaald in het Nederlands.\n",
-                        "In het blad Volzin nr 11 van november 2023 staat een interview met Munther Isaac"],
+        "description": [
+          "Uitgangspunt is het boek van de palestijnse bevrijdingstheoloog Munther Isaac.\n",
+          "Zijn boek 'The Other Side of the Wall - A Palestinian Christian Narrative of Lament and Hope' is vertaald in het Nederlands.\n",
+          "In het blad Volzin nr 11 van november 2023 staat een interview met Munther Isaac"
+        ],
         "led_by": "Remco van Mulligen",
         "image": "palchrist.jpg",
         "starting_date": "2024-02-03",
