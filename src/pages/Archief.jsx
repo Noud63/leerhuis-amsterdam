@@ -2,7 +2,7 @@ import React from 'react'
 import BackButton from '../components/BackButton';
 import {filteredExpiredActivities} from "../utils/filterByDate"
 import { useLoaderData } from "react-router-dom";
-import { Link, useLocation, useNavigation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export const archiveLoader = () => {
      return filteredExpiredActivities;
@@ -11,6 +11,7 @@ export const archiveLoader = () => {
 const Archief = () => {
 
   const data = useLoaderData();
+
  const url = useLocation().pathname;
  
   return (
@@ -27,7 +28,7 @@ const Archief = () => {
           <div className="w-full max-w-full flex flex-col justify-center flex-wrap ">
             {data?.map((act) => (
               <div
-                className="actueel flex flex-col rounded-t-lg mt-8 bg-gradient-to-t from-stone-400 to-white relative "
+                className="actueel h-auto flex flex-col rounded-t-lg mt-8 bg-gradient-to-t from-stone-400 to-white relative "
                 key={act.id}
                  >
                 <div className="flex flex-row py-3 px-3 text-black items-center">

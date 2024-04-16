@@ -1,6 +1,11 @@
 import React from "react";
 import BackButton from "../components/BackButton";
+import { filteredByWeek } from "../utils/filterByDate";
 import { Link, useLoaderData, useLocation } from "react-router-dom";
+
+export const currentLoader = () => {
+  return filteredByWeek;
+};
 
 
 const Aktueel = () => {

@@ -20,15 +20,15 @@ const showMenuOverlay = () => {
 
 return (
   <div className="w-full max-w-[2000px] mx-auto relative">
-    
     <div className="w-full">
       <div className="fixed top-0 w-full max-w-[2000px] min-h-screen bg-[url('./assets/images/map_adam2.jpg')] bg-no-repeat bg-top bg-cover -z-[999] opacity-5" />
       <Header showMenuOverlay={showMenuOverlay} />
       <div className="socials h-[30px] flex-row justify-center items-center gap-2 hidden">
         <Socials />
       </div>
+      
+        <Outlet />
 
-      <Outlet />
       <Footer />
     </div>
 

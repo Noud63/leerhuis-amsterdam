@@ -4,7 +4,7 @@ import { upcomingActivities} from "../utils/filterByDate"
 import { useLoaderData } from "react-router-dom";
 
 
-export const loader = () => {
+export const allActivitiesLoader = () => {
   return upcomingActivities;
 };
 
@@ -93,4 +93,4 @@ const AllActivities = () => {
   );
 };
 
-export default AllActivities;
+export {AllActivities}

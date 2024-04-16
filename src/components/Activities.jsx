@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import { upcomingActivities } from '../utils/filterByDate';
 import { useLoaderData } from "react-router-dom";
-import { Suspense } from 'react';
 
 
 export const rootLoader = () => {
@@ -36,7 +35,6 @@ const Activities = () => {
        }
 }, [width]);
 
-     
 return (
   <div className="w-[full] flex flex-row m-auto px-8 mt-[180px] text-black max-xxsm:px-4 max-xxxsm:px-2 pb-8">
     <div className="w-full flex flex-1 justify-center items-center flex-col">

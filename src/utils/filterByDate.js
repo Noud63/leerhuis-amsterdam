@@ -7,43 +7,51 @@ const nextWeek = now + 604800000;
 export const filteredExpiredActivities = [];
 
 //Filtered activities that are upcoming
-export const upcomingActivities = []
+export const upcomingActivities = [];
 
 //Filter activities
 const filterActivitiesInThePast = () => {
- 
-activities.activities.forEach((act) => {
-      if(new Date(act.closing_date).getTime() < now){
-        filteredExpiredActivities.push(act)
-      }
-         if (new Date(act.closing_date).getTime() >= now) {
-           upcomingActivities.push(act);
-         }
-       });
+  activities.activities.forEach((act) => {
+    if (new Date(act.closing_date).getTime() < now) {
+      filteredExpiredActivities.push(act);
+    }
+    if (new Date(act.closing_date).getTime() >= now) {
+      upcomingActivities.push(act);
+    }
+  });
 };
 
 filterActivitiesInThePast();
 
 
-// Announced only if there are no activities this week
-export const firstActivities = []
+// First activity after a week, announced only if there are no activities this week
+const firstActivities = [];
 
 const firstActivityAfterAWeek = () => {
   activities.activities.forEach((act) => {
-    if (
-      (new Date(act.starting_date).getTime() < nextWeek + 604800000) &&
-      (new Date(act.starting_date).getTime() >= nextWeek)
-    ) {
-      firstActivities.push(act);
-    }
+    const dates = act.date.dates;
+
+    dates.forEach((date) => {
+      if (
+        new Date(date).getTime() < nextWeek + 604800000 &&
+        new Date(date).getTime() >= nextWeek
+      ) {
+        firstActivities.push(act);
+      }
+    });
   });
 };
 
 firstActivityAfterAWeek();
 
+export const firstAfterAWeek = firstActivities.toSorted(
+  (a, b) => new Date(a.date) - new Date(b.date)
+);
+//console.log(firstAfterAWeek[0]);
+
+
 
 //Filter activities by coming week
-
 const filteredActivitiesByWeek = [];
 
 const filterByDate = () => {
@@ -51,9 +59,9 @@ const filterByDate = () => {
     const dates = act.date.dates;
 
     dates.forEach((date) => {
-     
       if (
-        (new Date(date).getTime() >= now && new Date(date).getTime() < nextWeek)
+        new Date(date).getTime() >= now &&
+        new Date(date).getTime() < nextWeek
       ) {
         filteredActivitiesByWeek.push({
           id: act.id,
@@ -74,6 +82,8 @@ export const filteredByWeek = filteredActivitiesByWeek.toSorted(
 
 
 
+
+
 // ---------------- Get the current date --------------- //
 // const today = new Date();
 
@@ -85,7 +95,7 @@ export const filteredByWeek = filteredActivitiesByWeek.toSorted(
 // const activitiesWithinWeek = activities.activities.filter(activity => {
 //     const activityDates = activity.date.dates.map(date => new Date(date));
 //     console.log(activityDates)
-    
+
 //     return activityDates.some(date => date >= today && date <= oneWeekFromNow);
 // });
 
@@ -115,7 +125,3 @@ export const filteredByWeek = filteredActivitiesByWeek.toSorted(
 // });
 
 // //Output the separated relevant dates
-
-
-
-

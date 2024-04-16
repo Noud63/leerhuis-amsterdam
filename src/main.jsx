@@ -7,17 +7,18 @@ import Activities, { rootLoader } from "./components/Activities"
 import Archief, {archiveLoader} from "./pages/Archief"
 import Root from './components/Root';
 import CalendarItem from './pages/CalendarItem';
-import AllActivities, { loader } from './pages/AllActivities';
+//import {AllActivities, allActivitiesLoader } from './pages/AllActivities';
 import OveronsPage from "./pages/OveronsPage";
 import ContactForm from './pages/ContactForm';
 import ContactPage from './pages/ContactPage';
-import Aktueel, {currentLoader} from './components/Aktueel';
-import AktueelPage from './pages/AktueelPage';
+import Aktueel from './components/Aktueel';
+import AktueelPage, { currentLoader } from "./pages/AktueelPage";
 import Subscribe from './pages/Subscribe';
 import AllActivitiesLayout from './pages/AllActivitiesLayout';
 import SubscriptionRules from './pages/SubscriptionRules';
 import ErrorPage from './pages/ErrorPage';
 import { Outlet } from 'react-router-dom';
+
 
 const router = createBrowserRouter([
   {
@@ -35,8 +36,15 @@ const router = createBrowserRouter([
         children: [
           {
             path: "/allactivities",
-            loader: loader,
-            element: <AllActivities />,
+            async lazy() {
+              let { AllActivities, allActivitiesLoader } = await import(
+                "./pages/AllActivities"
+              );
+              return {
+                Component: AllActivities,
+                loader: allActivitiesLoader,
+              };
+            },
           },
           {
             path: "/allactivities/calendaritem/:calendaritem_id",
@@ -54,7 +62,7 @@ const router = createBrowserRouter([
       },
 
       {
-        element: <Outlet/>,
+        element: <Outlet />,
         children: [
           {
             path: "/subscriptionrules",
@@ -110,7 +118,7 @@ const router = createBrowserRouter([
       {
         path: "/archief",
         loader: archiveLoader,
-        element: <Archief />,
+        element: <Archief />
       },
       {
         path: "/archief/calendarItem/:calendaritem_id",

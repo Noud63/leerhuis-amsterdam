@@ -3,10 +3,6 @@ import { filteredByWeek } from "../utils/filterByDate";
 import { Link } from "react-router-dom";
 
 
-export const currentLoader = () => {
-  return filteredByWeek;
-};
-
 const Aktueel = () => {
   
 const now = new Date().getTime();
