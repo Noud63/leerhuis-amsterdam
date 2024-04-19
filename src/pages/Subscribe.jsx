@@ -18,6 +18,7 @@ const Subscribe = () => {
   const [message, setMessage] = useState("");
 
   const { calendaritem_id, id } = useParams();
+  console.log(id)
 
   const url = useLocation().pathname;
   
@@ -77,30 +78,36 @@ const Subscribe = () => {
               <img src={pen} alt="" className="w-[180px] opacity-80" />
             </div>
           </div>
-          <div className="w-full text-[16px] justify-start my-4">
-            <span className="tracking-wide ">
-              Iedere cursusavond kost 5 euro, tenzij anders vermeld.
+          {id !== "LA-AC01" ? (
+            <div className="w-full text-[16px] justify-start my-4">
+              <span className="tracking-wide ">
+                Iedere cursusavond kost 5 euro, tenzij anders vermeld.
+                <br />
+                zoomgroepen zijn gratis. <br />
+                Voor wie de eigen bijdragen te hoog is, laat het ons weten,
+                stuur een{" "}
+                <Link to={`${url}/contactform`}>
+                  <span className="text-lg text-red-800 font-semibold underline">
+                    mail.
+                  </span>
+                </Link>
+                <br />
+                Betalen kan per bank. Maak €5,- per cursusavond over op
+                rekeningnummer:
+                <br />
+              </span>
+              <span className="font-semibold">
+                NL&nbsp;32&nbsp;INGB&nbsp;0000449815 t.n.v. PROTESTANTSE
+                GEMEENTE IN ZAKE T&E
+              </span>
               <br />
-              zoomgroepen zijn gratis. <br />
-              Voor wie de eigen bijdragen te hoog is, laat het ons weten, stuur
-              een{" "}
-              <Link to={`${url}/contactform`}>
-                <span className="text-lg text-red-800 font-semibold underline">
-                  mail.
-                </span>
-              </Link>
-              <br />
-              Betalen kan per bank. Maak €5,- per cursusavond over op
-              rekeningnummer:
-              <br />
-            </span>
-            <span className="font-semibold">
-              NL&nbsp;32&nbsp;INGB&nbsp;0000449815 t.n.v. PROTESTANTSE GEMEENTE
-              IN ZAKE T&E
-            </span>
-            <br />
-            <span>Vermeld hierbij het kenmerk van de activiteit.</span>
-          </div>
+              <span>Vermeld hierbij het kenmerk van de activiteit.</span>
+            </div>
+          ) : (
+            <div className="w-full justify-start mt-8 mb-4">
+              <span className="font-semibold">Eigen bijdrage: </span>Vrijwillig
+            </div>
+          )}
         </div>
 
         <form

@@ -54,7 +54,7 @@ const Overons = () => {
 
                       <Link
                         to="/overonspage"
-                        className="flex justify-center max-xxl:mt-16 mb-8 z-10"
+                        className="flex justify-center mb-8 z-10"
                       >
                         <button
                           type="button"

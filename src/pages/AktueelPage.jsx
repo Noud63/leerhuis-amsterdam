@@ -71,7 +71,7 @@ const Aktueel = () => {
                     type="button"
                     className="w-[150px] flex justify-center items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full p-2"
                   >
-                    info
+                    Lees meer
                   </button>
                 </Link>
               </div>

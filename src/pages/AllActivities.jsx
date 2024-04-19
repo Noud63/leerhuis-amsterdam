@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 import { upcomingActivities} from "../utils/filterByDate"
 import { useLoaderData } from "react-router-dom";
 
-
 export const allActivitiesLoader = () => {
   return upcomingActivities;
 };
 
 const AllActivities = () => {
-  
-  const data = useLoaderData();
 
-  return (
+const data = useLoaderData();
+
+  
+return (
     <div className="w-full flex pt-[180px] flex-row">
       <div className="w-full flex justify-center items-center flex-col mb-40">
         <div className="w-[95%] flex flex-row mb-8 border-b border-black">

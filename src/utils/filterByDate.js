@@ -1,7 +1,9 @@
 import activities from "../db.json";
 
+
 const now = new Date().getTime() - 86400000;
 const nextWeek = now + 604800000;
+
 
 // Filtered activities that are expired
 export const filteredExpiredActivities = [];
@@ -22,6 +24,7 @@ const filterActivitiesInThePast = () => {
 };
 
 filterActivitiesInThePast();
+
 
 
 // First activity after a week, announced only if there are no activities this week
@@ -79,9 +82,6 @@ filterByDate();
 export const filteredByWeek = filteredActivitiesByWeek.toSorted(
   (a, b) => new Date(a.date) - new Date(b.date)
 );
-
-
-
 
 
 // ---------------- Get the current date --------------- //
