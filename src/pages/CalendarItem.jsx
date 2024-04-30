@@ -27,6 +27,8 @@ const CalendarItem = () => {
  const url = useLocation().pathname;
 
   const item = activities.activities[calendaritem_id];
+  const ID = item.itemId
+  
 
   const givenDate = new Date(item.closing_date).getTime();
   const now = new Date().getTime();
@@ -153,11 +155,12 @@ useEffect(()=> {
                 {!expired ? (
                   <span>
                     Voor betaalgegevens en het inschrijfformulier, klik
-                    hieronder op "Schrijf je in"
+                    hieronder op "Schrijf je in".
                   </span>
                 ) : (
                   ""
                 )}
+               
               </div>
               <div className="w-full px-4">
                 {" "}
@@ -167,7 +170,6 @@ useEffect(()=> {
               <Link
                 to={`subscribe/${item.itemId}`}
                 className="w-full flex justify-center mt-6 mb-4"
-                
               >
                 <button
                   type="button"
