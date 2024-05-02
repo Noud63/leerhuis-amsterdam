@@ -4,6 +4,7 @@ import ringbinder from "../assets/images/ringbinder.png";
 import { Link, useNavigate, useLocation, useParams } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import pen from "../assets/icons/pen.png"
+import qrcode from "../assets/icons/qrcode.png"
 
 const serviceId = import.meta.env.VITE_REACT_APP_LA_SERVICE_ID;
 const templateId = import.meta.env.VITE_REACT_APP_LA_INSCHRIJVING_TEMPLATE_ID;
@@ -105,7 +106,8 @@ const Subscribe = () => {
             </div>
           ) : (
             <div className="w-full justify-start mt-8 mb-4">
-              <span className="font-semibold">Eigen bijdrage: </span>Vrijwillig
+              <span className="font-semibold">Eigen bijdrage: </span>Vrijwillig (Scan QR-Code)
+              <div className="w-full justify-center"><img src={qrcode} alt="" className="w-[200px] mx-auto"/></div>
             </div>
           )}
         </div>

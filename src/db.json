@@ -9,7 +9,7 @@
           "Hoop voor de aarde; een inspiratiemiddag voor kerk en stad"
         ],
         "date": { "day": "Zaterdag", "dates": ["2024-06-01"] },
-        "time": "13:00 - 17:30 uur",
+        "time": "<span className='text-red'>13:00 - 17:30 uur</span>",
         "contribution": "Vrijwillige bijdrage.",
         "description": [
           "Het klimaat verandert. Wat kun je eraan doen? Je voelt je machteloos, verlamd, en raakt",
@@ -38,29 +38,91 @@
           "Want je gaat het samen doen: met je geloofsgemeenschap, je buurtgenoten, je vrienden, je",
           " huisgenoten, je sportclub, je zangkoor. En dan kun je op 6 juni ook nog je stem uitbrengen",
           " voor de Europese verkiezingen.\n\n",
+
           "PROGRAMMA\n\n",
+
           "- Inloop.\n\n",
+
           "- Opening door Susanne Heering, Programmamaker, eindredacteur, moderator,",
           " presentator AT5, NHMedia, Pakhuis de Zwijger, e.a. Zij wil “Dichtbij de gewone mens,",
-          " maatschappelijke kritische vragen stellen onder de noemer: waar zijn we nu toch met zijn ",
-          "allen mee bezig.”\n\n",
+          " maatschappelijke kritische vragen stellen onder de noemer: waar zijn we nu toch met zijn",
+          " allen mee bezig.”\n\n",
+
           "- Remco Daalder, bioloog en schrijver. Hij is een scherp formulerende ras ",
           "Amsterdammer die zonder veel omhaal duidelijk vertelde hoe het er voor staat met de ",
           "natuur in de stad. Daalder werkte als beheerder in het Amsterdamse Bos en als stadsbioloog ",
           "bij de gemeente Amsterdam. Met het boek ‘De Gierzwaluw’ won hij de Jan Wolkers Prijs",
           "voor het beste natuurboek van 2014. Zijn columns over stadsnatuur die hij drie jaar lang ",
           "schreef voor NRC Handelsblad zijn gebundeld in zijn nieuwste boek ‘Stadse Beestjes’.\n\n",
+
           "- Carola Dahmen, eco-feministisch theoloog en predikant.\n",
-          "'Ecologische bekering'.\n",
-          "Klimaatverandering, verlies aan biodiversiteit, milieuvervuiling, nucleair afval en bedreiging - voor wie naar wetenschappers luistert is het duidelijk dat wij mensen anders met de meer-dan-menselijke natuur moeten omgaan.\n",
-          "Maar welke taal en beelden uit de Schrift en de christelijke traditie kunnen daarbij helpen en wat is er theologisch te zeggen over een 'ecologische bekering'?\n",
-          "Carola Dahmen stelt voor dat een doordenking van de notie van de incarnatie, de 'vleeswording' van God als schepsel, theologisch deuren opent om te spreken over een ecologische bekering.\n\n",
+          "De wereld Gods lichaam?\n",
+          "Vanuit de ecologische  noodtoestand weten we dat we beter met de aarde moeten omgaan en moeten ophouden te denken dat het allemaal om ons mensen draait.\n",
+          "Dus: de mens minder centraal - maar hoe zit dat in het christendom? Heeft de mens als heerser of rentmeester van de schepping daarin niet een centrale plek gekregen?\n",
+          "Ecofeministische theologie reikt andere verhalen en andere Godsbeelden aan die meer nadruk leggen op de lichamelijkheid van God en de mens als onderdeel van de schepping.\n",
+          "Als de wereld Gods lichaam zou zijn en wij mensen net als de dieren en de planten onderdeel zijn van dat lichaam – zou dat niet een ander perspectief bieden op onze relatie met de aarde, met elkaar en met God?\n",
+          "Het ervaren van zo’n relatie zou een appèl kunnen worden op onze menselijke verantwoordelijkheid in deze ecologische crisis.\n\n", 
+
           "- Pauze.\n\n",
+
           "- Eelco Schuijl, architect, aanjager duurzame transformatie bij de Protestantse Kerk ",
           "Amsterdam. Zijn missie is helder: “het behouden van het religieus erfgoed door middel van ",
           "innovatieve duurzame transformatie. Samen een groenere toekomst voor de monumenten ",
           "en een duurzame erfenis nalaten voor de generaties.”\n\n",
-          "- Pitches en workshops. Programma wordt z.s.m. bekend gemaakt.\n\n",
+
+          "PARADE VAN PROFETISCHE PITCHES.\n", 
+          "Hoor, waar klimaatactivisten mee bezig zijn, hoe zij getob ombuigen naar meedoen aan de verandering die nodig is.\n",
+          "Na korte presentaties ontstaat een ‘heilige chaos’. Schuif aan bij wie je in gesprek wil, wissel van tafel, ontmoet andere deelnemers van deze dag, wissel uit, kom op ideeën, maak afspraken.\n",
+          "Je kunt, in plaats van wisselende contacten, ook meedoen met een langere activiteit: een mini-college, een wandeling, een creatieve verwerking van je zorgen en je hoop.\n\n",
+
+          "KLIMAATWAKE\n",
+          "Elske Scholte is de Coordinator en contactpersoon Klimaatwakes in Amsterdam.\n",
+          "De maandelijkse Klimaatwakes in Amsterdam willen een plek zijn om moed te vatten als je somber en mismoedig wordt over wat de aarde te wachten staat door de opwarming van de aarde. Bosbranden, overstromingen, uitsterven van planten en insecten die zich niet zo snel kunnen aanpassen aan de veranderingen in temperatuur.\n",
+          "In de Klimaatwakes laten we ons informeren door deskundigen, maar ook inspireren door ‘voeders van het hart’: iemand uit een religieuze traditie of vanuit de kunst.\n",
+          "We zijn niet-politiek- of religieusgebonden.\n",
+          "We komen samen in de Dominicuskerk om 20.00 uuur\n",
+          "Volgende Wakes op dinsdag 21 mei en dinsdag 18 juni",
+          "Op onze website zie je wie we zijn: www.klimaatwake-amsterdam.nl\n\n",
+
+          "FORK RANGER\n",
+          "Frank Holleman is oprichter van Fork Ranger, een organisatie die mensen met twee vragen helpt:\n",
+          "1. Wat kan ik doen aan de klimaatcrisis?\n",
+          "2. Wat zullen we vanavond gaan eten?\n",
+          "Samen met zijn mede Fork Ranger gebruikt Frank data en storytelling om te laten zien welke keuzes het meeste uitmaken en ze ontwikkelen makkelijke recepten om kennis in praktijk te brengen.\n\n", 
+
+          "GROOTOUDERS VOOR HET KLIMAAT\n",
+          "Dick van Elk over Grootouders voor het Klimaat. Deze grootouders kijken verder...hun perspectief is dat van hun kleinkinderen en hoe zij daar nù aan kunnen bijdragen.\n",
+          "De wereld van morgen (nu? al) vraagt om een andere 'huishouding'. De groei vinden we niet langer in de exclusieve financiële economie. De groei gaat naar een inclusieve ecologische economie!\n\n",
+
+          "ALTERNATIEVEN VOOR KERKELIJKE PRAKTIJKEN\n",
+          "…… breekt een lans voor alternatieven in onze kerken. Zijn de bloemen biologisch? Of doe maar liever géén bloemen? En de kaarsen die we branden, liever niet of van bijenwas?\n\n", 
+
+          "FEITEN OVER KLIMAATVERANDERING\n",
+          "Gerriete Kooi, bioloog, geeft een mini-college van een half uur over de zestien kantelpunten in het klimaatsysteem.\n",
+          "Hoe meer de aarde opwarmt, hoe groter de kans op snelle onomkeerbare veranderingen. Geen opwekkende boodschap. Wel een intense motivatie om alles in het werk te stellen om te grote veranderingen tegen te houden.\n\n",
+          
+          "VAN SCHULDGEVOEL EN SCHAAMTE NAAR HOOP EN INVLOED\n",
+          "Een creatieve verwerking en persoonlijke gesprekken.\n\n",
+
+          "GROENE MOSLIMS\n",
+          "Bijna zeker…. Het motto van de Groene Moslims is: Groen islamitisch leven. Bewust.\n", 
+          "Stichting Groene Moslims is een organisatie die moslims vanuit een religieuze visie op duurzame ontwikkeling wil betrekken bij oplossingen voor het klimaatprobleem en het armoedeprobleem.\n",
+          "Een van hun activiteiten is: wandelen.\n",
+          "Elke eerste zaterdag van de maand organiseren we een maandelijkse wandeling in een natuurgebied in Nederland. Iedereen is welkom bij deze wandeling: moslims en niet-moslims in al hun diversiteit.\n",
+          "Samen genieten we van de natuur en van de rust of juist de gezelligheid. Daarnaast organiseren we ook van tijd tot tijd thematische wandelingen. In deze wandelingen ligt een grotere nadruk op het reflecteren op de natuur als teken van God. Ook bij deze wandelingen is uiteraard iedereen welkom.\n",
+          "De wandeling van drie kwartier gaat deze zaterdag door het Oosterpark. Stadsecoloog Remco Daalder loopt mee.\n\n",
+
+          "KLIMAATROUW/KLIMAATHOOP\n",
+          "Steek een kaarsje aan en schrijf je zorgen in het schrift. Je kunt ook een voorbede vragen voor iets/iemand.\n\n",
+
+          "POSTERPRESENTATIES\n",
+          "Niet iedereen kan een pitch houden of een workshop geven.\n",
+          "Maar misschien wil je wel een poster maken waarop je vertelt wat je bezig houdt? Dat kan, neem maar mee.\n\n",
+
+          "EIGEN MATERIAAL\n",
+          "Wil je jouw organisatie onder de aandacht brengen, jouw activiteit promoten? Je kunt materiaal meenemen, we zullen daarvoor een ‘actietafel’ klaar zetten.\n",
+          "(De wanden van de kerk mogen niet beplakt worden, hou daar rekening mee)\n\n",
+
           "- Afsluitende viering, o.l.v. Greteke de Vries, coördinator Leerhuis Amsterdam voor ",
           "zinvol samenleven en predikant Muiderkerk.\n\n",
           "Informatie: Greteke de Vries, leerhuisamsterdam@gmail.com of\n",
