@@ -22,7 +22,7 @@ return (
           </span>
         </div>
 
-        <div className="w-[85%] grid grid-cols-4 max-xxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8 max-xxxsm:w-[95%]">
+        <div className="w-[85%] grid grid-cols-4 max-maxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8 max-xxxsm:w-[95%]">
           {data?.map((act) => (
            <Activity key={act.id} act={act}/>
           ))}

@@ -2,14 +2,14 @@
     [
       {
         "id": 0,
-        "title": ["Groen geloven", ", Inspiratiemiddag"],
+        "title": "Groen geloven, Inspiratiemiddag",
         "title_long": [
           "Groen geloven",
           ", Inspiratiemiddag  Groen Geloven in Mokum",
           "Hoop voor de aarde; een inspiratiemiddag voor kerk en stad"
         ],
         "date": { "day": "Zaterdag", "dates": ["2024-06-01"] },
-        "time": "<span className='text-red'>13:00 - 17:30 uur</span>",
+        "time": "13:00 - 17:30 uur",
         "contribution": "Vrijwillige bijdrage.",
         "description": [
           "Het klimaat verandert. Wat kun je eraan doen? Je voelt je machteloos, verlamd, en raakt",
@@ -82,23 +82,23 @@
           "We zijn niet-politiek- of religieusgebonden.\n",
           "We komen samen in de Dominicuskerk om 20.00 uuur\n",
           "Volgende Wakes op dinsdag 21 mei en dinsdag 18 juni",
-          "Op onze website zie je wie we zijn: www.klimaatwake-amsterdam.nl\n\n",
+          "Op onze website zie je wie we zijn: https://www.klimaatwake-amsterdam.nl\n\n",
 
           "FORK RANGER\n",
-          "Frank Holleman is oprichter van Fork Ranger, een organisatie die mensen met twee vragen helpt:\n",
+          "Frank Holleman is oprichter van Fork Ranger (https://www.forkranger.com), een organisatie die mensen met twee vragen helpt:\n",
           "1. Wat kan ik doen aan de klimaatcrisis?\n",
           "2. Wat zullen we vanavond gaan eten?\n",
           "Samen met zijn mede Fork Ranger gebruikt Frank data en storytelling om te laten zien welke keuzes het meeste uitmaken en ze ontwikkelen makkelijke recepten om kennis in praktijk te brengen.\n\n", 
 
           "GROOTOUDERS VOOR HET KLIMAAT\n",
-          "Dick van Elk over Grootouders voor het Klimaat. Deze grootouders kijken verder...hun perspectief is dat van hun kleinkinderen en hoe zij daar nù aan kunnen bijdragen.\n",
+          "Dick van Elk over Grootouders voor het Klimaat (https://grootoudersvoorhetklimaat.nl). Deze grootouders kijken verder...hun perspectief is dat van hun kleinkinderen en hoe zij daar nù aan kunnen bijdragen.\n",
           "De wereld van morgen (nu? al) vraagt om een andere 'huishouding'. De groei vinden we niet langer in de exclusieve financiële economie. De groei gaat naar een inclusieve ecologische economie!\n\n",
 
           "ALTERNATIEVEN VOOR KERKELIJKE PRAKTIJKEN\n",
           "…… breekt een lans voor alternatieven in onze kerken. Zijn de bloemen biologisch? Of doe maar liever géén bloemen? En de kaarsen die we branden, liever niet of van bijenwas?\n\n", 
 
           "FEITEN OVER KLIMAATVERANDERING\n",
-          "Gerriete Kooi, bioloog, geeft een mini-college van een half uur over de zestien kantelpunten in het klimaatsysteem.\n",
+          "Gerriete Kooi, bioloog, geeft een mini-college van een half uur over de zestien kantelpunten (https://www.knmi.nl/over-het-knmi/nieuws/hoe-meer-de-aarde-opwarmt-hoe-groter-de-kans-op-snelle-onomkeerbare-veranderingen) in het klimaatsysteem.\n",
           "Hoe meer de aarde opwarmt, hoe groter de kans op snelle onomkeerbare veranderingen. Geen opwekkende boodschap. Wel een intense motivatie om alles in het werk te stellen om te grote veranderingen tegen te houden.\n\n",
           
           "VAN SCHULDGEVOEL EN SCHAAMTE NAAR HOOP EN INVLOED\n",
@@ -132,6 +132,7 @@
         ],
         "led_by": "Leerhuis en PKA",
         "image": "actiedag.jpg",
+        "card": "card.png",
         "subscription": "vanaf 15 april",
         "starting_date": "2024-06-01",
         "closing_date": "2024-06-01",

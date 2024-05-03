@@ -2,11 +2,13 @@ import React from "react";
 import { filteredByWeek } from "../utils/filterByDate";
 import { Link } from "react-router-dom";
 import ActivityArchiefActueel from "./ActivityArchiefActueel";
+import { useLocation } from "react-router-dom";
 
 
 const Aktueel = () => {
   
 const now = new Date().getTime();
+const url = useLocation().pathname
 
   return (
     <div className="w-full flex flex-col px-8 mt-10 max-xxsm:px-2">
@@ -40,7 +42,7 @@ const now = new Date().getTime();
               </div>
             )}
             {filteredByWeek?.map((act) => (
-              <ActivityArchiefActueel key={act.id} act={act} />
+              <ActivityArchiefActueel key={act.id} act={act} url={""}/>
             ))}
           </div>
 

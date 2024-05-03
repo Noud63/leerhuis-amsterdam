@@ -12,9 +12,8 @@ export const archiveLoader = () => {
 const Archief = () => {
 
   const data = useLoaderData();
-  // console.log(data)
 
- const url = useLocation().pathname;
+  const url = useLocation().pathname;
  
   return (
     <div className="w-full min-h-screen mt-[170px] flex flex-col justify-center items-start px-8 max-xxxsm:px-2 mb-44">
@@ -29,7 +28,7 @@ const Archief = () => {
         </div>
         <div className="w-full max-w-full flex flex-col justify-center flex-wrap ">
           {data?.map((act) => (
-            <ActivityArchiefActueel key={act.id} act={act} />
+            <ActivityArchiefActueel key={act.id} act={act} url={url}/>
           ))}
         </div>
       </div>

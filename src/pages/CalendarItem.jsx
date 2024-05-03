@@ -24,11 +24,11 @@ const CalendarItem = () => {
 
   const [expired, setExpired] = useState(false)
 
- const url = useLocation().pathname;
+  const url = useLocation().pathname;
 
   const item = activities.activities[calendaritem_id];
   const ID = item.itemId
-  
+  console.log(item.card)
 
   const givenDate = new Date(item.closing_date).getTime();
   const now = new Date().getTime();
@@ -73,14 +73,7 @@ useEffect(()=> {
                 className="h-auto border-b border-t border-[#000] gap-2 flex justify-between items-end font-semibold 
               font-papyrus mb-2 text-2xl py-2 mx-4 mt-4 overflow-hidden relative max-mini:text-xl"
               >
-                {Array.isArray(item.title) ? (
-                  <div className="flex flex-wrap">
-                    <span>{item.title[0]}</span>
-                    <span className="">{item.title[1]}</span>
-                  </div>
-                ) : (
-                  <span>{item.title}</span>
-                )}
+                <span>{item.title}</span>
                 <div className="group">
                   <div className="flex flex-row gap-2 font-normal">
                     <span className="text-orange-600 font-sans text-lg max-xxsm:hidden">
@@ -140,7 +133,27 @@ useEffect(()=> {
               <div className="w-full px-4 mb-2">
                 <span className="font-bold">Beschrijving : </span>
                 <br />
-                <span className="whitespace-pre-line">{item.description}</span>
+                {item.card ? (
+                  <>
+                    <span className="whitespace-pre-line">
+                      {item.description.slice(0, 70)}
+                    </span>
+                    <div>
+                      <img
+                        src={`/images/${item.card}`}
+                        alt=""
+                        className="mb-4"
+                      />
+                    </div>
+                    <span className="whitespace-pre-line">
+                      {item.description.slice(70, item.description.length)}
+                    </span>
+                  </>
+                ) : (
+                  <>
+                  {item.description}
+                  </>
+                )}
               </div>
               <div className="w-full px-4 mb-2">
                 {" "}
@@ -160,7 +173,6 @@ useEffect(()=> {
                 ) : (
                   ""
                 )}
-               
               </div>
               <div className="w-full px-4">
                 {" "}
@@ -191,6 +203,7 @@ useEffect(()=> {
           </div>
 
           <BackButton url={url} id={calendaritem_id} ID={item.itemId} />
+          
         </div>
       </div>
     </div>

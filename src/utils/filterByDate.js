@@ -15,7 +15,11 @@ export const upcomingActivities = [];
 const filterActivitiesInThePast = () => {
   activities.activities.forEach((act) => {
     if (new Date(act.closing_date).getTime() < now) {
-      filteredExpiredActivities.push(act);
+      filteredExpiredActivities.push({
+          id: act.id,
+          title: act.title,
+          image: act.image,
+      });
     }
     if (new Date(act.closing_date).getTime() >= now) {
       upcomingActivities.push(act);
@@ -24,7 +28,7 @@ const filterActivitiesInThePast = () => {
 };
 
 filterActivitiesInThePast();
-
+// console.log(filteredExpiredActivities)
 
 
 // First activity after a week, announced only if there are no activities this week

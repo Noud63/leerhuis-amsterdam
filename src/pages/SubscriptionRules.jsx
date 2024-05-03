@@ -47,7 +47,7 @@ const SubscriptionRules = () => {
           </span>
           <span><br />
             Inschrijven doe je d.m.v. het inschrijfformulier. Klik op 'Lees
-            meer' in een van de activiteiten en vervolgens op 'Schrijf je in'.
+            meer' in een van de activiteiten en klik vervolgens op 'Schrijf je in'.
           </span>
           <div className="w-full flex justify-center mt-12">
             <span>Graag tot ziens!</span>

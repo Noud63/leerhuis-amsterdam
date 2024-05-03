@@ -5,6 +5,7 @@ import { Link, useNavigate, useLocation, useParams } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import pen from "../assets/icons/pen.png"
 import qrcode from "../assets/icons/qrcode.png"
+import activities from "../db.json"
 
 const serviceId = import.meta.env.VITE_REACT_APP_LA_SERVICE_ID;
 const templateId = import.meta.env.VITE_REACT_APP_LA_INSCHRIJVING_TEMPLATE_ID;
@@ -19,7 +20,9 @@ const Subscribe = () => {
   const [message, setMessage] = useState("");
 
   const { calendaritem_id, id } = useParams();
-  console.log(id)
+  console.log(useParams())
+
+  const title = activities.activities[calendaritem_id].title;
 
   const url = useLocation().pathname;
   
@@ -69,7 +72,7 @@ const Subscribe = () => {
             className="max-sm:w-[30px] max-sm:h-auto"
           />
         </div>
-        <div className="w-full flex flex-col items-center justify-center text-black pb-4">
+        <div className="w-full flex flex-col items-center justify-center text-black">
           <div
             className="w-full h-[100px] text-2xl font-semibold text-white flex justify-center items-center
           bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 relative tracking-wider overflow-hidden"
@@ -79,8 +82,12 @@ const Subscribe = () => {
               <img src={pen} alt="" className="w-[180px] opacity-80" />
             </div>
           </div>
+
           {id !== "LA-AC01" ? (
             <div className="w-full text-[16px] justify-start my-4">
+              <div className="w-full pb-2 text-2xl font-semibold mt-2 mb-4 border-b border-black font-papyrus">
+                {title}
+              </div>
               <span className="tracking-wide ">
                 Iedere cursusavond kost 5 euro, tenzij anders vermeld.
                 <br />
@@ -105,9 +112,15 @@ const Subscribe = () => {
               <span>Vermeld hierbij het kenmerk van de activiteit.</span>
             </div>
           ) : (
-            <div className="w-full justify-start mt-8 mb-4">
-              <span className="font-semibold">Eigen bijdrage: </span>Vrijwillig (Scan QR-Code)
-              <div className="w-full justify-center"><img src={qrcode} alt="" className="w-[200px] mx-auto"/></div>
+            <div className="w-full justify-start mt-6 mb-4">
+              <div className="w-full pb-2 mb-2 text-2xl font-semibold border-b border-black max-xxxsm:text-xl">
+                {title}
+              </div>
+              <span className="font-semibold">Eigen bijdrage: </span>Vrijwillig
+              (Scan QR-Code)
+              <div className="w-full justify-center">
+                <img src={qrcode} alt="" className="w-[200px] mx-auto" />
+              </div>
             </div>
           )}
         </div>
@@ -117,7 +130,7 @@ const Subscribe = () => {
           onSubmit={sendEmail}
           autoComplete="off"
           className="w-full"
-        >
+          >
           <div className="w-full border-b border-t border-black">
             <label htmlFor="name">Naam:</label>
             <input

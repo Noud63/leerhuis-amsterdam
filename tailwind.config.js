@@ -8,6 +8,7 @@ export default {
         gtwalsheim: ["gtwalsheim"],
       },
       screens: {
+        maxxl:"1600px",
         xxxl: "1500px",
         xxl: "1300px",
         footer:"1150px",
