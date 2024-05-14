@@ -1,6 +1,6 @@
 import React from 'react'
 import bracket from "../assets/images/curlybracket_black.png"
-import logo from "../assets/images/logo.png"
+// import logo from "../assets/images/logo.png"
 import Socials from './Socials'
 import Menu from './Menu'
 import scroll from "../utils/scroll";
@@ -32,7 +32,7 @@ const Header = ({showMenuOverlay}) => {
        <div className="w-full h-full max-w-[2000px] flex flex-row justify-between">
          <Link to="/">
            <div className="h-full flex flex-row gap-4 max-xxsm:gap-2 py-4 pl-8 max-xxsm:pl-4 max-xxxsm:pl-2">
-             <img src={logo} alt="logo" className="w-[220px] h-[80px]" />
+             <img src="images/logo.png" alt="logo" className="w-[220px] h-[80px]" />
 
              <div className="">
                <img

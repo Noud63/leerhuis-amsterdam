@@ -11,7 +11,7 @@ const now = new Date().getTime();
 const url = useLocation().pathname
 
   return (
-    <div className="w-full flex flex-col px-8 mt-10 max-xxsm:px-2">
+    <div className="w-full flex flex-col px-8 mt-10 max-xxsm:px-2 max-mini:mt-0">
       <div className="w-full flex mb-6 border-b border-black pb-2">
         <span className="text-2xl font-semibold  text-black"># Actueel</span>
       </div>

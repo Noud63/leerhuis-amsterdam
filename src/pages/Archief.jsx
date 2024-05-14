@@ -2,7 +2,7 @@ import React from 'react'
 import BackButton from '../components/BackButton';
 import {filteredExpiredActivities} from "../utils/filterByDate"
 import { useLoaderData } from "react-router-dom";
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import ActivityArchiefActueel from '../components/ActivityArchiefActueel';
 
 export const archiveLoader = () => {
@@ -12,6 +12,7 @@ export const archiveLoader = () => {
 const Archief = () => {
 
   const data = useLoaderData();
+  console.log(data)
 
   const url = useLocation().pathname;
  

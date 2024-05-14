@@ -47,11 +47,11 @@ useEffect(()=> {
       <div className="flex flex-1 pt-[180px] flex-col items-center max-calendar:mt-12 max-xsm:pt-[170px]">
         <div className="w-full max-w-[700px] mb-32 flex flex-col items-center px-2">
           <div className="w-full flex justify-start text-xl font-semibold mb-4 border-b border-black pb-2">
-            <span># Over</span>&nbsp;
+            #&nbsp;<span className="max-xxsm:hidden">Over&nbsp;</span>
             {Array.isArray(item.title) ? (
               <div>
                 <span>{item.title[0]}</span>
-                <span className="max-xxsm:hidden">{item.title[1]}</span>
+                <span>{item.title[1]}</span>
               </div>
             ) : (
               <span>{item.title}</span>
@@ -150,9 +150,7 @@ useEffect(()=> {
                     </span>
                   </>
                 ) : (
-                  <>
-                  {item.description}
-                  </>
+                  <>{item.description}</>
                 )}
               </div>
               <div className="w-full px-4 mb-2">
@@ -203,7 +201,6 @@ useEffect(()=> {
           </div>
 
           <BackButton url={url} id={calendaritem_id} ID={item.itemId} />
-          
         </div>
       </div>
     </div>

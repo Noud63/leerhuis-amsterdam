@@ -2,7 +2,7 @@
     [
       {
         "id": 0,
-        "title": "Groen geloven, Inspiratiemiddag",
+        "title": ["Groen geloven, ", "Inspiratiemiddag"],
         "title_long": [
           "Groen geloven",
           ", Inspiratiemiddag  Groen Geloven in Mokum",
@@ -94,18 +94,26 @@
           "Dick van Elk over Grootouders voor het Klimaat (https://grootoudersvoorhetklimaat.nl). Deze grootouders kijken verder...hun perspectief is dat van hun kleinkinderen en hoe zij daar nù aan kunnen bijdragen.\n",
           "De wereld van morgen (nu? al) vraagt om een andere 'huishouding'. De groei vinden we niet langer in de exclusieve financiële economie. De groei gaat naar een inclusieve ecologische economie!\n\n",
 
-          "ALTERNATIEVEN VOOR KERKELIJKE PRAKTIJKEN\n",
-          "…… breekt een lans voor alternatieven in onze kerken. Zijn de bloemen biologisch? Of doe maar liever géén bloemen? En de kaarsen die we branden, liever niet of van bijenwas?\n\n", 
+          "GROENE KERK : ENERGIE, KANSEN, IDEEEN.\n",
+          "Met Annemarie van Wijngaarden.\n",
+          "Groene kerk worden lijkt belastend, maar geeft juist energie. Ideeën zijn er genoeg, voor elke gemeente is er wel wat.\n",
+          "Kijk maar op www.groenekerk.nl. Maar het is ook inspirerend om dan van elkaar te horen wat er al in Amsterdam gebeurt.\n\n", 
 
           "FEITEN OVER KLIMAATVERANDERING\n",
           "Gerriete Kooi, bioloog, geeft een mini-college van een half uur over de zestien kantelpunten (https://www.knmi.nl/over-het-knmi/nieuws/hoe-meer-de-aarde-opwarmt-hoe-groter-de-kans-op-snelle-onomkeerbare-veranderingen) in het klimaatsysteem.\n",
           "Hoe meer de aarde opwarmt, hoe groter de kans op snelle onomkeerbare veranderingen. Geen opwekkende boodschap. Wel een intense motivatie om alles in het werk te stellen om te grote veranderingen tegen te houden.\n\n",
           
           "VAN SCHULDGEVOEL EN SCHAAMTE NAAR HOOP EN INVLOED\n",
-          "Een creatieve verwerking en persoonlijke gesprekken.\n\n",
+          "Hoe blijf je hoopvol en gemotiveerd om je in te zetten om tegen klimaatverandering? En hoe ga je op een goede manier om met angst, boosheid en schuldgevoelens?\n",
+          "In deze workshop gaan we dieper in op wat we ervaren in de klimaatcrisis en staan we op een bewust manier stil bij deze gevoelens.\n",
+          "We kijken hoe deze gevoelens ons verder brengen en wanneer ze ons ook meer tegen kunnen houden. Het wordt een interactieve workshop waarin we meer delen van wat ons beweegt en hoe we dat vorm geven.\n",
+          "Wil je meer ontdekken over hoe jij in de klimaatcrisis staat en hoe je dat actief vorm kan geven? Kom dan meedoen!\n\n",
+          "Wilco van Bokhorst heeft een grote interesse voor zingeving en het vormgeven van je waarden in klimaatverandering.\n",
+          "Zelf zet hij zich al jaar en dag enthousiast in voor de Groene Kerk. Onlangs is hij van baan geswitcht, van Fair Wear naar Milieudefensie omdat hij tot de ontdekking kwam dat we er niet meer aan kunnen ontkomen om op te staan tegen het systeem dat klimaatverandering in stand houdt.\n\n",
 
-          "GROENE MOSLIMS\n",
-          "Bijna zeker…. Het motto van de Groene Moslims is: Groen islamitisch leven. Bewust.\n", 
+          "GROENE MOSLIMS.\n",
+          "Met Jumana Tuama, secretaris Groene Moslims.\n",
+          "Het motto van de Groene Moslims is: Groen islamitisch leven. Bewust.\n", 
           "Stichting Groene Moslims is een organisatie die moslims vanuit een religieuze visie op duurzame ontwikkeling wil betrekken bij oplossingen voor het klimaatprobleem en het armoedeprobleem.\n",
           "Een van hun activiteiten is: wandelen.\n",
           "Elke eerste zaterdag van de maand organiseren we een maandelijkse wandeling in een natuurgebied in Nederland. Iedereen is welkom bij deze wandeling: moslims en niet-moslims in al hun diversiteit.\n",
@@ -157,7 +165,7 @@
         "led_by": "A van Wijngaarden en Ditske Tanja",
         "image": "groengeloven3.jpg",
         "starting_date": "2024-04-10",
-        "closing_date": "2024-06-25",
+        "closing_date": "2024-04-25",
         "itemId": "LA-AC02"
       },
       {
@@ -178,7 +186,7 @@
         "led_by": "Clifton Walker en Greteke de Vries",
         "image": "zwartwit.jpg",
         "starting_date": "2024-04-19",
-        "closing_date": "2024-06-25",
+        "closing_date": "2024-06-21",
         "itemId": "LA-AC03"
       },
       {
@@ -297,7 +305,7 @@
         "led_by": "Hanneke Meulink-Korf en Greteke de Vries",
         "image": "vandis.jpg",
         "starting_date": "2024-03-04",
-        "closing_date": "2024-06-25",
+        "closing_date": "2024-05-06",
         "itemId": "LA-AC08"
       },
       {
@@ -326,7 +334,7 @@
         "led_by": "Willem M Dekker en Gerben van Manen",
         "image": "leesgroep_miskotte.jpg",
         "starting_date": "2024-01-10",
-        "closing_date": "2024-06-25",
+        "closing_date": "2024-05-08",
         "itemId": "LA-AC09"
       },
       {

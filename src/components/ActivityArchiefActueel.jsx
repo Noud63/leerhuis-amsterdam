@@ -23,7 +23,7 @@ const ActivityArchiefActueel = ({act, url}) => {
       </div>
       <div className="w-full">
         <img
-          src={`./images/${act.image}`}
+          src={`images/${act.image}`}
           alt=""
           className="w-full max-w-[550px]"
         />
