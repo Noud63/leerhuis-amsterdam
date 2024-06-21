@@ -138,7 +138,11 @@
           "Websites: www.leerhuisamsterdam.nl en www.protestantsamsterdam.nl\n",
           "Opgave is mogelijk vanaf 15 april.\n\n"
         ],
-        "led_by": "Leerhuis en PKA",
+        "led_by": "Leerhuis en PKA\n\n",
+        "location": [
+          "Muiderkerk\n", 
+          "Linnaeusstraat 37\n", 
+          "Amsterdam\n"],
         "image": "actiedag.jpg",
         "card": "card.png",
         "subscription": "vanaf 15 april",
@@ -284,7 +288,7 @@
         "led_by": "Wilken Veen",
         "image": "modernetheologen.jpg",
         "starting_date": "2024-01-30",
-        "closing_date": "2024-06-25",
+        "closing_date": "2024-06-22",
         "itemId": "LA-AC07"
       },
       {

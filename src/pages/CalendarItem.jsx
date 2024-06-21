@@ -28,14 +28,14 @@ const CalendarItem = () => {
 
   const item = activities.activities[calendaritem_id];
   const ID = item.itemId
-  console.log(item.card)
 
-  const givenDate = new Date(item.closing_date).getTime();
+  const givenDate = new Date(item.closing_date).getTime() + 86400000;
   const now = new Date().getTime();
-
+ 
 useEffect(()=> {
  if (givenDate <= now) {
-   setExpired(true);
+    setExpired(true);
+    console.log(expired);
  } else{
    setExpired(false);
  }
@@ -130,7 +130,7 @@ useEffect(()=> {
                 <br />
                 {item.time}
               </div>
-              <div className="w-full px-4 mb-2">
+              <div className="w-full px-4">
                 <span className="font-bold">Beschrijving : </span>
                 <br />
                 {item.card ? (
@@ -153,11 +153,20 @@ useEffect(()=> {
                   <>{item.description}</>
                 )}
               </div>
+
               <div className="w-full px-4 mb-2">
                 {" "}
                 <span className="font-bold flex flex-wrap">O.l.v :</span>{" "}
                 {item.led_by}
               </div>
+
+              {item.location && <div className="w-full px-4 mb-2">
+                {" "}
+                <span className="font-bold flex flex-wrap">Lokatie :</span>
+                <span className="whitespace-pre-line text-orange-800 font-semibold">{item.location}</span>
+                <div className="mb-4 mt-2"><img src="/images/muiderkerk.png" alt="" /></div>
+              </div>}
+
               <div className="w-full px-4 mb-2">
                 {" "}
                 <span className="font-bold flex flex-wrap">Bijdrage:</span>{" "}
