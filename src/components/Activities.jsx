@@ -15,6 +15,7 @@ const Activities = () => {
      const [width, setWidth] = useState(window.innerWidth);
 
      const data = useLoaderData();
+     console.log(data)
      
      useEffect(() => {
        const handleResize = () => {
@@ -43,7 +44,7 @@ return (
           # Activiteiten Kalender 2024
         </span>
       </div>
-      <div className="w-[85%] mb-4 max-xmd:w-full max-xxsm:pl-3">
+      <div className="w-[85%] mb-4 max-xmd:w-full max-xxsm:pl-0">
         <span className="text-lg font-normal max-xsm:text-base">
           Het Leerhuis Amsterdam organiseert bijeenkomsten, dialogen en
           cursussen. <br />
@@ -59,6 +60,18 @@ return (
           </Link>
         </span>
       </div>
+      {data.length === 0 && (
+        <div className="w-full flex justify-center mt-8">
+          <div className="w-[85%] flex justify-center text-amber-700 font-semibold 
+          text-lg calendar_item rounded-2xl bg-gradient-to-t from-stone-100 to-white py-12 px-4 max-xmd:w-full">
+          
+              Het cursusjaar is ten einde.<br/>
+              Het nieuwe agenda zal naar verwachting in augustus geplaatst worden.<br />
+              Graag zien we je dan weer terug.
+            
+          </div>
+        </div>
+      )}
       <div
         className={`w-[85%] grid grid-cols-4 max-maxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 max-xmd:w-full gap-4 mt-4`}
       >
@@ -71,7 +84,7 @@ return (
         <Link to="/allactivities">
           <button
             type="button"
-            className="btn w-[150px] rounded-full justify-center items-center text-[#000] border-2  border-gray-400 gap-2 pb-1 leading-8 pt-1 text-md font-semibold"
+            className="btn w-[150px] rounded-full justify-center items-center text-[#000] border-2 border-gray-400 gap-2 pb-1 leading-8 pt-1 text-md font-semibold"
           >
             Alle activiteiten
           </button>

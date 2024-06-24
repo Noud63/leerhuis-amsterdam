@@ -23,12 +23,10 @@ const Subscribe = () => {
   console.log(useParams())
 
   const title = activities.activities[calendaritem_id].title;
-
+  
   const url = useLocation().pathname;
   
-
   const navigate = useNavigate();
-
 
   const sendEmail = (e) => {
     e.preventDefault();
