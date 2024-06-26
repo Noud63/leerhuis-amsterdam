@@ -37,7 +37,7 @@ const Activities = () => {
 }, [width]);
 
 return (
-  <div className="w-[full] flex flex-row m-auto px-8 mt-[180px] text-black max-xxsm:px-4 max-xxxsm:px-2 pb-8 max-mini:pb-2">
+  <div className="w-[full] flex flex-row m-auto px-8 mt-[180px] text-black max-xxsm:px-4 max-xxxsm:px-4 pb-8 max-mini:pb-2">
     <div className="w-full flex flex-1 justify-center items-center flex-col">
       <div className="w-full flex flex-row gap-2  mb-6 border-b border-black pb-2 ">
         <span className="text-2xl font-semibold text-black">
@@ -61,14 +61,19 @@ return (
         </span>
       </div>
       {data.length === 0 && (
-        <div className="w-full flex justify-center mt-8">
-          <div className="w-[85%] flex justify-center text-amber-700 font-semibold 
-          text-lg calendar_item rounded-2xl bg-gradient-to-t from-stone-100 to-white py-12 px-4 max-xmd:w-full">
+        <div className="w-full flex justify-center mt-8 max-xxxsm:mt-4">
           
-              Het cursusjaar is ten einde.<br/>
-              Het nieuwe agenda zal naar verwachting in augustus geplaatst worden.<br />
-              Graag zien we je dan weer terug.
-            
+          <div
+            className="w-[85%] flex justify-center text-amber-800 font-semibold relative
+          text-lg calendar_item rounded-2xl bg-gradient-to-t from-stone-100  to-white py-12 px-4 max-xmd:w-full max-xxsm:py-8"
+          >
+            Het cursusjaar is ten einde.
+            <br />
+            Het nieuwe programma zal naar verwachting in augustus geplaatst worden.
+            <br />
+            We zien je graag weer terug.<br />
+            Tot dan!
+        
           </div>
         </div>
       )}

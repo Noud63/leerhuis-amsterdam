@@ -21,16 +21,19 @@ return (
       </div>
 
       {data.length === 0 && (
-        <div className="w-full flex justify-center mt-4">
+        <div className="w-full flex justify-center mt-8 max-xxxsm:mt-4 px-4">
           <div
-            className="w-[85%] flex justify-center text-amber-700 font-semibold 
-          text-lg py-12 px-4 max-xmd:w-full max-xmd:mx-4"
+            className="w-[85%] flex justify-center text-amber-800 font-semibold relative
+          text-lg calendar_item rounded-2xl bg-gradient-to-t from-stone-100  to-white py-12 px-4 max-xmd:w-full max-xxsm:py-8"
           >
             Het cursusjaar is ten einde.
             <br />
-            Het nieuwe agenda zal naar verwachting in augustus geplaatst worden.
+            Het nieuwe programma zal naar verwachting in augustus geplaatst
+            worden.
             <br />
-            Graag zien we je dan weer terug.
+            We zien je graag weer terug.
+            <br />
+            Tot dan!
           </div>
         </div>
       )}
