@@ -1,4 +1,4 @@
-import data from "../db.json"
+import data from "../db2.json"
 import axios from 'axios'
 import { upcomingActivities } from "./filterByDate";
 

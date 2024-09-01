@@ -11,7 +11,6 @@ export const allActivitiesLoader = () => {
 const AllActivities = () => {
 
 const data = useLoaderData();
-
   
 return (
   <div className="w-full flex pt-[180px] flex-row">
@@ -20,7 +19,7 @@ return (
         <span className="text-2xl font-semibold pb-2"># Alle activiteiten</span>
       </div>
 
-      {data.length === 0 && (
+      {/* {data.length === 0 && (
         <div className="w-full flex justify-center mt-8 max-xxxsm:mt-4 px-4">
           <div
             className="w-[85%] flex justify-center text-amber-800 font-semibold relative
@@ -36,7 +35,7 @@ return (
             Tot dan!
           </div>
         </div>
-      )}
+      )} */}
 
       <div className="w-[85%] grid grid-cols-4 max-maxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8 max-xxxsm:w-[95%]">
         {data?.map((act) => (

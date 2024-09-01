@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
-import activities from "../db.json";
+import activities from "../db2.json";
 import { Link, useLocation } from "react-router-dom";
 import share from "../assets/icons/share.png";
 import {
@@ -17,6 +17,8 @@ import BackButton from '../components/BackButton';
 
 
 const CalendarItem = () => {
+
+  console.log(activities)
   
   const currentUrl = window.location.href
 
@@ -28,6 +30,7 @@ const CalendarItem = () => {
 
   const item = activities.activities[calendaritem_id];
   const ID = item.itemId
+  console.log("Id:", ID)
 
   const givenDate = new Date(item.closing_date).getTime() + 86400000;
   const now = new Date().getTime();
@@ -150,24 +153,42 @@ useEffect(()=> {
                     </span>
                   </>
                 ) : (
-                  <>{item.description}</>
+                  <span>{item.description.map((line) => {
+                    return (
+                      <div className="flex flex-col">
+                        <span>{line}</span>
+                      </div>
+                    );
+                  })}</span>
                 )}
               </div>
 
-              <div className="w-full px-4 mb-2">
+              <div className="w-full px-4 mb-2 mt-2">
                 {" "}
                 <span className="font-bold flex flex-wrap">O.l.v :</span>{" "}
                 {item.led_by}
               </div>
 
-              {item.location && <div className="w-full px-4 mb-2">
-                {" "}
-                <span className="font-bold flex flex-wrap">Lokatie :</span>
-                <span className="whitespace-pre-line text-orange-800 font-semibold">{item.location}</span>
-                <div className="mb-4 mt-2"><img src="/images/muiderkerk.png" alt="" /></div>
-              </div>}
-
               <div className="w-full px-4 mb-2">
+                {" "}
+                <span className="font-bold flex flex-wrap">Email :</span>{" "}
+                {item.email}
+              </div>
+
+              {item.location && (
+                <div className="w-full px-4 mb-2">
+                  {" "}
+                  <span className="font-bold flex flex-wrap">Lokatie :</span>
+                  <span className="whitespace-pre-line text-orange-800 font-semibold">
+                    {item.location}
+                  </span>
+                  <div className="mb-4 mt-2">
+                    <img src="/images/muiderkerk.png" alt="" />
+                  </div>
+                </div>
+              )}
+
+              <div className="w-full px-4 mb-2 mt-2">
                 {" "}
                 <span className="font-bold flex flex-wrap">Bijdrage:</span>{" "}
                 {item.contribution}

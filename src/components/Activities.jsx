@@ -60,7 +60,7 @@ return (
           </Link>
         </span>
       </div>
-      {data.length === 0 && (
+      {/* {data.length === 0 && (
         <div className="w-full flex justify-center mt-8 max-xxxsm:mt-4">
           
           <div
@@ -76,7 +76,7 @@ return (
         
           </div>
         </div>
-      )}
+      )} */}
       <div
         className={`w-[85%] grid grid-cols-4 max-maxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 max-xmd:w-full gap-4 mt-4`}
       >

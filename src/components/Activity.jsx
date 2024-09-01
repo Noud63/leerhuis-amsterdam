@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const Activity = ({act}) => {
+
   return (
     <div className="w-full min-h-full" key={act.id}>
       <div className="calendar_item w-full h-full rounded-t-2xl bg-gradient-to-t from-stone-300 to-white flex flex-col justify-between relative">
@@ -28,6 +29,7 @@ const Activity = ({act}) => {
             {" "}
             <span className="font-semibold">O.l.v :</span> {act.led_by}
           </div>
+
           <div className="w-full">
             {" "}
             <span className="font-semibold">Kenmerk :</span> {act.itemId}

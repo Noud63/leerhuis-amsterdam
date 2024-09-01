@@ -1,5 +1,4 @@
-import activities from "../db.json";
-
+import activities from "../db2.json";
 
 const now = new Date().getTime() - 86400000;
 const nextWeek = now + 604800000;
@@ -10,6 +9,7 @@ export const filteredExpiredActivities = [];
 
 //Filtered activities that are upcoming
 export const upcomingActivities = [];
+
 
 //Filter activities
 const filterActivitiesInThePast = () => {
@@ -28,7 +28,7 @@ const filterActivitiesInThePast = () => {
 };
 
 filterActivitiesInThePast();
-// console.log(filteredExpiredActivities)
+
 
 
 // First activity after a week, announced only if there are no activities this week
