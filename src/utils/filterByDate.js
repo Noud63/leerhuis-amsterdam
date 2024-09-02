@@ -1,4 +1,4 @@
-import activities from "../db2.json";
+import activities from "../db.json";
 
 const now = new Date().getTime() - 86400000;
 const nextWeek = now + 604800000;

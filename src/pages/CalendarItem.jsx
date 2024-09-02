@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
-import activities from "../db2.json";
+import activities from "../db.json";
 import { Link, useLocation } from "react-router-dom";
 import share from "../assets/icons/share.png";
 import {
@@ -73,7 +73,7 @@ useEffect(()=> {
                 ""
               )}
               <div
-                className="h-auto border-b border-t border-[#000] gap-2 flex justify-between items-end font-semibold 
+                className="h-auto border-b border-[#000] gap-2 flex justify-between items-end font-semibold 
               font-papyrus mb-2 text-2xl py-2 mx-4 mt-4 overflow-hidden relative max-mini:text-xl"
               >
                 <span>{item.title}</span>

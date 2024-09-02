@@ -82,6 +82,42 @@
       "starting_date": "2024-09-24",
       "closing_date": "2025-06-24",
       "itemId": "LA-AC12"
+    },
+    {
+      "id": 3,
+      "title": "Wie is er bang voor gender?",
+      "date": {
+        "day": "Woensdag",
+        "dates": [
+          "2024-10-02",
+          "2024-10-16",
+          "2024-10-30",
+          "2025-11-13",
+          "2025-11-27",
+          "2025-12-11"
+        ]
+      },
+      "time": "19:00 - 21:00 uur",
+      "contribution": "Vrijwillige bijdrage",
+      "description": [
+      "Pogingen de wereld te vertaan voorbij een duaal denken.\n",
+      "Door over Gender en genderdysforie te spreken komen de biologische ‘vaste’ beelden over socialisatie van mensen onder kritiek te staan.\n", 
+      "Biologische lichamen worden immers binnen sociale culturele en economischeachtergronden gevormd.\n", 
+      "Mensen worden dan gezien als geweven binnen een web van verhoudingen die invloed uitoefenen op het biologische lichaam.\n",
+      "Daarmee wordt de geslachtsidentificatie bij geboorte van ‘vrouw ’ en ‘man’discutabel.\n", 
+      "Anders gezegd: onder welke invloeden wordt identiteit gevormd en hoe bepaaalt dat ons handelen.\n", 
+      "Een samen studie in het vragen stellen en hoe duaal denken geweld kan oproepen.\n",
+      "Literatuur: * Wie is er bang van gender – Judith Butler, ten Have 2024.\n",
+      "*De kleine Butler atlas contact 2024; * Langs de rivier – Harmen Elisa.\n",
+      "Brandsma, van Warven 2023; * Wij zijn net een boek – Harmen Elisa.\n",
+      "Brandsma, van Warven 2024; Bitch - Lucy Cooke, de Geus 2024."
+      ],
+      "led_by": "Harmen-Elisa Brandsma, theoloog/theatermaker/therapeut en Gillis Gilde-Damen.",
+      "email": "",
+      "image": "wieiserbangvoorgender.jpg",
+      "starting_date": "2024-09-24",
+      "closing_date": "2025-06-24",
+      "itemId": "LA-AC12"
     }
   ]
 }
