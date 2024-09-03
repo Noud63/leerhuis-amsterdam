@@ -5,21 +5,21 @@ export default {
     extend: {
       fontFamily: {
         papyrus: ["papyrus"],
-        // gtwalsheim: ["gtwalsheim"],
-        nunito: ["nunitoregular"],
+        gtwalsheim: ["gtwalsheim"],
+        MPLUSRounded1c: ["M PLUS Rounded 1c"],
       },
       screens: {
-        maxxl:"1600px",
+        maxxl: "1600px",
         xxxl: "1500px",
         xxl: "1300px",
-        footer:"1150px",
+        footer: "1150px",
         socials: "1050px",
         menu: "950px",
         xmd: "850px",
         xsm: "700px",
         xxsm: "530px",
         xxxsm: "450px",
-        mini: "400px"
+        mini: "400px",
       },
     },
   },

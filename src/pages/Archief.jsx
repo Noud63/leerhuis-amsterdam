@@ -30,24 +30,23 @@ const Archief = () => {
   return (
     <div className="w-full min-h-screen flex flex-col mt-[200px] items-start px-8 max-xxxsm:px-2 mb-44">
       <div className="w-full max-w-[600px] mx-auto ">
-       
-        <div className="actueel_info h-auto bg-white px-8 pt-8 rounded-xl max-xxxsm:px-4 pb-20 mb-8">
-          <div className="w-full flex flex-col items-start border-b border-black pb-2 mb-8">
+        <div className="actueel_info h-auto bg-white px-8 pt-8 rounded-xl max-xxxsm:px-4 pb-8 mb-8">
+          <div className="w-full flex flex-row justify-between items-center max-xxsm:flex-col max-xxsm:items-start border-b border-black pb-2 mb-8">
             <span className="text-2xl font-semibold  text-black">
               # Archief 2024-2025
             </span>
             <span>({archive2025.length} activiteiten)</span>
           </div>
 
-          <div className="w-full max-w-full flex flex-col justify-center flex-wrap ">
+          <div className="w-full max-w-full flex flex-col justify-center flex-wrap">
             {archive2025.map((act) => (
               <ActivityArchiefActueel key={act.id} act={act} url={url} />
             ))}
           </div>
         </div>
 
-        <div className="actueel_info h-auto bg-white px-8 pt-8 rounded-xl max-xxxsm:px-4 pb-20 mb-8">
-          <div className="w-full flex flex-col items-start border-b border-black pb-2 mb-8">
+        <div className="actueel_info h-auto bg-white px-8 pt-8 rounded-xl max-xxxsm:px-4 pb-14 mb-8">
+          <div className="w-full flex flex-row justify-between items-center max-xxsm:flex-col max-xxsm:items-start border-b border-black pb-2 mb-8">
             <span className="text-2xl font-semibold  text-black">
               # Archief jan-juni 2024
             </span>

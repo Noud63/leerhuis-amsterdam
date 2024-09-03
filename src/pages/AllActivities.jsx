@@ -16,7 +16,7 @@ return (
   <div className="w-full flex pt-[180px] flex-row">
     <div className="w-full flex justify-center items-center flex-col mb-40">
       <div className="w-[95%] flex flex-row mb-8 border-b border-black">
-        <span className="text-2xl font-semibold pb-2"># Alle activiteiten</span>
+        <span className="text-2xl font-semibold pb-2 font-Assistant"># Alle activiteiten</span>
       </div>
 
       {/* {data.length === 0 && (

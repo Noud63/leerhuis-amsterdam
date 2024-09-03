@@ -62,7 +62,7 @@ useEffect(()=> {
           </div>
 
           <div className="calendar_item w-full rounded-t-2xl">
-            <div className="bg-[#fff] text-[#000]  rounded-t-2xl pt-4 flex flex-col">
+            <div className="bg-gradient-to-t from-stone-100 via-stone-50 to-white text-[#000]  rounded-t-2xl pt-4 flex flex-col">
               {expired ? (
                 <div className="flex justify-end font-bold mx-4">
                   <span className="text-2xl max-xsm:text-xl">
@@ -153,13 +153,15 @@ useEffect(()=> {
                     </span>
                   </>
                 ) : (
-                  <span>{item.description.map((line) => {
-                    return (
-                      <div className="flex flex-col">
-                        <span>{line}</span>
-                      </div>
-                    );
-                  })}</span>
+                  <span>
+                    {item.description.map((line) => {
+                      return (
+                        <div className="flex flex-col">
+                          <span>{line}</span>
+                        </div>
+                      );
+                    })}
+                  </span>
                 )}
               </div>
 

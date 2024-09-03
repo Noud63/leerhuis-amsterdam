@@ -1,44 +1,35 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
- 
-@font-face {
-  font-family: 'papyrus';
-  src: url('./fonts/papyrus.ttf') format('truetype'), 
-       url('./fonts/papyrus.otf') format('otf'),
-       url('./fonts/papyrus.svg') format('svg'),
-       url('./fonts/papyrus.woff') format('woff'),
-       url('./fonts/papyrus.woff2') format('woff2')
-} 
+  @font-face {
+    font-family: "papyrus";
+    src: url("./fonts/papyrus.ttf") format("truetype"),
+      url("./fonts/papyrus.otf") format("otf"),
+      url("./fonts/papyrus.svg") format("svg"),
+      url("./fonts/papyrus.woff") format("woff"),
+      url("./fonts/papyrus.woff2") format("woff2");
+  }
 
-@font-face {
-  font-family: 'gtwalsheim';
-  src: url('./fonts/gtwalsheim.otf') format('otf'),
- url('./fonts/gtwalsheim.woff') format('woff'),
- url('./fonts/gtwalsheim.woff2') format('woff2'),
-  url('./fonts/gtwalsheim.ttf') format('ttf')
-}
-
-@font-face {
-  font-family: 'nunitoregular';
-  src: url('./fonts/nunitoregular.ttf') format('ttf'),
-  url('./fonts/nunitoregular.otf') format('otf'),
-  url('./fonts/nunitoregular.woff') format('woff')
+  @font-face {
+    font-family: "gtwalsheim";
+    src: url("./fonts/gtwalsheim.otf") format("otf"),
+      url("./fonts/gtwalsheim.woff") format("woff"),
+      url("./fonts/gtwalsheim.woff2") format("woff2"),
+      url("./fonts/gtwalsheim.ttf") format("ttf");
   }
 }
 
-
 :root {
-      font-size:16px;
-    }
+  font-size: 16px;
+}
 
 body {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -48,15 +39,15 @@ input {
 }
 
 .header {
-  box-shadow: 0px 13px 10px -13px rgb(0,0,0, .6); 
+  box-shadow: 0px 13px 10px -13px rgb(0, 0, 0, 0.6);
 }
 
 .overons_text {
-  box-shadow: 0px 2px 6px rgb(0,0,0, .4);
+  box-shadow: 0px 2px 6px rgb(0, 0, 0, 0.4);
 }
 
 .gathering {
-  box-shadow: 0px 2px 4px rgb(0,0,0, .5);
+  box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.5);
 }
 
 .overons_image {
@@ -68,23 +59,23 @@ input {
 }
 
 .map_box {
-  box-shadow: 0px 1px 4px rgb(0,0,0, .3);
+  box-shadow: 0px 1px 4px rgb(0, 0, 0, 0.3);
 }
 
 .btn_orange {
-  box-shadow: 0px 1px 4px rgb(0,0,0, .3);
+  box-shadow: 0px 1px 4px rgb(0, 0, 0, 0.3);
 }
 
 .contact_info {
-box-shadow: 0px 1px 3px rgb(0,0,0, .4);
+  box-shadow: 0px 1px 3px rgb(0, 0, 0, 0.4);
 }
 
 .actueel_info {
-box-shadow: 0px 1px 4px rgb(0,0,0, .4);
+  box-shadow: 0px 1px 4px rgb(0, 0, 0, 0.4);
 }
 
 .actueel {
-box-shadow: 0px 2px 4px rgb(0,0,0, .5);
+  box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.5);
 }
 
 .calendar_item {
@@ -99,28 +90,32 @@ box-shadow: 0px 2px 4px rgb(0,0,0, .5);
   box-shadow: 0px 0px 20px gray;
 }
 
-.contact_text, .subscribe {
-  text-shadow: 0px 0px 2px rgb(0,0,0, 1);
+.contact_text,
+.subscribe {
+  text-shadow: 0px 0px 2px rgb(0, 0, 0, 1);
 }
 
 .tolman {
- scale: .5; 
- opacity: 0;
- animation: fade-in linear forwards;
- animation-timeline: view();
- animation-range: entry 20% cover 30%;
+  scale: 0.5;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
   .tolman {
     animation-range: entry 20% cover 20%;
   }
 }
 
 @keyframes fade-in {
-  from {scale: .5; opacity: 0}
-  to { scale: 1; opacity: 1}
+  from {
+    scale: 0.5;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
-
-
-
