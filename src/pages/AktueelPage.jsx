@@ -24,12 +24,12 @@ const Aktueel = () => {
             Deze week:&nbsp;
             <span className="">
               {new Date().toLocaleDateString("nl-NL", {
-                month: "long",
+                month: "numeric",
                 day: "numeric",
               })}{" "}
               tot{" "}
               {new Date(now + 604800000).toLocaleDateString("nl-NL", {
-                month: "long",
+                month: "numeric",
                 day: "numeric",
               })}
             </span>

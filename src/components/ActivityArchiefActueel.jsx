@@ -12,7 +12,7 @@ const ActivityArchiefActueel = ({act, url}) => {
         <div className="flex flex-1 text-xl font-semibold font-papyrus mx-auto">
           {act.title}
         </div>
-         {act.date ? (<div className="flex items-center text-lg text-yellow-600 font-semibold">
+         {act.date ? (<div className="flex items-center text-lg text-gray-500 font-semibold">
          {new Date(act.date).toLocaleDateString("nl-NL", {
             month: "long",
             day: "numeric",

@@ -17,18 +17,18 @@ const url = useLocation().pathname
       </div>
 
       <div className="actueel_info flex w-full justify-center flex-col px-8 pt-8 pb-12 rounded-xl max-xxxsm:px-4 
-      bg-gradient-to-t from-stone-100 via-white to-white border-b border-stone-400">
+      bg-gradient-to-t from-stone-50 via-white to-white border-b border-stone-400">
         <div className="w-full flex text-lg border-b border-slate-700">
           <span className="w-full flex flex-row items-center text-lg text-slate-800 font-semibold pb-2 max-xxxsm:items-start">
             <span className="mr-1">Deze week:</span>
             <span className="ml-1 max-xxxsm:ml-0">
               {new Date().toLocaleDateString("nl-NL", {
-                month: "long",
+                month: "numeric",
                 day: "numeric",
               })}{" "}
               tot{" "}
               {new Date(now + 604800000).toLocaleDateString("nl-NL", {
-                month: "long",
+                month: "numeric",
                 day: "numeric",
               })}
             </span>

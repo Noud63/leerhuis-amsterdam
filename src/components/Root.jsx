@@ -3,6 +3,7 @@ import Overons from './Overons'
 import Activities from './Activities'
 import Contact from './Contact';
 import Aktueel from './Aktueel';
+import Thematiek from './Thematiek';
 
 const Root = () => {
   return (

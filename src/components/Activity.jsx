@@ -6,31 +6,31 @@ const Activity = ({act}) => {
   return (
     <div className="w-full min-h-full" key={act.id}>
       <div className="calendar_item w-full h-full rounded-t-2xl bg-gradient-to-t from-stone-300 to-white flex flex-col justify-between relative">
-        <div className="p-4">
+        <div className="p-4 overflow-y-hidden">
           <span className="border-b border-black flex justify-between font-semibold font-papyrus text-xl pb-2">
             {act.title}
           </span>
         </div>
 
-        <div className="h-[110px] flex flex-col gap-2 pl-4 mb-6">
-          <div className="w-full mt-2">
+        <div className="h-auto flex flex-col gap-2 pl-4 mb-2">
+          <div className="w-full flex flex-col">
             <span className="font-semibold">Start : </span>
             {new Date(act.starting_date).toLocaleDateString("nl-NL", {
               month: "long",
               day: "numeric",
             })}
           </div>
-          <div className="w-full">
+          <div className="w-full flex flex-col">
             {" "}
             <span className="font-semibold">Tijd :</span> {act.time}
           </div>
 
-          <div className="w-full">
+          <div className="w-full flex flex-col">
             {" "}
-            <span className="font-semibold">O.l.v :</span> {act.led_by}
+            <span className="font-semibold">O.l.v :</span>{act.led_by_short ? act.led_by_short : act.led_by}
           </div>
 
-          <div className="w-full">
+          <div className="w-full flex flex-col">
             {" "}
             <span className="font-semibold">Kenmerk :</span> {act.itemId}
           </div>

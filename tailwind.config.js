@@ -5,7 +5,8 @@ export default {
     extend: {
       fontFamily: {
         papyrus: ["papyrus"],
-        gtwalsheim: ["gtwalsheim"],
+        // gtwalsheim: ["gtwalsheim"],
+        nunito: ["nunitoregular"],
       },
       screens: {
         maxxl:"1600px",

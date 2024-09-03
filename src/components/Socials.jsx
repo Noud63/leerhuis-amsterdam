@@ -5,8 +5,6 @@ import linkedinDark from "../assets/icons/linkedin_darkmode.png";
 import facebookDark from "../assets/icons/facebook_darkmode.png";
 import insta from "../assets/icons/insta.png";
 import instaDark from "../assets/icons/insta_darkmode.png";
-import twitter from "../assets/icons/twitter.png";
-import twitterDark from "../assets/icons/twitter_darkmode.png";
 import mail from "../assets/icons/mail.png"
 import linkedIn from "../assets/icons/linkedin_color.png"
 import facebook from "../assets/icons/facebook_color.png"
@@ -33,7 +31,7 @@ const Socials = () => {
           <img src={linkedIn} alt="mail" className="w-[30px] drop-shadow-lg" />
         </div>
 
-        <XIcon round={true} size={30} className="mr-2 drop-shadow-lg" />
+        
         {/* <LinkedinIcon round={true} size={30} className="mr-2" /> */}
       </div>
 

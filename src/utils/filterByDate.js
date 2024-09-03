@@ -19,6 +19,7 @@ const filterActivitiesInThePast = () => {
           id: act.id,
           title: act.title,
           image: act.image,
+          date: act.starting_date
       });
     }
     if (new Date(act.closing_date).getTime() >= now) {

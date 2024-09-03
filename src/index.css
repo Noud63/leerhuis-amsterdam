@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+
+@layer base {
+ 
 @font-face {
   font-family: 'papyrus';
   src: url('./fonts/papyrus.ttf') format('truetype'), 
@@ -10,7 +13,7 @@
        url('./fonts/papyrus.svg') format('svg'),
        url('./fonts/papyrus.woff') format('woff'),
        url('./fonts/papyrus.woff2') format('woff2')
-}
+} 
 
 @font-face {
   font-family: 'gtwalsheim';
@@ -18,6 +21,14 @@
  url('./fonts/gtwalsheim.woff') format('woff'),
  url('./fonts/gtwalsheim.woff2') format('woff2'),
   url('./fonts/gtwalsheim.ttf') format('ttf')
+}
+
+@font-face {
+  font-family: 'nunitoregular';
+  src: url('./fonts/nunitoregular.ttf') format('ttf'),
+  url('./fonts/nunitoregular.otf') format('otf'),
+  url('./fonts/nunitoregular.woff') format('woff')
+  }
 }
 
 
