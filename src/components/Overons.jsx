@@ -4,7 +4,7 @@ import gathering from "../assets/images/wandelaars2.png"
 
 const Overons = () => {
   return (
-    <div className="w-full flex items-center justify-center px-8 z-10 relative max-lg:px-8 max-bracket:px-4 max-xxsm:px-4 max-xxxsm:px-2 ">
+    <div className="w-full flex items-center justify-center px-8 z-10 relative max-lg:px-8 max-bracket:px-4 max-xxsm:px-4 max-xxxsm:px-2">
       <div className="w-full">
         <div className="overons flex flex-col">
           <div className="flex flex-row justify-between font-normal z-5 max-lg:flex-col ">
@@ -41,10 +41,13 @@ const Overons = () => {
                           />
                         </div>
                         We organiseren cursussen en inspiratiedagen die gaan
-                        over zinvol en verantwoordelijk samenleven.
-                        <br />
-                        Via ontmoeting en moedige gesprekken zoeken we
-                        verdieping en verbreding.
+                        over zinvol en verantwoordelijk samenleven. Via
+                        ontmoeting en moedige gesprekken zoeken we verdieping,
+                        andere perspectieven, en antwoorden op de vraag: wat
+                        zullen wij doen? Onze cursussen en bijeenkomsten zijn
+                        boeiend, inspirerend, en zeker ook gezellig! Het
+                        Leerhuis Amsterdam is verbonden aan de protestantse
+                        Muiderkerk.
                         <br />
                         <span className="w-full flex justify-center mt-12">
                           Wees welkom!

@@ -28,8 +28,8 @@ const Archief = () => {
   const url = useLocation().pathname;
 
   return (
-    <div className="w-full min-h-screen flex flex-col mt-[200px] items-start px-8 max-xxxsm:px-2 mb-44">
-      <div className="w-full max-w-[600px] mx-auto ">
+    <div className="w-full min-h-screen flex flex-col mt-[180px] items-start px-8 max-xxxsm:px-2 mb-44">
+      <div className="w-full  mx-auto ">
         <div className="actueel_info h-auto bg-white px-8 pt-8 rounded-xl max-xxxsm:px-4 pb-8 mb-8">
           <div className="w-full flex flex-row justify-between items-center max-xxsm:flex-col max-xxsm:items-start border-b border-black pb-2 mb-8">
             <span className="text-2xl font-semibold  text-black">
@@ -53,13 +53,19 @@ const Archief = () => {
             <span>({archive2024.length} activiteiten)</span>
           </div>
 
-          <div className="w-full max-w-full flex-col justify-center flex-wrap">
+          {/* <div className="w-full max-w-full flex-col justify-center flex-wrap">
             {archive2024.slice(0, cut)?.map((act) => (
+              <ActivityArchiefActueel key={act.id} act={act} url={url} />
+            ))}
+          </div> */}
+
+          <div className="grid grid-cols-4 max-maxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8">
+            {data?.map((act) => (
               <ActivityArchiefActueel key={act.id} act={act} url={url} />
             ))}
           </div>
 
-          <div className="w-full flex justify-center">
+          {/* <div className="w-full flex justify-center">
             <button
               type="button"
               className="btn  w-[150px] rounded-full justify-center items-center text-[#000] border-2 border-black gap-2 pb-1 leading-8 pt-1 text-md font-semibold"
@@ -67,7 +73,7 @@ const Archief = () => {
             >
               {cut === -9 ? "Hele archief" : "Bekijk minder"}
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 

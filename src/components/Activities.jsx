@@ -9,6 +9,7 @@ export const rootLoader = () => {
 };
 
 const Activities = () => {
+  
   const [slice, setSlice] = useState(4);
   const [width, setWidth] = useState(window.innerWidth);
 

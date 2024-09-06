@@ -5,7 +5,7 @@ const ActivityArchiefActueel = ({act, url}) => {
   
   return (
     <div
-      className="actueel flex flex-col mb-12 rounded-t-xl bg-gradient-to-t from-stone-400 to-white relative"
+      className="actueel flex flex-col mb-8 rounded-t-xl bg-gradient-to-t from-stone-400 to-white relative"
       key={act.id}
     >
       <div className="flex flex-row py-3 px-3 text-black items-center">
@@ -25,7 +25,7 @@ const ActivityArchiefActueel = ({act, url}) => {
         <img
           src={`images/${act.image}`}
           alt=""
-          className="w-full max-w-[550px]"
+          className="w-full "
         />
       </div>
       <div className="bg-gradient-to-t from-slate-900 to-slate-900/50 w flex justify-center py-6 absolute bottom-0 left-0 w-full">
