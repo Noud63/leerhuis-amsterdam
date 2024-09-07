@@ -12,6 +12,7 @@ import OveronsPage from "./pages/OveronsPage";
 import ContactForm from './pages/ContactForm';
 import ContactPage from './pages/ContactPage';
 import Aktueel from './components/Aktueel';
+import ZakelijkPage from './pages/ZakelijkPage';
 import AktueelPage, { currentLoader } from "./pages/AktueelPage";
 import Subscribe from './pages/Subscribe';
 import AllActivitiesLayout from './pages/AllActivitiesLayout';
@@ -99,6 +100,10 @@ const router = createBrowserRouter([
         element: <ContactPage />,
       },
       {
+        path: "/zakelijkpage",
+        element: <ZakelijkPage />,
+      },
+      {
         path: "/aktueelpage",
         loader: currentLoader,
         element: <AktueelPage />,
@@ -118,7 +123,7 @@ const router = createBrowserRouter([
       {
         path: "/archief",
         loader: archiveLoader,
-        element: <Archief />
+        element: <Archief />,
       },
       {
         path: "/archief/calendarItem/:calendaritem_id",

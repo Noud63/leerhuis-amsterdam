@@ -21,7 +21,7 @@ const OveronsPage = () => {
                   <span className="flex justify-center text-2xl text-orange-700 font-semibold pb-4 max-xxxsm:justify-start border-b border-black mb-4">
                     Leren in een complexe wereld
                   </span>
-                  <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full">
+                  <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full prose-lg">
                     <p>
                       Het Leerhuis Amsterdam nodigt kerkelijke en
                       niet-kerkelijke Amsterdammers uit om elkaar te ontmoeten
@@ -43,7 +43,7 @@ const OveronsPage = () => {
                     </p>
                   </div>
 
-                  <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full mt-4">
+                  <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full mt-4 prose-lg">
                     <div className="font-semibold pb-2">
                       Thema voor 2024-2025: De polarisatie voorbij
                     </div>
@@ -98,25 +98,6 @@ const OveronsPage = () => {
                       <li>Wilken Veen</li>
                       <li>Greteke de Vries</li>
                     </ul>
-                  </div>
-
-                  <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full mt-12">
-                    <div className="font-semibold pb-2">
-                      Locatie, website en betaling:
-                    </div>
-                    Plaats: Muiderkerk, Linnaeusstraat 37 Amsterdam Oost, tenzij
-                    anders vermeld. <br />
-                    Informatie en opgave via leerhuisamsterdam@gmail.com, Graag
-                    zo spoedig mogelijk, uiterlijk een week voor aanvang van de
-                    cursus. <br />
-                    Website: www.leerhuisamsterdam.nl <br />
-                    Je bijdrage: vrijwillige bijdrage ter dekking van de kosten
-                    (gebruik vergaderruimte, verwarming, toilet, koffie/thee,
-                    kopieën). <br />
-                    Bankgegevens: NL32 INGB 0000449815 t.a.v. Protestantse
-                    gemeente inzake T&amp;E.  <br />
-                    Láter instappen in cursussen is vaak mogelijk. Vraag de
-                    cursusleider wat kan.
                   </div>
                 </div>
 

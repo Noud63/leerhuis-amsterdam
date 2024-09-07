@@ -132,7 +132,7 @@
         "title": "Literaire kring",
         "date": {
           "day": "Donderdag",
-          "dates": ["2024-10-14", "2024-10-28", "2025-11-25", "2025-01-13"]
+          "dates": ["2024-10-28", "2024-11-25", "2024-12-16", "2025-01-13"]
         },
         "time": "19:30 - 21:30 uur",
         "contribution": "Vrijwillige bijdrage",
@@ -154,8 +154,8 @@
         "led_by_short": "Hanneke Meulink-Korf en Greteke de Vries",
         "email": "predikant@muiderkerk.nl",
         "image": "debelofte.png",
-        "starting_date": "2024-09-30",
-        "closing_date": "2025-11-25",
+        "starting_date": "2024-10-28",
+        "closing_date": "2025-01-13",
         "itemId": "LA-AC15"
       },
       {

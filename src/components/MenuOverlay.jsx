@@ -65,6 +65,20 @@ return (
         <span>Activiteiten</span>
       </NavLink>
 
+      <div className="flex justify-center">
+        <NavLink
+          to="/zakelijkpage"
+          className={({ isActive }) => [
+            isActive
+              ? "border-b-2 border-black"
+              : "border-b-2 border-transparent",
+            ,
+          ]}
+        >
+          <span>Zakelijk</span>
+        </NavLink>
+      </div>
+
       <NavLink
         to="/aktueelpage"
         className={({ isActive }) => [
