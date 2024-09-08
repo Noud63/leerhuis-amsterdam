@@ -48,9 +48,9 @@
           "Miskotte schrijft over het gebed als een waakzame en verbindende daad van verzet.\n",
           "Hoe klinkt dat te midden van de huidige polarisatie? Kan bidden verbindend werken tussen woke en antiwoke?\n",
           "We leggen de beschouwingen van Miskotte naast Cees Zwijstra’s pleidooi voor een hedendaagse ethiek van verantwoordelijkheid. En dat brengen we in gesprek met ons eigen zoeken naar religieuze verbinding en maatschappelijke betrokkenheid.",
-          "Literatuur: *K.H. Miskotte, ‘De weg van het gebed’, in: Mystiek en Bevinding,Verzameld Werk 14, Uitgeverij Kok. 2015, p. 227-301.\n", 
+          "Literatuur: *K.H. Miskotte, ‘De weg van het gebed’, in: Mystiek en Bevinding,Verzameld Werk 14, Uitgeverij Kok. 2015, p. 227-301.\n",
           "Deze tekst zal voor de deelnemers beschikbaar worden gesteld.\n",
-          "*Cees Zweistra, Woke theater. Hoe we ontsnappen aan de greep van woke en antiwoke, Utrecht: KokBoekencentrum Uitgevers 2023.\n", 
+          "*Cees Zweistra, Woke theater. Hoe we ontsnappen aan de greep van woke en antiwoke, Utrecht: KokBoekencentrum Uitgevers 2023.\n",
           "Tijdens de cursus zullen we hier fragmenten uit bespreken.\n"
         ],
         "led_by": "Gerben van Manen, predikant in Nieuw-West",
@@ -209,23 +209,37 @@
       },
       {
         "id": 6,
+        "title": "De polarisatie voorbij",
+        "date": {
+          "day": "Zaterdag",
+          "dates": ["2024-11-02"]
+        },
+        "time": "15:00 - 17:00 uur",
+        "contribution": "Vrijwillige bijdrage",
+        "description": [
+          "Wat is polarisatie, waardoor ontstaat het, wat doet het met ons en met de wereld om ons heen?"
+        ],
+        "led_by": "?",
+        "email": "?",
+        "image": "polarisatie.jpeg",
+        "starting_date": "2024-11-02",
+        "closing_date": "2024-11-02",
+        "itemId": "LA-AC17"
+      },
+      {
+        "id": 7,
         "title": "Leesproject Zwart-Wit",
         "date": {
           "day": "Donderdag",
-          "dates": [
-            "2025-01-30",
-            "2025-02-27",
-            "2025-03-27",
-            "2025-05-01"
-          ]
+          "dates": ["2025-01-30", "2025-02-27", "2025-03-27", "2025-05-01"]
         },
         "time": "19:30 - 21:30 uur",
         "contribution": "Vrijwillige bijdrage",
         "description": [
-          "Eindelijk vrij? Bijdrage aan bezinning op kerken en slavernij.\n", 
-          "De Nederlandse Raad van Kerken heeft een Bezinningsboekje uitgegeven dat we dit jaar als leidraad gebruiken voor gesprekken tussen mensen van kleur en witte mensen.\n", 
-          "Aandacht voor de geschiedenis van Creolen en Hindostanen heeft de deelnemers aan eerdere bijeenkomsten verrijkt.\n", 
-          "Nu zullen we het gesprek stimuleren rond de doorwerking van het slavernijverleden in het nu, openlijk en onderhuids.\n", 
+          "Eindelijk vrij? Bijdrage aan bezinning op kerken en slavernij.\n",
+          "De Nederlandse Raad van Kerken heeft een Bezinningsboekje uitgegeven dat we dit jaar als leidraad gebruiken voor gesprekken tussen mensen van kleur en witte mensen.\n",
+          "Aandacht voor de geschiedenis van Creolen en Hindostanen heeft de deelnemers aan eerdere bijeenkomsten verrijkt.\n",
+          "Nu zullen we het gesprek stimuleren rond de doorwerking van het slavernijverleden in het nu, openlijk en onderhuids.\n",
           "Wij volgen de inhoud van het boekje: I. Slavernij en de Bijbel; II Slavernij in Oost en West, in verleden en heden; III Interviews en column; IV Heilzame verwerking.\n",
           "Eerlijke gesprekken, vanuit een verlangen naar een gezamenlijke toekomst, dat is wat we beogen.\n",
           "Mensen met een kerkelijke betrokkenheid of een andere motivatie: iedereen is welkom!\n",
@@ -237,10 +251,10 @@
         "image": "cliftonengreteke.jpg",
         "starting_date": "2025-01-30",
         "closing_date": "2025-05-01",
-        "itemId": "LA-AC17"
+        "itemId": "LA-AC18"
       },
       {
-        "id": 7,
+        "id": 8,
         "title": ["Groen geloven, ", "Inspiratiemiddag"],
         "title_long": [
           "Groen geloven",
@@ -387,7 +401,7 @@
         "itemId": "LA-AC01"
       },
       {
-        "id": 8,
+        "id": 9,
         "title": "Groen Geloven in Mokum",
         "date": {
           "day": "Woensdag",
@@ -409,7 +423,7 @@
         "itemId": "LA-AC02"
       },
       {
-        "id": 9,
+        "id": 10,
         "title": "Zwart/wit",
         "date": {
           "day": "Vrijdag",
@@ -430,7 +444,7 @@
         "itemId": "LA-AC03"
       },
       {
-        "id": 10,
+        "id": 11,
         "title": "De Zin van Sabbat",
         "date": {
           "day": "Dinsdag",
@@ -451,7 +465,7 @@
         "itemId": "LA-AC04"
       },
       {
-        "id": 11,
+        "id": 12,
         "title": "Bijbels Leerhuis",
         "date": {
           "day": "Donderdag",
@@ -479,7 +493,7 @@
         "itemId": "LA-AC05"
       },
       {
-        "id": 12,
+        "id": 13,
         "title": "Bijbels ABC",
         "date": {
           "day": "Maandag",
@@ -500,7 +514,7 @@
         "itemId": "LA-AC06"
       },
       {
-        "id": 13,
+        "id": 14,
         "title": "De Moderne Theologen",
         "date": {
           "day": "Dinsdag",
@@ -528,7 +542,7 @@
         "itemId": "LA-AC07"
       },
       {
-        "id": 14,
+        "id": 15,
         "title": "Literaire Kring",
         "date": {
           "day": "Maandag",
@@ -549,7 +563,7 @@
         "itemId": "LA-AC08"
       },
       {
-        "id": 15,
+        "id": 16,
         "title": "Leesgroep Miskotte",
         "date": {
           "day": "Woensdag",
@@ -578,7 +592,7 @@
         "itemId": "LA-AC09"
       },
       {
-        "id": 16,
+        "id": 17,
         "title": "Palestijnse Christenen",
         "date": {
           "day": "Zaterdag",

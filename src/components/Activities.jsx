@@ -14,7 +14,7 @@ const Activities = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
   const data = useLoaderData();
-  console.log(data);
+
 
   useEffect(() => {
     const handleResize = () => {

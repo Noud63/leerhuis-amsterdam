@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Activity = ({act}) => {
 
+
   return (
     <div className="w-full min-h-full" key={act.id}>
       <div className="calendar_item w-full h-full rounded-t-2xl bg-gradient-to-t from-stone-300 to-white flex flex-col justify-between relative">

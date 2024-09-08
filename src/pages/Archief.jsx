@@ -10,20 +10,22 @@ export const archiveLoader = () => {
 };
 
 const Archief = () => {
-  const [cut, setCut] = useState(-9);
+  // const [cut, setCut] = useState(-9);
 
   const data = useLoaderData();
   const archive2024 = data.slice(-10); // 10 aantal activiteiten van jan - jun 2024
   const archive2025 = data.slice(0, -10);
 
-  const handleClick = () => {
-    if (cut === -9) {
-      setCut(11);
-    } else {
-      setCut(-9);
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    }
-  };
+  const descendingOrder = archive2024.sort((a,b) => new Date(b.date) - new Date(a.date))
+
+  // const handleClick = () => {
+  //   if (cut === -9) {
+  //     setCut(11);
+  //   } else {
+  //     setCut(-9);
+  //     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  //   }
+  // };
 
   const url = useLocation().pathname;
 
@@ -60,7 +62,7 @@ const Archief = () => {
           </div> */}
 
           <div className="grid grid-cols-4 max-maxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8">
-            {data?.map((act) => (
+            {descendingOrder?.map((act) => (
               <ActivityArchiefActueel key={act.id} act={act} url={url} />
             ))}
           </div>

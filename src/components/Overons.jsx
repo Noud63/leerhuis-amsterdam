@@ -25,11 +25,11 @@ const Overons = () => {
                       className="overons_text flex items-center flex-col max-lg:w-full bg-gradient-to-t from-stone-100 via-white to-white rounded-xl 
                          border-b-2 border-stone-300 text-black px-10 pt-16 pb-12 max-xxxsm:px-4 max-xxxsm:pt-10 relative"
                     >
-                      <div className="w-full h-full absolute bottom-0 right-0 bg-[url('./assets/images/map_adam2.png')]  bg-center opacity-30" />
+                      <div className="w-full h-full absolute bottom-0 right-0 bg-[url('./assets/images/map_adam2.png')] bg-no-repeat bg-cover bg-center opacity-30" />
                       <span className="w-full flex justify-center text-2xl font-semibold pb-4 mb-4 text-amber-700 border-b border-black max-mini:text-[22px] ">
                         Leren in een complexe wereld
                       </span>
-                      <div className="w-full max-w-[800px] mt-6 mb-16">
+                      <div className="w-full max-w-[800px] mt-6 mb-16 prose-lg">
                         Het Leerhuis Amsterdam nodigt kerkelijke en
                         niet-kerkelijke Amsterdammers uit om elkaar te ontmoeten
                         rond de belangrijke thema's van deze tijd.

@@ -25,7 +25,7 @@ return (
         className={({ isActive }) => [
           isActive
             ? "border-b-2 border-black"
-            : "border-b-2 border-transparent",
+            : "border-b-2 border-transparent"
         ]}
       >
         <span className="cursor-pointer">Home</span>
@@ -36,7 +36,7 @@ return (
         className={({ isActive }) => [
           isActive
             ? "border-b-2 border-black"
-            : "border-b-2 border-transparent",
+            : "border-b-2 border-transparent"
         ]}
         onClick={closeMenuOverlay}
       >
@@ -48,7 +48,7 @@ return (
         className={({ isActive }) => [
           isActive
             ? "border-b-2 border-black"
-            : "border-b-2 border-transparent",
+            : "border-b-2 border-transparent"
         ]}
       >
         <span>Contact</span>
@@ -59,7 +59,7 @@ return (
         className={({ isActive }) => [
           isActive
             ? "border-b-2 border-black"
-            : "border-b-2 border-transparent",
+            : "border-b-2 border-transparent"
         ]}
       >
         <span>Activiteiten</span>
@@ -71,8 +71,7 @@ return (
           className={({ isActive }) => [
             isActive
               ? "border-b-2 border-black"
-              : "border-b-2 border-transparent",
-            ,
+              : "border-b-2 border-transparent"
           ]}
         >
           <span>Zakelijk</span>
@@ -84,7 +83,7 @@ return (
         className={({ isActive }) => [
           isActive
             ? "border-b-2 border-black"
-            : "border-b-2 border-transparent",
+            : "border-b-2 border-transparent"
         ]}
       >
         <span>Aktueel</span>
@@ -95,7 +94,7 @@ return (
         className={({ isActive }) => [
           isActive
             ? "border-b-2 border-black"
-            : "border-b-2 border-transparent",
+            : "border-b-2 border-transparent"
         ]}
       >
         <span>archief</span>

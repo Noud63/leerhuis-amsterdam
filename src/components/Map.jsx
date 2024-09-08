@@ -22,8 +22,9 @@ const Map = () => {
     <MapContainer
       center={positionMap}
       zoom={12}
-      scrollWheelZoom={true}
+      scrollWheelZoom={false}
       style={{ height: "400px" }}
+      
     >
       <TileLayer
         attribution='<a href="https://www.openstreetmap.org">&copy; OpenStreetMap</a>'
