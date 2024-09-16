@@ -91,7 +91,6 @@ const OveronsPage = () => {
 
                     <ul className="list-disc pl-12">
                       <li>Rijk van Ark</li>
-                      <li>Liemo de Boer</li>
                       <li>Corinne Egberts</li>
                       <li>Gerben van Manen</li>
                       <li>Anneke Nolet</li>
