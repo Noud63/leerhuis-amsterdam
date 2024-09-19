@@ -1,6 +1,5 @@
 import React from 'react'
 import bracket from "../assets/images/curlybracket_black.png"
-// import logo from "../assets/images/logo.png"
 import Socials from './Socials'
 import Menu from './Menu'
 import scroll from "../utils/scroll";

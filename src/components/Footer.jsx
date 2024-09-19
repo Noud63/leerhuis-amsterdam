@@ -7,12 +7,14 @@ import linkedin from "../assets/icons/linkedin_gray.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const style =
-    "flex flex-col max-footer:flex-row max-xsm:gap-6 max-xxxsm:font-normal text-base max-xxsm:grid grid-cols-3";
+  const style = "flex flex-col max-footer:flex-wrap max-footer:flex-row justify-center gap-6 mx-4";
 
   return (
-    <div className="w-full h-[600px] bg-stone-900 flex flex-row justify-around items-center relative pb-40 pt-20 max-footer:flex-col max-footer:pt-8 max-footer:h-[800px] max-xxsm:h-[850px]">
-      <div className="h-full flex-1 flex items-center justify-center max-footer:py-10">
+    <div
+      className="w-full h-[600px] bg-stone-900 flex flex-row justify-around items-center relative pb-40 pt-12 
+    max-footer:flex-col max-footer:pt-8 max-footer:h-[800px] max-xxsm:h-[850px]"
+    >
+      <div className="h-full flex-1 flex items-center justify-center max-footer:pt-8 max-footer:pb-10">
         <Menu color="white" style={style} border="border-none" />
       </div>
       <div className="h-full w-[600px] border-x border-white flex flex-col items-center justify-between pt-6 max-footer:border-none max-footer:py-4 max-footer:w-full">
@@ -35,10 +37,16 @@ const Footer = () => {
           <img src={linkedin} alt="" className="w-[35px]" />
         </div>
 
-        <div className="w-full h-1/3 max-w-[200px] max-footer:max-w-[500px] max-footer:items-center text-center max-footer:px-4 flex flex-col justify-end items-center text-sm text-gray-400 pb-4 pl-4">
-          Beeld in het Leerhuis logo is vervaardigd door kunstenaar Ronald Tolman.
+        <div
+          className="w-full h-1/3 max-w-[200px] max-footer:max-w-[500px] max-footer:items-center text-center 
+        max-footer:px-4 flex flex-col justify-end items-center text-sm text-gray-400 pb-4 pl-4"
+        >
+          Beeld in het Leerhuis logo is vervaardigd door kunstenaar Ronald
+          Tolman.
           <br />
-          <span className="w-full flex justify-center">- info@ronaldtolman.nl -</span>
+          <span className="w-full flex justify-center">
+            - info@ronaldtolman.nl -
+          </span>
         </div>
       </div>
 
