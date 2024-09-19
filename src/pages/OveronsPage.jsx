@@ -10,18 +10,18 @@ const OveronsPage = () => {
         <div className="overons flex flex-col">
           <div className="w-full flex flex-row justify-between text-black font-normal gap-12 rounded-lg z-5 max-lg:flex-col">
             <div className="flex flex-1 flex-col leading-2 text-lg max-lg:w-full pb-20">
-              <div className="flex justify-between border-b border-black mb-8 max-mini:mb-4">
-                <span className="flex text-[#000] text-2xl font-semibold pb-2">
+              <div className="flex justify-between border-b border-black mb-8 ">
+                <span className="flex text-[#000] text-xl font-semibold pb-2">
                   # Over het Leerhuis
                 </span>
               </div>
 
               <div className="w-full  flex flex-row items-start justify-center max-xxl:flex-col max-xxl:items-center">
-                <div className="max-xxl:w-full max-xxl:flex flex-col items-center">
-                  <span className="flex justify-center text-2xl text-orange-700 font-semibold pb-4 max-xxxsm:justify-start border-b border-black mb-4">
+                <div className="max-xxl:w-full max-xxl:flex flex-col items-center max-xxsm:items-start">
+                  <span className="flex justify-center text-2xl max-sm:text-xl text-orange-700 font-semibold  max-xxxsm:justify-start  mb-4">
                     Leren in een complexe wereld
                   </span>
-                  <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full prose-lg">
+                  <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full prose-lg border-t border-black pt-4">
                     <p>
                       Het Leerhuis Amsterdam nodigt kerkelijke en
                       niet-kerkelijke Amsterdammers uit om elkaar te ontmoeten

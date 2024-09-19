@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 const ZakelijkPage = () => {
   return (
     <div className="min-h-screen w-full max-w-[900px] mx-auto max-lg:w-full max-xxl:w-full mt-[180px] prose-lg px-4 mb-24">
-      <div className="font-semibold pb-2 border-b border-black mb-4">
+      <div className="text-[22px] font-semibold pb-2 border-b border-black mb-4">
         Zakelijke informatie
       </div>
       <div>
-        Alle activiteiten vinden plaats in de Muiderkerk, Linnaeusstraat 37, Amsterdam Oost, tenzij anders
-        vermeld. <br />
+        Alle activiteiten vinden plaats in de Muiderkerk, Linnaeusstraat 37,
+        Amsterdam Oost, tenzij anders vermeld. <br />
         Informatie en opgave via leerhuisamsterdam@gmail.com, Graag zo spoedig
         mogelijk, uiterlijk een week voor aanvang van de cursus. <br />
         Website: leerhuisamsterdam.nl <br />

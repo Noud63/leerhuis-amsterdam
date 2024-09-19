@@ -17,8 +17,6 @@ import BackButton from '../components/BackButton';
 
 
 const CalendarItem = () => {
-
-  console.log(activities)
   
   const currentUrl = window.location.href
 
@@ -30,7 +28,6 @@ const CalendarItem = () => {
 
   const item = activities.activities[calendaritem_id];
   const ID = item.itemId
-  console.log("Id:", ID)
 
   const givenDate = new Date(item.closing_date).getTime() + 86400000;
   const now = new Date().getTime();
@@ -76,7 +73,7 @@ useEffect(()=> {
                 className="h-auto border-b border-[#000] gap-2 flex justify-between items-end font-semibold 
               font-papyrus mb-2 text-2xl py-2 mx-4 mt-4 overflow-hidden relative max-mini:text-xl"
               >
-                <span>{item.title}</span>
+                <span className="line-clamp-1">{item.title}</span>
                 <div className="group">
                   <div className="flex flex-row gap-2 font-normal">
                     <span className="text-orange-600 font-sans text-lg max-xxsm:hidden">
@@ -156,7 +153,7 @@ useEffect(()=> {
                   <span>
                     {item.description.map((line) => {
                       return (
-                        <div className="flex flex-col">
+                        <div className="flex flex-col" key={line}>
                           <span>{line}</span>
                         </div>
                       );

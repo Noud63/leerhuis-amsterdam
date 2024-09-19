@@ -10,7 +10,7 @@ const Overons = () => {
           <div className="flex flex-row justify-between font-normal z-5 max-lg:flex-col ">
             <div className="flex flex-1 flex-col justify-center items-center leading-2 text-lg max-lg:w-full">
               <div className="w-full flex justify-between border-b border-black">
-                <span className="flex text-2xl font-semibold pb-4">
+                <span className="flex text-[22px] font-semibold pb-4">
                   # Over het Leerhuis
                 </span>
               </div>

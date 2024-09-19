@@ -6,7 +6,7 @@ const Contact = ({forwardUrl}) => {
   return (
     <div className="w-full h-auto flex flex-col px-8 text-black max-xxsm:px-4 max-xxxsm:px-2 mt-10">
       <div className="w-full flex gap-2 mb-6 border-b border-black pb-2 pt-10 max-xxsm:pt-8">
-        <span className="text-2xl font-semibold pt-1 text-black">
+        <span className="text-[22px] font-semibold pt-1 text-black">
           # Contact
         </span>
       </div>
