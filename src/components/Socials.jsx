@@ -3,7 +3,7 @@ import linkedin from "../assets/icons/linkedin.png";
 import linkedinDark from "../assets/icons/linkedin_darkmode.png";
 // import facebook from "../assets/icons/facebook_gray.png";
 import facebookDark from "../assets/icons/facebook_darkmode.png";
-import insta from "../assets/icons/insta.png";
+import insta from "../assets/icons/insta_color.png";
 import instaDark from "../assets/icons/insta_darkmode.png";
 import mail from "../assets/icons/mail.png"
 import linkedIn from "../assets/icons/linkedin_color.png"
@@ -28,10 +28,23 @@ const Socials = () => {
 
       <div className="flex flex-row">
         <div className="mr-2">
+          <a
+            href="https://www.instagram.com/leerhuisamsterdam/"
+            target="_blank"
+            passHref={true}
+          >
+            <img src={insta} alt="mail" className="w-[30px] drop-shadow-lg" />
+          </a>
+        </div>
+
+        {/* <LinkedinIcon round={true} size={30} className="mr-2" /> */}
+      </div>
+
+      <div className="flex flex-row">
+        <div className="mr-2">
           <img src={linkedIn} alt="mail" className="w-[30px] drop-shadow-lg" />
         </div>
 
-        
         {/* <LinkedinIcon round={true} size={30} className="mr-2" /> */}
       </div>
 
