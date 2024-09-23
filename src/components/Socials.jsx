@@ -29,9 +29,8 @@ const Socials = () => {
       <div className="flex flex-row">
         <div className="mr-2">
           <a
-            href="https://www.instagram.com/leerhuisamsterdam/"
+            href="https://www.instagram.com/leerhuisamsterdam?igsh=cnpleWpwazI1MDBr"
             target="_blank"
-            passHref={true}
           >
             <img src={insta} alt="mail" className="w-[30px] drop-shadow-lg" />
           </a>

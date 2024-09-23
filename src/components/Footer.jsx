@@ -39,9 +39,8 @@ const Footer = () => {
           <div className="flex flex-row">
             <div className="">
               <a
-                href="https://www.instagram.com/leerhuisamsterdam/"
+                href="https://www.instagram.com/leerhuisamsterdam?igsh=cnpleWpwazI1MDBr"
                 target="_blank"
-                passHref={true}
               >
                 <img
                   src={insta}
