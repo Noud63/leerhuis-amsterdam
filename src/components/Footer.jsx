@@ -4,6 +4,7 @@ import Menu from "./Menu";
 import mail from "../assets/icons/mail_gray.png";
 import facebook from "../assets/icons/facebook_gray.png";
 import linkedin from "../assets/icons/linkedin_gray.png";
+import insta from "../assets/icons/insta_gray.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -34,6 +35,25 @@ const Footer = () => {
           <Link to="/contactform">
             <img src={mail} alt="" className="w-[35px]" />
           </Link>
+
+          <div className="flex flex-row">
+            <div className="">
+              <a
+                href="https://www.instagram.com/leerhuisamsterdam/"
+                target="_blank"
+                passHref={true}
+              >
+                <img
+                  src={insta}
+                  alt="mail"
+                  className="w-[35px] drop-shadow-lg"
+                />
+              </a>
+            </div>
+
+            {/* <LinkedinIcon round={true} size={30} className="mr-2" /> */}
+          </div>
+
           <img src={linkedin} alt="" className="w-[35px]" />
         </div>
 
