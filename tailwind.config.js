@@ -7,6 +7,7 @@ export default {
         papyrus: ["papyrus"],
         gtwalsheim: ["gtwalsheim"],
         MPLUSRounded1c: ["M PLUS Rounded 1c"],
+        nunito: ["nunito"],
       },
       screens: {
         maxxl: "1600px",

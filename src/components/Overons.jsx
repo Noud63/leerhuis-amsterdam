@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import gathering from "../assets/images/wandelaars2.png"
+import wandelaars from "../assets/images/wandelaars2.png"
 
 const Overons = () => {
   return (
@@ -35,7 +35,7 @@ const Overons = () => {
                         rond de belangrijke thema's van deze tijd.
                         <div className="tolman w-full flex justify-center mt-12">
                           <img
-                            src={gathering}
+                            src={wandelaars}
                             alt=""
                             className="w-full max-w-[700px] max-xmd:max-w-full"
                           />

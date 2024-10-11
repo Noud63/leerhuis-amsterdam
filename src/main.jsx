@@ -11,6 +11,8 @@ import CalendarItem from './pages/CalendarItem';
 import OveronsPage from "./pages/OveronsPage";
 import ContactForm from './pages/ContactForm';
 import ContactPage from './pages/ContactPage';
+import Polarisatie from "./pages/Polarisatie";
+import PolarisatieCalendarItem from "./pages/PolarisatieCalenderItem"
 import Aktueel from './components/Aktueel';
 import ZakelijkPage from './pages/ZakelijkPage';
 import AktueelPage, { currentLoader } from "./pages/AktueelPage";
@@ -58,6 +60,18 @@ const router = createBrowserRouter([
           {
             path: "/allactivities/calendaritem/:calendaritem_id/subscribe/:id/contactform",
             element: <ContactForm />,
+          },
+          {
+            path: "/allactivities/polarisatie",
+            element: <Polarisatie />,
+          },
+          {
+            path: "/allactivities/polarisatie/polarisatiecalendaritem/:calendaritem_id",
+            element: <PolarisatieCalendarItem />,
+          },
+          {
+            path: "/allactivities/polarisatie/polarisatiecalendaritem/:calendaritem_id/subscribe/:id",
+            element: <Subscribe />,
           },
         ],
       },
@@ -128,6 +142,18 @@ const router = createBrowserRouter([
       {
         path: "/archief/calendarItem/:calendaritem_id",
         element: <CalendarItem />,
+      },
+      {
+        path: "/polarisatie",
+        element: <Polarisatie />,
+      },
+      {
+        path: "/polarisatie/polarisatiecalendaritem/:calendaritem_id",
+        element: <PolarisatieCalendarItem />,
+      },
+      {
+        path: "/polarisatie/polarisatiecalendaritem/:calendaritem_id/subscribe/:id",
+        element: <Subscribe />,
       },
     ],
   },

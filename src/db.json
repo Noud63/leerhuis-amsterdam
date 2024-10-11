@@ -214,12 +214,12 @@
           "day": "Zaterdag",
           "dates": ["2024-11-02"]
         },
-        "time": "15:00 - 17:00 uur",
+        "time": "14:30 - 17:30 uur",
         "contribution": "Vrijwillige bijdrage",
         "description": [
           "Wat is polarisatie, waardoor ontstaat het, wat doet het met ons en met de wereld om ons heen?"
         ],
-        "led_by": "?",
+        "led_by": "*",
         "email": "?",
         "image": "polarisatie.jpeg",
         "starting_date": "2024-11-02",

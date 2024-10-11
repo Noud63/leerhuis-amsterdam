@@ -1,0 +1,67 @@
+{ "polarisatie": 
+    [
+      {
+        "id": 0,
+        "title": ["De polarisatie voorbij -", " 1"],
+        "date": {
+          "day": "Zaterdag",
+          "dates": ["2024-11-02"]
+        },
+        "time": "14:30 - 17:30 uur",
+        "location": "Muiderkerk, Linnaeusstraat 37",
+        "contribution": "10 euro per keer, 17,50 voor twee en 25 euro voor drie bijeenkomsten",
+        "description": [
+          "Waarom en hoe polariseert de wereld en wat betekent dat voor onze stad?\n",
+          "Met: Jeroen Slot, hoofd onderzoek en statistiek van de gemeente Amsterdam, Polarisatie: de feiten en cijfers in Amsterdam, Rachelle van Andel, predikant en filosoof, over Hanna Ahrendt; Wilken Veen, predikant, over Dietrich Bonhoeffer."
+        ],
+        "led_by": "",
+        "email": "",
+        "image": "polarisatie.jpeg",
+        "starting_date": "2024-11-02",
+        "closing_date": "2024-11-02",
+        "itemId": "LA-AC17"
+      },
+      {
+        "id": 1,
+        "title": ["De polarisatie voorbij -", " 2"],
+        "date": {
+          "day": "Zaterdag",
+          "dates": ["2025-02-08"]
+        },
+        "time": "14:30 - 17:30 uur",
+        "location": "Keizersgrachtkerk, Keizersgracht 566",
+        "contribution": "10 euro per keer, 17,50 voor twee en 25 euro voor drie bijeenkomsten",
+        "description": [
+          "Bieden de bronnen van onze beschaving, zoals de Bijbel en andere religieuze en spirituele bronnen, een richting voor analyse en oplossingen?\n",
+          "Met: Erik Borgman, emeritus-hoogleraar Publieke Theologie Tilburg University, en Rosaliene Israël, praktisch theoloog, docent aan het Remonstrants Seminarium (gevraagd)."
+        ],
+        "led_by": "",
+        "email": "",
+        "image": "polarisatie2.jpg",
+        "starting_date": "2025-02-08",
+        "closing_date": "2025-02-08",
+        "itemId": "LA-AC18"
+      },
+      {
+        "id": 2,
+        "title": ["De polarisatie voorbij -", " 3"],
+        "date": {
+          "day": "Zaterdag",
+          "dates": ["2025-05-24"]
+        },
+        "time": "14:30 - 17:30 uur",
+        "location": "Oranjekerk, Van Ostadestraat",
+        "contribution": "10 euro per keer, 17,50 voor twee en 25 euro voor drie bijeenkomsten",
+        "description": [
+          "Hoe komen we voorbij de polarisatie? Zijn er werkbare voorbeelden?\n",
+          "Met: Marjolein Moorman, wethouder Amsterdam, portefeuilles Onderwijs, Jeugd(zorg), Armoede en Schuldhulpverlening etc. en Martijn van Leerdam, predikant-directeur Pauluskerk Rotterdam"
+        ],
+        "led_by": "",
+        "email": "",
+        "image": "polarisatie4.jpg",
+        "starting_date": "2025-05-24",
+        "closing_date": "2025-05-24",
+        "itemId": "LA-AC19"
+      }
+    ]
+}

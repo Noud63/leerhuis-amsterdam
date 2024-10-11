@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const ZakelijkPage = () => {
   return (
     <div className="min-h-screen w-full max-w-[900px] mx-auto max-lg:w-full max-xxl:w-full mt-[180px] prose-lg px-4 mb-24">
-      <div className="text-[22px] font-semibold pb-2 border-b border-black mb-4">
+      <div className="text-[22px] font-semibold pb-2 border-b border-black mb-4 tracking-wide">
         Zakelijke informatie
       </div>
       <div>

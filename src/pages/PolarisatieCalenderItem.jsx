@@ -1,6 +1,6 @@
-import React,{useState, useEffect} from 'react'
-import { useParams } from 'react-router-dom'
-import activities from "../db.json";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import polarisatie from "../polarisatiedb.json";
 import { Link, useLocation } from "react-router-dom";
 import share from "../assets/icons/share.png";
 import {
@@ -13,38 +13,37 @@ import {
   XIcon,
   LinkedinIcon,
 } from "react-share";
-import BackButton from '../components/BackButton';
-
+import BackButton from "../components/BackButton";
 
 const CalendarItem = () => {
-  
-  const currentUrl = window.location.href
+  const currentUrl = window.location.href;
 
-  const { calendaritem_id } = useParams()
+  const { calendaritem_id } = useParams();
 
-  console.log(calendaritem_id)
+  console.log(calendaritem_id);
 
-  const [expired, setExpired] = useState(false)
+  const [expired, setExpired] = useState(false);
 
   const url = useLocation().pathname;
-
   console.log(url)
 
-  const item = activities.activities[calendaritem_id];
-  const ID = item.itemId
+  console.log(url);
+  console.log(polarisatie.polarisatie);
+
+  const item = polarisatie.polarisatie[calendaritem_id];
+  const ID = item.itemId;
 
   const givenDate = new Date(item.closing_date).getTime() + 86400000;
   const now = new Date().getTime();
- 
-useEffect(()=> {
- if (givenDate <= now) {
-    setExpired(true);
-    console.log(expired);
- } else{
-   setExpired(false);
- }
-},[givenDate, now])
 
+  useEffect(() => {
+    if (givenDate <= now) {
+      setExpired(true);
+      console.log(expired);
+    } else {
+      setExpired(false);
+    }
+  }, [givenDate, now]);
 
   return (
     <div className="w-full flex items-center flex-row max-calendar:h-auto">
@@ -182,12 +181,7 @@ useEffect(()=> {
                 <div className="w-full px-4 mb-2">
                   {" "}
                   <span className="font-bold flex flex-wrap">Lokatie :</span>
-                  <span className="whitespace-pre-line text-orange-800 font-semibold">
-                    {item.location}
-                  </span>
-                  <div className="mb-4 mt-2">
-                    <img src="/images/muiderkerk.png" alt="" />
-                  </div>
+                  <span className="whitespace-pre-line">{item.location}</span>
                 </div>
               )}
 
@@ -233,11 +227,22 @@ useEffect(()=> {
             </div>
           </div>
 
-          <BackButton url={url} id={calendaritem_id} ID={item.itemId} />
+          <div className="w-full flex justify-center mt-24 pb-8 mb-8 max-mini:pb-4">
+            <Link to="/allactivities/polarisatie">
+              <button
+                type="button"
+                className="btn w-[150px] rounded-full justify-center items-center text-[#000] border-2 border-gray-400 gap-2 pb-1 leading-8 pt-1 text-md font-semibold"
+              >
+                Terug
+              </button>
+            </Link>
+          </div>
+
+          {/* <BackButton url={url} id={calendaritem_id} ID={item.itemId} /> */}
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default CalendarItem
+export default CalendarItem;

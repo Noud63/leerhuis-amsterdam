@@ -18,7 +18,7 @@ const OveronsPage = () => {
 
               <div className="w-full  flex flex-row items-start justify-center max-xxl:flex-col max-xxl:items-center">
                 <div className="max-xxl:w-full max-xxl:flex flex-col items-center max-xxsm:items-start">
-                  <span className="flex justify-center text-2xl max-sm:text-xl text-orange-700 font-semibold  max-xxxsm:justify-start  mb-4">
+                  <span className="flex justify-center text-2xl max-sm:text-xl  font-semibold tracking-wide max-xxxsm:justify-start  mb-4">
                     Leren in een complexe wereld
                   </span>
                   <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full prose-lg border-t border-black pt-4">
@@ -44,7 +44,7 @@ const OveronsPage = () => {
                   </div>
 
                   <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full mt-4 prose-lg">
-                    <div className="font-semibold pb-2">
+                    <div className="font-normal mb-4 tracking-wide text-white bg-gradient-to-r from-yellow-900 via-yellow-700 to-yellow-900 py-1 pl-4">
                       Thema voor 2024-2025: De polarisatie voorbij
                     </div>
                     Wie de waarheid in pacht heeft mag het zeggen.
@@ -69,27 +69,45 @@ const OveronsPage = () => {
                     De drie bijeenkomsten over ‘de polarisatie voorbij’ zijn:
                     <br />
                     <span className="font-semibold text-2xl">*</span> Zaterdag 2
-                    november, 15-17 uur: Wat is polarisatie, waardoor ontstaat
-                    het, wat doet het met ons en met de wereld om ons heen?
+                    november, 14:30-17:30 uur. Wat is polarisatie, waardoor
+                    ontstaat het, wat doet het met ons en met de wereld om ons
+                    heen?
                     <br />
                     <span className="font-semibold text-2xl">*</span> Zaterdag 8
-                    februari, 15-17 uur, Wat leren het christelijk geloof en
-                    andere bronnen van inspiratie bijvoorbeeld over verbindende
-                    en uitsluitende waarheid? 
+                    februari, 14:30-17:30 uur. Wat leren het christelijk geloof
+                    en andere bronnen van inspiratie bijvoorbeeld over
+                    verbindende en uitsluitende waarheid? 
                     <br />
                     <span className="font-semibold text-2xl">*</span> Zaterdag
-                    24 mei, 15-17 uur, Hoe reageren we op polarisatie in ons
-                    dagelijks leven? Hoe gaan we om met ongemak en emoties? En
-                    hebben we antwoorden of richting gevonden voor wat ons te
+                    24 mei, 14:30-17:30 uur. Hoe reageren we op polarisatie in
+                    ons dagelijks leven? Hoe gaan we om met ongemak en emoties?
+                    En hebben we antwoorden of richting gevonden voor wat ons te
                     doen staat?
                   </div>
 
+                  <div className="mt-8">
+                    Klik op onderstaande link voor meer informatie:
+                  </div>
+
+                  <div className="w-full flex justify-center mt-16 pb-8 mb-8 max-mini:pb-4">
+                    <Link to="/polarisatie">
+                      <button
+                        type="button"
+                        className="btn w-[250px] rounded-full justify-center items-center text-[#000] border-2 border-black gap-2  leading-8 p-2 text-md font-semibold"
+                      >
+                        De polarisatie voorbij
+                      </button>
+                    </Link>
+                  </div>
+
                   <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full mt-12">
-                    <div className="font-semibold pb-2">
-                      De commissie van het Leerhuis:
+                    <div className="font-semibold pb-2 mb-2">
+                      <span className="border-b border-black pb-1">
+                        De commissie van het Leerhuis:
+                      </span>
                     </div>
 
-                    <ul className="list-disc pl-12">
+                    <ul className="list-disc pl-5">
                       <li>Rijk van Ark</li>
                       <li>Corinne Egberts</li>
                       <li>Gerben van Manen</li>

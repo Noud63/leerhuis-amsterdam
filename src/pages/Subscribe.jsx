@@ -6,6 +6,7 @@ import BackButton from "../components/BackButton";
 import pen from "../assets/icons/pen.png"
 import qrcode from "../assets/icons/qrcode.png"
 import activities from "../db.json"
+import polarisatie from "../polarisatiedb.json"
 
 const serviceId = import.meta.env.VITE_REACT_APP_LA_SERVICE_ID;
 const templateId = import.meta.env.VITE_REACT_APP_LA_INSCHRIJVING_TEMPLATE_ID;
@@ -20,13 +21,41 @@ const Subscribe = () => {
   const [message, setMessage] = useState("");
 
   const { calendaritem_id, id } = useParams();
-  console.log(useParams())
 
-  const title = activities.activities[calendaritem_id].title;
-  
   const url = useLocation().pathname;
-  
-  const navigate = useNavigate();
+
+ let title;
+ let costs;
+ 
+  if(id === "LA-AC17" ||  id === "LA-AC18" || id === "LA-AC19"){
+     title = polarisatie.polarisatie[calendaritem_id].title;
+      costs =
+        (<span>
+          €10,- per keer, €17,50 voor twee en €25,- voor drie bijeenkomsten<br />
+          Betalen kan per bank:
+          </span>);
+  }else{
+    title = activities.activities[calendaritem_id].title;
+    costs = (
+      <span className="tracking-wide ">
+        Iedere cursusavond kost 5 euro, tenzij anders vermeld.
+        <br />
+        zoomgroepen zijn gratis. <br />
+        Voor wie de eigen bijdragen te hoog is, laat het ons weten, stuur een{" "}
+        <Link to={`${url}/contactform`}>
+          <span className="text-lg text-red-800 font-semibold underline">
+            mail.
+          </span>
+        </Link>
+        <br />
+        Betalen kan per bank. Maak €5,- per cursusavond over op rekeningnummer:
+        <br />
+      </span>
+    );
+  }
+
+
+ const navigate = useNavigate();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -81,46 +110,22 @@ const Subscribe = () => {
             </div>
           </div>
 
-          {id !== "LA-AC01" ? (
-            <div className="w-full text-[16px] justify-start my-4">
-              <div className="w-full pb-2 text-2xl font-semibold mt-2 mb-4 border-b border-black font-papyrus">
-                {title}
-              </div>
-              <span className="tracking-wide ">
-                Iedere cursusavond kost 5 euro, tenzij anders vermeld.
-                <br />
-                zoomgroepen zijn gratis. <br />
-                Voor wie de eigen bijdragen te hoog is, laat het ons weten,
-                stuur een{" "}
-                <Link to={`${url}/contactform`}>
-                  <span className="text-lg text-red-800 font-semibold underline">
-                    mail.
-                  </span>
-                </Link>
-                <br />
-                Betalen kan per bank. Maak €5,- per cursusavond over op
-                rekeningnummer:
-                <br />
-              </span>
-              <span className="font-semibold">
-                NL&nbsp;32&nbsp;INGB&nbsp;0000449815 t.n.v. PROTESTANTSE
-                GEMEENTE IN ZAKE T&E
-              </span>
-              <br />
-              <span>Vermeld hierbij het kenmerk van de activiteit.</span>
+          <div className="w-full text-[16px] justify-start my-4">
+            <div className="w-full pb-2 text-2xl font-semibold mt-2 mb-4 border-b border-black font-papyrus">
+              {title}
             </div>
-          ) : (
-            <div className="w-full justify-start mt-6 mb-4">
-              <div className="w-full pb-2 mb-2 text-2xl font-semibold border-b border-black max-xxxsm:text-xl">
-                {title}
-              </div>
-              <span className="font-semibold">Eigen bijdrage: </span>Vrijwillig
-              (Scan QR-Code)
-              <div className="w-full justify-center">
-                <img src={qrcode} alt="" className="w-[200px] mx-auto" />
-              </div>
+            <div>
+              <span className="font-semibold">Bijdrage:</span> 
+              {" "}{costs}
             </div>
-          )}
+
+            <span className="font-semibold">
+              NL&nbsp;32&nbsp;INGB&nbsp;0000449815 t.n.v. PROTESTANTSE GEMEENTE
+              IN ZAKE T&E
+            </span>
+            <br />
+      
+          </div>
         </div>
 
         <form
@@ -128,7 +133,7 @@ const Subscribe = () => {
           onSubmit={sendEmail}
           autoComplete="off"
           className="w-full"
-          >
+        >
           <div className="w-full border-b border-t border-black">
             <label htmlFor="name">Naam:</label>
             <input

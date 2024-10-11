@@ -39,7 +39,7 @@ const Activities = () => {
     <div className="w-[full] flex flex-row m-auto px-8 mt-[180px] text-black max-xxsm:px-4 max-xxxsm:px-4 pb-8 max-mini:pb-2">
       <div className="w-full flex flex-1 justify-center items-center flex-col">
         <div className="w-full flex flex-row gap-2  mb-6 border-b border-black pb-2 ">
-          <span className="text-[22px] font-semibold text-black ">
+          <span className="text-[20px] font-semibold text-black tracking-wide">
             # Activiteiten Kalender 2024
           </span>
         </div>

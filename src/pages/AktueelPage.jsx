@@ -18,7 +18,7 @@ const Aktueel = () => {
     <div className="w-full min-h-screen mt-[170px] flex flex-row justify-center items-start px-8 max-xxxsm:px-2 mb-44">
       <div className="actueel_info h-auto w-full max-w-[600px] bg-white px-8 pt-8 rounded-xl max-xxxsm:px-4 pb-20">
         <div className="w-full flex mb-6 border-b border-black pb-2">
-          <span className="text-[22px] font-semibold  text-black">
+          <span className="text-[22px] font-semibold tracking-wide text-black">
             # Actueel
           </span>
         </div>

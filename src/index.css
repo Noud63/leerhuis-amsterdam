@@ -21,10 +21,19 @@
       url("./fonts/gtwalsheim.woff2") format("woff2"),
       url("./fonts/gtwalsheim.ttf") format("ttf");
   }
+
+   @font-face {
+    font-family: "nunito";
+    src: url("./fonts/nunito.otf") format("otf"),
+      url("./fonts/nunito.woff") format("woff"),
+      url("./fonts/nunito.woff2") format("woff2"),
+      url("./fonts/nunito.ttf") format("ttf");
+  }
 }
 
 :root {
   font-size: 16px;
+  font-family: "Nunito"
 }
 
 body {
@@ -44,14 +53,6 @@ input {
 
 .overons_text {
   box-shadow: 0px 2px 6px rgb(0, 0, 0, 0.4);
-}
-
-.gathering {
-  box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.5);
-}
-
-.overons_image {
-  shape-outside: url("../assets/images/gathering.jpg");
 }
 
 .contact_form {

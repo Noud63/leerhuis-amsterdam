@@ -7,11 +7,7 @@ const nextWeek = now + 604800000;
 // Filtered activities that are expired
 export const filteredExpiredActivities = [];
 
-//Filtered activities that are upcoming
-export const upcomingActivities = [];
-
-
-//Filter activities
+//Filter expired activities
 const filterActivitiesInThePast = () => {
   activities.activities.forEach((act) => {
     if (new Date(act.closing_date).getTime() < now) {
@@ -22,41 +18,25 @@ const filterActivitiesInThePast = () => {
           date: act.starting_date
       });
     }
-    if (new Date(act.closing_date).getTime() >= now) {
-      upcomingActivities.push(act);
-    }
-  });
+   });
 };
 
 filterActivitiesInThePast();
 
 
+//Filtered activities that are upcoming
+export const upcomingActivities = [];
 
-// First activity after a week, announced only if there are no activities this week
-const firstActivities = [];
+// Filter Running and upcoming activities
+const upcomingAndRunningActivities = () => {
+   activities.activities.forEach((act) => {
+ if (new Date(act.closing_date).getTime() >= now) {
+   upcomingActivities.push(act);
+ }
+})
+}
 
-const firstActivityAfterAWeek = () => {
-  activities.activities.forEach((act) => {
-    const dates = act.date.dates;
-
-    dates.forEach((date) => {
-      if (
-        new Date(date).getTime() < nextWeek + 604800000 &&
-        new Date(date).getTime() >= nextWeek
-      ) {
-        firstActivities.push(act);
-      }
-    });
-  });
-};
-
-firstActivityAfterAWeek();
-
-export const firstAfterAWeek = firstActivities.toSorted(
-  (a, b) => new Date(a.date) - new Date(b.date)
-);
-//console.log(firstAfterAWeek[0]);
-
+upcomingAndRunningActivities();
 
 
 //Filter activities by coming week

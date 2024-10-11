@@ -40,9 +40,26 @@ const BackButton = (url) => {
       setPath(`/allactivities/calendaritem/${id}`);
     }
 
-    if (url.url === `/aktueel/calendaritem/${id}/subscribe/${ID}/contactform`) {
-      setPath(`/aktueel/calendaritem/${id}/subscribe/${ID}`);
+    if (
+      url.url === `/allactivities/polarisatie/polarisatiecalendaritem/${id}/subscribe/${ID}`
+    ) {
+      setPath(
+        `/allactivities/polarisatie/polarisatiecalendaritem/${id}`
+      );
     }
+
+    if (
+      url.url ===
+      `/polarisatie/polarisatiecalendaritem/${id}/subscribe/${ID}`
+    ) {
+      setPath(`/allactivities/polarisatie/polarisatiecalendaritem/${id}`);
+    }
+
+    if (
+        url.url === `/aktueel/calendaritem/${id}/subscribe/${ID}/contactform`
+      ) {
+        setPath(`/aktueel/calendaritem/${id}/subscribe/${ID}`);
+      }
 
     if (url.url === `/calendaritem/${id}/subscribe/${ID}/contactform`) {
       setPath(`/calendaritem/${id}/subscribe/${ID}`);
@@ -58,7 +75,7 @@ const BackButton = (url) => {
     if (url.url === `/calendaritem/${id}/subscribe/${ID}`) {
       setPath(`/calendaritem/${id}`);
     }
-  }, [id]);
+  }, [id, ID]);
 
   return (
     <div className="w-full flex justify-center mt-16">
