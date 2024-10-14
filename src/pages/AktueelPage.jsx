@@ -69,7 +69,7 @@ const Aktueel = () => {
                 />
               </div>
               <div className="bg-gradient-to-t from-slate-900 to-slate-900/50 w flex justify-center py-6 absolute bottom-0 left-0 w-full">
-                <Link to={`/aktueel/calendaritem/${act.id}`}>
+                <Link to={`/aktueelpage/calendaritem/${act.id}`}>
                   <button
                     type="button"
                     className="w-[150px] flex justify-center items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full p-2"

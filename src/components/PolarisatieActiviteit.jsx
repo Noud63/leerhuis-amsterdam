@@ -48,7 +48,7 @@ const PolarisatieActiviteit = ({act}) => {
           >
             <button
               type="button"
-              className="flex items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full px-8 py-1"
+              className="flex items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full px-8 py-2"
             >
               Lees meer
             </button>

@@ -1,14 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { upcomingActivities} from "../utils/filterByDate"
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useLocation} from "react-router-dom";
 import Activity from "../components/Activity";
+import BackButton from "../components/BackButton";
 
 export const allActivitiesLoader = () => {
   return upcomingActivities;
 };
 
 const AllActivities = () => {
+
+const url = useLocation().pathname;
 
 const data = useLoaderData();
   
@@ -45,7 +48,7 @@ return (
         ))}
       </div>
 
-      <div className="w-full flex justify-center mt-16">
+      {/* <div className="w-full flex justify-center mt-16">
         <Link to="/">
           <button
             type="button"
@@ -54,7 +57,8 @@ return (
             Terug
           </button>
         </Link>
-      </div>
+      </div> */}
+      <BackButton url={url} />
     </div>
   </div>
 );

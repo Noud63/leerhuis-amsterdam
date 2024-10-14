@@ -1,8 +1,12 @@
 import React from "react";
 import globe from "../assets/images/globe2.png";
 import { Link } from "react-router-dom";
+import BackButton from "../components/BackButton";
+import { useLocation } from "react-router-dom";
 
 const OveronsPage = () => {
+
+  const url = useLocation().pathname
   
   return (
     <div className="w-full flex pt-[180px] items-center px-8 relative max-xxxsm:px-4 mb-20">
@@ -127,7 +131,7 @@ const OveronsPage = () => {
                 </div>
               </div>
 
-              <div className="w-full flex justify-center mt-24">
+              {/* <div className="w-full flex justify-center mt-24">
                 <Link to="/">
                   <button
                     type="button"
@@ -136,7 +140,8 @@ const OveronsPage = () => {
                     Terug
                   </button>
                 </Link>
-              </div>
+              </div> */}
+              <BackButton url={url}/>
             </div>
           </div>
         </div>

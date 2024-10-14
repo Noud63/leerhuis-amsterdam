@@ -22,13 +22,13 @@ const CalendarItem = () => {
 
   const { calendaritem_id } = useParams()
 
-  console.log(calendaritem_id)
+  // console.log(calendaritem_id)
 
   const [expired, setExpired] = useState(false)
 
   const url = useLocation().pathname;
 
-  console.log(url)
+  // console.log(url)
 
   const item = activities.activities[calendaritem_id];
   const ID = item.itemId
@@ -233,7 +233,7 @@ useEffect(()=> {
             </div>
           </div>
 
-          <BackButton url={url} id={calendaritem_id} ID={item.itemId} />
+          <BackButton url={url} />
         </div>
       </div>
     </div>

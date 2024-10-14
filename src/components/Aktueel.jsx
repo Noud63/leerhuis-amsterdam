@@ -52,7 +52,7 @@ const url = useLocation().pathname
             ))}
           </div>
 
-          <div className="w-full flex justify-center mt-12">
+          <div className="w-full flex justify-center mt-6">
             <Link to="/allactivities">
               <button
                 type="button"

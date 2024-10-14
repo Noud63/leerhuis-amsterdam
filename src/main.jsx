@@ -66,6 +66,14 @@ const router = createBrowserRouter([
             element: <Polarisatie />,
           },
           {
+            path: "/polarisatiecalendaritem/:calendaritem_id",
+            element: <PolarisatieCalendarItem />,
+          },
+          {
+            path: "/polarisatiecalendaritem/:calendaritem_id/subscribe/:id",
+            element: <Subscribe />,
+          },
+          {
             path: "/allactivities/polarisatie/polarisatiecalendaritem/:calendaritem_id",
             element: <PolarisatieCalendarItem />,
           },
@@ -123,15 +131,15 @@ const router = createBrowserRouter([
         element: <AktueelPage />,
       },
       {
-        path: "/aktueel/calendaritem/:calendaritem_id",
+        path: "/aktueelpage/calendaritem/:calendaritem_id",
         element: <CalendarItem />,
       },
       {
-        path: "/aktueel/calendarItem/:calendaritem_id/subscribe/:id",
+        path: "/aktueelpage/calendarItem/:calendaritem_id/subscribe/:id",
         element: <Subscribe />,
       },
       {
-        path: "/aktueel/calendarItem/:calendaritem_id/subscribe/:id/contactform",
+        path: "/aktueelpage/calendarItem/:calendaritem_id/subscribe/:id/contactform",
         element: <ContactForm />,
       },
       {

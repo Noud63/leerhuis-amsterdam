@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react' 
 import muiderkerk from "/images/muiderkerk2.png"
 import { Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
+import BackButton from '../components/BackButton';
 
 
 const ZakelijkPage = () => {
+
+const url = useLocation().pathname
+
   return (
     <div className="min-h-screen w-full max-w-[900px] mx-auto max-lg:w-full max-xxl:w-full mt-[180px] prose-lg px-4 mb-24">
       <div className="text-[22px] font-semibold pb-2 border-b border-black mb-4 tracking-wide">
@@ -25,17 +30,7 @@ const ZakelijkPage = () => {
       <div>
         <img src={muiderkerk} alt="muiderkerk" />
       </div>
-
-      <div className="w-full flex justify-center mt-24">
-        <Link to="/">
-          <button
-            type="button"
-            className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
-          >
-            Terug
-          </button>
-        </Link>
-      </div>
+      <BackButton url={url}/>
     </div>
   );
 }

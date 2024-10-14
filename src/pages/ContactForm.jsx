@@ -133,7 +133,7 @@ const ContactForm = () => {
           </div>
         </form>
       </div>
-      <BackButton url={url} id={parseInt(calendaritem_id)} ID={id} />
+      <BackButton url={url} />
     </div>
   );
 };

@@ -1,18 +1,22 @@
-import React from 'react'
-import polarisatie from "../polarisatiedb.json"
-import { Link } from 'react-router-dom'
-import PolarisatieActiviteit from '../components/PolarisatieActiviteit'
+import React from "react";
+import polarisatie from "../polarisatiedb.json";
+import { Link, useLocation } from "react-router-dom";
+import PolarisatieActiviteit from "./PolarisatieActiviteit";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
+const PolarisatieHome = () => {
 
-const Polarisatie = () => {
-
-const data = polarisatie.polarisatie
+  const data = polarisatie.polarisatie;
 
   return (
-    <div className="w-full flex flex-col mx-auto px-4 mb-20 pt-[180px] max-xxsm:px-2">
-      <div className="px-6 mx-auto max-sm:px-2">
-        <div className="text-[22px] font-semibold text-black border-b border-black pb-2">
-          # De polarisatie voorbij
+    <div className="w-full flex flex-col mx-auto pt-[180px] max-xxsm:px-2">
+      <div className="px-8 mx-auto max-xxsm:px-2">
+        <div className="flex flex-row text-[20px] font-semibold gap-2 text-black border-b border-black pb-2">
+          <div className="w-32 gap-2 flex flex-row justify-between items-center text-yellow-700 border border-yellow-700 px-2 rounded-lg">
+            <span className="font-normal">Uitgelicht</span>
+            <FaLongArrowAltRight />
+          </div>{" "}
+          <span>De polarisatie voorbij</span>
         </div>
         <div className="w-[85%] mx-auto prose-lg py-4 max-xxsm:w-full ">
           Het Leerhuis Amsterdam voor zinvol samenleven wil een bijdrage leveren
@@ -44,19 +48,20 @@ const data = polarisatie.polarisatie
           ))}
         </div>
 
-        <div className="w-full flex justify-center mt-24 pb-8 mb-8 max-mini:pb-4">
+        <div className="w-full flex justify-center mt-16 pb-8 mb-8 max-mini:pb-4">
           <Link to="/allactivities">
             <button
               type="button"
               className="btn w-[150px] rounded-full justify-center items-center text-[#000] border-2 border-black gap-2 pb-1 leading-8 pt-1 text-md font-semibold"
             >
-              Terug
+              Alle activiteiten
             </button>
           </Link>
         </div>
+
       </div>
     </div>
   );
-}
+};
 
-export default Polarisatie
+export default PolarisatieHome;

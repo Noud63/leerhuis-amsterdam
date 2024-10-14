@@ -55,7 +55,7 @@ const Archief = () => {
         </div>
       </div>
 
-      <div className="w-full flex justify-center mt-16">
+      {/* <div className="w-full flex justify-center mt-16">
         <Link to="/">
           <button
             type="button"
@@ -64,7 +64,8 @@ const Archief = () => {
             Terug
           </button>
         </Link>
-      </div>
+      </div> */}
+      <BackButton url={url} />
     </div>
   );
 };

@@ -20,15 +20,15 @@ const CalendarItem = () => {
 
   const { calendaritem_id } = useParams();
 
-  console.log(calendaritem_id);
+  // console.log(calendaritem_id);
 
   const [expired, setExpired] = useState(false);
 
   const url = useLocation().pathname;
-  console.log(url)
+  // console.log(url)
 
-  console.log(url);
-  console.log(polarisatie.polarisatie);
+  // console.log(url);
+  // console.log(polarisatie.polarisatie);
 
   const item = polarisatie.polarisatie[calendaritem_id];
   const ID = item.itemId;
@@ -227,7 +227,7 @@ const CalendarItem = () => {
             </div>
           </div>
 
-          <div className="w-full flex justify-center mt-24 pb-8 mb-8 max-mini:pb-4">
+          {/* <div className="w-full flex justify-center mt-24 pb-8 mb-8 max-mini:pb-4">
             <Link to="/allactivities/polarisatie">
               <button
                 type="button"
@@ -236,9 +236,9 @@ const CalendarItem = () => {
                 Terug
               </button>
             </Link>
-          </div>
+          </div> */}
 
-          {/* <BackButton url={url} id={calendaritem_id} ID={item.itemId} /> */}
+          <BackButton url={url} />
         </div>
       </div>
     </div>
