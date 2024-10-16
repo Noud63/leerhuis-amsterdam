@@ -10,8 +10,8 @@ const BackButton = (url) => {
   // console.log(arr)
 
   // Navigate back, remove last 2 elements from pathname array
-  const newArr = arr.slice(1, -2).join(",").replace(/,/g, "/").split();
-  console.log(`/${newArr}`);
+  const newArr = arr.slice(1, -2).join(",").replace(/,/g, "/")
+  console.log("Path:",`/${newArr}`);
 
   const [path, setPath] = useState("");
 

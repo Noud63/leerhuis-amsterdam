@@ -48,8 +48,10 @@ const OveronsPage = () => {
                   </div>
 
                   <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full mt-4 prose-lg">
-                    <div className="font-normal mb-4 tracking-wide text-white bg-gradient-to-r from-yellow-900 via-yellow-700 to-yellow-900 py-1 pl-4">
-                      Thema voor 2024-2025: De polarisatie voorbij
+                    <div className="flex flex-row  font-normal mb-4 gap-2 tracking-wide text-white max-xxsm:items-center 
+                    bg-gradient-to-r from-yellow-900 via-yellow-700 to-yellow-900 py-1 px-4 max-xxsm:flex-col max-xxsm:gap-0">
+                      <span>Thema voor 2024-2025 :</span>
+                      <span>De polarisatie voorbij</span>
                     </div>
                     Wie de waarheid in pacht heeft mag het zeggen.
                     <br />
@@ -141,7 +143,7 @@ const OveronsPage = () => {
                   </button>
                 </Link>
               </div> */}
-              <BackButton url={url}/>
+              <BackButton url={url} />
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ const PolarisatieHome = () => {
     <div className="w-full flex flex-col mx-auto pt-[180px] max-xxsm:px-2">
       <div className="px-8 mx-auto max-xxsm:px-2">
         <div className="flex flex-row text-[20px] font-semibold gap-2 text-black border-b border-black pb-2">
-          <div className="w-32 gap-2 flex flex-row justify-between items-center text-yellow-700 border border-yellow-700 px-2 rounded-lg">
+          <div className="w-32 gap-2 flex flex-row justify-between items-center text-yellow-800 border border-yellow-800 px-2 rounded-lg shadow-md">
             <span className="font-normal">Uitgelicht</span>
             <FaLongArrowAltRight />
           </div>{" "}
@@ -31,11 +31,11 @@ const PolarisatieHome = () => {
           en zij (die leugens vertellen). <br />
           Hoe aan deze versimpeling van de werkelijkheid voorbij te komen?
           <div className="mx-auto prose-lg mt-4">
-            <span className="text-lg font-semibold">Bijdrage: </span>
+            <span className="font-semibold">Bijdrage: </span>
             &euro;10,- per keer, &euro;17,50 voor twee en &euro;25,- voor drie
             bijeenkomsten
           </div>
-          <div className="text-[22px] mt-4 mb-4 font-semibold border-b border-black">
+          <div className="text-[20px] mt-4 mb-4 font-semibold border-b border-black">
             Programma:
           </div>
         </div>
