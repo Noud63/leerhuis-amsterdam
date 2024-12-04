@@ -10,10 +10,10 @@ const ActivityArchiefActueel = ({act, url}) => {
     >
       <div className="flex flex-row max-sm:flex-col max-sm:items-start py-3 px-3 text-black items-center">
         <div className="flex flex-1 text-xl font-semibold font-papyrus max-sm:line-clamp-1">
-          {act.title}
+          {act.title.length > 25 ? `${act.title.slice(0, 25)}` : act.title}
         </div>
         {act.date ? (
-          <div className="flex items-center text-md font-semibold text-amber-800">
+          <div className="flex items-center text-md font-normal text-amber-800">
             {new Date(act.date).toLocaleDateString("nl-NL", {
               month: "long",
               day: "numeric",

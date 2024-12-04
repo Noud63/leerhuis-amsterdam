@@ -57,7 +57,7 @@
         "email": "gg_vanmanen@hotmail.com",
         "image": "dewegvanhetgebed.jpg",
         "starting_date": "2024-09-23",
-        "closing_date": "2025-11-04",
+        "closing_date": "2024-11-04",
         "itemId": "LA-AC12"
       },
       {
@@ -209,18 +209,20 @@
       },
       {
         "id": 6,
-        "title": "De polarisatie voorbij",
+        "title": ["De polarisatie voorbij -", " 1"],
         "date": {
           "day": "Zaterdag",
           "dates": ["2024-11-02"]
         },
         "time": "14:30 - 17:30 uur",
-        "contribution": "Vrijwillige bijdrage",
+        "location": "Muiderkerk, Linnaeusstraat 37",
+        "contribution": "10 euro per keer, 17,50 voor twee en 25 euro voor drie bijeenkomsten",
         "description": [
-          "Wat is polarisatie, waardoor ontstaat het, wat doet het met ons en met de wereld om ons heen?"
+          "Waarom en hoe polariseert de wereld en wat betekent dat voor onze stad?\n",
+          "Met: Jeroen Slot, hoofd onderzoek en statistiek van de gemeente Amsterdam, Polarisatie: de feiten en cijfers in Amsterdam, Rachelle van Andel, predikant en filosoof, over Hanna Ahrendt; Wilken Veen, predikant, over Dietrich Bonhoeffer."
         ],
-        "led_by": "*",
-        "email": "?",
+        "led_by": "",
+        "email": "",
         "image": "polarisatie.jpeg",
         "starting_date": "2024-11-02",
         "closing_date": "2024-11-02",
@@ -228,6 +230,27 @@
       },
       {
         "id": 7,
+        "title": ["De polarisatie voorbij -", " 2"],
+        "date": {
+          "day": "Zaterdag",
+          "dates": ["2025-02-08"]
+        },
+        "time": "14:30 - 17:30 uur",
+        "location": "Keizersgrachtkerk, Keizersgracht 566",
+        "contribution": "10 euro per keer, 17,50 voor twee en 25 euro voor drie bijeenkomsten",
+        "description": [
+          "Bieden de bronnen van onze beschaving, zoals de Bijbel en andere religieuze en spirituele bronnen, een richting voor analyse en oplossingen?\n",
+          "Met: Erik Borgman, emeritus-hoogleraar Publieke Theologie Tilburg University, en Rosaliene Israël, praktisch theoloog, docent aan het Remonstrants Seminarium (gevraagd)."
+        ],
+        "led_by": "",
+        "email": "",
+        "image": "polarisatie2a.jpg",
+        "starting_date": "2025-02-08",
+        "closing_date": "2025-02-08",
+        "itemId": "LA-AC18"
+      },
+      {
+        "id": 8,
         "title": "Leesproject Zwart-Wit",
         "date": {
           "day": "Donderdag",
@@ -254,7 +277,7 @@
         "itemId": "LA-AC20"
       },
       {
-        "id": 8,
+        "id": 9,
         "title": ["Groen geloven, ", "Inspiratiemiddag"],
         "title_long": [
           "Groen geloven",
@@ -401,7 +424,7 @@
         "itemId": "LA-AC01"
       },
       {
-        "id": 9,
+        "id": 10,
         "title": "Groen Geloven in Mokum",
         "date": {
           "day": "Woensdag",
@@ -423,7 +446,7 @@
         "itemId": "LA-AC02"
       },
       {
-        "id": 10,
+        "id": 11,
         "title": "Zwart/wit",
         "date": {
           "day": "Vrijdag",
@@ -444,7 +467,7 @@
         "itemId": "LA-AC03"
       },
       {
-        "id": 11,
+        "id": 12,
         "title": "De Zin van Sabbat",
         "date": {
           "day": "Dinsdag",
@@ -465,7 +488,7 @@
         "itemId": "LA-AC04"
       },
       {
-        "id": 12,
+        "id": 13,
         "title": "Bijbels Leerhuis",
         "date": {
           "day": "Donderdag",
@@ -493,7 +516,7 @@
         "itemId": "LA-AC05"
       },
       {
-        "id": 13,
+        "id": 14,
         "title": "Bijbels ABC",
         "date": {
           "day": "Maandag",
@@ -514,7 +537,7 @@
         "itemId": "LA-AC06"
       },
       {
-        "id": 14,
+        "id": 15,
         "title": "De Moderne Theologen",
         "date": {
           "day": "Dinsdag",
@@ -542,7 +565,7 @@
         "itemId": "LA-AC07"
       },
       {
-        "id": 15,
+        "id": 16,
         "title": "Literaire Kring",
         "date": {
           "day": "Maandag",
@@ -563,7 +586,7 @@
         "itemId": "LA-AC08"
       },
       {
-        "id": 16,
+        "id": 17,
         "title": "Leesgroep Miskotte",
         "date": {
           "day": "Woensdag",
@@ -592,7 +615,7 @@
         "itemId": "LA-AC09"
       },
       {
-        "id": 17,
+        "id": 18,
         "title": "Palestijnse Christenen",
         "date": {
           "day": "Zaterdag",

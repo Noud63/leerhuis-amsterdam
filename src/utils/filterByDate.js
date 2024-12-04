@@ -1,4 +1,5 @@
 import activities from "../db.json";
+import polarisatie from "../polarisatiedb.json"
 
 const now = new Date().getTime() - 86400000;
 const nextWeek = now + 604800000;

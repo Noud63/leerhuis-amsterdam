@@ -14,10 +14,14 @@ const Archief = () => {
   // const [cut, setCut] = useState(-9);
 
   const data = useLoaderData();
+  
   const archive2024 = data.slice(-10); // 10 aantal activiteiten van jan - jun 2024
   const archive2025 = data.slice(0, -10);
 
   const descendingOrder = archive2024.sort((a,b) => new Date(b.date) - new Date(a.date))
+  const descendingOrder2 = archive2025.sort((a,b) => new Date(b.date) - new Date(a.date))
+
+
 
   const url = useLocation().pathname;
 
@@ -33,7 +37,7 @@ const Archief = () => {
           </div>
 
           <div className="grid grid-cols-4 max-maxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8">
-            {archive2025.map((act) => (
+            {descendingOrder2.map((act) => (
               <ActivityArchiefActueel key={act.id} act={act} url={url} />
             ))}
           </div>

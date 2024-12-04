@@ -14,12 +14,12 @@ const Activity = ({act}) => {
         </div>
 
         <div className="relative h-auto flex flex-col gap-2 pl-4 mb-2">
-          {act.itemId === "LA-AC17" && (
+          {act.itemId === "LA-AC18" && (
             <div
               className="shadow-lg flex justify-center flex-col absolute top-16 items-center w-[90%] 
             bg-stone-100 -rotate-12 border-2 border-yellow-700 rounded-md p-4 tracking-wide text-yellow-800 text-xl font-papyrus font-semibold"
             >
-              <div className="gap-2 flex justify-center  ">
+              <div className="gap-2 flex justify-center">
                 <span>Drieluik : </span>
                 <span>Polarisatie</span>
               </div>
@@ -57,7 +57,7 @@ const Activity = ({act}) => {
         <div className="bg-gradient-to-t from-slate-950 to-slate-900/40 flex justify-center items-center h-[18%] absolute bottom-0 left-0 w-full">
           <Link
             to={
-              act.itemId === "LA-AC17"
+              act.itemId === "LA-AC18"
                 ? `polarisatie`
                 : `calendaritem/${act.id}`
             }
