@@ -4,12 +4,14 @@ import { Link, useLocation } from "react-router-dom";
 import PolarisatieActiviteit from "./PolarisatieActiviteit";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Activity from "./Activity";
-import activities from "../db2.json"
+import activities from "../db.json"
 
 const PolarisatieHome = () => {
 
   const data = polarisatie.polarisatie;
-  const act = activities.activities[7]
+  const act = activities.activities[8]
+
+  console.log(act)
 
   return (
     <div className="w-full flex flex-col mx-auto pt-[180px] max-xxsm:px-2">
@@ -72,11 +74,11 @@ const PolarisatieHome = () => {
             opzettelijk gecreëerde afgrenzing tussen wij (die weten wat waar is)
             en zij (die leugens vertellen). <br />
             Hoe aan deze versimpeling van de werkelijkheid voorbij te komen?
-            <div className="mx-auto prose-lg mt-4">
+            <span className="mx-auto prose-lg mt-4">
               <span className="font-semibold">Bijdrage: </span>
               &euro;10,- per keer, &euro;17,50 voor twee en &euro;25,- voor drie
               bijeenkomsten
-            </div>
+            </span>
           </p>
 
           <div className="text-[20px] mt-4 mb-4 font-semibold border-b border-black">
