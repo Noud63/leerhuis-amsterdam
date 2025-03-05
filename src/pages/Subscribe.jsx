@@ -22,6 +22,8 @@ const Subscribe = () => {
 
   const { calendaritem_id, id } = useParams();
 
+  console.log(useParams())
+
   const url = useLocation().pathname;
 
  let title;
@@ -34,6 +36,15 @@ const Subscribe = () => {
           €10,- per keer, €17,50 voor twee en €25,- voor drie bijeenkomsten<br />
           Betalen kan per bank:
           </span>);
+  }else if(id ==="LA-AC21"){
+    title = activities.activities[calendaritem_id].title;
+    costs = (
+      <span className="tracking-wide ">
+        Uw financiële bijdrage is 10 euro. U kunt ook meer of minder betalen.
+        Graag overmaken van te voren op onderstaand rekeningnummer of
+        betaal cash aan de deur.
+      </span>
+    );
   }else{
     title = activities.activities[calendaritem_id].title;
     costs = (

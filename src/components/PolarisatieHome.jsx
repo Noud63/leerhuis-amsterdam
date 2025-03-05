@@ -3,18 +3,17 @@ import polarisatie from "../polarisatiedb.json";
 import { Link, useLocation } from "react-router-dom";
 import PolarisatieActiviteit from "./PolarisatieActiviteit";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import Activity from "./Activity";
+import LeesProjectZwartWit from "./LeesProjectZwartWit";
+import ZingenVoorbijPolarisatie from "./ZingenVoorbijPolarisatie";
+
 import activities from "../db.json"
 
 const PolarisatieHome = () => {
 
   const data = polarisatie.polarisatie;
-  const act = activities.activities[8]
-
-  console.log(act)
 
   return (
-    <div className="w-full flex flex-col mx-auto pt-[180px] max-xxsm:px-2">
+    <div className="w-full flex flex-col mx-auto pt-[180px] max-xxsm:px-2 ">
       <div className="px-8 mx-auto max-xxsm:px-2">
         <div className="flex flex-row text-[20px] font-semibold gap-2 text-black border-b border-black pb-4">
           <div className="w-32 gap-2 flex flex-row justify-between items-center text-yellow-800 border border-yellow-800 px-2 rounded-lg shadow-md">
@@ -22,46 +21,19 @@ const PolarisatieHome = () => {
             <FaLongArrowAltRight />
           </div>{" "}
         </div>
-        <div className="w-[85%] mx-auto prose-lg py-4 max-xxsm:w-full ">
-          <span className="text-[20px] font-semibold border-b border-black">
-            Leesproject Zwart/Wit
-          </span>
-          <p className="my-2">
-            Eindelijk vrij? Bijdrage aan bezinning op kerken en slavernij.
-            <br />
-            De Nederlandse Raad van Kerken heeft een Bezinningsboekje uitgegeven
-            dat we dit jaar als leidraad gebruiken voor gesprekken tussen mensen
-            van kleur en witte mensen.
-            <br />
-            Aandacht voor de geschiedenis van Creolen en Hindostanen heeft de
-            deelnemers aan eerdere bijeenkomsten verrijkt.
-            <br />
-            Nu zullen we het gesprek stimuleren rond de doorwerking van het
-            slavernijverleden in het nu, openlijk en onderhuids.
-            <br />
-            Wij volgen de inhoud van het boekje: I. Slavernij en de Bijbel; II
-            Slavernij in Oost en West, in verleden en heden; III Interviews en
-            column; IV Heilzame verwerking.
-            <br />
-            Eerlijke gesprekken, vanuit een verlangen naar een gezamenlijke
-            toekomst, dat is wat we beogen.
-          </p>
-        </div>
-        <div className="w-[85%] mx-auto grid grid-cols-3 max-maxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8 max-xxsm:w-full mb-8">
-          <Activity act={act} />
+
+        <div className=" w-[85%] mx-auto flex flex-row mb-8 relative max-socials:flex-col max-xxsm:w-full">
+          <LeesProjectZwartWit act={activities.activities[8]} />
+          <ZingenVoorbijPolarisatie act={activities.activities[9]} />
         </div>
 
-        {/* <div className="flex flex-row text-[20px] font-semibold gap-2 text-black border-b border-black pb-2">
-          <div className="w-32 gap-2 flex flex-row justify-between items-center text-yellow-800  px-2 rounded-lg ">
-            <span className="font-normal"></span>
-            <FaLongArrowAltRight />
-          </div>{" "}
-          <span>De polarisatie voorbij</span>
-        </div> */}
         <div className="w-[85%] mx-auto prose-lg py-4 max-xxsm:w-full ">
-          <span className="text-[20px] font-semibold border-b border-black">
-            De polarisatie voorbij
-          </span>
+          <div
+            className="text-xl flex flex-row font-semibold mb-4 gap-2 tracking-wide text-black 
+                    py-1 max-xxsm:flex-col max-xxsm:gap-0 border-b border-black"
+          >
+            <span># De polarisatie voorbij</span>
+          </div>
           <p className="my-2">
             Het Leerhuis Amsterdam voor zinvol samenleven wil een bijdrage
             leveren aan het maatschappelijk gesprek over polarisatie. <br />
@@ -69,10 +41,12 @@ const PolarisatieHome = () => {
             buiten de kerken die zich zorgen maken over toenemende sociale
             spanningen.
             <br />
-            De rode lijn is de vraag naar waarheid.<br />Aannames en opvattingen over
-            de ander leiden niet langer tot onderzoek en debat, maar tot een
-            opzettelijk gecreëerde afgrenzing tussen wij (die weten wat waar is)
-            en zij (die leugens vertellen). <br />
+            De rode lijn is de vraag naar waarheid.
+            <br />
+            Aannames en opvattingen over de ander leiden niet langer tot
+            onderzoek en debat, maar tot een opzettelijk gecreëerde afgrenzing
+            tussen wij (die weten wat waar is) en zij (die leugens vertellen).{" "}
+            <br />
             Hoe aan deze versimpeling van de werkelijkheid voorbij te komen?
             <span className="mx-auto prose-lg mt-4">
               <span className="font-semibold">Bijdrage: </span>
@@ -92,7 +66,7 @@ const PolarisatieHome = () => {
           ))}
         </div>
 
-        <div className="w-full flex justify-center mt-16 pb-8 mb-8 max-mini:pb-4">
+        <div className="w-full flex justify-center mt-16 pb-4 mb-8">
           <Link to="/allactivities">
             <button
               type="button"

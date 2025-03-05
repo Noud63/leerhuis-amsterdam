@@ -21,7 +21,28 @@ const BackButton = (url) => {
     }else{
       setPath(`/${newArr}`);
     }
-    // if (url.url === "/subscriptionrules/contactform") {
+    }, [arr, newArr]);
+
+  return (
+    <div className="w-full flex justify-center mt-16">
+      <Link to={path}>
+        <button
+          type="button"
+          className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
+        >
+          Terug
+        </button>
+      </Link>
+    </div>
+  );
+};
+
+export default BackButton;
+
+
+
+
+// if (url.url === "/subscriptionrules/contactform") {
     //   setPath("/subscriptionrules");
     // }
 
@@ -86,20 +107,3 @@ const BackButton = (url) => {
     // if (url.url === `/calendaritem/${id}/subscribe/${ID}`) {
     //   setPath(`/calendaritem/${id}`);
     // }
-  }, [arr, newArr]);
-
-  return (
-    <div className="w-full flex justify-center mt-16">
-      <Link to={path}>
-        <button
-          type="button"
-          className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
-        >
-          Terug
-        </button>
-      </Link>
-    </div>
-  );
-};
-
-export default BackButton;

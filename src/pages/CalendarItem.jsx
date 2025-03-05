@@ -22,13 +22,9 @@ const CalendarItem = () => {
 
   const { calendaritem_id } = useParams()
 
-  // console.log(calendaritem_id)
-
   const [expired, setExpired] = useState(false)
 
   const url = useLocation().pathname;
-
-  // console.log(url)
 
   const item = activities.activities[calendaritem_id];
   const ID = item.itemId
@@ -194,7 +190,7 @@ useEffect(()=> {
               <div className="w-full px-4 mb-2 mt-2">
                 {" "}
                 <span className="font-bold flex flex-wrap">Bijdrage:</span>{" "}
-                {item.contribution}
+            {item.contribution}
                 <br />
                 {!expired ? (
                   <span>
