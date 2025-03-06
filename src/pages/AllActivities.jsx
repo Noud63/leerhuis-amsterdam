@@ -14,6 +14,10 @@ const AllActivities = () => {
 const url = useLocation().pathname;
 
 const data = useLoaderData();
+
+const sortedData = data.sort(
+  (a, b) => new Date(b.starting_date) - new Date(a.starting_date)
+);
   
 return (
   <div className="w-full flex pt-[180px] flex-row">
@@ -43,7 +47,7 @@ return (
       )} */}
 
       <div className="w-[85%] grid grid-cols-4 max-maxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8 max-xxxsm:w-[95%]">
-        {data?.map((act) => (
+        {sortedData?.map((act) => (
           <Activity key={act.id} act={act} />
         ))}
       </div>

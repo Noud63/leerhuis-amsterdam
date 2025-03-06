@@ -45,7 +45,7 @@ useEffect(()=> {
   return (
     <div className="w-full flex items-center flex-row max-calendar:h-auto">
       <div className="flex flex-1 pt-[180px] flex-col items-center max-calendar:mt-12 max-xsm:pt-[170px]">
-        <div className="w-full max-w-[700px] mb-32 flex flex-col items-center px-2">
+        <div className="w-full max-w-[900px] mb-32 flex flex-col items-center px-2">
           <div className="w-full flex justify-start text-xl font-semibold mb-4 border-b border-black pb-2">
             #&nbsp;<span className="max-xxsm:hidden">Over&nbsp;</span>
             {Array.isArray(item.title) ? (
@@ -181,9 +181,9 @@ useEffect(()=> {
                   <span className="whitespace-pre-line text-orange-800 font-semibold">
                     {item.location}
                   </span>
-                  <div className="mb-4 mt-2">
+                  {/* <div className="mb-4 mt-2">
                     <img src="/images/muiderkerk.png" alt="" />
-                  </div>
+                  </div> */}
                 </div>
               )}
 

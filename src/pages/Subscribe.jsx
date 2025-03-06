@@ -125,17 +125,15 @@ const Subscribe = () => {
             <div className="w-full pb-2 text-2xl font-semibold mt-2 mb-4 border-b border-black font-papyrus">
               {title}
             </div>
-            <div>
-              <span className="font-semibold">Bijdrage:</span> 
-              {" "}{costs}
+            <div className="">
+              <span className="font-semibold">Bijdrage: </span>
+              <span className="">{costs}</span>
             </div>
 
-            <span className="font-semibold">
+            <div className="font-semibold mt-2">
               NL&nbsp;32&nbsp;INGB&nbsp;0000449815 t.n.v. PROTESTANTSE GEMEENTE
               IN ZAKE T&E
-            </span>
-            <br />
-      
+            </div>
           </div>
         </div>
 
