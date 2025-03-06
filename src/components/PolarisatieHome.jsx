@@ -5,7 +5,7 @@ import PolarisatieActiviteit from "./PolarisatieActiviteit";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import LeesProjectZwartWit from "./LeesProjectZwartWit";
 import ZingenVoorbijPolarisatie from "./ZingenVoorbijPolarisatie";
-
+import Inmemoriam from "./Inmemoriam_wv";
 import activities from "../db.json"
 
 const PolarisatieHome = () => {
@@ -22,7 +22,9 @@ const PolarisatieHome = () => {
           </div>{" "}
         </div>
 
-        <div className=" w-[85%] mx-auto flex flex-row mb-8 relative max-socials:flex-col max-xxsm:w-full">
+        <Inmemoriam />
+
+        <div className=" w-[85%] mx-auto flex flex-row mb-8 relative max-socials:flex-col max-xxsm:w-full socials:border-t border-black">
           <LeesProjectZwartWit act={activities.activities[9]} />
           <ZingenVoorbijPolarisatie act={activities.activities[10]} />
         </div>
@@ -47,7 +49,8 @@ const PolarisatieHome = () => {
             onderzoek en debat, maar tot een opzettelijk gecreëerde afgrenzing
             tussen wij (die weten wat waar is) en zij (die leugens vertellen).{" "}
             <br />
-            Hoe aan deze versimpeling van de werkelijkheid voorbij te komen?<br />
+            Hoe aan deze versimpeling van de werkelijkheid voorbij te komen?
+            <br />
             <span className="mx-auto prose-lg mt-4">
               <span className="font-semibold">Bijdrage: </span>
               &euro;10,- per keer, &euro;17,50 voor twee en &euro;25,- voor drie
