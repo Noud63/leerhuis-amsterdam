@@ -41,8 +41,8 @@ const Subscribe = () => {
     costs = (
       <span className="tracking-wide ">
         Uw financiële bijdrage is 10 euro. U kunt ook meer of minder betalen.
-        Graag overmaken van te voren op onderstaand rekeningnummer of
-        betaal cash aan de deur.
+        Graag overmaken van te voren op onderstaand rekeningnummer. U kunt ook betalen
+        door het scannen van de qr-code bij de ingang of anders cash.
       </span>
     );
   }else{
