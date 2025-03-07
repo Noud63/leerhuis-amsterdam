@@ -7,8 +7,9 @@ const Inmemoriam = () => {
         <span classname=""># In Memoriam</span>
       </div>
 
-      <div className="max-w-[700px] flex flex-col bg-white mb-4 shadow-md">
-        <img src="/images/wilkenveen.png" alt="" />
+      <div className="max-w-full flex flex-col bg-white mb-4 shadow-md">
+        <img src="/images/wilkenveen_groot.png" alt="" className="max-xmd:hidden"/>
+        <img src="/images/wilkenveen.png" alt="" className="xmd:hidden"/>
         <div className="flex justify-between items-center p-1 text-gray-500">
           <span className="text-sm">De Polarisatie voorbij</span>
           <span className="text-sm ">zaterdag 2 november 2024</span>
