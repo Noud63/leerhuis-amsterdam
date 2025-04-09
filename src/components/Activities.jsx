@@ -36,17 +36,15 @@ const Activities = () => {
   }, [width]);
 
   return (
-    <div className="w-full flex flex-row m-auto px-8 mt-12 text-black max-xxsm:px-4 max-xxxsm:px-4 pb-8 max-mini:pb-2">
+    <div className="w-full flex flex-row m-auto px-8 mt-10 text-black max-xxsm:px-4 max-xxxsm:px-4 pb-8 max-mini:pb-2 max-xsm:mt-4">
       <div className="w-full flex flex-1 justify-center items-center flex-col">
         <div className="w-full flex flex-row gap-2 mb-6 border-b border-black pb-2 ">
-          <span
-          className="text-[20px] font-semibold text-black tracking-wide"
-        >
+          <span className="text-[20px] font-semibold text-black tracking-wide max-xxsm:text-[19px]">
             # Activiteiten Kalender 2024 - 2025
           </span>
         </div>
         <div className="w-[85%] mb-4 max-xmd:w-full max-xxsm:pl-0">
-          <span className="text-lg prose-lg max-xsm:text-base">
+          <span className="prose-lg max-xsm:text-[17px]">
             Het Leerhuis Amsterdam organiseert bijeenkomsten, dialogen en
             cursussen. <br />
             De bijeenkomsten vinden plaats in de Muiderkerk tenzij anders

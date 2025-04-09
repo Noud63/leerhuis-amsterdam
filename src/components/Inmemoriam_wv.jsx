@@ -2,14 +2,18 @@ import React from 'react'
 
 const Inmemoriam = () => {
   return (
-    <div className="w-[85%] mx-auto  mb-12 max-socials:w-full">
-      <div className="flex  bg-gradient-to-r from-black via-yellow-900 to-black text-white text-xl py-2 mb-4 pl-4 rounded-lg">
+    <div className="w-full max-w-[900px] mb-12 mt-12 max-socials:w-full flex justify-center flex-col">
+      <div className="w-full max-w-[900px]  bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 text-white font-normal py-1 mb-4 pl-4 rounded-lg">
         <span classname=""># In Memoriam</span>
       </div>
 
       <div className="max-w-full flex flex-col bg-white mb-4 shadow-md">
-        <img src="/images/wilkenveen_groot.png" alt="" className="max-xmd:hidden"/>
-        <img src="/images/wilkenveen.png" alt="" className="xmd:hidden"/>
+        <img
+          src="/images/wilkenveen_groot.png"
+          alt=""
+          className="max-xmd:hidden"
+        />
+        <img src="/images/wilkenveen.png" alt="" className="xmd:hidden" />
         <div className="flex justify-between items-center p-1 text-gray-500">
           <span className="text-sm">De Polarisatie voorbij</span>
           <span className="text-sm ">zaterdag 2 november 2024</span>

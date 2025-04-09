@@ -14,7 +14,7 @@ const Contact = ({forwardUrl}) => {
       <div className="contact_info w-full flex flex-row px-8 pb-20 pt-12 bg-gradient-to-t from-stone-100 via-white to-white border-b border-stone-400 rounded-xl mb-10 max-socials:flex-col max-xxsm:px-4 max-xxsm:pt-6">
         <div className="flex flex-col w-2/3 max-socials:w-full">
           <div className="flex flex-col text-base mb-4 gap-1">
-            <span className="text-lg font-semibold text-orange-700 mb-2">
+            <span className="text-lg font-semibold text-orange-800 mb-2">
               Het Leerhuis is gevestigd in de Muiderkerk:
             </span>
 
@@ -24,7 +24,7 @@ const Contact = ({forwardUrl}) => {
           </div>
 
           <div className=" flex flex-col mt-8 gap-2 max-socials:mb-8">
-            <span className="text-lg font-semibold text-orange-700">
+            <span className="text-lg font-semibold text-orange-800">
               Heeft u vragen, zijn dingen niet helemaal duidelijk of heeft u een
               voorstel?
               <br />

@@ -15,7 +15,7 @@ const PolarisatieHome = () => {
   return (
     <div className="w-full flex flex-col mx-auto pt-[180px] max-xxsm:px-2 max-socials:pt-[160px]">
       <div className="px-8 mx-auto max-xxsm:px-2">
-        <Inmemoriam />
+       
         <div className="flex flex-row text-[20px] font-semibold gap-2 text-black border-b border-black pb-4">
           <div className="w-32 gap-2 flex flex-row justify-between items-center text-yellow-800 border border-yellow-800 px-2 rounded-lg shadow-md">
             <span className="font-normal">Uitgelicht</span>
@@ -23,19 +23,18 @@ const PolarisatieHome = () => {
           </div>{" "}
         </div>
 
-        <div className=" w-[85%] mx-auto flex flex-row mb-8 relative max-socials:flex-col max-xxsm:w-full">
+        <div className=" w-[85%] mx-auto flex flex-row mb-8 relative max-socials:flex-col max-xmd:w-full">
           <LeesProjectZwartWit act={activities.activities[9]} />
-          <ZingenVoorbijPolarisatie act={activities.activities[10]} />
         </div>
 
-        <div className="w-[85%] mx-auto prose-lg py-4 max-xxsm:w-full ">
+        <div className="w-[85%] mx-auto  py-4 max-xxsm:w-full max-xmd:w-full">
           <div
             className="text-xl flex flex-row font-semibold mb-4 gap-2 tracking-wide text-black 
                     py-1 max-xxsm:flex-col max-xxsm:gap-0 border-b border-black"
           >
             <span># De polarisatie voorbij</span>
           </div>
-          <p className="my-2">
+          <p className="my-2 prose-lg max-xsm:text-[17px]">
             Het Leerhuis Amsterdam voor zinvol samenleven wil een bijdrage
             leveren aan het maatschappelijk gesprek over polarisatie. <br />
             Het organiseert daartoe drie bijeenkomsten voor mensen van binnen en
@@ -50,7 +49,8 @@ const PolarisatieHome = () => {
             <br />
             Hoe aan deze versimpeling van de werkelijkheid voorbij te komen?
             <br />
-            <span className="mx-auto prose-lg mt-4">
+            <br />
+            <span className="mx-auto prose-lg mt-4 max-xsm:text-base">
               <span className="font-semibold">Bijdrage: </span>
               &euro;10,- per keer, &euro;17,50 voor twee en &euro;25,- voor drie
               bijeenkomsten
@@ -62,7 +62,7 @@ const PolarisatieHome = () => {
           </div>
         </div>
 
-        <div className="w-[85%] mx-auto grid grid-cols-3 max-maxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8 max-xxsm:w-full">
+        <div className="w-[85%] mx-auto grid grid-cols-3 max-maxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8 max-xmd:w-full">
           {data?.map((act) => (
             <PolarisatieActiviteit key={act.id} act={act} />
           ))}

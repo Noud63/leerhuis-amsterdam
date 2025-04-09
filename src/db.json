@@ -27,7 +27,7 @@
         "Daarna kiezen we een gedeelte uit het Oude Testament, namelijk het Jozef-verhaal (Genesis 37-50), een prachtige novelle die is toegevoegd aan het verhaal van de aartsvaders en -moeders.\n",
         "Voor vertalingen wordt gezorgd en die krijgen deelnemers een paar dagen voor de bijeenkomst gemaild."
       ],
-      "led_by": "Wilken Veen, em. predikant",
+      "led_by": "Was Wilken Veen, voorlopig wisselende docenten",
       "email": "wilkenveen@hotmail.com",
       "image": "briefaandehebreeen2.jpg",
       "starting_date": "2024-09-12",
@@ -86,7 +86,7 @@
         "Ook wie niet over het boek beschikt (het is dik en dus prijzig) kan meedoen en krijgt de te bespreken teksten vooraf gemaild.\n",
         "Literatuur: De moderne theologen, onder redactie van Marcel Poorthuis en Wilken Veen en uitgegeven bij uitgeverij Boom"
       ],
-      "led_by": "Wilken Veen, em. predikant",
+      "led_by": "Was Wilken Veen, voorlopig wisselende docenten",
       "email": "wilkenveen@hotmail.com",
       "image": "modernetheologen.jpg",
       "starting_date": "2024-09-24",
@@ -248,7 +248,7 @@
       "contribution": "€10 per keer, 17,50 voor twee en 25 euro voor drie bijeenkomsten",
       "description": [
         "Hoe komen we voorbij de polarisatie? Zijn er werkbare voorbeelden?\n",
-         "Met: Marjolein Moorman, wethouder Amsterdam, portefeuilles Onderwijs, Jeugd(zorg), Armoede en Schuldhulpverlening etc. en Martijn van Leerdam, predikant-directeur Pauluskerk Rotterdam."
+        "Met: Marjolein Moorman, wethouder Amsterdam, portefeuilles Onderwijs, Jeugd(zorg), Armoede en Schuldhulpverlening etc. en Martijn van Leerdam, predikant-directeur Pauluskerk Rotterdam."
       ],
       "led_by": "",
       "email": "",
@@ -314,6 +314,29 @@
     },
     {
       "id": 11,
+      "title": "Dekesel en Malevich",
+      "date": {
+        "day": "Dinsdag",
+        "dates": ["2025-06-10", "2025-06-10", "2025-07-08"]
+      },
+      "time": "19:00 - 21:00 uur",
+      "contribution": "Vrijwillige bijdrage",
+      "description": [
+        "Marc Dekesel, em. hoogleraar aan de Radboud universiteit te Nijmegen, komt naar het Leerhuis om te spreken over Kazimir Malevich (1879-1935), de relatie kunst en religie.\n", 
+        "Malevich was een belangrijke avant-garde kunstenaar die zichzelf suprematist noemde. Nog steeds worden zijn werken zoals wit op wit bewonderd vanwege zijn moderne en eenvoudige stijl.\n", 
+        "We leren Malevich kennen vanuit zijn schilderijen en ontdekken dat zijn avant-garde kunst teksten zeer theologisch te interpreteren zijn. De relatie kunst en religie krijgt een andere dimensie door deze grote Russische kunstenaar.\n",
+        "Eerste avond: inleiding over leven en werk van de schilder en filosoof Malevich; tweede en derde avond lezen we Engelse teksten uit het vertaalde pamflet ‘God is not cast down’.\n"
+      ],
+      "led_by": "Marc Dekesel en Tiers Bakker",
+      "led_by_short": "",
+      "email": "tiersbakker@gmail.com",
+      "image": "",
+      "starting_date": "2025-06-10",
+      "closing_date": "2025-07-08",
+      "itemId": "LA-AC22"
+    },
+    {
+      "id": 12,
       "title": ["Groen geloven, ", "Inspiratiemiddag"],
       "title_long": [
         "Groen geloven",
@@ -460,7 +483,7 @@
       "itemId": "LA-AC01"
     },
     {
-      "id": 12,
+      "id": 13,
       "title": "Groen Geloven in Mokum",
       "date": {
         "day": "Woensdag",
@@ -482,7 +505,7 @@
       "itemId": "LA-AC02"
     },
     {
-      "id": 13,
+      "id": 14,
       "title": "Zwart/wit",
       "date": {
         "day": "Vrijdag",
@@ -503,7 +526,7 @@
       "itemId": "LA-AC03"
     },
     {
-      "id": 14,
+      "id": 15,
       "title": "De Zin van Sabbat",
       "date": {
         "day": "Dinsdag",
@@ -524,7 +547,7 @@
       "itemId": "LA-AC04"
     },
     {
-      "id": 15,
+      "id": 16,
       "title": "Bijbels Leerhuis",
       "date": {
         "day": "Donderdag",
@@ -552,7 +575,7 @@
       "itemId": "LA-AC05"
     },
     {
-      "id": 16,
+      "id": 17,
       "title": "Bijbels ABC",
       "date": {
         "day": "Maandag",
@@ -573,7 +596,7 @@
       "itemId": "LA-AC06"
     },
     {
-      "id": 17,
+      "id": 18,
       "title": "De Moderne Theologen",
       "date": {
         "day": "Dinsdag",
@@ -601,7 +624,7 @@
       "itemId": "LA-AC07"
     },
     {
-      "id": 18,
+      "id": 19,
       "title": "Literaire Kring",
       "date": {
         "day": "Maandag",
@@ -622,7 +645,7 @@
       "itemId": "LA-AC08"
     },
     {
-      "id": 19,
+      "id": 20,
       "title": "Leesgroep Miskotte",
       "date": {
         "day": "Woensdag",
@@ -651,7 +674,7 @@
       "itemId": "LA-AC09"
     },
     {
-      "id": 20,
+      "id": 21,
       "title": "Palestijnse Christenen",
       "date": {
         "day": "Zaterdag",

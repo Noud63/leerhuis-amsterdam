@@ -3,6 +3,7 @@ import globe from "../assets/images/globe2.png";
 import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import { useLocation } from "react-router-dom";
+import Inmemoriam from "../components/Inmemoriam_wv";
 
 const OveronsPage = () => {
 
@@ -14,15 +15,15 @@ const OveronsPage = () => {
         <div className="overons flex flex-col">
           <div className="w-full flex flex-row justify-between text-black font-normal gap-12 rounded-lg z-5 max-lg:flex-col">
             <div className="flex flex-1 flex-col leading-2 text-lg max-lg:w-full pb-20">
-              <div className="flex justify-between border-b border-black mb-8 ">
+              <div className="border-b border-black mb-8 ">
                 <span className="flex text-[#000] text-xl font-semibold pb-2">
                   # Over het Leerhuis
                 </span>
               </div>
 
-              <div className="w-full  flex flex-row items-start justify-center max-xxl:flex-col max-xxl:items-center">
+              <div className="w-full flex flex-row items-start justify-center max-xxl:flex-col max-xxl:items-center">
                 <div className="max-xxl:w-full max-xxl:flex flex-col items-center max-xxsm:items-start">
-                  <span className="flex justify-center text-2xl max-sm:text-xl  font-semibold tracking-wide max-xxxsm:justify-start  mb-4">
+                  <span className="flex justify-center text-2xl max-sm:text-xl font-semibold tracking-wide max-xxxsm:justify-start mb-4">
                     Leren in een complexe wereld
                   </span>
                   <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full prose-lg border-t border-black pt-4">
@@ -50,7 +51,7 @@ const OveronsPage = () => {
                   <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full mt-4 prose-lg">
                     <div
                       className="flex flex-row font-normal mb-4 gap-2 tracking-wide text-white max-xxsm:items-center 
-                    bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 py-1 px-4 max-xxsm:flex-col max-xxsm:gap-0"
+                    bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 py-1 px-4 max-xxsm:flex-col max-xxsm:gap-0 rounded-lg"
                     >
                       <span>Thema voor 2024-2025 :</span>
                       <span>De polarisatie voorbij</span>
@@ -120,10 +121,12 @@ const OveronsPage = () => {
                       <li>Corinne Egberts</li>
                       <li>Gerben van Manen</li>
                       <li>Anneke Nolet</li>
-                      <li>Wilken Veen</li>
+                      <li>&#10013;Wilken Veen</li>
                       <li>Greteke de Vries</li>
                     </ul>
                   </div>
+
+                  <Inmemoriam />
                 </div>
 
                 <div className="">

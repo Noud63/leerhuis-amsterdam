@@ -3,7 +3,7 @@ import Activity from "./Activity";
 
 const LeesProjectZwartWit = ({act}) => {
   return (
-    <div className="w-1/2 flex flex-col justify-between pr-6 mt-4 max-xxsm:pr-0 max-socials:w-full max-socials:pr-0">
+    <div className="w-full flex flex-col justify-between pr-6 mt-4 max-xxsm:pr-0 max-socials:w-full max-socials:pr-0">
       <div className="prose-lg py-4 max-xxsm:w-full ">
         <div
           className="text-xl flex flex-row font-semibold mb-4 gap-2 tracking-wide text-black 
@@ -11,7 +11,7 @@ const LeesProjectZwartWit = ({act}) => {
         >
           <span># Leesproject Zwart/Wit</span>
         </div>
-        <p className="my-2 h-auto">
+        <p className="my-2 h-auto prose-lg max-xsm:text-[17px]">
           Eindelijk vrij? Bijdrage aan bezinning op kerken en slavernij.
           <br />
           De Nederlandse Raad van Kerken heeft een Bezinningsboekje uitgegeven
@@ -32,7 +32,7 @@ const LeesProjectZwartWit = ({act}) => {
           toekomst, dat is wat we beogen.
         </p>
       </div>
-      <div className="w-full max-w-[400px] max-xxsm:max-w-full">
+      <div className="w-full max-w-[400px] max-xmd:max-w-full">
         <Activity act={act} />
       </div>
     </div>
