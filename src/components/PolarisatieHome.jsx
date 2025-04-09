@@ -1,11 +1,9 @@
 import React from "react";
 import polarisatie from "../polarisatiedb.json";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import PolarisatieActiviteit from "./PolarisatieActiviteit";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import LeesProjectZwartWit from "./LeesProjectZwartWit";
-import ZingenVoorbijPolarisatie from "./ZingenVoorbijPolarisatie";
-import Inmemoriam from "./Inmemoriam_wv";
 import activities from "../db.json"
 
 const PolarisatieHome = () => {
