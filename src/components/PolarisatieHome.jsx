@@ -3,8 +3,8 @@ import polarisatie from "../polarisatiedb.json";
 import { Link } from "react-router-dom";
 import PolarisatieActiviteit from "./PolarisatieActiviteit";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import LeesProjectZwartWit from "./LeesProjectZwartWit";
 import activities from "../db.json"
+import DekeselEnMalevich from "./DekeselEnMalevich";
 
 const PolarisatieHome = () => {
 
@@ -13,7 +13,6 @@ const PolarisatieHome = () => {
   return (
     <div className="w-full flex flex-col mx-auto pt-[180px] max-xxsm:px-2 max-socials:pt-[160px]">
       <div className="px-8 mx-auto max-xxsm:px-2">
-       
         <div className="flex flex-row text-[20px] font-semibold gap-2 text-black border-b border-black pb-4">
           <div className="w-32 gap-2 flex flex-row justify-between items-center text-yellow-800 border border-yellow-800 px-2 rounded-lg shadow-md">
             <span className="font-normal">Uitgelicht</span>
@@ -22,7 +21,7 @@ const PolarisatieHome = () => {
         </div>
 
         <div className=" w-[85%] mx-auto flex flex-row mb-8 relative max-socials:flex-col max-xmd:w-full">
-          <LeesProjectZwartWit act={activities.activities[9]} />
+          <DekeselEnMalevich act={activities.activities[11]} />
         </div>
 
         <div className="w-[85%] mx-auto  py-4 max-xxsm:w-full max-xmd:w-full">
