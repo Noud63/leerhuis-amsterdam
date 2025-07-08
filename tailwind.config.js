@@ -18,14 +18,20 @@ export default {
         menu: "950px",
         xmd: "850px",
         xsm: "700px",
+        xxmd: "640px",
         xxsm: "530px",
         xxxsm: "450px",
         mini: "400px",
       },
+      textShadow: {
+        sm: "1px 1px 2px rgba(0, 0, 0, 1)",
+        lg: "2px 2px 4px rgba(0, 0, 0, 1)",
+      },
     },
   },
   plugins: [
-    require('@tailwindcss/typography')
+    require("@tailwindcss/typography"),
+    require("tailwindcss-textshadow"),
   ],
 };
 

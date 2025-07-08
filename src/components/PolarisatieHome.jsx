@@ -11,8 +11,14 @@ const PolarisatieHome = () => {
   const data = polarisatie.polarisatie;
 
   return (
-    <div className="w-full flex flex-col mx-auto pt-[180px] max-xxsm:px-2 max-socials:pt-[160px]">
+    <div className="w-full flex flex-col mx-auto pt-[140px] max-xxsm:px-2 max-mini:pt-[130px]">
       <div className="px-8 mx-auto max-xxsm:px-2">
+        <div className="w-[85%] mx-auto flex justify-center items-center bg-[url('/images/zomerreces.png')] bg-no-repeat bg-top bg-cover -z-[999] py-20 my-10 px-4 max-menu:bg-right max-mini:py-8 max-xmd:w-full">
+          <p className="text-white text-2xl max-xxxsm:text-lg prose-lg tracking-wider max-maxxl:text-2xl flex text-shadow-sm px-4">
+            Het Leerhuis houdt zomerreces en komt in september met een nieuw
+            programma.
+          </p>
+        </div>
         <div className="flex flex-row text-[20px] font-semibold gap-2 text-black border-b border-black pb-4">
           <div className="w-32 gap-2 flex flex-row justify-between items-center text-yellow-800 border border-yellow-800 px-2 rounded-lg shadow-md">
             <span className="font-normal">Uitgelicht</span>
@@ -20,7 +26,7 @@ const PolarisatieHome = () => {
           </div>{" "}
         </div>
 
-        <div className=" w-[85%] mx-auto flex flex-row mb-8 relative max-socials:flex-col max-xmd:w-full">
+        <div className="w-[85%] mx-auto flex flex-row mb-8 relative max-socials:flex-col max-xmd:w-full">
           <DekeselEnMalevich act={activities.activities[11]} />
         </div>
 
