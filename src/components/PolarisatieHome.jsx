@@ -3,18 +3,17 @@ import polarisatie from "../polarisatiedb.json";
 import { Link } from "react-router-dom";
 import PolarisatieActiviteit from "./PolarisatieActiviteit";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import activities from "../db.json"
+import activities from "../db.json";
 import DekeselEnMalevich from "./DekeselEnMalevich";
 
 const PolarisatieHome = () => {
-
   const data = polarisatie.polarisatie;
 
   return (
     <div className="w-full flex flex-col mx-auto pt-[140px] max-xxsm:px-2 max-mini:pt-[130px]">
       <div className="px-8 mx-auto max-xxsm:px-2">
-        <div className="w-[85%] mx-auto flex justify-center items-center bg-[url('/images/zomerreces.png')] bg-no-repeat bg-top bg-cover -z-[999] py-20 my-10 px-4 max-menu:bg-right max-mini:py-8 max-xmd:w-full">
-          <p className="text-white text-2xl max-xxxsm:text-lg prose-lg tracking-wider max-maxxl:text-2xl flex text-shadow-sm px-4">
+        <div className="w-[85%] mx-auto flex justify-center items-center bg-[url('/images/zomerreces.png')] bg-no-repeat bg-top bg-cover -z-[999] py-20  mt-10 mb-8 px-4 max-menu:bg-right max-xxsm:py-12 max-mini:py-8 max-xmd:w-full">
+          <p className="text-white text-2xl tracking-wider flex text-shadow-sm px-4 max-menu:text-xl max-xxsm:text-lg max-mini:text-[18px]">
             Het Leerhuis houdt zomerreces en komt in september met een nieuw
             programma.
           </p>
