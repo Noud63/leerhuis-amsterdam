@@ -2,6 +2,6 @@
 
 React + Vite + Tailwind<br><br>
 
-![la_final](https://github.com/Noud63/leerhuis-amsterdam/assets/38325801/fdcd44b4-241c-484a-bf9e-8953882179f2)
+<div><img width="1600" height="903" alt="Image" src="https://github.com/user-attachments/assets/80ff2829-dcd2-4826-8278-f495129eb9a9" /></div>
 
 
