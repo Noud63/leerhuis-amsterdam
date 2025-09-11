@@ -3,16 +3,16 @@ import Overons from './Overons'
 import Activities from './Activities'
 import Contact from './Contact';
 import Aktueel from './Aktueel';
-import PolarisatieHome from './PolarisatieHome';
+// import HomeUitgelicht from './HomeUitgelicht';
 
 const Root = () => {
   return (
     <div className="mb-20">
-      <PolarisatieHome />
-      <Activities />
+      {/* <HomeUitgelicht /> */}
+      {/* <Activities /> */}
       <Overons />
-      <Aktueel />
-      <Contact />
+      {/* <Aktueel /> */}
+      {/* <Contact /> */}
     </div>
   );
 }

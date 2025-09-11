@@ -1,79 +1,66 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import wandelaars from "../assets/images/wandelaars2.png"
+import SectionTitle from "./SectionTitle";
 
 const Overons = () => {
   return (
-    <div className="w-full flex items-center justify-center px-8 z-10 relative max-lg:px-8 max-bracket:px-4 max-xxsm:px-4 max-xxxsm:px-2">
-      <div className="w-full">
-        <div className="overons flex flex-col">
-          <div className="flex flex-row justify-between font-normal z-5 max-lg:flex-col ">
-            <div className="flex flex-1 flex-col justify-center items-center leading-2 text-lg max-lg:w-full">
-              <div className="w-full flex justify-between border-b border-black">
-                <span className="flex text-[22px] font-semibold pb-4">
-                  # Over het Leerhuis
-                </span>
-              </div>
+
+ 
+     
+            <>
 
               <div
-                className="w-full max-w-[1220px] flex flex-col items-center justify-center pt-8
-                   max-xmd:flex-row max-xmd:items-center  max-xxsm:max-w-full"
-              >
-                <div className="w-full max-w-[1220px] flex flex-col justify-center max-xmd:flex-col max-xmd:max-w-full">
+                className="w-full max-w-[1220px] flex flex-col items-center justify-center pt-8 mt-[160px] max-xxmd:mt-[140px]
+                   max-xmd:flex-row max-xmd:items-center  max-xxsm:max-w-full mx-auto"
+                 >
+                <div className="w-full max-w-[1220px] flex flex-col justify-center max-xmd:flex-col max-xmd:max-w-full mx-4">
                   <div className="w-full mb-20">
-                    <div
-                      className="overons_text flex items-center flex-col max-lg:w-full bg-gradient-to-t from-stone-100 via-white to-white rounded-xl 
-                         border-b-2 border-stone-300 text-black px-10 pt-16 pb-12 max-xxxsm:px-4 max-xxxsm:pt-10 relative"
-                    >
-                      <div className="w-full h-full absolute bottom-0 right-0 bg-[url('./assets/images/map_adam2.png')] bg-no-repeat bg-cover bg-center opacity-30" />
-                      <span className="w-full flex justify-center text-2xl font-semibold pb-4 mb-4 text-amber-700 border-b border-black max-mini:text-[22px] ">
-                        Leren in een complexe wereld
-                      </span>
-                      <div className="w-full max-w-[800px] mt-6 mb-16 prose-lg">
-                        Het Leerhuis Amsterdam nodigt kerkelijke en
-                        niet-kerkelijke Amsterdammers uit om elkaar te ontmoeten
-                        rond de belangrijke thema's van deze tijd.
-                        <div className="tolman w-full flex justify-center mt-12">
-                          <img
-                            src={wandelaars}
-                            alt=""
-                            className="w-full max-w-[700px] max-xmd:max-w-full"
-                          />
-                        </div>
-                        We organiseren cursussen en inspiratiedagen die gaan
-                        over zinvol en verantwoordelijk samenleven. Via
-                        ontmoeting en moedige gesprekken zoeken we verdieping,
-                        andere perspectieven, en antwoorden op de vraag: wat
-                        zullen wij doen? Onze cursussen en bijeenkomsten zijn
-                        boeiend, inspirerend, en zeker ook gezellig! Het
-                        Leerhuis Amsterdam is verbonden aan de protestantse
-                        Muiderkerk.
-                        <br />
-                        <span className="w-full flex justify-center mt-12">
-                          Wees welkom!
-                        </span>
-                      </div>
+                    <div className="overons_text flex items-center flex-col max-lg:w-full bg-gradient-to-t from-stone-100 via-white to-white rounded-xl 
+                                    border-b-2 border-stone-300 text-black px-10 pt-12 pb-12 max-xxxsm:px-4 max-xxxsm:pt-10 relative">
+                               <div className="w-full h-full absolute bottom-0 right-0 bg-[url('./assets/images/map_adam2.png')] bg-no-repeat bg-cover bg-center opacity-30" />
 
-                      <Link
-                        to="/overonspage"
-                        className="flex justify-center mb-8 z-10"
-                      >
-                        <button
-                          type="button"
-                          className="btn w-[150px] rounded-full justify-center items-center text-black border-2 border-black gap-2 pb-1 leading-8 pt-1 font-semibold"
-                        >
-                          Lees meer
-                        </button>
-                      </Link>
+                              <SectionTitle className="w-full flex justify-center text-2xl  p-2 mb-4  max-mini:text-[20px] shadow-md">
+                                Leren in een complexe wereld
+                              </SectionTitle>
+                      
+                          <div className="w-full max-w-[800px] mt-6 mb-16 prose-lg">
+                                Het Leerhuis Amsterdam, onderdeel van de Muiderkerk/ Protestantse Kerk Amsterdam, nodigt kerkelijke en niet-kerkelijke Amsterdammers uit om elkaar te ontmoeten rond belangrijke thema's van deze tijd.
+                            <div className="tolman w-full flex justify-center mt-12">
+                                <img
+                                src={wandelaars}
+                                alt=""
+                                className="w-full max-w-[700px] max-xmd:max-w-full"
+                                />
+                             </div>
+                                Via cursussen, lezingen, colleges en moedige gesprekken zoeken we verdieping, andere perspectieven, en antwoorden op de vraag: wat zullen wij doen?<br />
+                                De commissie van het Leerhuis bestaat dit seizoen uit: Rijk van Ark, Tiers Bakker, Sandra Bos, Corinne Egberts, Gerben van Manen, Anneke Nolet en Greteke de Vries
+
+                                <br />
+                                  <span className="w-full flex justify-center mt-12">
+                                      Wees welkom!
+                                </span>
+                          </div>
+
+                            <Link
+                              to="/overonspage"
+                              className="flex justify-center mb-8 z-10"
+                            >
+                              <button
+                                type="button"
+                                className="btn w-[150px] rounded-full justify-center items-center text-black border-2 border-black gap-2 pb-1 leading-8 pt-1 font-semibold"
+                              >
+                                Lees meer
+                              </button>
+                            </Link>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </>
+          
+        
+    
   );
 };
 

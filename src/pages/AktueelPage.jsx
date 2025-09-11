@@ -17,15 +17,11 @@ const Aktueel = () => {
   return (
     <div className="w-full min-h-screen mt-[170px] flex flex-row justify-center items-start px-8 max-xxxsm:px-2 mb-44">
       <div className="actueel_info h-auto w-full max-w-[600px] bg-white px-8 pt-8 rounded-xl max-xxxsm:px-4 pb-20">
-        <div className="w-full flex mb-6 border-b border-black pb-2">
-          <span className="text-[22px] font-semibold tracking-wide text-black">
-            # Actueel
-          </span>
-        </div>
-        <div className="text-lg border border-slate-700">
-          <span className="w-full flex items-center text-lg p-2 text-slate-800 font-semibold">
-            Deze week:&nbsp;
-            <span className="">
+        
+        <div className="text-lg border-b border-slate-700">
+          <span className="w-full flex items-center text-xl text-slate-800 font-semibold">
+            Deze week :&nbsp;
+            <span>
               {new Date().toLocaleDateString("nl-NL", {
                 month: "numeric",
                 day: "numeric",
@@ -50,15 +46,23 @@ const Aktueel = () => {
               className="actueel flex flex-col rounded-t-lg mt-8 bg-gradient-to-t from-stone-400 to-white relative "
               key={act.id}
             >
-              <div className="flex flex-row py-3 px-3 text-black items-center max-sm:flex-col max-sm:items-start">
+              <div className="flex flex-row py-3 px-3 text-black items-center max-sm:items-start">
                 <div className="min-w-0 flex flex-1 text-xl font-semibold font-papyrus max-sm:line-clamp-1">
                   {act.title}
                 </div>
-                <div className="flex items-center text-md font-semibold text-amber-800">
-                  {new Date(act.date).toLocaleDateString("nl-NL", {
-                    month: "long",
-                    day: "numeric",
-                  })}
+                <div className="flex items-center text-md text-amber-800 font-semibold">
+                 <span className="max-xxsm:inline hidden pt-1">
+                    {new Date(act.date).toLocaleDateString("nl-NL", {
+                      month: "numeric",
+                      day: "numeric",
+                    })}
+                  </span>
+                  <span className="max-xxsm:hidden inline">
+                    {new Date(act.date).toLocaleDateString("nl-NL", {
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </span>
                 </div>
               </div>
               <div className="w-full">

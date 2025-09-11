@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import ringbinder from "../assets/images/ringbinder.png"
 import BackButton from "../components/BackButton";
 import { useLocation, useParams } from "react-router-dom";
-import at from "../assets/icons/at.png"
+import at from "../assets/icons/at_2.png"
 
 const serviceId = import.meta.env.VITE_REACT_APP_LA_SERVICE_ID;
 const templateId = import.meta.env.VITE_REACT_APP_LA_CONTACT_TEMPLATE_ID;
@@ -70,11 +70,11 @@ const ContactForm = () => {
         <div
           className="contact_text w-full h-[100px] flex text-2xl text-white font-semibold justify-center items-center 
           bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 relative"
-          >
-          Laat een bericht achter
+        >
           <div className="absolute flex">
-            <img src={at} alt="" className="w-[80px] opacity-30" />
+            <img src={at} alt="" className="w-[70px]" />
           </div>
+          <span className="z-10">Laat een bericht achter</span>
         </div>
         <form
           ref={form}

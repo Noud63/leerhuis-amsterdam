@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Socials = () => {
   return (
-    <div className="min-h-full flex flex-row justify-center items-center mr-4 max-footer:mr-0 max-xsm:hidden">
+    <div className="min-h-full flex flex-row justify-center items-center mr-8 max-footer:mr-0 max-xsm:hidden">
       <div className="flex flex-row pb-0">
         <div className="mr-2">
           <img src={facebook} alt="mail" className="w-[30px] drop-shadow-lg" />

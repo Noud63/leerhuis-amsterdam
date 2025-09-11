@@ -1,15 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
 import close from "../assets/icons/close.png"
 
 const MenuOverlay = ({showMenu, closeMenuOverlay}) => {
+  
+    useEffect(() => {
+        if (showMenu) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+        return () => {
+            document.body.classList.remove('no-scroll');
+        };
+    }, [showMenu]);
 
     
 return (
   <div
-    className={`${showMenu ? "translate-x-0" : "translate-x-[330px]"} 
+    className={`${showMenu ? "translate-x-0" : "translate-x-[101%]"} 
              overlay fixed h-full backdrop-blur-lg top-0 right-0 bottom-0 
-           bg-white/50 z-[999] w-full max-w-[320px] transition ease-in duration-300`}
+           bg-white/60 z-[999] w-full max-w-full transition ease-in duration-300 border-l border-yellow-800 overflow-y-scroll`}
     onClick={closeMenuOverlay}
   >
     <div
@@ -24,7 +35,7 @@ return (
         to="/"
         className={({ isActive }) => [
           isActive
-            ? "border-b-2 border-black"
+            ? "border-b-2 border-black shadow-md"
             : "border-b-2 border-transparent"
         ]}
       >
@@ -35,7 +46,7 @@ return (
         to="/overonspage"
         className={({ isActive }) => [
           isActive
-            ? "border-b-2 border-black"
+            ? "border-b-2 border-black shadow-md"
             : "border-b-2 border-transparent"
         ]}
         onClick={closeMenuOverlay}
@@ -47,7 +58,7 @@ return (
         to="/contactpage"
         className={({ isActive }) => [
           isActive
-            ? "border-b-2 border-black"
+            ? "border-b-2 border-black shadow-md"
             : "border-b-2 border-transparent"
         ]}
       >
@@ -58,7 +69,7 @@ return (
         to="/allactivities"
         className={({ isActive }) => [
           isActive
-            ? "border-b-2 border-black"
+            ? "border-b-2 border-black shadow-md"
             : "border-b-2 border-transparent"
         ]}
       >
@@ -70,11 +81,11 @@ return (
           to="/zakelijkpage"
           className={({ isActive }) => [
             isActive
-              ? "border-b-2 border-black"
+              ? "border-b-2 border-black shadow-md"
               : "border-b-2 border-transparent"
           ]}
         >
-          <span>Zakelijk</span>
+          <span>Aanmelden</span>
         </NavLink>
       </div>
 
@@ -82,11 +93,11 @@ return (
         to="/aktueelpage"
         className={({ isActive }) => [
           isActive
-            ? "border-b-2 border-black"
+            ? "border-b-2 border-black shadow-md"
             : "border-b-2 border-transparent"
         ]}
       >
-        <span>Aktueel</span>
+        <span>Deze week</span>
       </NavLink>
 
       <NavLink

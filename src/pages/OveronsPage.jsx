@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import { useLocation } from "react-router-dom";
 import Inmemoriam from "../components/Inmemoriam_wv";
+import SectionTitle from "../components/SectionTitle";
 
 const OveronsPage = () => {
 
@@ -23,93 +24,35 @@ const OveronsPage = () => {
 
               <div className="w-full flex flex-row items-start justify-center max-xxl:flex-col max-xxl:items-center">
                 <div className="max-xxl:w-full max-xxl:flex flex-col items-center max-xxsm:items-start">
-                  <span className="flex justify-center text-2xl max-sm:text-xl font-semibold tracking-wide max-xxxsm:justify-start mb-4">
-                    Leren in een complexe wereld
-                  </span>
-                  <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full prose-lg border-t border-black pt-4">
+
+                  <SectionTitle className="w-full max-w-[900px] flex justify-center text-xl max-sm:text-xl tracking-wide mb-4 py-1 ">Leren in een complexe wereld</SectionTitle>
+                 
+                  <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full prose-lg pt-2 pb-4">
                     <p>
-                      Het Leerhuis Amsterdam nodigt kerkelijke en
-                      niet-kerkelijke Amsterdammers uit om elkaar te ontmoeten
-                      rond de belangrijke thema's van deze tijd. <br />
+                      Het Leerhuis Amsterdam, onderdeel van de Muiderkerk/ Protestantse Kerk Amsterdam, nodigt kerkelijke en niet-kerkelijke Amsterdammers uit om elkaar te ontmoeten rond belangrijke thema's van deze tijd.  <br />
                       We organiseren cursussen en inspiratiedagen die gaan over
                       zinvol en verantwoordelijk samenleven.
                       <br />
-                      Via ontmoeting en moedige gesprekken zoeken we verdieping,
-                      andere perspectieven, en antwoorden op de vraag: wat
-                      zullen wij doen?
-                      <br />
-                      Onze cursussen en bijeenkomsten zijn boeiend, inspirerend,
-                      en zeker ook gezellig!
-                      <br />
-                      Het Leerhuis Amsterdam is verbonden aan de protestantse
-                      Muiderkerk.
-                      <br />
-                      <br />
+                     Via cursussen, lezingen, colleges en moedige gesprekken zoeken we verdieping, andere perspectieven, en antwoorden op de vraag: wat zullen wij doen?
+                      
                     </p>
                   </div>
 
-                  <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full mt-4 prose-lg">
-                    <div
-                      className="flex flex-row font-normal mb-4 gap-2 tracking-wide text-white max-xxsm:items-center 
-                    bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 py-1 px-4 max-xxsm:flex-col max-xxsm:gap-0 rounded-lg"
+                <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full mt-4 prose-lg">
+                    <SectionTitle
+                      className="flex justify-center flex-row font-normal mb-4 gap-2 tracking-wide max-xxsm:items-center 
+                     py-1 max-xxsm:flex-col max-xxsm:gap-0"
                     >
-                      <span>Thema voor 2024-2025 :</span>
-                      <span>De polarisatie voorbij</span>
-                    </div>
-                    Wie de waarheid in pacht heeft mag het zeggen.
-                    <br />
-                    In deze tijd nemen velen het woord om hun waarheid te
-                    verkondigen, hun aanhang te vergroten en anderen verdacht te
-                    maken.
-                    <br />
-                    Wat is het antwoord van de kerk en de bijbel op deze
-                    polarisatie? Wat kunnen we leren van inspiratiebronnen
-                    binnen en buiten de kerk die aangeven dat en hoe het anders
-                    kan? Een andere taal leren spreken, luisteren en het eigen
-                    oordeel uitstellen. Verbinding zoeken in woord, gebaar en
-                    muziek. Dat is wat we beogen met ons programma. <br />
-                    We sluiten hiermee nauw aan bij de agenda van de
-                    Protestantse Kerk Amsterdam die op allerlei manieren het
-                    gesprek zoekt bij actuele thema’s in de stad. <br />
-                    <br />
-                    Het thema Polarisatie wordt uitgewerkt in drie grotere
-                    bijeenkomsten en in een aantal van de activiteiten die
-                    hieronder aangegeven staan. <br />
-                    De drie bijeenkomsten over ‘de polarisatie voorbij’ zijn:
-                    <br />
-                    <span className="font-semibold text-2xl">*</span> Zaterdag 2
-                    november, 14:30-17:30 uur. Wat is polarisatie, waardoor
-                    ontstaat het, wat doet het met ons en met de wereld om ons
-                    heen?
-                    <br />
-                    <span className="font-semibold text-2xl">*</span> Zaterdag 8
-                    februari, 14:30-17:30 uur. Wat leren het christelijk geloof
-                    en andere bronnen van inspiratie bijvoorbeeld over
-                    verbindende en uitsluitende waarheid? 
-                    <br />
-                    <span className="font-semibold text-2xl">*</span> Zaterdag
-                    24 mei, 14:30-17:30 uur. Hoe reageren we op polarisatie in
-                    ons dagelijks leven? Hoe gaan we om met ongemak en emoties?
-                    En hebben we antwoorden of richting gevonden voor wat ons te
-                    doen staat?
-                  </div>
+                      <span>Jaarthema 2025-2026 :</span>
+                      <span>De (wan)hoop nabij</span>
+                    </SectionTitle>
+                    <p>De wanhoop nabij! Het is een uitroep die velen vandaag herkennen – in gesprekken over de verwording van onze samenleving, de klimaatcrises, oorlog en ontmenselijking, de snelle ontwikkeling van AI, gevoelens over het eind der tijden en ook chaos in persoonlijke levens. Deze wanhoop nemen we serieus. Wat is er aan de hand, om wie maken we ons zorgen, wat doet wanhoop met ons geloof? We stellen ook de vraag: wat als politieke verdeeldheid, geestelijke leegte, economische ongelijkheid, een kerk in krimpstand geen teken is van mislukking, maar het begin van iets nieuws, iets echts?</p>
+                    <p>In drie interactieve bijeenkomsten, een lezingenreeks en een middagje zingen stellen we wanhoop niet tegenover hoop, maar proberen we haar te zien als een doorgang. De Bijbel leert ons om niet te vluchten in gemakkelijke antwoorden, maar om dwars door de afgrond heen te gaan – en daarin een geloof te vinden dat niet draait om succes, zekerheid of troost, maar om waarheid, kwetsbaarheid en bevrijding. Echte hoop komt ons nabij wanneer we onze schijnbare zekerheden durven loslaten. Omdat geloof niet betekent: “alles komt goed”, maar: “zelfs als alles uit elkaar valt, ben ik niet alleen”.</p> 
 
-                  <div className="mt-8">
-                    Klik op onderstaande link voor meer informatie:
                   </div>
+                 
 
-                  <div className="w-full flex justify-center mt-16 pb-8 mb-8 max-mini:pb-4">
-                    <Link to="/polarisatie">
-                      <button
-                        type="button"
-                        className="btn w-[250px] rounded-full justify-center items-center text-[#000] border-2 border-black gap-2  leading-8 p-2 text-md font-semibold"
-                      >
-                        De polarisatie voorbij
-                      </button>
-                    </Link>
-                  </div>
-
-                  <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full mt-12">
+                  <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full mt-8">
                     <div className="font-semibold pb-2 mb-2">
                       <span className="border-b border-black pb-1">
                         De commissie van het Leerhuis:
@@ -118,10 +61,11 @@ const OveronsPage = () => {
 
                     <ul className="list-disc pl-5">
                       <li>Rijk van Ark</li>
+                      <li>Tiers Bakker</li>
+                      <li>Sandra Bos</li>
                       <li>Corinne Egberts</li>
                       <li>Gerben van Manen</li>
                       <li>Anneke Nolet</li>
-                      <li>&#10013;Wilken Veen</li>
                       <li>Greteke de Vries</li>
                     </ul>
                   </div>
@@ -133,21 +77,11 @@ const OveronsPage = () => {
                   <img
                     src={globe}
                     alt="globe"
-                    className="pl-8 max-xxl:pr-20 max-xxxsm:pr-16 mt-12"
+                    className="pl-16 max-xxl:pr-20 max-xxxsm:pr-16 mt-12"
                   />
                 </div>
               </div>
 
-              {/* <div className="w-full flex justify-center mt-24">
-                <Link to="/">
-                  <button
-                    type="button"
-                    className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
-                  >
-                    Terug
-                  </button>
-                </Link>
-              </div> */}
               <BackButton url={url} />
             </div>
           </div>

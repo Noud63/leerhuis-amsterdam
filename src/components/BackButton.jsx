@@ -1,36 +1,26 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const BackButton = (url) => {
+const BackButton = ({ url }) => {
+  
+  const navigate = useNavigate();
 
-  // const id = url.id; // index 0, 1, 2, 3, ....
-  // const ID = url.ID; // kenmerk LA-AC01
-
-  const arr = url.url.split("/")
-
-  // Navigate back, remove last 2 elements from pathname array
-  const newArr = arr.slice(1, -2).join(",").replace(/,/g, "/")
-
-  const [path, setPath] = useState("");
-
-  useEffect(() => {
-    if (arr.length === 2 || arr.length === 3) {
-      setPath("/");
-    }else{
-      setPath(`/${newArr}`);
-    }
-    }, [arr, newArr]);
+  const arr = url.split("/");
+  //Navigate back, remove last 2 elements from pathname array
+  const newArr = arr.slice(1, -2).join(",").replace(/,/g, "/");
+  let path = "/";
+  if (!(arr.length === 2 || arr.length === 3)) {
+    path = `/${newArr}`;
+  }
 
   return (
     <div className="w-full flex justify-center mt-16">
-      <Link to={path}>
-        <button
-          type="button"
-          className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
-        >
-          Terug
-        </button>
-      </Link>
+      <button
+        type="button"
+        className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
+        onClick={() => navigate(path)}
+      >
+        Terug
+      </button>
     </div>
   );
 };

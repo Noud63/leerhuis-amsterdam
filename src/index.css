@@ -42,6 +42,10 @@ body {
   box-sizing: border-box;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 input {
   text-decoration: none;
   outline: none;

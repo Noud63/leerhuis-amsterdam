@@ -12,6 +12,7 @@ export default {
       screens: {
         maxxl: "1600px",
         xxxl: "1500px",
+        title: "1350px",
         xxl: "1300px",
         footer: "1150px",
         socials: "1050px",

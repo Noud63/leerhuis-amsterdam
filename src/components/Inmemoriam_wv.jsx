@@ -1,11 +1,13 @@
 import React from 'react'
+import SectionTitle from './SectionTitle';
 
 const Inmemoriam = () => {
   return (
     <div className="w-full max-w-[900px] mb-12 mt-12 max-socials:w-full flex justify-center flex-col">
-      <div className="w-full max-w-[900px]  bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 text-white font-normal py-1 mb-4 pl-4 rounded-lg">
-        <span classname=""># In Memoriam</span>
-      </div>
+
+      <SectionTitle className="flex justify-center flex-row font-normal mb-4 gap-2 tracking-wide max-xxsm:items-center py-1 max-xxsm:flex-col max-xxsm:gap-0">
+        <span>In Memoriam</span>
+      </SectionTitle>
 
       <div className="max-w-full flex flex-col bg-white mb-4 shadow-md">
         <img

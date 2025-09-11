@@ -44,7 +44,7 @@ const PolarisatieActiviteit = ({act}) => {
 
         <div className="bg-gradient-to-t from-slate-950 to-slate-900/40 flex justify-center items-center h-[18%] absolute bottom-0 left-0 w-full">
           <Link
-            to={`polarisatiecalendaritem/${act.id}`}
+            to={`calendaritem/${act.id}`}
           >
             <button
               type="button"

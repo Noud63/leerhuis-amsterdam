@@ -2,6 +2,7 @@ import React from 'react'
 import polarisatie from "../polarisatiedb.json"
 import { Link } from 'react-router-dom'
 import PolarisatieActiviteit from '../components/PolarisatieActiviteit'
+import SectionTitle from '../components/SectionTitle'
 
 
 const Polarisatie = () => {
@@ -11,9 +12,9 @@ const data = polarisatie.polarisatie
   return (
     <div className="w-full flex flex-col mx-auto px-4 mb-20 pt-[180px] max-xxsm:px-2">
       <div className="px-6 mx-auto max-sm:px-2">
-        <div className="text-[22px] font-semibold text-black border-b border-black pb-2">
+        <SectionTitle className="text-[22px] font-semibold text-black border-b border-black pb-2">
           # De polarisatie voorbij
-        </div>
+        </SectionTitle>
         <div className="w-[85%] mx-auto prose-lg py-4 max-xxsm:w-full ">
           Het Leerhuis Amsterdam voor zinvol samenleven wil een bijdrage leveren
           aan het maatschappelijk gesprek over polarisatie. <br />
@@ -31,9 +32,9 @@ const data = polarisatie.polarisatie
             &euro;10,- per keer, &euro;17,50 voor twee en &euro;25,- voor drie
             bijeenkomsten
           </div>
-          <div className="text-[22px] mt-4 mb-4 font-semibold border-b border-black">
+          <SectionTitle className="text-[22px] mt-4 mb-4 font-semibold border-b border-black">
             Programma:
-          </div>
+          </SectionTitle>
         </div>
 
         <div

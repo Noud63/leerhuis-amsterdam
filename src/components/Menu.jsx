@@ -57,7 +57,7 @@ const Menu = ({ color, style, border }) => {
             isActive ? `${border}` : "border-b-2 border-none",
           ]}
         >
-          <span>Zakelijk</span>
+          <span>Aanmelden</span>
         </NavLink>
       </div>
 
@@ -68,7 +68,7 @@ const Menu = ({ color, style, border }) => {
             isActive ? `${border}` : "border-b-2 border-none",
           ]}
         >
-          <span>Actueel</span>
+          <span>Deze week</span>
         </NavLink>
       </div>
 

@@ -14,13 +14,7 @@ const DekeselEnMalevich = ({act}) => {
         <p className="my-2 h-auto prose-lg max-xsm:text-[17px]">
           {act.description}
         </p>
-        <div className="text-red-700 font-semibold flex flex-col mb-4 text-base">
-          <span>Let op! </span>
-          <span>
-            De bijeenkomst met Marc Dekesel van 8 juli is komen te vervallen!
-          </span>
-          <span>Deze is verplaatst naar 15 september.</span>
-        </div>
+        
       </div>
       <div className="w-full max-w-[400px] max-xmd:max-w-full">
         <Activity act={act} />

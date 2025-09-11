@@ -16,7 +16,7 @@ const filterActivitiesInThePast = () => {
           id: act.id,
           title: act.title,
           image: act.image,
-          date: act.starting_date
+          starting_date: act.starting_date
       });
     }
    });
@@ -62,7 +62,6 @@ const filterByDate = () => {
     });
   });
 };
-
 filterByDate();
 
 export const filteredByWeek = filteredActivitiesByWeek.toSorted(
@@ -111,3 +110,4 @@ export const filteredByWeek = filteredActivitiesByWeek.toSorted(
 // });
 
 // //Output the separated relevant dates
+

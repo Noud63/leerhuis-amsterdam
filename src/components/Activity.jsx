@@ -1,19 +1,23 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom';
+import ActivityCategory from './ActivityCategory';
 
-const Activity = ({act}) => {
-
+const Activity = ({act }) => {
 
   return (
     <div className="w-full min-h-full" key={act.id}>
+     
       <div className="calendar_item w-full h-full rounded-t-2xl bg-gradient-to-t from-stone-300 to-white flex flex-col justify-between relative">
+
+        <ActivityCategory cat={act.cat}/>
+
         <div className="p-4 overflow-y-hidden">
-          <span className="border-b border-black flex justify-between font-semibold font-papyrus text-xl pb-2 max-sm:line-clamp-1">
+          <span className="border-b border-black justify-between font-semibold font-papyrus text-xl pb-2 line-clamp-1">
             {act.title}
           </span>
         </div>
 
-        <div className="relative h-auto flex flex-col gap-2 pl-4 mb-2">
+        <div className="relative h-auto flex flex-col gap-1 pl-4 mb-2">
           {act.itemId === "LA-AC19" && (
             <div
               className="shadow-lg flex justify-center flex-col absolute top-16 items-center w-[90%] 
@@ -28,7 +32,7 @@ const Activity = ({act}) => {
 
           <div className="w-full flex flex-col">
             <span className="font-semibold">Start : </span>
-            {new Date(act.starting_date).toLocaleDateString("nl-NL", {
+            {new Date(act.itemId === "LA-AC22" ? act.closing_date : act.starting_date).toLocaleDateString("nl-NL", {
               month: "long",
               day: "numeric",
             })}
@@ -38,6 +42,11 @@ const Activity = ({act}) => {
             <span className="font-semibold">Tijd :</span> {act.time}
           </div>
 
+          {/* <div className="w-full flex flex-col">
+            {" "}
+            <span className="font-semibold">Locatie :</span> {act.location}
+          </div> */}
+
           <div className="w-full flex flex-col">
             {" "}
             <span className="font-semibold">O.l.v :</span>
@@ -46,12 +55,16 @@ const Activity = ({act}) => {
 
           <div className="w-full flex flex-col">
             {" "}
-            <span className="font-semibold">Kenmerk :</span> {act.itemId}
+            <span className="font-semibold">Locatie :</span> {act.location}
           </div>
+
+          
         </div>
 
         <div className="w-full flex justify-center items-center mt-4">
-          <img src={`/images/${act.image}`} alt="" className="w-full h-auto" />
+          <Link to={`/allactivities/calendaritem/${act.id}`}>
+            <img src={`/images/${act.image}`} alt="" className="w-full h-auto" loading="lazy" />
+          </Link>
         </div>
 
         <div className="bg-gradient-to-t from-slate-950 to-slate-900/40 flex justify-center items-center h-[18%] absolute bottom-0 left-0 w-full">

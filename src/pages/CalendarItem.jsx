@@ -14,6 +14,7 @@ import {
   LinkedinIcon,
 } from "react-share";
 import BackButton from '../components/BackButton';
+import SectionTitle from '../components/SectionTitle';
 
 
 const CalendarItem = () => {
@@ -46,7 +47,7 @@ useEffect(()=> {
     <div className="w-full flex items-center flex-row max-calendar:h-auto">
       <div className="flex flex-1 pt-[180px] flex-col items-center max-calendar:mt-12 max-xsm:pt-[170px]">
         <div className="w-full max-w-[900px] mb-32 flex flex-col items-center px-2">
-          <div className="w-full flex justify-start text-xl font-semibold mb-4 border-b border-black pb-2">
+          <SectionTitle className="w-full flex justify-start text-xl last:font-semibold mb-4 shadow-md p-2">
             #&nbsp;<span className="max-xxsm:hidden">Over&nbsp;</span>
             {Array.isArray(item.title) ? (
               <div>
@@ -54,9 +55,9 @@ useEffect(()=> {
                 <span>{item.title[1]}</span>
               </div>
             ) : (
-              <span>{item.title}</span>
+              <span>{ID === "LA-AC33" ? item.title.slice(20) : item.title}</span>
             )}
-          </div>
+          </SectionTitle>
 
           <div className="calendar_item w-full rounded-t-2xl">
             <div className="bg-gradient-to-t from-stone-100 via-stone-50 to-white text-[#000]  rounded-t-2xl pt-4 flex flex-col">
@@ -76,7 +77,7 @@ useEffect(()=> {
                 <span className="line-clamp-1">{item.title}</span>
                 <div className="group">
                   <div className="flex flex-row gap-2 font-normal">
-                    <span className="text-orange-600 font-sans text-lg max-xxsm:hidden">
+                    <span className="text-orange-700 font-sans text-lg max-xxsm:hidden">
                       Deel
                     </span>
                     <img
@@ -109,7 +110,7 @@ useEffect(()=> {
               </div>
 
               <div className="w-full pl-4 my-2">
-                <div className="font-bold">Datums :</div>
+                <div className="font-bold">Datum :</div>
                 <div className="w-full flex flex-row flex-wrap">
                   <span>{item.date.day}:&nbsp;</span>
                   {item.date.dates.map((date, index) => (
@@ -153,7 +154,10 @@ useEffect(()=> {
                   <span>
                     {item.description.map((line) => {
                       return (
-                        <div className="flex flex-col" key={line}>
+                        <div
+                          className="flex flex-col whitespace-pre-line"
+                          key={line}
+                        >
                           <span>{line}</span>
                         </div>
                       );
@@ -178,24 +182,21 @@ useEffect(()=> {
                 <div className="w-full px-4 mb-2">
                   {" "}
                   <span className="font-bold flex flex-wrap">Lokatie :</span>
-                  <span className="whitespace-pre-line text-orange-800 font-semibold">
+                  <span className="whitespace-pre-line text-black">
                     {item.location}
                   </span>
-                  {/* <div className="mb-4 mt-2">
-                    <img src="/images/muiderkerk.png" alt="" />
-                  </div> */}
                 </div>
               )}
 
-              <div className="w-full px-4 mb-2 mt-2">
+              <div className="flex flex-col w-full px-4 mb-2 mt-2">
                 {" "}
-                <span className="font-bold flex flex-wrap">Bijdrage:</span>{" "}
-            {item.contribution}
-                <br />
+                <div className="font-bold flex-wrap">Bijdrage:</div>{" "}
+                {item.contribution}
+                
                 {!expired ? (
                   <span>
-                    Voor betaalgegevens en het inschrijfformulier, klik
-                    hieronder op "Schrijf je in".
+                    Voor betaalgegevens en/of het inschrijfformulier, klik
+                    hieronder op "Schrijf je in"
                   </span>
                 ) : (
                   ""

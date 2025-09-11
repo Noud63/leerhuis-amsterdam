@@ -11,10 +11,10 @@ const Contact = ({forwardUrl}) => {
         </span>
       </div>
 
-      <div className="contact_info w-full flex flex-row px-8 pb-20 pt-12 bg-gradient-to-t from-stone-100 via-white to-white border-b border-stone-400 rounded-xl mb-10 max-socials:flex-col max-xxsm:px-4 max-xxsm:pt-6">
-        <div className="flex flex-col w-2/3 max-socials:w-full">
+      <div className="contact_info w-full flex flex-row px-8 pb-20 pt-12 bg-gradient-to-t from-stone-100 via-white to-white border-b border-stone-400 rounded-xl mb-10 max-xxl:flex-col max-xxsm:px-4 max-xxsm:pt-6">
+        <div className="flex flex-col w-2/3 max-xxl:w-full">
           <div className="flex flex-col text-base mb-4 gap-1">
-            <span className="text-lg font-semibold text-orange-800 mb-2">
+            <span className="text-lg font-semibold mb-2 border-b border-black max-w-[600px] max-xxl:max-w-full">
               Het Leerhuis is gevestigd in de Muiderkerk:
             </span>
 
@@ -23,18 +23,17 @@ const Contact = ({forwardUrl}) => {
             <span>1093EG Amsterdam</span>
           </div>
 
-          <div className=" flex flex-col mt-8 gap-2 max-socials:mb-8">
-            <span className="text-lg font-semibold text-orange-800">
+          <div className="flex flex-col mt-8 gap-2 max-xxl:mb-8">
+            <span className="text-lg font-semibold border-b border-black max-w-[600px] max-xxl:max-w-full">
               Heeft u vragen, zijn dingen niet helemaal duidelijk of heeft u een
               voorstel?
-              <br />
-              Laat het ons weten.
+              
             </span>
             <span className="text-lg font-semibold text-orange-700 "></span>
             <span className="">Bel naar: 06 10325127</span>
             <span className="">Mail naar: leerhuisamsterdam@gmail.com</span>
             <span className="mb-2">Of klik op onderstaande link:</span>
-            <Link to="/contactform" className="mt-12 max-socials:mt-4">
+            <Link to="/contactform" className="mt-12 max-xxl:mt-4">
               <button
                 type="button"
                 className="btn w-[150px] rounded-full justify-center items-center text-[#000] border-2 border-black gap-2 pb-1 leading-8 pt-1 text-md font-semibold"
@@ -45,7 +44,7 @@ const Contact = ({forwardUrl}) => {
           </div>
         </div>
 
-        <div className="map_box h-[440px] w-1/2 bg-white max-socials:w-full z-10">
+        <div className="map_box h-[440px] w-1/2 bg-white max-xxl:w-full z-10">
           <Map />
           <div className="w-full flex justify-start text-gray-700 bg-stone-100 p-2 border-b border-stone-400">
             * Locatie Leerhuis Amsterdam

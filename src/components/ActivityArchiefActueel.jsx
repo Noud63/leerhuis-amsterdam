@@ -8,20 +8,26 @@ const ActivityArchiefActueel = ({act, url}) => {
       className="actueel flex flex-col mb-8 rounded-t-xl bg-gradient-to-t from-stone-400 to-white relative"
       key={act.id}
     >
-      <div className="flex flex-row max-sm:flex-col max-sm:items-start py-3 px-3 text-black items-center">
+      <div className="flex flex-row max-sm:items-start py-3 px-3 text-black items-center">
         <div className="flex flex-1 text-xl font-semibold font-papyrus max-sm:line-clamp-1">
           {act.title.length > 25 ? `${act.title.slice(0, 25)}` : act.title}
         </div>
-        {act.date ? (
+        
           <div className="flex items-center text-md font-normal text-amber-800">
-            {new Date(act.date).toLocaleDateString("nl-NL", {
-              month: "long",
-              day: "numeric",
-            })}
+            <span className="max-xxsm:inline hidden font-semibold">
+              {new Date(act.starting_date).toLocaleDateString("nl-NL", {
+                month: "numeric",
+                day: "numeric",
+              })}
+            </span>
+            <span className="max-xxsm:hidden inline font-semibold">
+              {new Date(act.starting_date).toLocaleDateString("nl-NL", {
+                month: "long",
+                day: "numeric",
+              })}
+            </span>
           </div>
-        ) : (
-          ""
-        )}
+        
       </div>
       <div className="w-full">
         <img src={`images/${act.image}`} alt="" className="w-full " />

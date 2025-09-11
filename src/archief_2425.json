@@ -1,0 +1,316 @@
+{
+  "activities": [
+    {
+      "id": 10,
+      "title": "Bijbels Leerhuis",
+      "date": {
+        "day": "Donderdag",
+        "dates": [
+          "2024-09-12",
+          "2024-10-10",
+          "2024-11-14",
+          "2024-12-12",
+          "2025-01-09",
+          "2025-02-13",
+          "2025-03-13",
+          "2025-04-10",
+          "2025-05-08",
+          "2025-06-12"
+        ]
+      },
+      "time": "14:00 - 16:00 uur",
+      "contribution": "Vrijwillige bijdrage",
+      "description": [
+        "We maken de lezing af van de Brief aan de Hebreeën, waarmee we vorig seizoen begonnen zijn.\n",
+        "Daarin gaat het onder andere over de beroemde lijst met geloofsgetuigen vanaf Abel tot aan de tijd van Jezus.\n",
+        "‘Door geloof’, wat betekent dat eigenlijk, want bij Abel en die na hem komen, kun je niet spreken van geloof in Jezus?\n",
+        "Daarna kiezen we een gedeelte uit het Oude Testament, namelijk het Jozef-verhaal (Genesis 37-50), een prachtige novelle die is toegevoegd aan het verhaal van de aartsvaders en -moeders.\n",
+        "Voor vertalingen wordt gezorgd en die krijgen deelnemers een paar dagen voor de bijeenkomst gemaild."
+      ],
+      "led_by": "Was Wilken Veen, voorlopig wisselende docenten",
+      "email": "wilkenveen@hotmail.com",
+      "image": "briefaandehebreeen2.jpg",
+      "starting_date": "2024-09-12",
+      "closing_date": "2025-06-12",
+      "itemId": "LA-AC11"
+    },
+    {
+      "id": 11,
+      "title": "Wakker in tijden van woke en anti-woke",
+      "date": {
+        "day": "Maandag",
+        "dates": ["2024-09-23", "2024-10-07", "2024-10-21", "2024-11-04"]
+      },
+      "time": "19:00 - 21:30 uur",
+      "contribution": "Vrijwillige bijdrage",
+      "description": [
+        "We lezen met elkaar het boekje De weg van het gebed (1962) van de theoloog K.H. Miskotte (1894-1976).\n",
+        "Miskotte schrijft over het gebed als een waakzame en verbindende daad van verzet.\n",
+        "Hoe klinkt dat te midden van de huidige polarisatie? Kan bidden verbindend werken tussen woke en antiwoke?\n",
+        "We leggen de beschouwingen van Miskotte naast Cees Zwijstra’s pleidooi voor een hedendaagse ethiek van verantwoordelijkheid. En dat brengen we in gesprek met ons eigen zoeken naar religieuze verbinding en maatschappelijke betrokkenheid.",
+        "Literatuur: *K.H. Miskotte, ‘De weg van het gebed’, in: Mystiek en Bevinding,Verzameld Werk 14, Uitgeverij Kok. 2015, p. 227-301.\n",
+        "Deze tekst zal voor de deelnemers beschikbaar worden gesteld.\n",
+        "*Cees Zweistra, Woke theater. Hoe we ontsnappen aan de greep van woke en antiwoke, Utrecht: KokBoekencentrum Uitgevers 2023.\n",
+        "Tijdens de cursus zullen we hier fragmenten uit bespreken.\n"
+      ],
+      "led_by": "Gerben van Manen, predikant in Nieuw-West",
+      "email": "gg_vanmanen@hotmail.com",
+      "image": "dewegvanhetgebed.jpg",
+      "starting_date": "2024-09-23",
+      "closing_date": "2024-11-04",
+      "itemId": "LA-AC12"
+    },
+    {
+      "id": 12,
+      "title": "Moderne Theologen",
+      "date": {
+        "day": "Dinsdag",
+        "dates": [
+          "2024-09-24",
+          "2024-10-29",
+          "2024-11-26",
+          "2025-01-28",
+          "2025-02-25",
+          "2025-03-25",
+          "2025-04-29",
+          "2025-05-27",
+          "2025-06-24"
+        ]
+      },
+      "time": "19:00 - 21:00 uur",
+      "contribution": "Vrijwillige bijdrage",
+      "description": [
+        "Sinds twee jaar lezen we onder leiding van Wilken Veen op de laatste dinsdag van de maand hoofdstukken uit het boek De moderne theologen.\n",
+        "Met modern bedoelen we niet persé progressief, maar eigentijds (nog actief geweest in de afgelopen veertig jaar).\n",
+        "In de komende maanden willen we een aantal katholieke theologen bespreken en vertegenwoordigers van de ‘black theology’ (bevrijdingstheologie van zwarte Amerikaanse theologen).\n",
+        "Ook wie niet over het boek beschikt (het is dik en dus prijzig) kan meedoen en krijgt de te bespreken teksten vooraf gemaild.\n",
+        "Literatuur: De moderne theologen, onder redactie van Marcel Poorthuis en Wilken Veen en uitgegeven bij uitgeverij Boom"
+      ],
+      "led_by": "Was Wilken Veen, voorlopig wisselende docenten",
+      "email": "wilkenveen@hotmail.com",
+      "image": "modernetheologen.jpg",
+      "starting_date": "2024-09-24",
+      "closing_date": "2025-06-24",
+      "itemId": "LA-AC13"
+    },
+    {
+      "id": 13,
+      "title": "Bijbels Leerhuis",
+      "date": {
+        "day": "Donderdag",
+        "dates": [
+          "2024-09-26",
+          "2024-10-24",
+          "2024-11-28",
+          "2025-01-23",
+          "2025-02-27",
+          "2025-03-27",
+          "2025-04-24",
+          "2025-05-22",
+          "2025-06-26"
+        ]
+      },
+      "time": "14:00 - 16:00 uur",
+      "contribution": "Vrijwillige bijdrage",
+      "description": [
+        "We lezen en gaan in gesprek over het bijbelboek Mattheüs.\n",
+        "Zoals de Rabbijnen ons leerden: elke tekst, elk verhaal heeft zeventig gezichten.\n",
+        "Pas als we alle zeventig hebben ‘aangekeken’ kunnen we iets van de ware betekenis gaan vermoeden.\n",
+        "Voor die tijd kan niemand de waarheid claimen. Maar ieder van ons kan de ander wel vertellen wat hij, wat zij gezien heeft! Want wat wij zien doet ertoe! Er zijn daarbij geen domme opmerkingen of vragen.\n",
+        "Zo gaan we dus ook met Matteüs in gesprek en we stellen bijvoorbeeld om te beginnen de vraag: Waar is die uitgebreide stamboom van Jezus voor nodig?\n",
+        "Een dringende vraag, want uit meerdere delen van het Nieuwe Testament klinken geluiden van argwaan voor het gebruik van ‘bloedlijnen’, oftewel argwaan, je tegenzin tegen het zoeken van genealogische zekerheid.\n"
+      ],
+      "led_by": "Gerhard Scholte, em. predikant",
+      "email": "gscholte@dds.nl",
+      "image": "bijbel.jpg",
+      "starting_date": "2024-09-26",
+      "closing_date": "2025-06-26",
+      "itemId": "LA-AC14"
+    },
+    {
+      "id": 14,
+      "title": "Literaire kring",
+      "date": {
+        "day": "Maandag",
+        "dates": ["2024-10-28", "2024-11-25", "2024-12-16", "2025-01-13"]
+      },
+      "time": "19:30 - 21:30 uur",
+      "contribution": "Vrijwillige bijdrage",
+      "description": [
+        "Met elkaar lezen we de roman De Belofte, van de Zuid Afrikaanse schrijver Damon Galgut.\n",
+        "Dit boek is een intergenerationele familieroman en speelt zich deels af tijdens de apartheid, en deels in de jaren na de afschaffing daarvan (1990).\n",
+        "De witte familie Swart heeft een grote boerderij in de buurt van Pretoria.\n",
+        "We kijken al lezend vanuit verschillende perspectieven, die van Ma, van Pa, van de drie volwassen wordende kinderen.\n",
+        "Als in een zijlicht ontmoeten we de zwarte hulp Salomé, die in een klein bouwvallig huisje op het erf woont en de zieke Ma en het jongste kind (Amor) intensief bijstaat.\n",
+        "Ma laat op haar sterfbed Pa beloven dat Salomé haar huisje in bezit zal krijgen.\n",
+        "Maar wordt die belofte gehouden? Pa maakt er geen werk van en de oudste kinderen, Astrid en Anton, voelen er niets voor om na Pa’s dood alsnog deze belofte te vervullen. Maar Amor weet dat ze iets goed moet maken.\n",
+        "Al was ze persoonlijk nooit een aanhanger van de apartheid ideologie, ze is nog iets verschuldigd aan Salomé en diens zoon.\n",
+        "Natuurlijk gaat het over meer dan deze ene familie.\n",
+        "Dit boek bestrijkt meer dan dertig jaar van de geschiedenis van een land dat beweegt van hoop op rechtvaardige verhoudingen naar teleurstelling en soms toch weer kleine hoop.\n",
+        "Loyaliteit is een belangrijke rode draad, met goede kanten en zeer onrechtvaardige keerzijden.\n",
+        "Schuld en hoe daarmee om te gaan, is misschien wel het kernthema.\n"
+      ],
+      "led_by": "Hanneke Meulink-Korf, theoloog en contextueel therapeut, en Greteke de Vries, predikant",
+      "led_by_short": "Hanneke Meulink-Korf en Greteke de Vries",
+      "email": "predikant@muiderkerk.nl",
+      "image": "debelofte.png",
+      "starting_date": "2024-10-28",
+      "closing_date": "2025-01-13",
+      "itemId": "LA-AC15"
+    },
+    {
+      "id": 15,
+      "title": "Wie is er bang voor gender?",
+      "date": {
+        "day": "Woensdag",
+        "dates": [
+          "2025-01-29",
+          "2025-02-12",
+          "2025-02-26",
+          "2025-03-12",
+          "2025-03-26"
+        ]
+      },
+      "time": "10:30 - 12:00 uur",
+      "contribution": "Vrijwillige bijdrage",
+      "description": [
+        "Pogingen de wereld te verstaan voorbij een duaal denken.\n",
+        "Je hoeft niet alles te geloven wat je zelf denkt (ansichtkaart gekocht in Ekoplaza)\n",
+        "Wie wat vindt heeft slecht gezocht (Rutger Kopland)\n",
+        "In deze studie-gespreksgroep zijn deze uitdrukkingen leidraad.\n",
+        "Het gaat vooral om het zoeken en niet vinden.\n",
+        "Vaak worden oplossingen en antwoorden als hapklare brokken aangeboden.\n",
+        "Religieuze, politieke partijen dienen ‘maaltijden’ vaak verleidelijk op.\n",
+        "In deze leer-groep kijken wij naar de ingrediënten.\n",
+        "Wij hoeven de maaltijd niet te eten zoals het wordt geserveerd maar proeven blijft noodzakelijk.\n",
+        "De vraagt blijft: Hoe komt het dat ik dat ene wil eten en dat andere niet? Door over Gender en genderdysforie te spreken komen de biologische ‘vaste’ beelden over socialisatie van mensen onder kritiek te staan.\n",
+        "Biologische lichamen worden binnen sociale culturele, en economische achtergronden gevormd.\n",
+        "Daarmee worden identiteiten gezien als geweven binnen een web van verhoudingen die invloed uitoefenen op de biologische lichamen waardoor ‘vaste’ biologische sekse duidingen niet meer voldoen.\n"
+      ],
+      "led_by": "Harmen-Elisa Brandsma",
+      "email": "harmenbrandsma@gmail.com",
+      "image": "wieiserbangvoorgender.jpg",
+      "starting_date": "2025-01-29",
+      "closing_date": "2025-03-26",
+      "itemId": "LA-AC16"
+    },
+    {
+      "id": 16,
+      "title": ["De polarisatie voorbij -", " 1"],
+      "date": {
+        "day": "Zaterdag",
+        "dates": ["2024-11-02"]
+      },
+      "time": "14:30 - 17:30 uur",
+      "location": "Muiderkerk, Linnaeusstraat 37",
+      "contribution": "€10 per keer, 17,50 voor twee en 25 euro voor drie bijeenkomsten",
+      "description": [
+        "Waarom en hoe polariseert de wereld en wat betekent dat voor onze stad?\n",
+        "Met: Jeroen Slot, hoofd onderzoek en statistiek van de gemeente Amsterdam, Polarisatie: de feiten en cijfers in Amsterdam, Rachelle van Andel, predikant en filosoof, over Hanna Ahrendt; Wilken Veen, predikant, over Dietrich Bonhoeffer."
+      ],
+      "led_by": "",
+      "email": "",
+      "image": "polarisatie.jpeg",
+      "starting_date": "2024-11-02",
+      "closing_date": "2024-11-02",
+      "itemId": "LA-AC17"
+    },
+    {
+      "id": 17,
+      "title": ["De polarisatie voorbij -", " 2"],
+      "date": {
+        "day": "Zaterdag",
+        "dates": ["2025-02-08"]
+      },
+      "time": "14:30 - 17:30 uur",
+      "location": "Keizersgrachtkerk, Keizersgracht 566",
+      "contribution": "€10 per keer, 17,50 voor twee en 25 euro voor drie bijeenkomsten",
+      "description": [
+        "Bieden de bronnen van onze beschaving, zoals de Bijbel en andere religieuze en spirituele bronnen, een richting voor analyse en oplossingen?\n",
+        "Met: Erik Borgman, emeritus-hoogleraar Publieke Theologie Tilburg University, en Rosaliene Israël, praktisch theoloog, docent aan het Remonstrants Seminarium (gevraagd)."
+      ],
+      "led_by": "",
+      "email": "",
+      "image": "polarisatie2a.jpg",
+      "starting_date": "2025-02-08",
+      "closing_date": "2025-02-08",
+      "itemId": "LA-AC18"
+    },
+    {
+      "id": 18,
+      "title": ["De polarisatie voorbij -", " 3"],
+      "date": {
+        "day": "Zaterdag",
+        "dates": ["2025-05-24"]
+      },
+      "time": "14:30 - 17:30 uur",
+      "location": "Oranjekerk, Van Ostadestraat",
+      "contribution": "€10 per keer, 17,50 voor twee en 25 euro voor drie bijeenkomsten",
+      "description": [
+        "Hoe komen we voorbij de polarisatie? Zijn er werkbare voorbeelden?\n",
+        "Met: Marjolein Moorman, wethouder Amsterdam, portefeuilles Onderwijs, Jeugd(zorg), Armoede en Schuldhulpverlening etc. en Martijn van Leerdam, predikant-directeur Pauluskerk Rotterdam."
+      ],
+      "led_by": "",
+      "email": "",
+      "image": "polarisatie4.jpg",
+      "starting_date": "2025-05-24",
+      "closing_date": "2025-05-24",
+      "itemId": "LA-AC19"
+    },
+    {
+      "id": 19,
+      "title": "Leesproject Zwart-Wit",
+      "date": {
+        "day": "Donderdag",
+        "dates": ["2025-01-30", "2025-02-27", "2025-03-27", "2025-05-01"]
+      },
+      "time": "19:30 - 21:30 uur",
+      "contribution": "Vrijwillige bijdrage",
+      "description": [
+        "Eindelijk vrij? Bijdrage aan bezinning op kerken en slavernij.\n",
+        "De Nederlandse Raad van Kerken heeft een Bezinningsboekje uitgegeven dat we dit jaar als leidraad gebruiken voor gesprekken tussen mensen van kleur en witte mensen.\n",
+        "Aandacht voor de geschiedenis van Creolen en Hindostanen heeft de deelnemers aan eerdere bijeenkomsten verrijkt.\n",
+        "Nu zullen we het gesprek stimuleren rond de doorwerking van het slavernijverleden in het nu, openlijk en onderhuids.\n",
+        "Wij volgen de inhoud van het boekje: I. Slavernij en de Bijbel; II Slavernij in Oost en West, in verleden en heden; III Interviews en column; IV Heilzame verwerking.\n",
+        "Eerlijke gesprekken, vanuit een verlangen naar een gezamenlijke toekomst, dat is wat we beogen.\n",
+        "Mensen met een kerkelijke betrokkenheid of een andere motivatie: iedereen is welkom!\n",
+        "Het Bezinningsboekje is voor 7,50 te koop bij Greteke de Vries, predikant@muiderkerk.nl\n"
+      ],
+      "led_by": "Clifton Walker, predikant Evangelische Broeder Gemeente Amsterdam (Koningskerk), en Greteke de Vries, predikant Protestantse Muiderkerk",
+      "led_by_short": "Clifton Walker en Greteke de Vries",
+      "email": "cliftonwalker@ebga.nl",
+      "image": "cliftonengreteke.jpg",
+      "starting_date": "2025-01-30",
+      "closing_date": "2025-05-01",
+      "itemId": "LA-AC20"
+    },
+    {
+      "id": 20,
+      "title": "Zingen voorbij Polarisatie",
+      "date": {
+        "day": "Zaterdag",
+        "dates": ["2025-04-05"]
+      },
+      "time": "14:00 - 17:30 uur",
+      "contribution": "Uw financiële bijdrage is 10 euro. U kunt ook meer of minder betalen.",
+      "description": [
+        "Leerhuis Amsterdam voor Zinvol Samenleven organiseert op zaterdagmiddag 5 april, 14.30-17.30 uur, in de Muiderkerk een middag over ‘Zingen voorbij polarisatie’.\n",
+        "Bestemd voor kerkmusici, koren, liturgiecommissies, voorgangers en wie er maar van kerkmuziek houdt.\n",
+        "De één houdt van opwekking, de ander van gregoriaans, de een van Goudimel, de ander van Oosterhuis.\n",
+        "Sluiten de verschillende genres elkaar uit? Soms lijkt dat wel zo. Wij willen de polarisatie voorbij.\n",
+        "Met Christiaan Winter, musici van binnen en buiten de PKA.\n",
+        "Organisatie door Rijk van Ark en Flip Noordam. Voor informatie en aanmelding: www.leerhuisamsterdam.nl\n",
+        "Psalmen, Latijnse mis, Liedboek, Oosterhuis, Opwekking, enz.\n",
+        "Een middag o.l.v. kerkmusicus Christiaan Winter.\n",
+        "Met: Jan Cornelis Blokhuis, Elthetokerk, Herman Rouw, Dominicuskerk; Pieter Mark, Kamminga, Noorderkerk; Catharina Bonsel, Hofkerk; Flip Noordam, Muiderkerk.\n"
+      ],
+      "led_by": "Christiaan Winter",
+      "led_by_short": "",
+      "email": "leerhuisamsterdam@gmail.com",
+      "image": "zingenvoorbijpolarisatie1.jpg",
+      "starting_date": "2025-04-05",
+      "closing_date": "2025-04-05",
+      "itemId": "LA-AC21"
+    }
+  ]
+}
