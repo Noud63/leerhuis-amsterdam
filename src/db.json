@@ -711,7 +711,7 @@
       "location": "Muiderkerk, Linnaeusstraat 37",
       "email": "tiersbakker@gmail.com",
       "image": "malevich.png",
-      "starting_date": "2025-09-15",
+      "starting_date": "2025-06-10",
       "closing_date": "2025-09-15",
       "itemId": "LA-AC22",
       "cat": "cursus"
@@ -843,7 +843,7 @@
       "title": "De overheid als moderne vrijheid",
       "date": {
         "day": "Dinsdag",
-        "dates": ["2025-11-25"]
+        "dates": ["2026-01-20"]
       },
       "time": "20:00 - 22:00 uur",
       "contribution": "",
@@ -856,8 +856,8 @@
       "email": "leerhuisamsterdam@gmail.com",
       "location": "De Thomas, Prinses Irenestraat 36",
       "image": "overheid.png",
-      "starting_date": "2025-11-25",
-      "closing_date": "2025-11-25",
+      "starting_date": "2026-01-20",
+      "closing_date": "2026-01-20",
       "itemId": "LA-AC28",
       "cat": "lezing"
     },
@@ -954,7 +954,7 @@
       "location": "Muiderkerk, Linnaeusstraat 37",
       "image": "wieiserbangvoorgender_2.jpg",
       "starting_date": "2025-09-24",
-      "closing_date": "2025-09-24",
+      "closing_date": "2025-12-17",
       "itemId": "LA-AC32",
       "cat": "cursus"
     },
@@ -1039,8 +1039,8 @@
       "email": "ngallouh@msn.com",
       "location":"De OPGANG, Tussen Meer 68",
       "image": "klimaatverandering.png",
-      "starting_date": "2025-11-12",
-      "closing_date": "2025-11-12",
+      "starting_date": "2025-11-13",
+      "closing_date": "2025-12-11",
       "itemId": "LA-AC35",
       "cat": "cursus"
     },
@@ -1067,6 +1067,31 @@
       "closing_date": "2026-08-29",
       "itemId": "LA-AC36",
       "cat": "gesprek"
+    },
+    {
+      "id": 36,
+      "title": "Dankdienst, 50 jaar Suriname",
+      "date": {
+        "day": "Dinsdag",
+        "dates": [
+          "2025-11-25"
+        ]
+      },
+      "time": "19:00 uur (Inloop)",
+      "contribution": "n.v.t.",
+      "description": [
+        "Uitnodiging Dankdienst. \n",
+        "1975- 2025, 50 jaar staatkundige onafhankelijkheid van de Republiek Suriname.\n",
+        "Evangelische Broedergemeente Amsterdam Stad en Flevoland"
+      ],
+      "led_by": "n.v.t.",
+      "location": "Koningskerk, Van 't Hofflaan 20",
+      "email": "n.v.t.",
+      "image": "suriname.jpg",
+      "starting_date": "2025-11-25",
+      "closing_date": "2025-11-25",
+      "itemId": "LA-AC37",
+      "cat": "dankdienst"
     }
   ]
 }

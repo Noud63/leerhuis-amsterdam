@@ -35,7 +35,8 @@ const Activity = ({act }) => {
             {new Date(act.itemId === "LA-AC22" ? act.closing_date : act.starting_date).toLocaleDateString("nl-NL", {
               month: "long",
               day: "numeric",
-            })}
+            })}<br />
+            {act.itemId ==="LA-AC28" && <div className="text-red-700 font-semibold">(Let op! 25 november is komen te vervallen)</div> }
           </div>
           <div className="w-full flex flex-col">
             {" "}

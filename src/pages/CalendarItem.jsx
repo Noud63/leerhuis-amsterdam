@@ -1,5 +1,5 @@
-import React,{useState, useEffect} from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import activities from "../db.json";
 import { Link, useLocation } from "react-router-dom";
 import share from "../assets/icons/share.png";
@@ -13,35 +13,32 @@ import {
   XIcon,
   LinkedinIcon,
 } from "react-share";
-import BackButton from '../components/BackButton';
-import SectionTitle from '../components/SectionTitle';
-
+import BackButton from "../components/BackButton";
+import SectionTitle from "../components/SectionTitle";
 
 const CalendarItem = () => {
-  
-  const currentUrl = window.location.href
+  const currentUrl = window.location.href;
 
-  const { calendaritem_id } = useParams()
+  const { calendaritem_id } = useParams();
 
-  const [expired, setExpired] = useState(false)
+  const [expired, setExpired] = useState(false);
 
   const url = useLocation().pathname;
 
   const item = activities.activities[calendaritem_id];
-  const ID = item.itemId
+  const ID = item.itemId;
 
   const givenDate = new Date(item.closing_date).getTime() + 86400000;
   const now = new Date().getTime();
- 
-useEffect(()=> {
- if (givenDate <= now) {
-    setExpired(true);
-    console.log(expired);
- } else{
-   setExpired(false);
- }
-},[givenDate, now])
 
+  useEffect(() => {
+    if (givenDate <= now) {
+      setExpired(true);
+      console.log(expired);
+    } else {
+      setExpired(false);
+    }
+  }, [givenDate, now]);
 
   return (
     <div className="w-full flex items-center flex-row max-calendar:h-auto">
@@ -55,7 +52,9 @@ useEffect(()=> {
                 <span>{item.title[1]}</span>
               </div>
             ) : (
-              <span>{ID === "LA-AC33" ? item.title.slice(20) : item.title}</span>
+              <span>
+                {ID === "LA-AC33" ? item.title.slice(20) : item.title}
+              </span>
             )}
           </SectionTitle>
 
@@ -188,37 +187,44 @@ useEffect(()=> {
                 </div>
               )}
 
-              <div className="flex flex-col w-full px-4 mb-2 mt-2">
-                {" "}
-                <div className="font-bold flex-wrap">Bijdrage:</div>{" "}
-                {item.contribution}
-                
-                {!expired ? (
-                  <span>
-                    Voor betaalgegevens en/of het inschrijfformulier, klik
-                    hieronder op "Schrijf je in"
-                  </span>
-                ) : (
-                  ""
-                )}
-              </div>
+              {item.itemId === "LA-AC37" ? (
+                ""
+              ) : (
+                <div className="flex flex-col w-full px-4 mb-2 mt-2">
+                  {" "}
+                  <div className="font-bold flex-wrap">Bijdrage:</div>{" "}
+                  {item.contribution}
+                  {!expired ? (
+                    <span>
+                      Voor betaalgegevens en/of het inschrijfformulier, klik
+                      hieronder op "Schrijf je in"
+                    </span>
+                  ) : (
+                    ""
+                  )}
+                </div>
+              )}
               <div className="w-full px-4">
                 {" "}
                 <span className="font-bold">Kenmerk :</span> {item.itemId}
               </div>
 
-              <Link
-                to={`subscribe/${item.itemId}`}
-                className="w-full flex justify-center mt-6 mb-4"
-              >
-                <button
-                  type="button"
-                  className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
-                  disabled={expired}
+              {item.itemId === "LA-AC37" ? (
+                <div className="mt-6 mb-4"></div>
+              ) : (
+                <Link
+                  to={`subscribe/${item.itemId}`}
+                  className="w-full flex justify-center mt-6 mb-4"
                 >
-                  Schrijf je in
-                </button>
-              </Link>
+                  <button
+                    type="button"
+                    className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
+                    disabled={expired}
+                  >
+                    Schrijf je in
+                  </button>
+                </Link>
+              )}
 
               <div className="w-full flex justify-center items-center mt-4 relative">
                 <img
@@ -235,6 +241,6 @@ useEffect(()=> {
       </div>
     </div>
   );
-}
+};
 
-export default CalendarItem
+export default CalendarItem;
