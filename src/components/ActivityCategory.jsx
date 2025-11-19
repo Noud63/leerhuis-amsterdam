@@ -4,8 +4,7 @@ const categoryTitles = {
   cursus: "Cursus",
   lezing: "Lezing",
   gesprek: "Gesprek",
-  voorstelling: "Voorstelling",
-  dankdienst: "Dankdienst"
+  voorstelling: "Voorstelling"
 }
 
 const ActivityCategory = ({cat}) => {

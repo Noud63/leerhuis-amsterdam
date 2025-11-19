@@ -1067,31 +1067,6 @@
       "closing_date": "2026-08-29",
       "itemId": "LA-AC36",
       "cat": "gesprek"
-    },
-    {
-      "id": 36,
-      "title": "Dankdienst, 50 jaar Suriname",
-      "date": {
-        "day": "Dinsdag",
-        "dates": [
-          "2025-11-25"
-        ]
-      },
-      "time": "19:00 uur (Inloop)",
-      "contribution": "n.v.t.",
-      "description": [
-        "Uitnodiging Dankdienst. \n",
-        "1975- 2025, 50 jaar staatkundige onafhankelijkheid van de Republiek Suriname.\n",
-        "Evangelische Broedergemeente Amsterdam Stad en Flevoland"
-      ],
-      "led_by": "n.v.t.",
-      "location": "Koningskerk, Van 't Hofflaan 20",
-      "email": "n.v.t.",
-      "image": "suriname.jpg",
-      "starting_date": "2025-11-25",
-      "closing_date": "2025-11-25",
-      "itemId": "LA-AC37",
-      "cat": "dankdienst"
     }
   ]
 }

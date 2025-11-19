@@ -187,9 +187,7 @@ const CalendarItem = () => {
                 </div>
               )}
 
-              {item.itemId === "LA-AC37" ? (
-                ""
-              ) : (
+             
                 <div className="flex flex-col w-full px-4 mb-2 mt-2">
                   {" "}
                   <div className="font-bold flex-wrap">Bijdrage:</div>{" "}
@@ -203,15 +201,13 @@ const CalendarItem = () => {
                     ""
                   )}
                 </div>
-              )}
+            
               <div className="w-full px-4">
                 {" "}
-                <span className="font-bold">Kenmerk :</span> {item.itemId}
+                <span className="font-bold">Kenmerk : </span> {item.itemId}
               </div>
 
-              {item.itemId === "LA-AC37" ? (
-                <div className="mt-6 mb-4"></div>
-              ) : (
+              
                 <Link
                   to={`subscribe/${item.itemId}`}
                   className="w-full flex justify-center mt-6 mb-4"
@@ -224,7 +220,7 @@ const CalendarItem = () => {
                     Schrijf je in
                   </button>
                 </Link>
-              )}
+            
 
               <div className="w-full flex justify-center items-center mt-4 relative">
                 <img
