@@ -792,8 +792,8 @@
       "id": 25,
       "title": "Miskotte en Rollins",
       "date": {
-        "day": "Donderdag",
-        "dates": ["2025-10-16"]
+        "day": "Dinsdag",
+        "dates": ["2025-12-09"]
       },
       "time": "20:00 - 22:00 uur",
       "contribution": "",
@@ -807,8 +807,8 @@
       "email": "leerhuisamsterdam@gmail.com",
       "location": "De Thomas, Prinses Irenestraat 36",
       "image": "miskotte_rollins.png",
-      "starting_date": "2025-10-16",
-      "closing_date": "2025-10-16",
+      "starting_date": "2025-12-09",
+      "closing_date": "2025-12-09",
       "itemId": "LA-AC26",
       "cat": "lezing"
     },
@@ -1067,6 +1067,34 @@
       "closing_date": "2026-08-29",
       "itemId": "LA-AC36",
       "cat": "gesprek"
+    },
+    {
+      "id": 36,
+      "title": "Bijbels Leerhuis over Jozef en zijn familie",
+      "date": {
+        "day": "Donderdag",
+        "dates": [
+          "2026-01-15","2026-01-29","2026-02-12","2026-02-26","2026-03-12","2026-03-26"
+        ]
+      },
+      "time": "14:00 - 16:00 uur",
+      "contribution": "Gratis (vrije bijdrage donatie welkom)",
+      "description": [
+        "‘O God van Jozef, leid ons verder’ (Psalm 80, Liedboek)\n",
+        "Vanaf 15 januari lezen we per bijeenkomst een hoofdstuk uit het Jozefverhaal: uit Genesis 46 t/m 50.\n",
+        "We bespreken dan hoe Jozefs familie in Egypte terechtkomt, hoe Jakob zijn zoons zegent op zijn sterfbed, en waarom Jozef het zijn broers niet betaald zet wat ze met hem hebben gedaan: ‘Jullie hadden kwaad tegen mij in de zin, maar God heeft dat ten goede gekeerd, zodat een groot volk in leven blijft (Gen.50:20).’\n", 
+        " \n",
+        "Welkom om mee te lezen!\n",
+        " \n"
+      ],
+      "led_by": "Gerben van Manen en Wout van der Spek",
+      "location": "Muiderkerk",
+      "email": "gg_vanmanen@hotmail.com",
+      "image": "jozef_jacob.jpg",
+      "starting_date": "2026-01-15",
+      "closing_date": "2026-03-26",
+      "itemId": "LA-AC37",
+      "cat": "cursus"
     }
   ]
 }

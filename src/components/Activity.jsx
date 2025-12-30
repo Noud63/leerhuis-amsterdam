@@ -11,10 +11,10 @@ const Activity = ({act }) => {
 
         <ActivityCategory cat={act.cat}/>
 
-        <div className="p-4 overflow-y-hidden">
-          <span className="border-b border-black justify-between font-semibold font-papyrus text-xl pb-2 line-clamp-1">
+        <div className="p-4">
+          <div className="border-b border-black justify-between font-semibold font-papyrus text-xl pb-2 truncate">
             {act.title}
-          </span>
+          </div>
         </div>
 
         <div className="relative h-auto flex flex-col gap-1 pl-4 mb-2">
@@ -36,7 +36,6 @@ const Activity = ({act }) => {
               month: "long",
               day: "numeric",
             })}<br />
-            {act.itemId ==="LA-AC28" && <div className="text-red-700 font-semibold">(Let op! 25 november is komen te vervallen)</div> }
           </div>
           <div className="w-full flex flex-col">
             {" "}
