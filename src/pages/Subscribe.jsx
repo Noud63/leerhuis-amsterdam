@@ -175,9 +175,17 @@ const Subscribe = () => {
               {title}
             </div>
             <div>
-              <span className="font-semibold">Bijdrage : </span>
-              {contributionTexts[id === "LA-AC35" ? "gratis" : category] || null}
-            </div>
+  <span className="font-semibold">Bijdrage : </span>
+  {
+    contributionTexts[
+      id === "LA-AC35"
+        ? "gratis"
+        : id === "LA-AC37"
+        ? "gesprek"
+        : category
+    ] || null
+  }
+</div>
 
             <div className={`${id === "LA-AC35" ? "hidden" : "flex font-semibold mt-2"}`}>
               NL&nbsp;32&nbsp;INGB&nbsp;0000449815 t.n.v. PROTESTANTSE GEMEENTE
