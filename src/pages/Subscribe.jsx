@@ -180,7 +180,7 @@ const Subscribe = () => {
     contributionTexts[
       id === "LA-AC35"
         ? "gratis"
-        : id === "LA-AC37"
+        : id === "LA-AC37" || id === "LA-AC38"
         ? "gesprek"
         : category
     ] || null
