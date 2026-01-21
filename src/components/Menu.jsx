@@ -6,7 +6,7 @@ const Menu = ({ color, style, border }) => {
     <div
       className={`menu flex justify-center items-center text-lg tracking-wide font-semibold gap-5 text-${color} ${style}`}
     >
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <NavLink
           to="/"
           className={({ isActive }) => [
@@ -15,7 +15,7 @@ const Menu = ({ color, style, border }) => {
         >
           <span className="cursor-pointer">Start</span>
         </NavLink>
-      </div>
+      </div> */}
 
       <div className="flex justify-center">
         <NavLink
@@ -80,6 +80,17 @@ const Menu = ({ color, style, border }) => {
           ]}
         >
           <span>Archief</span>
+        </NavLink>
+      </div>
+
+      <div className="flex justify-center">
+        <NavLink
+          to="/podiumvoorvriendenpage"
+          className={({ isActive }) => [
+            isActive ? `${border}` : "border-b-2 border-none",
+          ]}
+        >
+          <span>Podium voor vrienden</span>
         </NavLink>
       </div>
     </div>

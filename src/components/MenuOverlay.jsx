@@ -23,15 +23,10 @@ return (
            bg-white/60 z-[999] w-full max-w-full transition ease-in duration-300 border-l border-yellow-800 overflow-y-scroll`}
     onClick={closeMenuOverlay}
   >
-    <div
-      className="cursor-pointer flex justify-center pt-4"
-      onClick={closeMenuOverlay}
-    >
-      <img src={close} alt="close" className="w-8" />
-    </div>
+   
 
-    <div className="menu flex flex-col justify-center items-center text-lg font-semibold gap-12 mt-8">
-      <NavLink
+    <div className="menu flex flex-col justify-center items-center text-lg font-semibold gap-12 mt-12">
+      {/* <NavLink
         to="/"
         className={({ isActive }) => [
           isActive
@@ -40,7 +35,7 @@ return (
         ]}
       >
         <span className="cursor-pointer">Home</span>
-      </NavLink>
+      </NavLink> */}
 
       <NavLink
         to="/overonspage"
@@ -110,6 +105,24 @@ return (
       >
         <span>archief</span>
       </NavLink>
+
+     
+              <NavLink
+                to="/podiumvoorvriendenpage"
+                className={({ isActive }) => [
+                  isActive
+            ? "border-b-2 border-black"
+            : "border-b-2 border-transparent"
+                ]}
+              >
+                <span>Podium voor vrienden</span>
+              </NavLink>
+            <div
+      className="cursor-pointer flex justify-center"
+      onClick={closeMenuOverlay}
+    >
+      <img src={close} alt="close" className="w-8" />
+    </div>
     </div>
   </div>
 );

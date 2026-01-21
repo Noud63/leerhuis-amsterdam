@@ -21,6 +21,7 @@ import AllActivitiesLayout from './pages/AllActivitiesLayout';
 import SubscriptionRules from './pages/SubscriptionRules';
 import ErrorPage from './pages/ErrorPage';
 import { Outlet } from 'react-router-dom';
+import PodiumvoorvriendenPage from './pages/PodiumvoorvriendenPage';
 
 
 const router = createBrowserRouter([
@@ -100,6 +101,10 @@ const router = createBrowserRouter([
       {
         path: "/overonspage",
         element: <OveronsPage />,
+      },
+      {
+        path: "/podiumvoorvriendenpage",
+        element: <PodiumvoorvriendenPage />,
       },
       {
         path: "/calendaritem/:calendaritem_id",
