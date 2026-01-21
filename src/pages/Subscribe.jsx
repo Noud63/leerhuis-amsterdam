@@ -178,9 +178,9 @@ const Subscribe = () => {
   <span className="font-semibold">Bijdrage : </span>
   {
     contributionTexts[
-      id === "LA-AC35"
+      id === "LA-AC35" || id === "LA-AC38"
         ? "gratis"
-        : id === "LA-AC37" || id === "LA-AC38"
+        : id === "LA-AC37"
         ? "gesprek"
         : category
     ] || null

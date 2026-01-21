@@ -40,6 +40,17 @@ const CalendarItem = () => {
     }
   }, [givenDate, now]);
 
+  const aanmelden = {
+    gratis: (<span>Gratis (vrije bijdrage donatie welkom)</span>),
+    vrijwilligebijdrage: (
+      <span>
+        Gratis (vrije bijdrage donatie welkom) Voor betaalgegevens en/of het
+        inschrijfformulier, klik hieronder op "Schrijf je in"
+      </span>
+    ),
+     betaald: (<span>Voor betaalgegevens en/of het inschrijfformulier, klik hieronder op "Schrijf je in"</span>),
+  };
+
   return (
     <div className="w-full flex items-center flex-row max-calendar:h-auto">
       <div className="flex flex-1 pt-[180px] flex-col items-center max-calendar:mt-12 max-xsm:pt-[170px]">
@@ -187,40 +198,29 @@ const CalendarItem = () => {
                 </div>
               )}
 
-             
-                <div className="flex flex-col w-full px-4 mb-2 mt-2">
-                  {" "}
-                  <div className="font-bold flex-wrap">Bijdrage:</div>{" "}
-                  {item.contribution}
-                  {!expired ? (
-                    <span>
-                      Voor betaalgegevens en/of het inschrijfformulier, klik
-                      hieronder op "Schrijf je in"
-                    </span>
-                  ) : (
-                    ""
-                  )}
-                </div>
-            
+              <div className="flex flex-col w-full px-4 mb-2 mt-2">
+                {" "}
+                <div className="font-bold flex-wrap">Bijdrage:</div>{" "}
+                {item.contribution}
+              </div>
+
               <div className="w-full px-4">
                 {" "}
                 <span className="font-bold">Kenmerk : </span> {item.itemId}
               </div>
 
-              
-                <Link
-                  to={`subscribe/${item.itemId}`}
-                  className="w-full flex justify-center mt-6 mb-4"
+              {item.itemId !== "LA-AC38" ? (<Link
+                to={`subscribe/${item.itemId}`}
+                className="w-full flex justify-center mt-6 mb-4"
+              >
+                <button
+                  type="button"
+                  className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
+                  disabled={expired}
                 >
-                  <button
-                    type="button"
-                    className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
-                    disabled={expired}
-                  >
-                    Schrijf je in
-                  </button>
-                </Link>
-            
+                  Schrijf je in
+                </button>
+              </Link>) : (<div className="w-full h-8"></div>)}
 
               <div className="w-full flex justify-center items-center mt-4 relative">
                 <img
