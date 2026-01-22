@@ -8,9 +8,9 @@ const ActivityArchiefActueel = ({act, url}) => {
       className="actueel flex flex-col mb-8 rounded-t-xl bg-gradient-to-t from-stone-400 to-white relative"
       key={act.id}
     >
-      <div className="flex flex-row max-sm:items-start py-3 px-3 text-black items-center">
-        <div className="flex flex-1 text-xl font-semibold font-papyrus max-sm:line-clamp-1">
-          {act.title.length > 25 ? `${act.title.slice(0, 25)}` : act.title}
+      <div className="flex justify-between flex-row max-sm:items-start py-3 px-3 text-black items-center">
+        <div className="flex-1 min-w-0 truncate text-xl font-semibold font-papyrus mr-4">
+          {act.title}
         </div>
         
           <div className="flex items-center text-md font-normal text-amber-800">
