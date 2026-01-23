@@ -105,12 +105,17 @@ const Subscribe = () => {
     ),
     gratis: (
       <span>
-        Gratis<br/>
-        <span className="font-semibold">Contactpersoon :</span> Mw Nel Gallouh<br />
-        <span className="font-semibold">Aanmelden via :</span> ngallouh@msn.com<br />
-        <span className="font-semibold">O.v.v. :</span> Christendom en Klimaatverandering<br />
+        Gratis
+        <br />
+        <span className="font-semibold">Contactpersoon :</span> Mw Nel Gallouh
+        <br />
+        <span className="font-semibold">Aanmelden via :</span> ngallouh@msn.com
+        <br />
+        <span className="font-semibold">O.v.v. :</span> Christendom en
+        Klimaatverandering
+        <br />
       </span>
-    )
+    ),
   };
 
   const sendEmail = (e) => {
@@ -131,7 +136,7 @@ const Subscribe = () => {
       },
       (error) => {
         console.log(error.text);
-      }
+      },
     );
 
     form.current.reset();
@@ -175,95 +180,96 @@ const Subscribe = () => {
               {title}
             </div>
             <div>
-  <span className="font-semibold">Bijdrage : </span>
-  {
-    contributionTexts[
-      id === "LA-AC35" || id === "LA-AC38"
-        ? "gratis"
-        : id === "LA-AC37"
-        ? "gesprek"
-        : category
-    ] || null
-  }
-</div>
+              <span className="font-semibold">Bijdrage : </span>
+              {contributionTexts[
+                id === "LA-AC35"
+                  ? "gratis"
+                  : id === "LA-AC37" || id === "LA-AC40" || id === "LA-AC39"
+                    ? "gesprek"
+                    : category
+              ] || null}
+            </div>
 
-            <div className={`${id === "LA-AC35" ? "hidden" : "flex font-semibold mt-2"}`}>
+            <div
+              className={`${id === "LA-AC35" ? "hidden" : "flex font-semibold mt-2"}`}
+            >
               NL&nbsp;32&nbsp;INGB&nbsp;0000449815 t.n.v. PROTESTANTSE GEMEENTE
               IN ZAKE T&E
             </div>
           </div>
         </div>
 
-        {id !== "LA-AC35" && <form
-          ref={form}
-          onSubmit={sendEmail}
-          autoComplete="off"
-          className="w-full"
-        >
-          <div className="w-full border-b border-t border-black">
-            <label htmlFor="name">Naam:</label>
+        {id !== "LA-AC35" && (
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            autoComplete="off"
+            className="w-full"
+          >
+            <div className="w-full border-b border-t border-black">
+              <label htmlFor="name">Naam:</label>
 
-            <input
-              id="name"
-              type="text"
-              name="from_name"
-              placeholder="voornaam en achternaam"
-              required
-              className="py-4 pl-2"
-            />
-          </div>
+              <input
+                id="name"
+                type="text"
+                name="from_name"
+                placeholder="voornaam en achternaam"
+                required
+                className="py-4 pl-2"
+              />
+            </div>
 
-          <div className="w-full border-b border-black mb-2">
-            <label htmlFor="e-mail">Email:</label>
-            <input
-              id="e-mail"
-              type="email"
-              name="from_email"
-              placeholder="geldig emailadres"
-              required
-              className="py-4 pl-2"
-            />
-          </div>
+            <div className="w-full border-b border-black mb-2">
+              <label htmlFor="e-mail">Email:</label>
+              <input
+                id="e-mail"
+                type="email"
+                name="from_email"
+                placeholder="geldig emailadres"
+                required
+                className="py-4 pl-2"
+              />
+            </div>
 
-          <div className="w-full border-b border-black mb-2">
-            <label htmlFor="partake">Datum:</label>
-            <input
-              id="partake"
-              type="text"
-              name="date"
-              placeholder="deelname datum"
-              required
-              className="py-4 pl-2"
-            />
-          </div>
+            <div className="w-full border-b border-black mb-2">
+              <label htmlFor="partake">Datum:</label>
+              <input
+                id="partake"
+                type="text"
+                name="date"
+                placeholder="deelname datum"
+                required
+                className="py-4 pl-2"
+              />
+            </div>
 
-          <div className="w-full border-b border-black mb-2">
-            <label htmlFor="kenmerk">Kenmerk:</label>
-            <input
-              id="kenmerk"
-              type="text"
-              name="from_kenmerk"
-              defaultValue={id}
-              required
-              className="w-[80px] bg-transparent py-4 pl-2"
-            />
-          </div>
+            <div className="w-full border-b border-black mb-2">
+              <label htmlFor="kenmerk">Kenmerk:</label>
+              <input
+                id="kenmerk"
+                type="text"
+                name="from_kenmerk"
+                defaultValue={id}
+                required
+                className="w-[80px] bg-transparent py-4 pl-2"
+              />
+            </div>
 
-          <div className="w-full flex justify-center">
-            <button
-              type="submit"
-              value="send"
-              className="btn_orange w-[180px] rounded-full bg-yellow-800 py-3 text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 mt-8"
-            >
-              {status}
-            </button>
-          </div>
+            <div className="w-full flex justify-center">
+              <button
+                type="submit"
+                value="send"
+                className="btn_orange w-[180px] rounded-full bg-yellow-800 py-3 text-white bg-gradient-to-r from-yellow-950 via-yellow-700 to-yellow-950 mt-8"
+              >
+                {status}
+              </button>
+            </div>
 
-          <div className="w-full flex justify-center text-lg mt-4">
-            {message}
-          </div>
-        </form>
-}
+            <div className="w-full flex justify-center text-lg mt-4">
+              {message}
+            </div>
+          </form>
+        )}
       </div>
 
       <BackButton url={url} />
