@@ -20,7 +20,7 @@ return (
   <div
     className={`${showMenu ? "translate-x-0" : "translate-x-[101%]"} 
              overlay fixed h-full backdrop-blur-lg top-0 right-0 bottom-0 
-           bg-white/60 z-[999] w-full max-w-full transition ease-in duration-300 border-l border-yellow-800 overflow-y-scroll`}
+           bg-white/60 z-[999] w-full max-w-[50%] max-sm:max-w-full transition ease-in duration-300  overflow-y-scroll pb-12`}
     onClick={closeMenuOverlay}
   >
    
@@ -39,11 +39,11 @@ return (
 
       <NavLink
         to="/overonspage"
-        className={({ isActive }) => [
+        className={ ({ isActive }) => [
           isActive
             ? "border-b-2 border-black shadow-md"
             : "border-b-2 border-transparent"
-        ]}
+        ] }
         onClick={closeMenuOverlay}
       >
         <span>Over ons</span>
@@ -108,7 +108,7 @@ return (
 
      
               <NavLink
-                to="/podiumvoorvriendenpage"
+                to="/podiumvoorvrienden"
                 className={({ isActive }) => [
                   isActive
             ? "border-b-2 border-black"

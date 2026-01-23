@@ -1,0 +1,46 @@
+{"podium": [
+     {
+        "id": 0,
+        "title": ["Seks, God en Foucault"],
+        "date": {
+          "day": "Zaterdag",
+          "dates": ["2026-02-17", "2026-03-10", "2026-03-31", "2026-04-21", "2026-05-12", "2026-06-02"]
+        },
+        "time": "19:30 uur, inloop vanaf 19:00 uur",
+        "location": "OKP30, Oudekerksplein 30A",
+        "contribution": "n.v.t.",
+        "description": [
+          "In deze zesdelige serie staat het postuum verschenen boek ‘Bekentenissen van het vlees’ van Michel Foucault centraal.\n",
+          "Foucault onderzoekt hoe vroege Christelijke denkers en kerkvaders het spreken over seks, genot, ascese en bekentenis vormgaven, en hoe deze denkbeelden diep hebben ingegrepen in het Westerse begrip van subjectiviteit, moraal en lichaam.\n",
+          "Samen met theoloog en filosoof Marc De Kesel wordt dit gedachtegoed gelezen, besproken en verbonden met theologische tradities en hedendaagse vragen rond seksualiteit en geloof.\n",
+          "\n",
+          "Programma:\n",
+          "Dinsdag 17 februari: Inleiding op Foucaults 'Bekentenissen van het vlees'\n",
+          "Kennismaking met 'Bekentenissen van het vlees'.\n",
+          "Waarom eindigt Foucault zijn Geschiedenis van de seksualiteit bij het vroege Christendom? Over macht, waarheid en het ontstaan van het bekennende subject.",
+          "\n", 
+           "Dinsdag 10 maart: 'Kerkvaders en seksuele ethiek'\n",
+           "Hoe dachten kerkvaders als Augustinus en Clemens van Alexandrië over seks, huwelijk en onthouding? Seksualiteit als moreel vraagstuk en spirituele oefening.\n",
+           "\n",
+           "Dinsdag 31 maart: 'Genot, ascese en zelfonderzoek'\n",
+           "Waarom werd genot niet alleen beperkt, maar ook eindeloos geanalyseerd? Over vasten, kuisheid, begeerte en de zorg voor de ziel.\n",
+           "\n",
+           "Dinsdag 21 april: 'Bekentenis en waarheid'\n",
+           "De opkomst van biecht, zelfonderzoek en spreken over het innerlijk. Hoe het vlees een plaats wordt, waar waarheid over het zelf geproduceerd moet worden.\n",
+           "\n",    
+           "Dinsdag 12 mei: 'Seksualiteit, macht en subjectiviteit'\n",
+           "Foucault's analyse van macht: niet als verbod, maar als vorming. Wat betekent dit voor onze moderne ideeën over vrijheid, identiteit en verlangen?\n",
+           "\n",
+           "Dinsdag 2 juni: 'God, lichaam en hedendaagse seksualiteit'",
+           "Slotavond met reflectie: wat kunnen theologie en filosofie vandaag nog met Foucault's analyse? Over religie, intimiteit en de toekomst van het spreken over het vlees."
+
+        ],
+        "led_by": "Marc de Kesel",
+        "email": "info@wallenbuurt.amsterdam",
+        "image": "sexgodfoucault.png",
+        "starting_date": "2026-02-17",
+        "closing_date": "2026-06-02",
+        "itemId": "P_01",
+        "cat": "cursus"
+      }
+]}

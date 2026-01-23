@@ -9,6 +9,7 @@ import Root from './components/Root';
 import CalendarItem from './pages/CalendarItem';
 //import {AllActivities, allActivitiesLoader } from './pages/AllActivities';
 import OveronsPage from "./pages/OveronsPage";
+import PodiumItem from './pages/PodiumItem';
 import ContactForm from './pages/ContactForm';
 import ContactPage from './pages/ContactPage';
 import Polarisatie from "./pages/Polarisatie";
@@ -21,7 +22,7 @@ import AllActivitiesLayout from './pages/AllActivitiesLayout';
 import SubscriptionRules from './pages/SubscriptionRules';
 import ErrorPage from './pages/ErrorPage';
 import { Outlet } from 'react-router-dom';
-import PodiumvoorvriendenPage from './pages/PodiumvoorvriendenPage';
+import Podiumvoorvrienden from './pages/Podiumvoorvrienden';
 
 
 const router = createBrowserRouter([
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
           {
             path: "/allactivities/calendaritem/:calendaritem_id",
             element: <CalendarItem />,
+          },
+           {
+            path: "/podiumvoorvrienden/podiumitem/:podium_id",
+            element: <PodiumItem />,
           },
           {
             path: "/allactivities/calendaritem/:calendaritem_id/subscribe/:id",
@@ -103,8 +108,8 @@ const router = createBrowserRouter([
         element: <OveronsPage />,
       },
       {
-        path: "/podiumvoorvriendenpage",
-        element: <PodiumvoorvriendenPage />,
+        path: "/podiumvoorvrienden",
+        element: <Podiumvoorvrienden />,
       },
       {
         path: "/calendaritem/:calendaritem_id",

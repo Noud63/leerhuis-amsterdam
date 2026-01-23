@@ -85,7 +85,7 @@ const Menu = ({ color, style, border }) => {
 
       <div className="flex justify-center">
         <NavLink
-          to="/podiumvoorvriendenpage"
+          to="/podiumvoorvrienden"
           className={({ isActive }) => [
             isActive ? `${border}` : "border-b-2 border-none",
           ]}
