@@ -64,9 +64,9 @@ const Activity = ({act }) => {
         </div>
 
         <div className="w-full flex justify-center items-center mt-4">
-          <Link to={`/allactivities/calendaritem/${act.id}`}>
+         
             <img src={`/images/${act.image}`} alt="" className="w-full h-auto" loading="lazy" />
-          </Link>
+          
         </div>
 
         {act.itemId.slice(0, 1) !== "P" ? <ActivityItemLink act={act} /> : <PodiumItemLink act={act} /> }
