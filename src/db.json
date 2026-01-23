@@ -1116,7 +1116,7 @@
         "Sommige feministische theologen zijn van mening dat er in God geweld is. Ze wijzen daarvoor op het patriarchale godsbeeld van mannen waarmee ze vrouwen onderdrukken.\n",
         "De literatuurwetenschapper René Girard  stelt daarentegen dat dankzij Christus juist geen geweld in God is. En hoe moet je ons als mensen zien?\n",
         "Zijn we schuldig aan ons kwaad of is de mens tragisch en overkomt het kwaad ons zoals de Griekse tragedies schetsen?\n",
-        "Op de genoemde vragen van God, mensen en het kwaad zullen we op vier avonden ingaan.\n", 
+        "Op de genoemde vragen van God, mensen en het kwaad zullen we op vier avonden ingaan.\n",
         "Verrassende theologische visies worden besproken.\n",
         "\n",
         "9 maart: De schuldige mens (Genesis 3) en de tragische mens ( Griekse tragedies).\n",
@@ -1141,6 +1141,61 @@
       "closing_date": "2026-03-30",
       "itemId": "LA-AC38",
       "cat": "cursus"
+    },
+    {
+      "id": 38,
+      "title": "Leesproject voor zwart en wit",
+      "date": {
+        "day": "Maandag",
+        "dates": ["2026-02-20", "2026-03-20", "2026-04-17", "2026-05-15"]
+      },
+      "time": "19.30-21.30 uur",
+      "contribution": "Gratis (vrije bijdrage donatie welkom)",
+      "description": [
+        "Gesprekken tussen mensen met een verschillende historische achtergrond kunnen heilzaam zijn. Dat is de bedoeling van het samen leren van de geschiedenis van het koloniale en slavernij-verleden. En van het met elkaar bespreken van de doorwerking ervan tot op de dag van vandaag.\n",
+        "Wij, de dominee van de Evangelische Broeder Gemeente in de Koningskerk en de dominee van de protestantse Muiderkerk, hebben inmiddels een paar jaar ervaring met respectvolle ontmoetingen.\n",
+        "Boeken of artikelen dienen als uitgangspunt.\n",
+        "Dit seizoen lezen we hoofdstukken uit het boek van Herman Vuijsje: God zij met ons Suriname. Religie als vloek en zegen.\n",
+        "Aanschaf van het boek is aanbevolen, maar wie het niet heeft kan tegen betaling een kopie krijgen.\n",
+        "Bedoeling is dat deelnemers zoveel mogelijk alle vier keren komen.",
+        "\n"
+      ],
+      "led_by": "Clifton Walker en Greteke de Vries",
+      "location": "Koningskerk, Ostwaldstraat 1",
+      "email": "leerhuisamsterdam@gmail.com",
+      "image": "herman_vuijsje.png",
+      "starting_date": "2026-02-20",
+      "closing_date": "2026-05-15",
+      "itemId": "LA-AC39",
+      "cat": "gesprek"
+    },
+     {
+      "id": 39,
+      "title": "Leerhuis Literair",
+      "date": {
+        "day": "Maandag",
+        "dates": ["2026-04-23", "2026-05-07", "2026-05-28"]
+      },
+      "time": "19.30-21.30 uur",
+      "contribution": "Gratis (vrije bijdrage donatie welkom)",
+      "description": [
+        "Lezend verbreden we onze horizon en bespreken we onze huidige tijd. Dit keer sluiten we aan bij de oorlogsdreiging aan de rand van Europa.\n",
+        "De Finse schrijfster Eeva Kilpi (1928) schreef een indrukwekkende autobiografische trilogie over de oorlogsjaren in haar jeugd in Karelië toen Finland en de Sovjet Unie de Winteroorlog (1939-1940) uitvochten en de Sovjet Unie Karelië innam.\n",
+        "Wat deed de gedwongen evacuatie, op de vlucht voor het oorlogsgeweld, met dit dappere kind en haar familie?\n",
+        "We lezen met elkaar het eerste deel: De tijd van de Winteroorlog. Een herinnering aan mijn kindertijd.",
+        "\n",
+        "Meulink-Korf en De Vries proberen menselijke relaties te duiden vanuit de contextuele benadering van Ivan Boszormenyi-Nagy. Relationele ethiek - geven en ontvangen van zorgzaamheid of het onthouden van zorg binnen de verschillende generaties van een familie - staat in ons lezen voorop.\n",
+        "En zeker ook: ‘situationeel onrecht’ dat leiden kan tot 'relationeel onrecht'.",
+        "\n"
+      ],
+      "led_by": "Hanneke Meulink-Korf en Greteke de Vries",
+      "location": "Muiderkerk",
+      "email": "leerhuisamsterdam@gmail.com",
+      "image": "eeva_kilpi.png",
+      "starting_date": "2026-04-23",
+      "closing_date": "2026-05-28",
+      "itemId": "LA-AC40",
+      "cat": "gesprek"
     }
   ]
 }
