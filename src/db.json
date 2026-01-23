@@ -1162,12 +1162,12 @@
       ],
       "led_by": "Clifton Walker en Greteke de Vries",
       "location": "Koningskerk, Ostwaldstraat 1",
-      "email": "leerhuisamsterdam@gmail.com",
+      "email": "cliftonwalker@ebga.nl",
       "image": "herman_vuijsje.png",
       "starting_date": "2026-02-20",
       "closing_date": "2026-05-15",
       "itemId": "LA-AC39",
-      "cat": "gesprek"
+      "cat": "cursus"
     },
      {
       "id": 39,
@@ -1195,7 +1195,7 @@
       "starting_date": "2026-04-23",
       "closing_date": "2026-05-28",
       "itemId": "LA-AC40",
-      "cat": "gesprek"
+      "cat": "cursus"
     }
   ]
 }
