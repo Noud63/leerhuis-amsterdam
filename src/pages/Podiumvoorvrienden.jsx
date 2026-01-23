@@ -8,8 +8,9 @@ const Podiumvoorvrienden = () => {
 
     const url = useLocation().pathname
   return (
-      <div className="flex w-full flex-col min-h-screen items-center justify-start pt-[200px] px-4 max-xsm:pt-[170px] mb-20">
-        <div className="flex flex-col min-h-screen">
+      <div className="flex w-full flex-col min-h-screen items-center justify-start pt-[180px] px-4 max-xsm:pt-[170px] mb-20">
+        <div className="flex flex-col w-full max-w-[850px] min-h-screen">
+          <div className="mb-8">(De Bijeenkomsten op deze pagina vallen niet onder het Leerhuis Amsterdam)</div>
           {podium.podium?.map((act) => (
             <Activity key={act.id} act={act} />
           ))}

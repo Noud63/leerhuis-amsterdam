@@ -69,7 +69,7 @@ const Activity = ({act }) => {
           </Link>
         </div>
 
-        {act.itemId !== "P_01" ? <ActivityItemLink act={act} /> : <PodiumItemLink act={act} /> }
+        {act.itemId.slice(0, 1) !== "P" ? <ActivityItemLink act={act} /> : <PodiumItemLink act={act} /> }
       </div>
     </div>
   );
