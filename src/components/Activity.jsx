@@ -1,17 +1,13 @@
+import { Link } from "react-router-dom";
+import ActivityCategory from "./ActivityCategory";
+import ActivityItemLink from "./ActivityItemLink";
+import PodiumItemLink from "./PodiumItemLink";
 
-import { Link } from 'react-router-dom';
-import ActivityCategory from './ActivityCategory';
-import ActivityItemLink from './ActivityItemLink';
-import PodiumItemLink from './PodiumItemLink';
-
-const Activity = ({act }) => {
-
+const Activity = ({ act }) => {
   return (
-    <div className="w-full min-h-full" key={act.id}>
-     
+    <div className="w-full min-h-full">
       <div className="calendar_item w-full h-full rounded-t-2xl bg-gradient-to-t from-stone-300 to-white flex flex-col justify-between relative">
-
-        <ActivityCategory cat={act.cat}/>
+        <ActivityCategory cat={act.cat} />
 
         <div className="p-4">
           <div className="border-b border-black justify-between font-semibold font-papyrus text-xl pb-2 truncate">
@@ -34,10 +30,13 @@ const Activity = ({act }) => {
 
           <div className="w-full flex flex-col">
             <span className="font-semibold">Start : </span>
-            {new Date(act.itemId === "LA-AC22" ? act.closing_date : act.starting_date).toLocaleDateString("nl-NL", {
+            {new Date(
+              act.itemId === "LA-AC22" ? act.closing_date : act.starting_date,
+            ).toLocaleDateString("nl-NL", {
               month: "long",
               day: "numeric",
-            })}<br />
+            })}
+            <br />
           </div>
           <div className="w-full flex flex-col">
             {" "}
@@ -59,20 +58,25 @@ const Activity = ({act }) => {
             {" "}
             <span className="font-semibold">Locatie :</span> {act.location}
           </div>
-
-          
         </div>
 
         <div className="w-full flex justify-center items-center mt-4">
-         
-            <img src={`/images/${act.image}`} alt="" className="w-full h-auto" loading="lazy" />
-          
+          <img
+            src={`/images/${act.image}`}
+            alt=""
+            className="w-full h-auto"
+            loading="lazy"
+          />
         </div>
 
-        {act.itemId.slice(0, 1) !== "P" ? <ActivityItemLink act={act} /> : <PodiumItemLink act={act} /> }
+        {act.itemId.slice(0, 1) !== "P" ? (
+          <ActivityItemLink act={act} />
+        ) : (
+          <PodiumItemLink act={act} />
+        )}
       </div>
     </div>
   );
-}
+};
 
-export default Activity
+export default Activity;

@@ -55,19 +55,11 @@ const PodiumItem = () => {
     <div className="w-full flex items-center flex-row max-calendar:h-auto">
       <div className="flex flex-1 pt-[180px] flex-col items-center max-calendar:mt-12 max-xsm:pt-[170px]">
         <div className="w-full max-w-[900px] mb-32 flex flex-col items-center px-2">
-          <SectionTitle className="w-full flex justify-start text-xl last:font-semibold mb-4 shadow-md p-2">
+          {<SectionTitle className="w-full flex justify-start text-xl last:font-semibold mb-4 shadow-md p-2">
             #&nbsp;<span className="max-xxsm:hidden">Over&nbsp;</span>
-            {Array.isArray(item.title) ? (
-              <div>
-                <span>{item.title[0]}</span>
-                <span>{item.title[1]}</span>
-              </div>
-            ) : (
-              <span>
-                {ID === "LA-AC33" ? item.title.slice(20) : item.title}
-              </span>
-            )}
-          </SectionTitle>
+            {item.title}
+            
+          </SectionTitle>}
 
           <div className="calendar_item w-full rounded-t-2xl">
             <div className="bg-gradient-to-t from-stone-100 via-stone-50 to-white text-[#000]  rounded-t-2xl pt-4 flex flex-col">
@@ -162,11 +154,11 @@ const PodiumItem = () => {
                   </>
                 ) : (
                   <span>
-                    {item.description.map((line) => {
+                    {item.description.map((line, index) => {
                       return (
                         <div
                           className="flex flex-col whitespace-pre-line"
-                          key={line}
+                          key={index}
                         >
                           <span>{line}</span>
                         </div>

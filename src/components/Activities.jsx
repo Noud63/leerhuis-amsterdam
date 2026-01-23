@@ -73,7 +73,7 @@ const getSlice = (w) => {
           className={`w-[85%] grid grid-cols-4 max-maxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 max-xmd:w-full gap-4 mt-4`}
         >
           {activities?.map((act) => (
-            <Activity key={act.id} act={act} />
+            <Activity key={act.itemId} act={act} />
           ))}
         </div>
 
