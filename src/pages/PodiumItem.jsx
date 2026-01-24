@@ -41,25 +41,31 @@ const PodiumItem = () => {
   }, [givenDate, now]);
 
   const aanmelden = {
-    gratis: (<span>Gratis (vrije bijdrage donatie welkom)</span>),
+    gratis: <span>Gratis (vrije bijdrage donatie welkom)</span>,
     vrijwilligebijdrage: (
       <span>
         Gratis (vrije bijdrage donatie welkom) Voor betaalgegevens en/of het
         inschrijfformulier, klik hieronder op "Schrijf je in"
       </span>
     ),
-     betaald: (<span>Voor betaalgegevens en/of het inschrijfformulier, klik hieronder op "Schrijf je in"</span>),
+    betaald: (
+      <span>
+        Voor betaalgegevens en/of het inschrijfformulier, klik hieronder op
+        "Schrijf je in"
+      </span>
+    ),
   };
 
   return (
     <div className="w-full flex items-center flex-row max-calendar:h-auto">
       <div className="flex flex-1 pt-[180px] flex-col items-center max-calendar:mt-12 max-xsm:pt-[170px]">
         <div className="w-full max-w-[900px] mb-32 flex flex-col items-center px-2">
-          {<SectionTitle className="w-full flex justify-start text-xl last:font-semibold mb-4 shadow-md p-2">
-            #&nbsp;<span className="max-xxsm:hidden">Over&nbsp;</span>
-            {item.title}
-            
-          </SectionTitle>}
+          {
+            <SectionTitle className="w-full flex justify-start text-xl last:font-semibold mb-4 shadow-md p-2">
+              #&nbsp;<span className="max-xxsm:hidden">Over&nbsp;</span>
+              {item.title}
+            </SectionTitle>
+          }
 
           <div className="calendar_item w-full rounded-t-2xl">
             <div className="bg-gradient-to-t from-stone-100 via-stone-50 to-white text-[#000]  rounded-t-2xl pt-4 flex flex-col">
@@ -75,7 +81,7 @@ const PodiumItem = () => {
               <div
                 className="h-auto border-b border-[#000] gap-2 flex justify-between items-end font-semibold 
                  font-papyrus mb-2 text-2xl py-2 mx-4 mt-4 overflow-hidden relative max-mini:text-xl"
-                 >
+              >
                 <span className="line-clamp-1">{item.title}</span>
                 <div className="group">
                   <div className="flex flex-row gap-2 font-normal">
@@ -164,6 +170,20 @@ const PodiumItem = () => {
                         </div>
                       );
                     })}
+                    {item?.link && (
+                      <div className="mb-4">
+                        Aanmelden via de website: <br />
+                        <span className="underline text-yellow-800">
+                          <a
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {item.link}
+                          </a>
+                        </span>
+                      </div>
+                    )}
                   </span>
                 )}
               </div>
