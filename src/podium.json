@@ -46,5 +46,74 @@
         "starting_date": "2026-02-17",
         "closing_date": "2026-06-02",
         "itemId": "P_01"
+      },
+      {
+        "id": 1,
+        "title": ["Bergmanfestival: film, theater en interpretatie"],
+        "date": {
+          "day": "Donderdag",
+          "dates": ["2026-02-12", "2026-03-26", "2026-03-31", "2026-04-09"]
+        },
+        "time": "19.30 uur, (inloop 19.00 uur)",
+        "location": "OKP30, Oudekerksplein 30A",
+        "contribution": "n.v.t.",
+        "description": [
+          "Programma donderdag 12 februari:\n",
+          "- Inleiding over de ontvangst van Bergmans films in Nederland\n",
+          "- Focus op de jaren ’50 en ’60 en het promotie-aspect\n",
+          "- Filmvertoning\n",
+          "Vragen & Antwoorden met de inleider na afloop\n",
+          "De eerste film: 'De Avondmaalsgasten', met inleiding en interactieve nabespreking door Frank Blaakmeer, gepromoveerd op het werk van Ingmar Bergman.",
+          "\n",
+          "Programma donderdag 26 maart:\n",
+          "- Inleiding over vrouwenrollen en morele thematiek\n",
+          "- Filmvertoning\n",
+          "- Vragen & Antwoorden met de inleider na afloop\n",
+          "De tweede film: 'De Maagdenbron', met inleiding over vrouwenrollen en morele thematiek door Petra Broomans, emeritus hoogleraar Scandinavistiek aan de Rijksuniversiteit Groningen.",
+          "\n",
+          "Programma donderdag 9 april:\n",
+          "- Bespreking van de toneeluitvoering\n",
+          "- Analyse van derol van Agnes\n",
+          "- Filmvertoning\n",
+          "- Vragen & Antwoorden met de inleider na afloop\n",
+          "De derde film: 'Kreten en Gefluister', met inleiding en interactieve nabespreking door Chris Nietvelt, actrice en winnaar van een Theo d’Or.",
+          "\n",
+          "Tijdig aanmelden: via info@wallenbuurt.amsterdam\n",
+          "\n"
+],
+        "led_by": "Frank Blaakmeer, Petra Broomans, Chris Nietvelt",
+        "email": "info@wallenbuurt.amsterdam",
+        "image": "bergman.png",
+        "starting_date": "2026-02-12",
+        "closing_date": "2026-04-09",
+        "itemId": "P_02"
+      },
+      {
+        "id": 2,
+        "title": ["Making Love / Church of Contradiction"],
+        "date": {
+          "day": "Zaterdag",
+          "dates": ["2026-01-28"]
+        },
+        "time": "20.00 - 22:00 uur",
+        "location": "Thomaskerk, Prinses Irenestraat 36",
+        "contribution": "Gratis aanmelding",
+        "description": [
+          "Op 28 januari presenteert The Contradiction Company de filmvertoning Making Love van kunstenaar Helen Rollins in de Thomaskerk.\n",
+          "De avond vormt het begin van een nieuwe samenwerking tussen Contradiction Company en de Oude Kerkgemeenschap, de Thomaskerkgemeenschap, de Muiderkerkgemeenschap en het Leerhuis Amsterdam, waarin hedendaagse kunst en maatschappelijke reflectie elkaar ontmoeten.",
+           "\n",
+          "Making Love is een filmisch werk waarin verschillende artistieke stemmen samenkomen.\n",
+          "Het werk onderzoekt vormen van nabijheid, intimiteit en betekenisgeving, en creëert ruimte voor ontmoeting en uitwisseling.\n",
+          "De vertoning vindt plaats op een plek die traditioneel gewijd is aan gemeenschap en gaat een dialoog aan met de hedendaagse kunstpraktijk.",
+          "De avond markeert het begin van een bredere dialoog tussen kunstenaars en kerkelijke gemeenschappen, waarin kunst wordt ingezet als middel om nieuwe gesprekken te openen en bestaande kaders te bevragen.",
+          "\n"
+
+        ],
+        "led_by": "Helen Rollins, Astrid Elburg, Jasmijn Dijkman, Dimitri Crooijmans en Jozua Ros",
+        "email": "info@dethomas.nl",
+        "image": "makinglove.png",
+        "starting_date": "2026-01-28",
+        "closing_date": "2026-01-28",
+        "itemId": "P_03"
       }
 ]}

@@ -24,13 +24,13 @@ return (
     <div className="w-full flex justify-center items-center flex-col mb-40">
       <div className="w-[95%] flex flex-row mb-8 border-b border-black max-xxmd:mb-4">
         <span className="text-[22px] font-semibold pb-2 font-Assistant tracking-wide">
-          # Alle activiteiten
+          # Alle activiteiten 2025/2026
         </span>
       </div>
 
        {sortedData === null || sortedData.length === 0 && <div className="h-full w-[95%] justify-center flex border border-black py-2">Geen activiteiten gevonden</div>}
 
-      <div className="w-[95%] grid grid-cols-4 max-maxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8 max-xxxsm:w-[95%]">
+      <div className="w-[75%] grid grid-cols-3 max-maxxl:grid-cols-2  max-socials:w-[95%] max-md:grid-cols-1 gap-8 max-xxxsm:w-[95%]">
         {sortedData?.map((act) => (
           <Activity key={act.id} act={act} />
         ))}

@@ -3,18 +3,15 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./pages/Layout"
 import './index.css'
-import Activities, { rootLoader } from "./components/Activities"
 import Archief, {archiveLoader} from "./pages/Archief"
 import Root from './components/Root';
 import CalendarItem from './pages/CalendarItem';
-//import {AllActivities, allActivitiesLoader } from './pages/AllActivities';
 import OveronsPage from "./pages/OveronsPage";
 import PodiumItem from './pages/PodiumItem';
 import ContactForm from './pages/ContactForm';
 import ContactPage from './pages/ContactPage';
 import Polarisatie from "./pages/Polarisatie";
 import PolarisatieCalendarItem from "./pages/PolarisatieCalenderItem"
-import Aktueel from './components/Aktueel';
 import ZakelijkPage from './pages/ZakelijkPage';
 import AktueelPage, { currentLoader } from "./pages/AktueelPage";
 import Subscribe from './pages/Subscribe';
@@ -33,7 +30,6 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        loader: rootLoader,
         element: <Root />,
       },
       {
