@@ -200,8 +200,8 @@ const CalendarItem = () => {
 
               <div className="flex flex-col w-full px-4 mb-2 mt-2">
                 {" "}
-                <div className="font-bold flex-wrap">Bijdrage:</div>{" "}
-                {item.contribution}
+                <div className="font-bold flex-wrap ">Bijdrage:</div>{" "}
+                <span className="whitespace-pre-line">{item.contribution}</span>
               </div>
 
               <div className="w-full px-4">
