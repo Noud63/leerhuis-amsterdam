@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import podium from "../podium.json";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import share from "../assets/icons/share.png";
 import {
   FacebookShareButton,
@@ -40,21 +40,6 @@ const PodiumItem = () => {
     }
   }, [givenDate, now]);
 
-  const aanmelden = {
-    gratis: <span>Gratis (vrije bijdrage donatie welkom)</span>,
-    vrijwilligebijdrage: (
-      <span>
-        Gratis (vrije bijdrage donatie welkom) Voor betaalgegevens en/of het
-        inschrijfformulier, klik hieronder op "Schrijf je in"
-      </span>
-    ),
-    betaald: (
-      <span>
-        Voor betaalgegevens en/of het inschrijfformulier, klik hieronder op
-        "Schrijf je in"
-      </span>
-    ),
-  };
 
   return (
     <div className="w-full flex items-center flex-row max-calendar:h-auto">
@@ -220,19 +205,6 @@ const PodiumItem = () => {
                 {" "}
                 <span className="font-bold">Kenmerk : </span> {item.itemId}
               </div>
-
-              {/* {item.itemId !== "LA-AC38" ? (<Link
-                to={`subscribe/${item.itemId}`}
-                className="w-full flex justify-center mt-6 mb-4"
-              >
-                <button
-                  type="button"
-                  className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
-                  disabled={expired}
-                >
-                  Schrijf je in
-                </button>
-              </Link>) : (<div className="w-full h-8"></div>)} */}
 
               <div className="w-full flex justify-center items-center mt-4 relative">
                 <img
