@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <div
-      className="w-full h-[600px] bg-stone-900 flex flex-row justify-around items-center relative pb-40 pt-12 
+      className="w-full h-[550px] bg-gradient-to-r from-black via-yellow-900 to-black flex flex-row justify-around items-center relative pb-32 pt-12 
     max-footer:flex-col max-footer:pt-8 max-footer:h-[800px] max-xxsm:h-[850px]"
     >
       <div className="h-full flex-1 flex items-center justify-center max-footer:pt-8 max-footer:pb-10">
@@ -58,7 +58,7 @@ const Footer = () => {
 
         <div
           className="w-full h-1/3 max-w-[200px] max-footer:max-w-[500px] max-footer:items-center text-center 
-        max-footer:px-4 flex flex-col justify-end items-center text-sm text-gray-400 pb-4 pl-4"
+        max-footer:px-4 flex flex-col justify-end items-center text-[10px] font-sans text-white/90 pb-4 pl-4"
         >
           Beeld in het Leerhuis logo is vervaardigd door kunstenaar Ronald
           Tolman.
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full absolute bottom-0 left-0 text-white/50 flex justify-center text-sm bg-black py-4">
+      <div className="w-full absolute bottom-0 left-0 text-white/40 flex justify-center text-sm bg-black py-4">
         <a href="https://appcollection.netlify.app/" target="_blank">
           {" "}
           &copy;noudvandun webdevelopment
