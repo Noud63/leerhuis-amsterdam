@@ -48,10 +48,9 @@ const OveronsPage = () => {
                     </SectionTitle>
                     <p>De wanhoop nabij! Het is een uitroep die velen vandaag herkennen – in gesprekken over de verwording van onze samenleving, de klimaatcrises, oorlog en ontmenselijking, de snelle ontwikkeling van AI, gevoelens over het eind der tijden en ook chaos in persoonlijke levens. Deze wanhoop nemen we serieus. Wat is er aan de hand, om wie maken we ons zorgen, wat doet wanhoop met ons geloof? We stellen ook de vraag: wat als politieke verdeeldheid, geestelijke leegte, economische ongelijkheid, een kerk in krimpstand geen teken is van mislukking, maar het begin van iets nieuws, iets echts?</p>
                     <p>In drie interactieve bijeenkomsten, een lezingenreeks en een middagje zingen stellen we wanhoop niet tegenover hoop, maar proberen we haar te zien als een doorgang. De Bijbel leert ons om niet te vluchten in gemakkelijke antwoorden, maar om dwars door de afgrond heen te gaan – en daarin een geloof te vinden dat niet draait om succes, zekerheid of troost, maar om waarheid, kwetsbaarheid en bevrijding. Echte hoop komt ons nabij wanneer we onze schijnbare zekerheden durven loslaten. Omdat geloof niet betekent: “alles komt goed”, maar: “zelfs als alles uit elkaar valt, ben ik niet alleen”.</p> 
-
+                     <p>De Cyclus 'De (wan)hoop nabij' wordt mogelijk gemaakt met steun van het <a href="https://protestantsekerk.nl/onderwerp/kerk-en-wereld/" style={{textDecoration:"underline"}}>Fonds Kerk en Wereld.</a></p>
                   </div>
                  
-
                   <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full mt-8">
                     <div className="font-semibold pb-2 mb-2">
                       <span className="border-b border-black pb-1">
