@@ -1202,6 +1202,34 @@
       "closing_date": "2026-05-28",
       "itemId": "LA-AC40",
       "cat": "cursus"
+    },
+    {
+      "id": 40,
+      "title": "Kiezen voor vrede - niets doen is geen optie",
+      "date": {
+        "day": "Dinsdag",
+        "dates": ["2026-03-31"]
+      },
+      "time": "19.30-22.00 uur",
+      "contribution": "Gratis (vrije bijdrage donatie welkom)",
+      "description": [
+        "Op 31 maart is er in de Keizersgrachtkerk een gespreksavond over oorlog en vrede. Berichten over oorlogsdreiging zijn aan de orde van de dag; de NAVO staat onder druk; het Nederlandse defensiebudget gaat met sprongen omhoog. Met als uitgangspunt: 'een oorlog voorkom je door je voor te bereiden op een oorlog'.\n",
+        "In de kerken, en breder in de Nederlandse samenleving, leeft grote zorg hierover. Iedereen realiseert zich dat niets doen geen optie is. Maar is dan de oorlog voorbereiden de enige optie om te handelen? Sommigen onder ons voelen heel sterk het appel dat je als christen niet anders kunt dan radicaal pacifist te zijn. Anderen voelen ook de logica van jezelf verdedigen en de wens om Oekraïne terzijde te staan.\n",
+        "Voor veel gelovigen een persoonlijk dilemma dat vertwijfeling brengt over de oorlogsdreiging en de toenemende wapenwedloop. In dat spanningsveld willen we met elkaar op 31 maart in gesprek, zoekend naar een weg.\n\n",
+        "Verschillende sprekers geven hun visie op oorlog en vrede anno 2026.\n",
+        "Krijgsmachtpredikant Gert van der Ende (recent met emeritaat) vertelt over zijn werk bij defensie in deze tijden van toenemende spanning in Europa en verbindt dat aan de visie van de krijgsmachtpredikanten op de weerbaarheid van de Nederlandse samenleving.",
+        "Emeritus-predikant Bram Grandia (predikant in de Keizersgrachtkerk in de jaren ’80) zal vanuit zijn radicale keuze voor pacifisme en geweldloosheid betogen dat oorlog een probleem is, geen oplossing. Oorlogsretoriek brengt onheil over de wereld. Jezus roept op de vijand lief te hebben – en dat roept én sympathie én weerstand op.\n\n",
+        "De sprekers gaan met elkaar in gesprek en natuurlijk is er ruimte voor vragen vanuit de zaal. Ds Corine Sloots, lid van de Muiderkerk en hoofd Geestelijke Verzorging bij de Krijgsmacht, zal vanuit haar expertise daaraan meedoen. \n\n",
+        "In verband met de organisatie (bij grote belangstelling zal de avond plaatsvinden in de kerkzaal) graag je komst aanmelden bij leerhuisamsterdam@gmail.com"
+      ],
+      "led_by": "Rijk van Ark",
+      "location": "Muiderkerk",
+      "email": "leerhuisamsterdam@gmail.com",
+      "image": "kiezenvoorvrede_2.png",
+      "starting_date": "2026-03-31",
+      "closing_date": "2026-03-31",
+      "itemId": "LA-AC41",
+      "cat": "gesprek"
     }
   ]
 }
