@@ -162,11 +162,11 @@ const CalendarItem = () => {
                   </>
                 ) : (
                   <span>
-                    {item.description.map((line) => {
+                    {item.description.map((line, index) => {
                       return (
                         <div
                           className="flex flex-col whitespace-pre-line"
-                          key={line}
+                          key={index}
                         >
                           <span>{line}</span>
                         </div>
