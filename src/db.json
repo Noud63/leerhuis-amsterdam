@@ -1230,6 +1230,28 @@
       "closing_date": "2026-03-31",
       "itemId": "LA-AC41",
       "cat": "gesprek"
+    },
+    {
+      "id": 41,
+      "title": "Bijbels Leerhuis",
+      "date": {
+        "day": "Donderdag",
+        "dates": ["2026-03-26","2026-04-09","2026-04-23","2026-05-28","2026-06-25"]
+      },
+      "time": "14.00-16.00 uur",
+      "contribution": "Vrijwillge bijdrage",
+      "description": [
+        "Wout van der Spek en Gerben van Manen gaan met de deelnemers een psalm lezen met daarnaast de hertaling van de betreffende psalm van Huub Oosterhuis en een gedicht van Karel Eykman bij dezelfde psalm.\n",
+        "De eerste keer psalm 1 en 2. Voor teksten wordt gezorgd."
+      ],
+      "led_by": "Wout van der Spek en Gerben van Manen",
+      "location": "Muiderkerk, Linnaeusstraat 37",
+      "email": "leerhuisamsterdam@gmail.com",
+      "image": "psalmen.jpg",
+      "starting_date": "2026-03-26",
+      "closing_date": "2026-06-25",
+      "itemId": "LA-AC42",
+      "cat": "cursus"
     }
   ]
 }
