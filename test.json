@@ -74,5 +74,33 @@
      "starting_date": "2025-05-24",
      "closing_date": "2025-05-24",
      "itemId": "LA-AC21"
-   }
+   },
+   {
+      "id": 24,
+      "title": "De (wan)hoop nabij - 3",
+      "date": {
+        "day": "Dinsdagavond",
+        "dates": ["2026-05-12"]
+      },
+      "time": "19:30 - 20:00 uur",
+      "contribution": "Vrijwillige bijdrage",
+      "description": [
+        "De Wanhoop van Amsterdam - City predikant Tim Vreugdenhil legt langs drie perpectieven de wanhoop van Amsterdam bloot.\n",
+        "- hoe leven we in deze stad?\n",
+        "- ⁠wie vallen buiten de boot?\n",
+        "- wie is verantwoordelijk?\n",
+        "Hij gaat in gesprek met drie Amsterdamse opiniemakers en legt de lat van de wanhoop hoog voor de deelnemers! Ook met aandacht voor het drugsgebruik in de stad.\n\n",
+        "De cyclus 'De (wan)hoop nabij' wordt mogelijk gemaakt met steun van het Fonds Kerk en Wereld.\n\n"
+      ],
+      "led_by": "Tim Vreugdenhil",
+      "email": "leerhuisamsterdam@gmail.com",
+      "location": "Muiderkerk, Linnaeusstraat 37",
+      "image": "drugs.jpg",
+      "starting_date": "2026-05-12",
+      "closing_date": "2026-05-12",
+      "itemId": "LA-AC25",
+      "cat": "gesprek"
+    }
  ]
+
+ 

@@ -766,32 +766,6 @@
     },
     {
       "id": 24,
-      "title": "De (wan)hoop nabij - 3",
-      "date": {
-        "day": "Dinsdagavond",
-        "dates": ["2026-05-12"]
-      },
-      "time": "19:30 - 20:00 uur",
-      "contribution": "Vrijwillige bijdrage",
-      "description": [
-        "De Wanhoop van Amsterdam - City predikant Tim Vreugdenhil legt langs drie perpectieven de wanhoop van Amsterdam bloot.\n",
-        "- hoe leven we in deze stad?\n",
-        "- ⁠wie vallen buiten de boot?\n",
-        "- wie is verantwoordelijk?\n",
-        "Hij gaat in gesprek met drie Amsterdamse opiniemakers en legt de lat van de wanhoop hoog voor de deelnemers! Ook met aandacht voor het drugsgebruik in de stad.\n\n",
-        "De cyclus 'De (wan)hoop nabij' wordt mogelijk gemaakt met steun van het Fonds Kerk en Wereld.\n\n"
-      ],
-      "led_by": "Tim Vreugdenhil",
-      "email": "leerhuisamsterdam@gmail.com",
-      "location": "Muiderkerk, Linnaeusstraat 37",
-      "image": "drugs.jpg",
-      "starting_date": "2026-05-12",
-      "closing_date": "2026-05-12",
-      "itemId": "LA-AC25",
-      "cat": "gesprek"
-    },
-    {
-      "id": 25,
       "title": "Miskotte en Rollins",
       "date": {
         "day": "Dinsdag",
@@ -815,7 +789,7 @@
       "cat": "lezing"
     },
     {
-      "id": 26,
+      "id": 25,
       "title": "Gegijzeld door vrijheid",
       "date": {
         "day": "Dinsdag",
@@ -841,7 +815,7 @@
       "cat": "lezing"
     },
     {
-      "id": 27,
+      "id": 26,
       "title": "De overheid als moderne vrijheid",
       "date": {
         "day": "Dinsdag",
@@ -864,7 +838,7 @@
       "cat": "lezing"
     },
     {
-      "id": 28,
+      "id": 27,
       "title": "Radicale onzekerheid, Jonathan Sacks",
       "date": {
         "day": "Dinsdag",
@@ -887,7 +861,7 @@
       "cat": "lezing"
     },
     {
-      "id": 29,
+      "id": 28,
       "title": "Bijbels Leerhuis - 1",
       "date": {
         "day": "Donderdag",
@@ -909,7 +883,7 @@
       "cat": "cursus"
     },
     {
-      "id": 30,
+      "id": 29,
       "title": "Bijbels Leerhuis - 2",
       "date": {
         "day": "Donderdag",
@@ -932,7 +906,7 @@
       "cat": "cursus"
     },
     {
-      "id": 31,
+      "id": 30,
       "title": "Wie is er bang voor gender?",
       "date": {
         "day": "Woensdagochtend",
@@ -968,7 +942,7 @@
       "cat": "cursus"
     },
     {
-      "id": 32,
+      "id": 31,
       "title": "Theatervoorstelling: Waar ben ik dan?",
       "date": {
         "day": "Zaterdagmiddag",
@@ -996,7 +970,7 @@
       "cat": "voorstelling"
     },
     {
-      "id": 33,
+      "id": 32,
       "title": "Moderne Theologen",
       "date": {
         "day": "Dinsdag",
@@ -1018,7 +992,7 @@
       "cat": "cursus"
     },
     {
-      "id": 34,
+      "id": 33,
       "title": "Christendom en klimaatverandering",
       "date": {
         "day": "Donderdag",
@@ -1050,7 +1024,7 @@
       "cat": "cursus"
     },
     {
-      "id": 35,
+      "id": 34,
       "title": "In wanhoop zingen we de vrijheid tegemoet",
       "date": {
         "day": "Zaterdag",
@@ -1072,7 +1046,7 @@
       "cat": "gesprek"
     },
     {
-      "id": 36,
+      "id": 35,
       "title": "Bijbels Leerhuis over Jozef en zijn familie",
       "date": {
         "day": "Donderdag",
@@ -1104,7 +1078,7 @@
       "cat": "cursus"
     },
     {
-      "id": 37,
+      "id": 36,
       "title": "God, mensen en het kwaad",
       "date": {
         "day": "Maandag",
@@ -1149,7 +1123,7 @@
       "cat": "cursus"
     },
     {
-      "id": 38,
+      "id": 37,
       "title": "Leesproject voor zwart en wit",
       "date": {
         "day": "Vrijdag",
@@ -1176,7 +1150,7 @@
       "cat": "cursus"
     },
      {
-      "id": 39,
+      "id": 38,
       "title": "Leerhuis Literair",
       "date": {
         "day": "Donderdag",
@@ -1204,7 +1178,7 @@
       "cat": "cursus"
     },
     {
-      "id": 40,
+      "id": 39,
       "title": "Hoe zijn we kerk in tijden van oorlog?",
       "date": {
         "day": "Dinsdag",
@@ -1232,7 +1206,7 @@
       "cat": "gesprek"
     },
     {
-      "id": 41,
+      "id": 40,
       "title": "Bijbels Leerhuis",
       "date": {
         "day": "Donderdag",
