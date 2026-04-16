@@ -785,7 +785,7 @@
       "image": "miskotte_rollins.png",
       "starting_date": "2025-12-09",
       "closing_date": "2025-12-09",
-      "itemId": "LA-AC26",
+      "itemId": "LA-AC25",
       "cat": "lezing"
     },
     {
@@ -811,7 +811,7 @@
       "image": "vrijheid.png",
       "starting_date": "2025-10-28",
       "closing_date": "2025-10-28",
-      "itemId": "LA-AC27",
+      "itemId": "LA-AC26",
       "cat": "lezing"
     },
     {
@@ -834,7 +834,7 @@
       "image": "overheid.png",
       "starting_date": "2026-01-20",
       "closing_date": "2026-01-20",
-      "itemId": "LA-AC28",
+      "itemId": "LA-AC27",
       "cat": "lezing"
     },
     {
@@ -857,7 +857,7 @@
       "image": "sacks.png",
       "starting_date": "2026-04-07",
       "closing_date": "2026-04-07",
-      "itemId": "LA-AC29",
+      "itemId": "LA-AC28",
       "cat": "lezing"
     },
     {
@@ -879,7 +879,7 @@
       "image": "jozef.jpg",
       "starting_date": "2025-09-11",
       "closing_date": "2025-12-11",
-      "itemId": "LA-AC30",
+      "itemId": "LA-AC29",
       "cat": "cursus"
     },
     {
@@ -902,7 +902,7 @@
       "image": "bijbel.jpg",
       "starting_date": "2025-09-25",
       "closing_date": "2025-11-27",
-      "itemId": "LA-AC31",
+      "itemId": "LA-AC30",
       "cat": "cursus"
     },
     {
@@ -938,7 +938,7 @@
       "image": "wieiserbangvoorgender_2.jpg",
       "starting_date": "2025-09-24",
       "closing_date": "2025-12-17",
-      "itemId": "LA-AC32",
+      "itemId": "LA-AC31",
       "cat": "cursus"
     },
     {
@@ -966,7 +966,7 @@
       "image": "samengesteldgezin.jpg",
       "starting_date": "2025-11-29",
       "closing_date": "2025-11-29",
-      "itemId": "LA-AC33",
+      "itemId": "LA-AC32",
       "cat": "voorstelling"
     },
     {
@@ -988,7 +988,7 @@
       "image": "modernetheologen.jpg",
       "starting_date": "2025-11-12",
       "closing_date": "2025-11-12",
-      "itemId": "LA-AC34",
+      "itemId": "LA-AC33",
       "cat": "cursus"
     },
     {
@@ -1020,7 +1020,7 @@
       "image": "klimaatverandering.png",
       "starting_date": "2025-11-13",
       "closing_date": "2025-12-11",
-      "itemId": "LA-AC35",
+      "itemId": "LA-AC34",
       "cat": "cursus"
     },
     {
@@ -1042,7 +1042,7 @@
       "image": "muiderkerk.jpg",
       "starting_date": "2026-08-29",
       "closing_date": "2026-08-29",
-      "itemId": "LA-AC36",
+      "itemId": "LA-AC35",
       "cat": "gesprek"
     },
     {
@@ -1074,7 +1074,7 @@
       "image": "jozef_jacob.jpg",
       "starting_date": "2026-01-15",
       "closing_date": "2026-03-26",
-      "itemId": "LA-AC37",
+      "itemId": "LA-AC36",
       "cat": "cursus"
     },
     {
@@ -1119,7 +1119,7 @@
       "image": "zondebok.png",
       "starting_date": "2026-03-09",
       "closing_date": "2026-03-30",
-      "itemId": "LA-AC38",
+      "itemId": "LA-AC37",
       "cat": "cursus"
     },
     {
@@ -1146,39 +1146,12 @@
       "image": "herman_vuijsje.png",
       "starting_date": "2026-02-20",
       "closing_date": "2026-05-15",
-      "itemId": "LA-AC39",
+      "itemId": "LA-AC38",
       "cat": "cursus"
     },
-     {
-      "id": 38,
-      "title": "Leerhuis Literair",
-      "date": {
-        "day": "Donderdag",
-        "dates": ["2026-04-23", "2026-05-07", "2026-05-28"]
-      },
-      "time": "19.30-21.30 uur",
-      "contribution": "Gratis (vrije bijdrage donatie welkom)",
-      "description": [
-        "Lezend verbreden we onze horizon en bespreken we onze huidige tijd. Dit keer sluiten we aan bij de oorlogsdreiging aan de rand van Europa.\n",
-        "De Finse schrijfster Eeva Kilpi (1928) schreef een indrukwekkende autobiografische trilogie over de oorlogsjaren in haar jeugd in Karelië toen Finland en de Sovjet Unie de Winteroorlog (1939-1940) uitvochten en de Sovjet Unie Karelië innam.\n",
-        "Wat deed de gedwongen evacuatie, op de vlucht voor het oorlogsgeweld, met dit dappere kind en haar familie?\n",
-        "We lezen met elkaar het eerste deel: De tijd van de Winteroorlog. Een herinnering aan mijn kindertijd.",
-        "\n",
-        "Meulink-Korf en De Vries proberen menselijke relaties te duiden vanuit de contextuele benadering van Ivan Boszormenyi-Nagy. Relationele ethiek - geven en ontvangen van zorgzaamheid of het onthouden van zorg binnen de verschillende generaties van een familie - staat in ons lezen voorop.\n",
-        "En zeker ook: ‘situationeel onrecht’ dat leiden kan tot 'relationeel onrecht'.",
-        "\n"
-      ],
-      "led_by": "Hanneke Meulink-Korf en Greteke de Vries",
-      "location": "Muiderkerk",
-      "email": "leerhuisamsterdam@gmail.com",
-      "image": "eeva_kilpi.png",
-      "starting_date": "2026-04-23",
-      "closing_date": "2026-05-28",
-      "itemId": "LA-AC40",
-      "cat": "cursus"
-    },
+     
     {
-      "id": 39,
+      "id": 38,
       "title": "Hoe zijn we kerk in tijden van oorlog?",
       "date": {
         "day": "Dinsdag",
@@ -1202,11 +1175,11 @@
       "image": "kiezenvoorvrede.png",
       "starting_date": "2026-03-31",
       "closing_date": "2026-03-31",
-      "itemId": "LA-AC41",
+      "itemId": "LA-AC39",
       "cat": "gesprek"
     },
     {
-      "id": 40,
+      "id": 39,
       "title": "Bijbels Leerhuis",
       "date": {
         "day": "Donderdag",
@@ -1224,7 +1197,7 @@
       "image": "psalmen.jpg",
       "starting_date": "2026-03-26",
       "closing_date": "2026-06-25",
-      "itemId": "LA-AC42",
+      "itemId": "LA-AC40",
       "cat": "cursus"
     }
   ]
