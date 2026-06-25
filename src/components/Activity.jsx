@@ -60,7 +60,7 @@ const Activity = ({ act }) => {
           </div>
         </div>
 
-        <div className="w-full flex justify-center items-center mt-4">
+        <div className="relative w-full flex justify-center items-center mt-4">
           <img
             src={`/images/${act.image}`}
             alt=""

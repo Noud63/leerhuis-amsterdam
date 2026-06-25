@@ -209,7 +209,7 @@ const CalendarItem = () => {
                 <span className="font-bold">Kenmerk : </span> {item.itemId}
               </div>
 
-              {item.itemId !== "LA-AC38" ? (<Link
+              {item.itemId !== "LA-AC38" && item.itemId !== "LA-AC35" ? (<Link
                 to={`subscribe/${item.itemId}`}
                 className="w-full flex justify-center mt-6 mb-4"
               >
@@ -223,6 +223,7 @@ const CalendarItem = () => {
               </Link>) : (<div className="w-full h-8"></div>)}
 
               <div className="w-full flex justify-center items-center mt-4 relative">
+                {item.bron && <div className="absolute bottom-2 right-2 text-gray-400"><a href={`${item.bron}`} rel="noopener noreferrer" target="_blank">Afbeelding: {item.bron}</a></div>}
                 <img
                   src={`/images/${item.image}`}
                   alt=""
