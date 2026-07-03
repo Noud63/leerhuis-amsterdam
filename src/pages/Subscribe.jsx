@@ -4,9 +4,7 @@ import ringbinder from "../assets/images/ringbinder.png";
 import { Link, useNavigate, useLocation, useParams } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import pen from "../assets/icons/pen.png";
-// import qrcode from "../assets/icons/qrcode.png"
 import activities from "../db.json";
-// import polarisatie from "../polarisatiedb.json"
 
 const serviceId = import.meta.env.VITE_REACT_APP_LA_SERVICE_ID;
 const templateId = import.meta.env.VITE_REACT_APP_LA_INSCHRIJVING_TEMPLATE_ID;
