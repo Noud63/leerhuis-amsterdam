@@ -33,7 +33,7 @@ const ActivityArchiefActueel = ({act, url}) => {
         <img src={`images/${act.image}`} alt="" className="w-full " />
       </div>
       <div className="bg-gradient-to-t from-slate-900 to-slate-900/50 w flex justify-center py-6 absolute bottom-0 left-0 w-full">
-        <Link to={`${url}/calendaritem/${act.id}`}>
+        <Link to={`${url}/calendaritem/${act.itemId}`}>
           <button
             type="button"
             className="w-[150px] flex justify-center items-center text-orange-400 font-semibold border-2 border-orange-400 rounded-full p-2"

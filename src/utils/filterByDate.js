@@ -1,4 +1,4 @@
-import activities from "../db.json";
+import activities from "../db.json"; //db.json is the main database of current and upcoming activities
 import polarisatie from "../polarisatiedb.json"
 
 const now = new Date().getTime() - 86400000;

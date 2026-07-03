@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import activities from "../db.json";
+import activities from "../db2.json";
 import { Link, useLocation } from "react-router-dom";
 import share from "../assets/icons/share.png";
 import {
@@ -19,14 +19,15 @@ import SectionTitle from "../components/SectionTitle";
 const CalendarItem = () => {
   const currentUrl = window.location.href;
 
-  const { calendaritem_id } = useParams();
+  const { itemId } = useParams();
 
   const [expired, setExpired] = useState(false);
 
   const url = useLocation().pathname;
 
-  const item = activities.activities[calendaritem_id];
-  const ID = item.itemId;
+ const item = activities.activities.find(
+  activity => activity.itemId === itemId
+);
 
   const givenDate = new Date(item.closing_date).getTime() + 86400000;
   const now = new Date().getTime();
@@ -64,7 +65,7 @@ const CalendarItem = () => {
               </div>
             ) : (
               <span>
-                {ID === "LA-AC33" ? item.title.slice(20) : item.title}
+                {item.itemId === "LA-AC33" ? item.title.slice(20) : item.title}
               </span>
             )}
           </SectionTitle>
@@ -178,7 +179,7 @@ const CalendarItem = () => {
 
               <div className="w-full px-4 mb-2 mt-2">
                 {" "}
-                <span className="font-bold flex flex-wrap">O.l.v :</span>{" "}
+                <span className="font-bold flex flex-wrap">Met :</span>{" "}
                 {item.led_by}
               </div>
 

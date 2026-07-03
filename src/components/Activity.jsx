@@ -29,7 +29,7 @@ const Activity = ({ act }) => {
           )}
 
           <div className="w-full flex flex-col">
-            <span className="font-semibold">Start : </span>
+            <span className="font-semibold">Datum : </span>
             {new Date(
               act.itemId === "LA-AC22" ? act.closing_date : act.starting_date,
             ).toLocaleDateString("nl-NL", {
@@ -50,7 +50,7 @@ const Activity = ({ act }) => {
 
           <div className="w-full flex flex-col">
             {" "}
-            <span className="font-semibold">O.l.v :</span>
+            <span className="font-semibold">Met :</span>
             {act.led_by_short ? act.led_by_short : act.led_by}
           </div>
 

@@ -18,10 +18,10 @@ const Subscribe = () => {
   const [status, setStatus] = useState("Verstuur");
   const [message, setMessage] = useState("");
 
-  const { calendaritem_id, id } = useParams();
+  const { itemId } = useParams();
 
-  const category = activities.activities[calendaritem_id].cat || "";
-  const title = activities.activities[calendaritem_id].title || "";
+  const category = activities.activities.find(activity => activity.itemId === itemId)?.cat || "";
+  const title = activities.activities.find(activity => activity.itemId === itemId)?.title || "";
 
   const url = useLocation().pathname;
   const navigate = useNavigate();
@@ -173,7 +173,7 @@ const Subscribe = () => {
 
           <div className="w-full text-[16px] justify-start my-4">
             <div className="w-full pb-1 text-2xl font-semibold mt-2 mb-4 border-b border-black font-papyrus max-mini:text-xl xxxsm:hidden">
-              {id === "LA-AC33" ? title.slice(20) : title}
+              {itemId === "LA-AC33" ? title.slice(20) : title}
             </div>
 
             <div className="flex w-full pb-1 text-2xl font-semibold mt-2 mb-4 border-b border-black font-papyrus max-mini:text-xl max-xxsm:hidden xxxsm:flex">
@@ -182,16 +182,16 @@ const Subscribe = () => {
             <div>
               <span className="font-semibold">Bijdrage : </span>
               {contributionTexts[
-                id === "LA-AC35"
+                itemId === "LA-AC35"
                   ? "gratis"
-                  : id === "LA-AC37" || id === "LA-AC40" || id === "LA-AC39" || id === "LA-AC42"
+                  : itemId === "LA-AC41" || itemId === "LA-AC42" || itemId === "LA-AC43" || itemId === "LA-AC44"
                     ? "gesprek"
                     : category
               ] || null}
             </div>
 
             <div
-              className={`${id === "LA-AC35" ? "hidden" : "flex font-semibold mt-2"}`}
+              className={`${itemId === "LA-AC35" ? "hidden" : "flex font-semibold mt-2"}`}
             >
               NL&nbsp;32&nbsp;INGB&nbsp;0000449815 t.n.v. PROTESTANTSE GEMEENTE
               IN ZAKE T&E
@@ -199,7 +199,7 @@ const Subscribe = () => {
           </div>
         </div>
 
-        {id !== "LA-AC35" && (
+        {itemId !== "LA-AC35" && (
           <form
             ref={form}
             onSubmit={sendEmail}
@@ -249,7 +249,7 @@ const Subscribe = () => {
                 id="kenmerk"
                 type="text"
                 name="from_kenmerk"
-                defaultValue={id}
+                defaultValue={itemId}
                 required
                 className="w-[80px] bg-transparent py-4 pl-2"
               />

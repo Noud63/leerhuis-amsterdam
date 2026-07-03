@@ -1,0 +1,491 @@
+{
+  "activities": [{
+      "id": 21,
+      "title": "Dekesel en Malevich",
+      "date": {
+        "day": "Dinsdag",
+        "dates": ["2025-06-10", "2025-06-24", "2025-09-15"]
+      },
+      "time": "19:00 - 21:00 uur",
+      "contribution": "Vrijwillige bijdrage",
+      "description": [
+        "Marc Dekesel, em. hoogleraar aan de Radboud universiteit te Nijmegen, komt naar het Leerhuis om te spreken over Kazimir Malevich (1879-1935), de relatie kunst en religie.\n",
+        "Malevich was een belangrijke avant-garde kunstenaar die zichzelf suprematist noemde. Nog steeds worden zijn werken zoals wit op wit bewonderd vanwege zijn moderne en eenvoudige stijl.\n",
+        "We leren Malevich kennen vanuit zijn schilderijen en ontdekken dat zijn avant-garde kunst teksten zeer theologisch te interpreteren zijn. De relatie kunst en religie krijgt een andere dimensie door deze grote Russische kunstenaar.\n",
+        "Eerste avond: inleiding over leven en werk van de schilder en filosoof Malevich; tweede en derde avond lezen we Engelse teksten uit het vertaalde pamflet ‘God is not cast down’.\n"
+      ],
+      "led_by": "Marc Dekesel en Tiers Bakker",
+      "led_by_short": "",
+      "location": "Muiderkerk, Linnaeusstraat 37",
+      "email": "tiersbakker@gmail.com",
+      "image": "malevich.png",
+      "starting_date": "2025-06-10",
+      "closing_date": "2025-09-15",
+      "itemId": "LA-AC22",
+      "cat": "cursus"
+    },
+    {
+      "id": 22,
+      "title": "De (wan)hoop nabij - 1",
+      "date": {
+        "day": "Zaterdag",
+        "dates": ["2025-10-18"]
+      },
+      "time": "14:30 - 17:00 uur",
+      "contribution": "Vrijwillige bijdrage",
+      "description": [
+        "met Marjan Slob (filosofe, publicist en Denker der Nederlanden 2023-2024) en Arjan Broers (pastor in de oecumenische Dominicuskerk in Amsterdam en columnist bij Happinez).\n",
+        "Met deze inspirerende gasten verkennen we het thema. Marjan Slob ziet dat we het bestaan momenteel ervaren op een schaal die ons hart eigenlijk niet aankan: ‘mijn kleine hart weet niet wat het met deze informatie aan moet.’ Dat is wat haar betreft hét moreel-psychologische probleem van onze tijd. Hoe ga je om met al die zware informatie?\n",
+        "Arjan Broers nodigt ons uit om ons te bezinnen op wat goed leven is, nu we onszelf zo uit balans hebben ontwikkeld. Want als het waar is dat we leven uit genade – leven van wat we ontvangen – wat wordt ons dan geschonken in de wanhoop, die momenteel zo voelbaar is? \n",
+        "Broer schreef een boek over wijsheidsontwikkeling (De beste helft, 2023),hij werkt samen met theatermakers en zoekt met zijn gemeenschap momenteel naar manieren om GGZ en zielzorg met elkaar te verbinden.\n\n",
+        "De cyclus 'De (wan)hoop nabij' wordt mogelijk gemaakt met steun van het Fonds Kerk en Wereld.\n\n"
+      ],
+      "led_by": "Marjan Slob en Arjan Broers",
+      "email": "leerhuisamsterdam@gmail.com",
+      "location": "Muiderkerk, Linnaeusstraat 37",
+      "image": "wanhoop_1.png",
+      "starting_date": "2025-10-18",
+      "closing_date": "2025-10-18",
+      "itemId": "LA-AC23",
+      "cat": "gesprek"
+    },
+    {
+      "id": 23,
+      "title": "De (wan)hoop nabij - 2",
+      "date": {
+        "day": "Zaterdag",
+        "dates": ["2026-03-07"]
+      },
+      "time": "14:30 - 17:00 uur",
+      "contribution": "Vrijwillige bijdrage",
+      "description": [
+        "Hoop daagt uit - Migratie & geloofstaal van hoop\n",
+        "Vanuit een workshop over migratie gaat hoogleraar theologie en migratie Dorottya Nagy samen met de deelnemers op zoek naar een geloofstaal van hoop, aan de hand van een aantal theologen (Moltmann, Sölle). Met migratie als case study kijken we naar de vaak wanhopig stemmende maatschappelijke ontwikkelingen met de verwachting dat er hoop daagt.\n\n",
+        "De cyclus 'De (wan)hoop nabij' wordt mogelijk gemaakt met steun van het Fonds Kerk en Wereld.\n\n"
+      ],
+      "led_by": "Dorottya Nagy",
+      "email": "leerhuisamsterdam@gmail.com",
+      "location": "Muiderkerk, Linnaeusstraat 37",
+      "image": "wanhoop_act_2.png",
+      "starting_date": "2026-03-07",
+      "closing_date": "2026-03-07",
+      "itemId": "LA-AC24",
+      "cat": "gesprek"
+    },
+    {
+      "id": 24,
+      "title": "Miskotte en Rollins",
+      "date": {
+        "day": "Dinsdag",
+        "dates": ["2025-12-09"]
+      },
+      "time": "20:00 - 22:00 uur",
+      "contribution": "",
+      "description": [
+        "Lezing: “Miskotte en Rollins – Theologie tussen crisis en tegenstem”\n",
+        "In deze lezing bespreekt Dr. Mirjam Elbers haar onderzoek naar de theologische benadering van K.H. Miskotte en hoe deze resoneert met de radicale theologie van Peter Rollins.\n",
+        "Wat betekent geloof wanneer hoop wankelt, wanneer vormen breken? En hoe kunnen oude theologische stemmen klinken in een seculiere tijd van wanhoop?\n",
+        "Een avond over geloof als kritische ontwrichting – en als bron van een andere vrijheid.\n"
+      ],
+      "led_by": "Dr. Mirjam Elbers",
+      "email": "leerhuisamsterdam@gmail.com",
+      "location": "De Thomas, Prinses Irenestraat 36",
+      "image": "miskotte_rollins.png",
+      "starting_date": "2025-12-09",
+      "closing_date": "2025-12-09",
+      "itemId": "LA-AC25",
+      "cat": "lezing"
+    },
+    {
+      "id": 25,
+      "title": "Gegijzeld door vrijheid",
+      "date": {
+        "day": "Dinsdag",
+        "dates": ["2025-10-28"]
+      },
+      "time": "20:00 - 22:00 uur",
+      "contribution": "",
+      "description": [
+        "Thijs Broer (journalist bij Vrij Nederland).\n",
+        "'Gegijzeld door vrijheid – Hoe het liberalisme ons gevangen zet.'\n",
+        "De liberale vrijheid is overal: in verkiezingsprogramma’s, talkshows, beleidsnota’s.",
+        "Maar volgens Thijs Broer heeft deze vrijheid haar belofte verraden. In plaats van bevrijding zien we ontbinding: van zorg, gemeenschap, solidariteit.",
+        "Broer onderzoekt hoe het begrip vrijheid werd gekaapt door het neoliberalisme – en waarom deze vorm van ‘vrijheid’ juist onze machteloosheid voedt.",
+        "Vrijheid is een woord waarachter een leegte schuilgaat, als we niet durven spreken over verantwoordelijkheid."
+      ],
+      "led_by": "Thijs Broers",
+      "email": "leerhuisamsterdam@gmail.com",
+      "location": "De Thomas, Prinses Irenestraat 36",
+      "image": "vrijheid.png",
+      "starting_date": "2025-10-28",
+      "closing_date": "2025-10-28",
+      "itemId": "LA-AC26",
+      "cat": "lezing"
+    },
+    {
+      "id": 26,
+      "title": "De overheid als moderne vrijheid",
+      "date": {
+        "day": "Dinsdag",
+        "dates": ["2026-01-20"]
+      },
+      "time": "20:00 - 22:00 uur",
+      "contribution": "",
+      "description": [
+        "Sprekers: Jean Wagemans (hoogleraar Retorica, UvA) en Jacco Verburgt (docent filosofie, KU Leuven / Tilburg)\n",
+        "Dubbellezing & gesprek: “De overheid als moderne vrijheid – Tussen dwang en dialoog” Is de overheid onze vijand of onze belichaming van gedeelde vrijheid? In deze lezing onderzoeken Wagemans en Verburgt hoe de moderne staat niet slechts een beperking is van vrijheid, maar ook een voorwaarde ervan – mits zij zichzelf onderwerpt aan publieke kritiek.\n",
+        "Aan de hand van retorische theorie, politieke filosofie en theologische noties zoals gerechtigheid en verantwoordelijkheid, bepleiten zij een herwaardering van de overheid als kritische ruimte voor vrijheid. 'Vrijheid is geen afwezigheid van dwang, maar de aanwezigheid van een gesprek.'"
+      ],
+      "led_by": "Jean Wagemans en Jacco Verburgt",
+      "email": "leerhuisamsterdam@gmail.com",
+      "location": "De Thomas, Prinses Irenestraat 36",
+      "image": "overheid.png",
+      "starting_date": "2026-01-20",
+      "closing_date": "2026-01-20",
+      "itemId": "LA-AC27",
+      "cat": "lezing"
+    },
+    {
+      "id": 27,
+      "title": "Radicale onzekerheid, Jonathan Sacks",
+      "date": {
+        "day": "Dinsdag",
+        "dates": ["2026-04-07"]
+      },
+      "time": "20:00 - 22:00 uur",
+      "contribution": "Voor betaalgegevens en/of het inschrijfformulier, klik hieronder op 'Schrijf je in'",
+      "description": [
+        "Lezing: Radicale onzekerheid, vrijheid en hoop volgens Jonathan Sacks.\n",
+        "Om in tijden van radicale onzekerheid een begaanbare weg van vrijheid en hoop te vinden putten we inspiratie uit het werk van wijlen opper-rabbijn van het Verenigd Koninkrijk, Jonathan Sacks.\n",
+        "Hasselaar: 'Heel veel mensen en partijen, juist in het seculiere domein en de economie, stellen of ervaren theologische vragen. Als je goed kunt luisteren en de verbindingen kunt leggen, creëert dit talloze nieuwe mogelijkheden. In mijn huidige onderzoek richt ik me op de menselijke conditie van radicale onzekerheid. Hoe gaan we om met echte onzekerheid, met optimisme of pessimisme? Theologische tradities laten een derde weg zien: die van hoop."
+      ],
+      "led_by": "Gerben van Manen en Jan Jorit Hasselaar",
+      "email": "gg_vanmanen@hotmail.com",
+      "location": "De Thomas, Prinses Irenestraat 36",
+      "image": "sacks.png",
+      "starting_date": "2026-04-07",
+      "closing_date": "2026-04-07",
+      "itemId": "LA-AC28",
+      "cat": "lezing"
+    },
+    {
+      "id": 28,
+      "title": "Bijbels Leerhuis - 1",
+      "date": {
+        "day": "Donderdag",
+        "dates": ["2025-09-11", "2025-10-09", "2025-11-13", "2025-12-11"]
+      },
+      "time": "14:00 - 16:00 uur",
+      "contribution": "Gratis (vrije bijdrage donatie welkom)",
+      "description": [
+        "We lezen en bespreken met het oog op vandaag het Jozefverhaal (Genesis 37-50), een prachtige novelle die is toegevoegd aan het verhaal van de aartsvaders en -moeders. Voor vertalingen wordt gezorgd en die krijgen deelnemers een paar dagen voor de bijeenkomst gemaild.\n",
+        "Literatuur: Karel Deurloo / Wilken Veen ed. , De gezegende temidden van zijn broeders, Jozef en Juda in Genesis 37-50, Baarn 1995.\n"
+      ],
+      "led_by": "Gerben van Manen",
+      "email": "gg_vanmanen@hotmail.com ",
+      "location": "Muiderkerk, Linnaeusstraat 37",
+      "image": "jozef.jpg",
+      "starting_date": "2025-09-11",
+      "closing_date": "2025-12-11",
+      "itemId": "LA-AC29",
+      "cat": "cursus"
+    },
+    {
+      "id": 29,
+      "title": "Bijbels Leerhuis - 2",
+      "date": {
+        "day": "Donderdag",
+        "dates": ["2025-09-25", "2025-10-23", "2025-11-27"]
+      },
+      "time": "14:00 - 16:00 uur",
+      "contribution": "Gratis (vrije bijdrage donatie welkom)",
+      "description": [
+        "We lezen en gaan in gesprek over het bijbelboek Matteüs.\n",
+        "Zoals de Rabbijnen ons leerden: elke tekst, elk verhaal heeft zeventig gezichten. Pas als we alle zeventig hebben ‘aangekeken’ kunnen we iets van de ware betekenis gaan vermoeden. Voor die tijd kan niemand de waarheid claimen. Maar ieder van ons kan de ander wel vertellen wat hij, wat zij gezien heeft!\n",
+        "Want wat wij zien doet ertoe! Er zijn daarbij geen domme opmerkingen of vragen. Zo gaan we dus ook met Matteüs in gesprek en we stellen bijvoorbeeld om te beginnen de vraag: Waar is die uitgebreide stamboom van Jezus voor nodig? Een dringende vraag, want uit meerdere delen van het Nieuwe Testament klinken geluiden van argwaan voor het gebruik van ‘bloedlijnen’, oftewel argwaan, je tegenzin tegen het zoeken van genealogische zekerheid. "
+      ],
+      "led_by": "Gerhard Scholte",
+      "email": "gscholte@dds.nl",
+      "location": "Muiderkerk, Linnaeusstraat 37",
+      "image": "bijbel.jpg",
+      "starting_date": "2025-09-25",
+      "closing_date": "2025-11-27",
+      "itemId": "LA-AC30",
+      "cat": "cursus"
+    },
+    {
+      "id": 30,
+      "title": "Wie is er bang voor gender?",
+      "date": {
+        "day": "Woensdagochtend",
+        "dates": [
+          "2025-09-24",
+          "2025-10-08",
+          "2025-10-22",
+          "2025-11-05",
+          "2025-11-19",
+          "2025-12-03",
+          "2025-12-17"
+        ]
+      },
+      "time": "10:30 - 12:00 uur",
+      "contribution": "Gratis (vrije bijdrage donatie welkom)",
+      "description": [
+        "In deze cursus verkennen de deelnemers thema’s op het snijvlak van psychoanalyse, filosofie, theologie en humanisme. In een tijd waarin de ideologie van het ongebreidelde verlangen dominant lijkt, luisteren wij naar elkaars verhalen en onderzoeken we het netwerk van gender- en machtsverhoudingen waarin het individu is ingebed.\n",
+        "De opzet van onze bijeenkomsten is het gezamenlijk onderzoeken van de ‘textuur’ van ideologie, verlangen en hoop die ons als individu mede vormen. Zoals Thijs Lijster het onlangs verwoordde in De Groene (22 mei 2025): In een tijd van het hedofascisme is het onderzoeken van de eigen passies (…) de taak van deze tijd.\n",
+        "De deelnemers lezen (verder) in het werk van Judith Butler. Centraal staan teksten over mensbeelden en haar uitnodiging tot verbinding met datgene wat aanvankelijk als ‘vreemd’ of beangstigend wordt ervaren.\n",
+        "Voorafgaand aan de eerste bijeenkomst wordt van de deelnemers gevraagd te lezen: Bitch van Lucy Cooke, De Geus 2022, noot van de auteur, voorwoord, hoofdtuk 1) Geslachtelijke anarchie.\n",
+        "Na aanmelding met emailadres kunnen deelnemers deze pagina’s toegestuurd krijgen. Tijdens de eerste bijeenkomst overleggen de deelnemers over boeken of artikelen die verder tijdens de cursus besproken worden.\n",
+        "\n",
+        "Cursusleiding en informatie:\n",
+        "Marieke Bell, humanistisch raadvrouw- / fotograaf-, in opleiding; Gilles Gilde-Damen, metro bestuurder / ex militair Harmen Elisa (Harry) Brandsma, gevangenispredikant- / verzoeningswerker- / therapeut-, in ruste / regisseur."
+      ],
+      "led_by": "M. Bell, G. Gilde-Damen en H.E. Brandsma",
+      "email": "harrybrandsma@gmail.com",
+      "location": "Muiderkerk, Linnaeusstraat 37",
+      "image": "wieiserbangvoorgender_2.jpg",
+      "starting_date": "2025-09-24",
+      "closing_date": "2025-12-17",
+      "itemId": "LA-AC31",
+      "cat": "cursus"
+    },
+    {
+      "id": 31,
+      "title": "Theatervoorstelling: Waar ben ik dan?",
+      "date": {
+        "day": "Zaterdagmiddag",
+        "dates": ["2025-11-29"]
+      },
+      "time": "14:30 - 17:00 uur",
+      "contribution": "Gratis (vrije bijdrage donatie welkom)",
+      "description": [
+        "Een persoonlijke en politieke familiegeschiedenis\n",
+        "In een tijd waarin samengestelde gezinnen steeds gewoner worden en familiebanden in vele vormen bestaan, stelt de voorstelling Waar ben ik dan? een urgente en intieme vraag.\n",
+        "Ellen Makkelie vertelt haar eigen verhaal. Ze groeide op in Amsterdam-Noord als dochter van George en Sofia, in een samengesteld gezin. Haar vader had twee kinderen uit een eerdere relatie, haar moeder één. Later trouwden ze met elkaar.\n",
+        "Beide ouders maakten als tieners de oorlog mee en waren actief binnen de Communistische Partij.\n",
+        "Het verhaal biedt een indringend portret van een familie in de vorige eeuw, tegen de achtergrond van de Koude Oorlog. Kinderen worden geboren in een web van verwachtingen, verlangen en hoop. Binnen dat web zoekt het kind naar een eigen stem.\n",
+        "In deze voorstelling wordt zichtbaar hoe het persoonlijke politiek wordt – en hoe het politieke diep persoonlijk kan zijn.\n",
+        "Hoe vinden we balans tussen ons eigen verhaal en de wereld waarin we zijn opgegroeid? Wat betekent het om je plek te zoeken binnen een samengesteld gezin? Welke vragen over identiteit en loyaliteit komen daarbij kijken? Waar ben ik dan? nodigt uit tot reflectie.\n",
+        "Door het schrijven van deze voorstelling, en het herlezen van haar vaders teksten, ontstond een onverwachte ontmoeting: meer begrip, en een nieuwe verbinding.\n"
+      ],
+      "led_by": "Harry Brandsma",
+      "email": "harrybrandsma@gmail.com",
+      "location": "Muiderkerk, Linnaeusstraat 37",
+      "image": "samengesteldgezin.jpg",
+      "starting_date": "2025-11-29",
+      "closing_date": "2025-11-29",
+      "itemId": "LA-AC32",
+      "cat": "voorstelling"
+    },
+    {
+      "id": 32,
+      "title": "Moderne Theologen",
+      "date": {
+        "day": "Dinsdag",
+        "dates": ["2025-11-12"]
+      },
+      "time": "19:30 uur",
+      "contribution": "Vrijwillige bijdrage",
+      "description": [
+        "Nog één bijeenkomst zal dit seizoen besteed worden aan het indrukwekkende boek Moderne Theologen, het hoofdstuk van Marcel Poorthuis over Rooms-Katholieke Theologie.\n",
+        "Literatuur: De moderne theologen, onder redactie van Marcel Poorthuis en Wilken Veen en uitgegeven bij uitg. Boom.\n"
+      ],
+      "led_by": "Tiers Bakker",
+      "email": "tiersbakker@gmail.com",
+      "location": "Muiderkerk, Linnaeusstraat 37",
+      "image": "modernetheologen.jpg",
+      "starting_date": "2025-11-12",
+      "closing_date": "2025-11-12",
+      "itemId": "LA-AC33",
+      "cat": "cursus"
+    },
+    {
+      "id": 33,
+      "title": "Christendom en klimaatverandering",
+      "date": {
+        "day": "Donderdag",
+        "dates": ["2025-11-13", "2025-11-20", "2025-12-04", "2025-12-11"]
+      },
+      "time": "19:30 - 21:30 uur",
+      "contribution": "Gratis",
+      "description": [
+        "Klimaatverandering is niet alleen een thema van de politiek en van de wetenschap. Ook kerk en theologie kunnen een belangrijke bijdrage leveren aan het gesprek over een nieuw klimaatregime.\n",
+        "Door de vaak eenzijdige aandacht voor de verhouding van God en mens, zijn we wat vergeten dat God de schepper is van deze wereld en dat zijn zorg niet alleen mensen geldt, maar ook heel de natuur. De hele schepping gaat ons aan.\n",
+        "Vanuit de kerken, zowel de katholieke als de protestantse, is er een beweging voor het behoud van de schepping gekomen. Te denken is aan het Conciliair Proces van de jaren ’80 van de vorige eeuw en recent aan de encycliek van paus Franciscus, Laudato sì, over het klimaat, die wereldwijd instemming heeft gevonden.\n",
+        "In het leerhuis van De OPGANG dit najaar is het onderwerp: christendom en klimaatverandering. We gaan zien wat in de kerkelijke prediking het tekort is geweest van het eenzijdige accent op de relatie van God en mens.\n",
+        "Wat houdt God als schepper in volgens de Bijbel en hoe moet je vandaag God als schepper zien in samenhang met wat de natuur-wetenschap zegt over onze aarde? Verschillende beelden van God als Schepper zullen worden bekeken en bevraagd op hun overtuigingskracht.\n",
+        "Hoe beleven we de natuur als schepping? Zijn er sporen van God in de natuur aanwezig? Hoe moeten we onze verhouding tot de natuur zien? Staan we tegenover de natuur of zijn we er een deel van?\n",
+        "De Oosterse Kerk (de oosterse orthodoxie) heeft vanouds een zorgzamere relatie gehad met de natuur als Gods schepping dan de kerken in het Westen. Een hedendaagse ‘groene’ patriarch spreekt in verband met de huidige klimaatcrisis over de mens als priester van de schepping. Wat bedoelt hij daarmee?\n",
+        "Op de genoemde vragen van God, mens en natuur zullen we op vier avonden ingaan. Verrassende theologische visies worden besproken.\n",
+        "\n",
+        "Voorbereiding: voor deze cursus is niet nodig, maar indien u zich wilt oriënteren over het onderwerp, dan beveel ik Kelly Keasberry, Geworteld in verbinding: een ecologische theologie voor de toekomst (Garant 2024) aan.\n",
+        "\n",
+        "Wessel Stoker is oud-predikant van Osdorp en Sloten. Hij doceerde godsdienstfilosofie en esthetica aan de Vrije Universiteit. Hij publiceerde tal van boeken en artikelen op het gebied van de godsdienstfilosofie en esthetica, o.a. God opnieuw verbeeld: een theologische kunstbeschouwing (3e druk 2024). Samen met Caroline Vander Stichele is hij de redacteur van een boek over kunst, religie en de klimaatcrisis, dat in 2026 verschijnt. Website: wesselstoker.eu\n"
+      ],
+      "led_by": "Wessel Stoker",
+      "email": "ngallouh@msn.com",
+      "location": "De OPGANG, Tussen Meer 68",
+      "image": "klimaatverandering.png",
+      "starting_date": "2025-11-13",
+      "closing_date": "2025-12-11",
+      "itemId": "LA-AC34",
+      "cat": "cursus"
+    },
+    
+    {
+      "id": 35,
+      "title": "Bijbels Leerhuis over Jozef en zijn familie",
+      "date": {
+        "day": "Donderdag",
+        "dates": [
+          "2026-01-15",
+          "2026-01-29",
+          "2026-02-12",
+          "2026-02-26",
+          "2026-03-12",
+          "2026-03-26"
+        ]
+      },
+      "time": "14:00 - 16:00 uur",
+      "contribution": "Gratis (vrije bijdrage donatie welkom)",
+      "description": [
+        "‘O God van Jozef, leid ons verder’ (Psalm 80, Liedboek)\n",
+        "Vanaf 15 januari lezen we per bijeenkomst een hoofdstuk uit het Jozefverhaal: uit Genesis 46 t/m 50.\n",
+        "We bespreken dan hoe Jozefs familie in Egypte terechtkomt, hoe Jakob zijn zoons zegent op zijn sterfbed, en waarom Jozef het zijn broers niet betaald zet wat ze met hem hebben gedaan: ‘Jullie hadden kwaad tegen mij in de zin, maar God heeft dat ten goede gekeerd, zodat een groot volk in leven blijft (Gen.50:20).’\n",
+        " \n",
+        "Welkom om mee te lezen!\n"
+      ],
+      "led_by": "Gerben van Manen en Wout van der Spek",
+      "location": "Muiderkerk",
+      "email": "gg_vanmanen@hotmail.com",
+      "image": "jozef_jacob.jpg",
+      "starting_date": "2026-01-15",
+      "closing_date": "2026-03-26",
+      "itemId": "LA-AC36",
+      "cat": "cursus"
+    },
+    {
+      "id": 36,
+      "title": "God, mensen en het kwaad",
+      "date": {
+        "day": "Maandag",
+        "dates": ["2026-03-09", "2026-03-16", "2026-03-23", "2026-03-30"]
+      },
+      "time": "19.45 – 21.45 uur",
+      "contribution": ["Inschrijving voor de cursus kan per email bij Nel Gallouh (ngallouh@msn.com) onder vermelding van naam, adres, emailadres en God en het kwaad.\n",
+      "De bijdrage voor de cursus is € 20,00 per persoon en voor aanvang van de cursus te storten op rekeningnr. NL98INGB0004627290 t.n.v. Protestantse Diaconie Amsterdam, wijk Osdorp – Sloten o.v.v. Leerhuis, God en het Kwaad.\n",
+      "Inschrijving is mogelijk tot 28 februari 2026. De cursus zal doorgaan bij minimaal 10 deelnemers.\n",
+      "Voor vragen en nadere informatie kunt u terecht bij Nel Gallouh. Email: ngallouh@msn.com\n"],
+      "description": [
+        "God, mensen en het kwaad.\n",
+        "Is er in god geweld? Is de mens schuldig of tragisch?\n",
+        "God is liefde en almachtig, zeggen christenen. Dat is niet vanzelfsprekend als we kijken naar onze huidige wereld met zijn vele kwaad dat mensen en volken elkaar aandoen.\n",
+        "Sommige feministische theologen zijn van mening dat er in God geweld is. Ze wijzen daarvoor op het patriarchale godsbeeld van mannen waarmee ze vrouwen onderdrukken.\n",
+        "De literatuurwetenschapper René Girard  stelt daarentegen dat dankzij Christus juist geen geweld in God is. En hoe moet je ons als mensen zien?\n",
+        "Zijn we schuldig aan ons kwaad of is de mens tragisch en overkomt het kwaad ons zoals de Griekse tragedies schetsen?\n",
+        "Op de genoemde vragen van God, mensen en het kwaad zullen we op vier avonden ingaan.\n",
+        "Verrassende theologische visies worden besproken.\n",
+        "\n",
+        "9 maart: De schuldige mens (Genesis 3) en de tragische mens ( Griekse tragedies).\n",
+        "16 maart: Geweld in het Oude Testament; een patriarchaal godsbeeld?\n",
+        "23 maart: in God is geen geweld: Job. \n",
+        "30 maart: In God is geen geweld: 1. René Girard: de zondebok 2. Een praktische theodicee.\n",
+        "\n",
+        "Wessel Stoker is oud-predikant van Osdorp en Sloten.\n",
+        "Hij doceerde godsdienstfilosofie en esthetica aan de Vrije Universiteit.\n",
+        "Hij publiceerde tal van boeken en artikelen op het gebied van de godsdienstfilosofie en esthetica, o.a. God opnieuw verbeeld: een theologische kunstbeschouwing (3e druk 2024).\n",
+        "Samen met Caroline Vander Stichele is hij de redacteur van een boek over kunst, religie en de klimaatcrisis, dat in 2026 verschijnt.\n",
+        "Website: wesselstoker.eu\n",
+        "\n",
+        "Voor inschrijving en betaling zie bijdrage.\n",
+        "\n"
+      ],
+      "led_by": "Wessel Stoker",
+      "location": "De Opgang, Tussenmeer 68",
+      "email": "ngallouh@msn.com",
+      "image": "zondebok.png",
+      "starting_date": "2026-03-09",
+      "closing_date": "2026-03-30",
+      "itemId": "LA-AC37",
+      "cat": "cursus"
+    },
+    {
+      "id": 37,
+      "title": "Leesproject voor zwart en wit",
+      "date": {
+        "day": "Vrijdag",
+        "dates": ["2026-02-20", "2026-03-20", "2026-04-17", "2026-05-15"]
+      },
+      "time": "19.30-21.30 uur",
+      "contribution": "Gratis (vrije bijdrage donatie welkom)",
+      "description": [
+        "Gesprekken tussen mensen met een verschillende historische achtergrond kunnen heilzaam zijn. Dat is de bedoeling van het samen leren van de geschiedenis van het koloniale en slavernij-verleden. En van het met elkaar bespreken van de doorwerking ervan tot op de dag van vandaag.\n",
+        "Wij, de dominee van de Evangelische Broeder Gemeente in de Koningskerk en de dominee van de protestantse Muiderkerk, hebben inmiddels een paar jaar ervaring met respectvolle ontmoetingen.\n",
+        "Boeken of artikelen dienen als uitgangspunt.\n",
+        "Dit seizoen lezen we hoofdstukken uit het boek van Herman Vuijsje: God zij met ons Suriname. Religie als vloek en zegen.\n",
+        "Aanschaf van het boek is aanbevolen, maar wie het niet heeft kan tegen betaling een kopie krijgen.\n",
+        "Bedoeling is dat deelnemers zoveel mogelijk alle vier keren komen.",
+        "\n"
+      ],
+      "led_by": "Clifton Walker en Greteke de Vries",
+      "location": "Koningskerk, Ostwaldstraat 1",
+      "email": "cliftonwalker@ebga.nl",
+      "image": "herman_vuijsje.png",
+      "starting_date": "2026-02-20",
+      "closing_date": "2026-05-15",
+      "itemId": "LA-AC38",
+      "cat": "cursus"
+    },
+     
+    {
+      "id": 38,
+      "title": "Hoe zijn we kerk in tijden van oorlog?",
+      "date": {
+        "day": "Dinsdag",
+        "dates": ["2026-03-31"]
+      },
+      "time": "19.30-22.00 uur",
+      "contribution": "Gratis (vrije bijdrage donatie welkom, bv €5,-)",
+      "description": [
+        "Een kerkelijk gesprek over hoe je kerk bent in tijden van oorlog, of: wat het betekent om christen te zijn in een situatie van grote escalatie?\n\n",
+        "Na de oorlog in Oekraïne dwingt ook de huidige oorlog in het Midden-Oosten ons, christenen en kerken, met elkaar in gesprek te gaan. Het ene (Iraanse) kerklid juicht over het doden van de top van het regiem waarvoor het gevlucht is, een ander kerklid stemt in met de geweldsactie van Israël en de VS omdat Iran de vijand van Israël is, een derde organiseert een demonstratie bij de Amerikaanse ambassade uit protest tegen het terzijde schuiven van internationale afspraken, een vierde ziet geen verantwoordelijkheid voor zichzelf, een vijfde voelt zich als verlamd vanwege de duivelse dilemma’s.\n\n",
+        "We constateren allemaal: het recht van de sterkste regeert, instituties die conflicten moeten reguleren hebben hun gezag verloren, de wereld is nog onveiliger geworden, het leed van burgers in de oorlogsgebieden is onvoorstelbaar groot en onze aarde wordt te grote schade berokkend. Om wanhopig van te worden. Maar daaraan móeten we voorbij! Dat doen we door een gesprek te organiseren rond de vraag: wat betekent het om christen te zijn in deze situatie van grote escalatie? Welke positie neem je in? Hoe kom je je machteloosheid voorbij?\n\n",
+        "Kom hierover praten met: ds Bram Grandia, die vanuit zijn christelijk gemotiveerde radicale keuze voor pacifisme en geweldloosheid uiterst kritisch is op de nieuwe wereldorde zoals die zich aan het ontwikkelen is, en met ds Gert van der Ende, die als (net gepensioneerd) hoofdlegerpredikant vanuit dat perspectief veel heeft nagedacht over oorlog en vrede.\n\n",
+        "Bram Grandia (predikant in de Keizersgrachtkerk in de jaren ’80 en al 50 jaar lid van Kerk en Vrede) geeft een Bijbelse onderbouwing voor zijn radicale keuze voor pacifisme en geweldloosheid en betoogt dat oorlog een probleem is, geen oplossing. Oorlogsretoriek brengt onheil over de wereld. Jezus roept op de vijand lief te hebben – en dat roept én sympathie én weerstand op. \n\n",
+        "Hoofdkrijgsmachtpredikant b.d. Gert van der Ende verkent met ons de klassieke en weer springlevende mantra ‘als je vrede wilt, bereid je dan voor op oorlog’.  Hij neemt ons mee in een theologische verkenning van de spanning tussen de realiteit van oorlog en het Evangelie dat vrede verkondigt – van de ‘rechtvaardige oorlog’ van Augustinus tot aan onze mentale weerbaarheid.\n\n",
+        "De sprekers gaan met elkaar in gesprek en natuurlijk is er ruimte voor vragen vanuit de zaal.\n\n",
+        "De zaal gaat open om 19.00 uur. Graag je komst aanmelden (afhankelijk van aantal aanmeldingen zal het gesprek plaats vinden in de kerkzaal, dan wel de tuinzaal)"
+      ],
+      "led_by": "Rijk van Ark",
+      "location": "Keizersgrachtkerk, Keizersgracht 566",
+      "email": "leerhuisamsterdam@gmail.com",
+      "image": "kiezenvoorvrede.png",
+      "starting_date": "2026-03-31",
+      "closing_date": "2026-03-31",
+      "itemId": "LA-AC39",
+      "cat": "gesprek"
+    },
+    {
+      "id": 39,
+      "title": "Bijbels Leerhuis",
+      "date": {
+        "day": "Donderdag",
+        "dates": ["2026-03-26","2026-04-09","2026-04-23","2026-05-28","2026-06-25"]
+      },
+      "time": "14.00-16.00 uur",
+      "contribution": "Vrijwillge bijdrage",
+      "description": [
+        "Wout van der Spek en Gerben van Manen gaan met de deelnemers een psalm lezen met daarnaast de hertaling van de betreffende psalm van Huub Oosterhuis en een gedicht van Karel Eykman bij dezelfde psalm.\n",
+        "De eerste keer psalm 1 en 2. Voor teksten wordt gezorgd."
+      ],
+      "led_by": "Wout van der Spek en Gerben van Manen",
+      "location": "Muiderkerk, Linnaeusstraat 37",
+      "email": "leerhuisamsterdam@gmail.com",
+      "image": "psalmen.jpg",
+      "starting_date": "2026-03-26",
+      "closing_date": "2026-06-25",
+      "itemId": "LA-AC40",
+      "cat": "cursus"
+    }
+]
+}

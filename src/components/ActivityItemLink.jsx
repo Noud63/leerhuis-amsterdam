@@ -8,7 +8,7 @@ const ActivityItemLink = ({act}) => {
                 to={
                   act.itemId === "LA-AC19"
                     ? `polarisatie`
-                    : `calendaritem/${act.id}`
+                    : `calendaritem/${act.itemId}`
                 }
               >
                 <button

@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./pages/Layout"
 import './index.css'
-import Archief, {archiveLoader} from "./pages/Archief"
+import Archief from "./pages/Archief"
+import Archive2627, {archiveLoader} from "./components/Archive2627"
 import Root from './components/Root';
 import CalendarItem from './pages/CalendarItem';
 import OveronsPage from "./pages/OveronsPage";
@@ -48,7 +49,7 @@ const router = createBrowserRouter([
             },
           },
           {
-            path: "/allactivities/calendaritem/:calendaritem_id",
+            path: "/allactivities/calendaritem/:itemId",
             element: <CalendarItem />,
           },
            {
@@ -56,11 +57,11 @@ const router = createBrowserRouter([
             element: <PodiumItem />,
           },
           {
-            path: "/allactivities/calendaritem/:calendaritem_id/subscribe/:id",
+            path: "/allactivities/calendaritem/:itemId/subscribe/:id",
             element: <Subscribe />,
           },
           {
-            path: "/allactivities/calendaritem/:calendaritem_id/subscribe/:id/contactform",
+            path: "/allactivities/calendaritem/:itemId/subscribe/:id/contactform",
             element: <ContactForm />,
           },
           {
@@ -108,15 +109,15 @@ const router = createBrowserRouter([
         element: <Podiumvoorvrienden />,
       },
       {
-        path: "/calendaritem/:calendaritem_id",
+        path: "/calendaritem/:itemId",
         element: <CalendarItem />,
       },
       {
-        path: "/calendaritem/:calendaritem_id/subscribe/:id",
+        path: "/calendaritem/:itemId/subscribe/:id",
         element: <Subscribe />,
       },
       {
-        path: "/calendaritem/:calendaritem_id/subscribe/:id/contactform",
+        path: "/calendaritem/:itemId/subscribe/:id/contactform",
         element: <ContactForm />,
       },
       {
@@ -137,15 +138,15 @@ const router = createBrowserRouter([
         element: <AktueelPage />,
       },
       {
-        path: "/aktueelpage/calendaritem/:calendaritem_id",
+        path: "/aktueelpage/calendaritem/:itemId",
         element: <CalendarItem />,
       },
       {
-        path: "/aktueelpage/calendarItem/:calendaritem_id/subscribe/:id",
+        path: "/aktueelpage/calendarItem/:itemId/subscribe/:id",
         element: <Subscribe />,
       },
       {
-        path: "/aktueelpage/calendarItem/:calendaritem_id/subscribe/:id/contactform",
+        path: "/aktueelpage/calendarItem/:itemId/subscribe/:id/contactform",
         element: <ContactForm />,
       },
       {
@@ -154,7 +155,7 @@ const router = createBrowserRouter([
         element: <Archief />,
       },
       {
-        path: "/archief/calendarItem/:calendaritem_id",
+        path: "/archief/calendarItem/:itemId",
         element: <CalendarItem />,
       },
       {

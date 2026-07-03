@@ -38,17 +38,22 @@ const OveronsPage = () => {
                     </p>
                   </div>
 
-                <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full mt-4 prose-lg">
+                <div className="w-full flex flex-col max-w-[900px] max-lg:w-full max-xxl:w-full mt-4 prose-lg">
+
                     <SectionTitle
                       className="flex justify-center flex-row font-normal mb-4 gap-2 tracking-wide max-xxsm:items-center 
                      py-1 max-xxsm:flex-col max-xxsm:gap-0"
                     >
-                      <span>Jaarthema 2025-2026 :</span>
-                      <span>De (wan)hoop nabij</span>
+                      <span>Jaarthema 2025-2027 :</span>
+                      <span>Zie de mens</span>
                     </SectionTitle>
-                    <p>De wanhoop nabij! Het is een uitroep die velen vandaag herkennen – in gesprekken over de verwording van onze samenleving, de klimaatcrises, oorlog en ontmenselijking, de snelle ontwikkeling van AI, gevoelens over het eind der tijden en ook chaos in persoonlijke levens. Deze wanhoop nemen we serieus. Wat is er aan de hand, om wie maken we ons zorgen, wat doet wanhoop met ons geloof? We stellen ook de vraag: wat als politieke verdeeldheid, geestelijke leegte, economische ongelijkheid, een kerk in krimpstand geen teken is van mislukking, maar het begin van iets nieuws, iets echts?</p>
-                    <p>In drie interactieve bijeenkomsten, een lezingenreeks en een middagje zingen stellen we wanhoop niet tegenover hoop, maar proberen we haar te zien als een doorgang. De Bijbel leert ons om niet te vluchten in gemakkelijke antwoorden, maar om dwars door de afgrond heen te gaan – en daarin een geloof te vinden dat niet draait om succes, zekerheid of troost, maar om waarheid, kwetsbaarheid en bevrijding. Echte hoop komt ons nabij wanneer we onze schijnbare zekerheden durven loslaten. Omdat geloof niet betekent: “alles komt goed”, maar: “zelfs als alles uit elkaar valt, ben ik niet alleen”.</p> 
-                     <p>De cyclus 'De (wan)hoop nabij' wordt mogelijk gemaakt met steun van het <a href="https://protestantsekerk.nl/onderwerp/kerk-en-wereld/"  target="_blank" rel="noopener" style={{textDecoration:"underline"}}>Fonds Kerk en Wereld.</a></p>
+
+                    <header className="text-lg mb-3">Hoe kunstmatige intelligentie de mens kan dienen en niet andersom</header>
+                    <span className="w-fit mb-3 font-semibold border-b border-black">Inleiding:</span>
+                    <span className="mb-3">Hoe behouden we menselijke waardigheid en sociale rechtvaardigheid nu digitalisering en met name kunstmatige intelligentie – of artificial intelligence (AI) – zich alsmaar sneller ontwikkelen? Daarover gaat de encycliek ‘Magnifica Humanitas. Schitterende mensheid’ (2026) van paus Leo XIV. We laten ons daardoor inspireren voor ons jaarthema in het seizoen 2026-2027: ‘Zie de mens’. </span>
+                    <span className="mb-3">Mensen zijn geschapen en gezegend door God, maar kunnen ook doorslaan in zelfoverschatting. De paus wil de razendsnelle opkomst van kunstmatige intelligentie theologisch doordenken vanuit de sociale leer van de Rooms-Katholieke kerk, vanuit menselijke relaties en hun recht op ontwikkeling op alle terreinen van het leven. Technologie kan daaraan bijdragen en daarmee God eren en de liefde dienen. Maar het kan ook leiden tot ontmenselijking, verdeeldheid of uitsluiting. Want technologie, zoals AI, is niet neutraal: het vertegenwoordigt de waarden van de mensen die het ontwikkelen en gebruiken. De paus staat stil bij de morele consequenties van AI op menselijke relaties, (het manipuleren van) de waarheid, de arbeidsmarkt, oorlog en vrede, ecologie, machtsverhoudingen en het ‘perfectioneren’ van de mens. </span> 
+                     <span>Met het nieuwe jaarthema wil het Leerhuis het gesprek in de Amsterdamse kerken stimuleren over de huidige digitale revolutie, die een nieuwe fase inluidt in de wereldsamenleving waarvan wij deel uitmaken. Hoe kan kunstmatige intelligentie de mens dienen en niet andersom? We bereiden vier bijeenkomsten voor, waarvan één uitmondt in een cursus. Het programma is nog in ontwikkeling. Houd onze website in de gaten voor nieuwe informatie en aangevulde data!</span>
+                     <img src="/images/paus_ai.jpg" alt="" />
                   </div>
                  
                   <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full mt-8">
