@@ -29,10 +29,12 @@ const Contact = ({forwardUrl}) => {
               voorstel?
               
             </span>
-            <span className="text-lg font-semibold text-orange-700 "></span>
-            <span className="">Bel naar: 06 10325127</span>
+            <div className="flex flex-col gap-1 mt-2 ">
+             <span className="">Bel naar: 06 10325127</span>
             <span className="">Mail naar: leerhuisamsterdam@gmail.com</span>
             <span className="mb-2">Of klik op onderstaande link:</span>
+            </div>
+           
             <Link to="/contactform" className="mt-12 max-xxl:mt-4">
               <button
                 type="button"
@@ -46,7 +48,7 @@ const Contact = ({forwardUrl}) => {
 
         <div className="map_box h-[440px] w-1/2 bg-white max-xxl:w-full z-10">
           <Map />
-          <div className="w-full flex justify-start text-gray-700 bg-stone-100 p-2 border-b border-stone-400">
+          <div className="w-full flex justify-start text-white p-2 bg-gradient-to-r from-red-950 via-yellow-800 to-red-950 ">
             * Locatie Leerhuis Amsterdam
           </div>
         </div>

@@ -23,7 +23,7 @@ const Header = ({showMenuOverlay}) => {
         >
        <div
          className="w-full max-w-[2000px] h-[30px] flex justify-center items-center text-sm text-white/90 tracking-wider
-         bg-gradient-to-r from-black via-yellow-800 to-black"
+         bg-[linear-gradient(to_right,_theme(colors.black),_theme(colors.red.950),_theme(colors.yellow.700),_theme(colors.red.950),_theme(colors.black))]"
          >
          <span>Leerhuis Amsterdam - voor zinvol samenleven</span>
          </div>

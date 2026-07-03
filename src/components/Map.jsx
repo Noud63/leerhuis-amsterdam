@@ -28,7 +28,7 @@ const Map = () => {
     >
       <TileLayer
         attribution='<a href="https://www.openstreetmap.org">&copy; OpenStreetMap</a>'
-        url="https://api.mapbox.com/styles/v1/noud/cjv7mpqox0hps1fs1tzwk9fgx/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoibm91ZCIsImEiOiJjanYyY205MjExbW82M3ptMjVxd21ma2w2In0.rpsoE0GNWh9fWdkNikufxg"
+        url="https://api.mapbox.com/styles/v1/noud/cmlkufksc007201r81z3s3vtu/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoibm91ZCIsImEiOiJjanYyY205MjExbW82M3ptMjVxd21ma2w2In0.rpsoE0GNWh9fWdkNikufxg"
       />
       <Marker position={positionMarker} icon={icon}></Marker>
     </MapContainer>
