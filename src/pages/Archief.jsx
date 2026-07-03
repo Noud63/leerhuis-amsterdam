@@ -16,23 +16,14 @@ export const archiveLoader = () => {
 
 const Archief = () => {
   const data = useLoaderData();
-
-  console.log("Archives:", archives);
-
-  const archive2627 = data.slice(39, data.length);
-
+  
   const archive_2627 = useMemo(
     () =>
-      (archive2627 || [])
+      (data || [])
         .slice()
         .sort((a, b) => new Date(a.date) - new Date(b.date)),
-    [archive2627],
+    [data],
   );
-
-  //const archive24 = data.slice(0, -10); // 10 aantal activiteiten van jan - jun 2024
-  const archive24 = ascendingOrder(archief_24.activities || []);
-  const archive2425 = ascendingOrder(archief_2425.activities || []);
-  const archive2526 = ascendingOrder(archief_2526.activities || []);
 
   const url = useLocation().pathname;
 
@@ -56,14 +47,15 @@ const Archief = () => {
           </div>
         </div>
 
-        {archives.map((archive) => (
-          <div className="actueel_info h-auto bg-white px-8 pt-8 rounded-xl max-xxxsm:px-4 pb-8 mb-8">
+        {archives.map((archive, index) => (
+          <div className="actueel_info h-auto bg-white px-8 pt-8 rounded-xl max-xxxsm:px-4 pb-8 mb-8" key={index}>
             <div className="w-full flex flex-row justify-between items-center max-xxsm:flex-col max-xxsm:items-start border-b border-black pb-2 mb-8">
               <span className="text-[20px] font-semibold  text-black tracking-wide">
                 # {archive.title}
               </span>
               <span>
-                ({archive.activities.length > 0 ? archive.activities.length : 0} activiteiten)
+                ({archive.activities.length > 0 ? archive.activities.length : 0}{" "}
+                activiteiten)
               </span>
             </div>
 

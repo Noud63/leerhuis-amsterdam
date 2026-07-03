@@ -9,6 +9,7 @@ export const archiveLoader = () => {
 const Archive2627 = () => {
   const data = useLoaderData();
 
+
   const archive2627 = data.slice(39, data.length);
 
   const archive_2627 = useMemo(
