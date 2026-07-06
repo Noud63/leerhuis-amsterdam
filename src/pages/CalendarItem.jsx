@@ -28,7 +28,7 @@ const CalendarItem = () => {
  const item = activities.activities.find(
   activity => activity.itemId === itemId
 );
-
+  console.log("ITEM:", item);
   const givenDate = new Date(item.closing_date).getTime() + 86400000;
   const now = new Date().getTime();
 

@@ -1,6 +1,6 @@
 {
   "activities": [
-   {
+    {
       "id": 0,
       "title": ["Groen geloven, ", "Inspiratiemiddag"],
       "title_long": [
@@ -1063,10 +1063,12 @@
         "dates": ["2026-03-09", "2026-03-16", "2026-03-23", "2026-03-30"]
       },
       "time": "19.45 – 21.45 uur",
-      "contribution": ["Inschrijving voor de cursus kan per email bij Nel Gallouh (ngallouh@msn.com) onder vermelding van naam, adres, emailadres en God en het kwaad.\n",
-      "De bijdrage voor de cursus is € 20,00 per persoon en voor aanvang van de cursus te storten op rekeningnr. NL98INGB0004627290 t.n.v. Protestantse Diaconie Amsterdam, wijk Osdorp – Sloten o.v.v. Leerhuis, God en het Kwaad.\n",
-      "Inschrijving is mogelijk tot 28 februari 2026. De cursus zal doorgaan bij minimaal 10 deelnemers.\n",
-      "Voor vragen en nadere informatie kunt u terecht bij Nel Gallouh. Email: ngallouh@msn.com\n"],
+      "contribution": [
+        "Inschrijving voor de cursus kan per email bij Nel Gallouh (ngallouh@msn.com) onder vermelding van naam, adres, emailadres en God en het kwaad.\n",
+        "De bijdrage voor de cursus is € 20,00 per persoon en voor aanvang van de cursus te storten op rekeningnr. NL98INGB0004627290 t.n.v. Protestantse Diaconie Amsterdam, wijk Osdorp – Sloten o.v.v. Leerhuis, God en het Kwaad.\n",
+        "Inschrijving is mogelijk tot 28 februari 2026. De cursus zal doorgaan bij minimaal 10 deelnemers.\n",
+        "Voor vragen en nadere informatie kunt u terecht bij Nel Gallouh. Email: ngallouh@msn.com\n"
+      ],
       "description": [
         "God, mensen en het kwaad.\n",
         "Is er in god geweld? Is de mens schuldig of tragisch?\n",
@@ -1127,7 +1129,7 @@
       "itemId": "LA-AC37",
       "cat": "cursus"
     },
-     
+
     {
       "id": 37,
       "title": "Hoe zijn we kerk in tijden van oorlog?",
@@ -1161,7 +1163,13 @@
       "title": "Bijbels Leerhuis",
       "date": {
         "day": "Donderdag",
-        "dates": ["2026-03-26","2026-04-09","2026-04-23","2026-05-28","2026-06-25"]
+        "dates": [
+          "2026-03-26",
+          "2026-04-09",
+          "2026-04-23",
+          "2026-05-28",
+          "2026-06-25"
+        ]
       },
       "time": "14.00-16.00 uur",
       "contribution": "Vrijwillge bijdrage",
@@ -1177,6 +1185,129 @@
       "closing_date": "2026-06-25",
       "itemId": "LA-AC39",
       "cat": "cursus"
+    },
+    {
+      "id": 0,
+      "title": ["Seks, God en Foucault"],
+      "date": {
+        "day": "Dinsdag",
+        "dates": [
+          "2026-02-17",
+          "2026-03-10",
+          "2026-03-31",
+          "2026-04-21",
+          "2026-05-12",
+          "2026-06-02"
+        ]
+      },
+      "time": "19:30 uur, inloop vanaf 19:00 uur",
+      "location": "OKP30, Oudekerksplein 30A",
+      "contribution": "n.v.t.",
+      "description": [
+        "In deze zesdelige serie staat het postuum verschenen boek ‘Bekentenissen van het vlees’ van Michel Foucault centraal.\n",
+        "Foucault onderzoekt hoe vroege Christelijke denkers en kerkvaders het spreken over seks, genot, ascese en bekentenis vormgaven, en hoe deze denkbeelden diep hebben ingegrepen in het Westerse begrip van subjectiviteit, moraal en lichaam.\n",
+        "Samen met theoloog en filosoof Marc De Kesel wordt dit gedachtegoed gelezen, besproken en verbonden met theologische tradities en hedendaagse vragen rond seksualiteit en geloof.\n",
+        "\n",
+        "Programma:\n",
+        "Dinsdag 17 februari: Inleiding op Foucaults 'Bekentenissen van het vlees'\n",
+        "Kennismaking met 'Bekentenissen van het vlees'.\n",
+        "Waarom eindigt Foucault zijn Geschiedenis van de seksualiteit bij het vroege Christendom? Over macht, waarheid en het ontstaan van het bekennende subject.",
+        "\n",
+        "Dinsdag 10 maart: 'Kerkvaders en seksuele ethiek'\n",
+        "Hoe dachten kerkvaders als Augustinus en Clemens van Alexandrië over seks, huwelijk en onthouding? Seksualiteit als moreel vraagstuk en spirituele oefening.\n",
+        "\n",
+        "Dinsdag 31 maart: 'Genot, ascese en zelfonderzoek'\n",
+        "Waarom werd genot niet alleen beperkt, maar ook eindeloos geanalyseerd? Over vasten, kuisheid, begeerte en de zorg voor de ziel.\n",
+        "\n",
+        "Dinsdag 21 april: 'Bekentenis en waarheid'\n",
+        "De opkomst van biecht, zelfonderzoek en spreken over het innerlijk. Hoe het vlees een plaats wordt, waar waarheid over het zelf geproduceerd moet worden.\n",
+        "\n",
+        "Dinsdag 12 mei: 'Seksualiteit, macht en subjectiviteit'\n",
+        "Foucault's analyse van macht: niet als verbod, maar als vorming. Wat betekent dit voor onze moderne ideeën over vrijheid, identiteit en verlangen?\n",
+        "\n",
+        "Dinsdag 2 juni: 'God, lichaam en hedendaagse seksualiteit'",
+        "Slotavond met reflectie: wat kunnen theologie en filosofie vandaag nog met Foucault's analyse? Over religie, intimiteit en de toekomst van het spreken over het vlees.\n",
+        "\n",
+        "Elke avond bestaat uit een inleiding door Marc De Kesel, gevolgd door gesprek en discussie.\n",
+        "Graag tijdig aanmelden via: info@wallenbuurt.amsterdam\n",
+        "De maximale capaciteit bedraagt 20 personen.",
+        "\n"
+      ],
+      "led_by": "Marc de Kesel",
+      "email": "info@wallenbuurt.amsterdam",
+      "image": "sexgodfoucault.png",
+      "starting_date": "2026-02-17",
+      "closing_date": "2026-06-02",
+      "itemId": "P_01"
+    },
+    {
+      "id": 1,
+      "title": ["Bergmanfestival: film, theater en interpretatie"],
+      "date": {
+        "day": "Donderdag",
+        "dates": ["2026-02-12", "2026-03-26", "2026-03-31", "2026-04-09"]
+      },
+      "time": "19.30 uur, inloop vanaf 19.00 uur",
+      "location": "OKP30, Oudekerksplein 30A",
+      "contribution": "n.v.t.",
+      "description": [
+        "Programma donderdag 12 februari:\n",
+        "- Inleiding over de ontvangst van Bergmans films in Nederland\n",
+        "- Focus op de jaren ’50 en ’60 en het promotie-aspect\n",
+        "- Filmvertoning\n",
+        "Vragen & Antwoorden met de inleider na afloop\n",
+        "De eerste film: 'De Avondmaalsgasten', met inleiding en interactieve nabespreking door Frank Blaakmeer, gepromoveerd op het werk van Ingmar Bergman.",
+        "\n",
+        "Programma donderdag 26 maart:\n",
+        "- Inleiding over vrouwenrollen en morele thematiek\n",
+        "- Filmvertoning\n",
+        "- Vragen & Antwoorden met de inleider na afloop\n",
+        "De tweede film: 'De Maagdenbron', met inleiding over vrouwenrollen en morele thematiek door Petra Broomans, emeritus hoogleraar Scandinavistiek aan de Rijksuniversiteit Groningen.",
+        "\n",
+        "Programma donderdag 9 april:\n",
+        "- Bespreking van de toneeluitvoering\n",
+        "- Analyse van derol van Agnes\n",
+        "- Filmvertoning\n",
+        "- Vragen & Antwoorden met de inleider na afloop\n",
+        "De derde film: 'Kreten en Gefluister', met inleiding en interactieve nabespreking door Chris Nietvelt, actrice en winnaar van een Theo d’Or.",
+        "\n",
+        "Tijdig aanmelden: via info@wallenbuurt.amsterdam\n",
+        "\n"
+      ],
+      "led_by": "Frank Blaakmeer, Petra Broomans, Chris Nietvelt",
+      "email": "info@wallenbuurt.amsterdam",
+      "image": "bergman.png",
+      "starting_date": "2026-02-12",
+      "closing_date": "2026-04-09",
+      "itemId": "P_02"
+    },
+    {
+      "id": 2,
+      "title": ["Making Love / Church of Contradiction"],
+      "date": {
+        "day": "Zaterdag",
+        "dates": ["2026-01-28"]
+      },
+      "time": "20.00 - 22:00 uur",
+      "location": "Thomaskerk, Prinses Irenestraat 36",
+      "contribution": "Gratis aanmelding",
+      "description": [
+        "Op 28 januari presenteert The Contradiction Company de filmvertoning Making Love van kunstenaar Helen Rollins in de Thomaskerk.\n",
+        "De avond vormt het begin van een nieuwe samenwerking tussen Contradiction Company en de Oude Kerkgemeenschap, de Thomaskerkgemeenschap, de Muiderkerkgemeenschap en het Leerhuis Amsterdam, waarin hedendaagse kunst en maatschappelijke reflectie elkaar ontmoeten.",
+        "\n",
+        "Making Love is een filmisch werk waarin verschillende artistieke stemmen samenkomen.\n",
+        "Het werk onderzoekt vormen van nabijheid, intimiteit en betekenisgeving, en creëert ruimte voor ontmoeting en uitwisseling.\n",
+        "De vertoning vindt plaats op een plek die traditioneel gewijd is aan gemeenschap en gaat een dialoog aan met de hedendaagse kunstpraktijk.\n",
+        "De avond markeert het begin van een bredere dialoog tussen kunstenaars en kerkelijke gemeenschappen, waarin kunst wordt ingezet als middel om nieuwe gesprekken te openen en bestaande kaders te bevragen.",
+        "\n"
+      ],
+      "link": "https://dethomas.nl/activiteiten/making-love-church-of-contradiction/",
+      "led_by": "Helen Rollins, Astrid Elburg, Jasmijn Dijkman, Dimitri Crooijmans en Jozua Ros",
+      "email": "info@dethomas.nl",
+      "image": "makinglove.png",
+      "starting_date": "2026-01-28",
+      "closing_date": "2026-01-28",
+      "itemId": "P_03"
     },
     {
       "id": 39,
@@ -1218,8 +1349,8 @@
       "contribution": "Vrijwillge bijdrage, richtlijn €10,-",
       "description": [
         "Eerste bijeenkomst in de serie ‘Zie de mens’\n",
-         "Cultuurtheoloog dr. Frank Bosman van Tilburg University gaat met ons in gesprek over de theologische vragen en morele argumenten die de pauselijke encycliek Magnifica Humanitas aansnijdt. De achterliggende vraag is: hoe geven we in kerken vorm aan moreel beraad hierover, als we niet in een kramp willen schieten, maar ook de dienende mogelijkheden van AI willen leren kennen?\n\n",
-"Contactpersoon: Gerben van Manen, 06 83650662"
+        "Cultuurtheoloog dr. Frank Bosman van Tilburg University gaat met ons in gesprek over de theologische vragen en morele argumenten die de pauselijke encycliek Magnifica Humanitas aansnijdt. De achterliggende vraag is: hoe geven we in kerken vorm aan moreel beraad hierover, als we niet in een kramp willen schieten, maar ook de dienende mogelijkheden van AI willen leren kennen?\n\n",
+        "Contactpersoon: Gerben van Manen, 06 83650662"
       ],
       "led_by": "Dr. Frank Bosman",
       "location": "Muiderkerk, Linnaeusstraat 37",
@@ -1254,7 +1385,7 @@
       "itemId": "LA-AC42",
       "cat": "cursus"
     },
-     {
+    {
       "id": 42,
       "title": "Ecologie, duurzaamheid en AI",
       "date": {
@@ -1277,7 +1408,7 @@
       "itemId": "LA-AC43",
       "cat": "cursus"
     },
-     {
+    {
       "id": 43,
       "title": "Een drone naar vrede: weg uit de systemen",
       "date": {

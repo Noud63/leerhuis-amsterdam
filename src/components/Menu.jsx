@@ -83,6 +83,8 @@ const Menu = ({ color, style, border }) => {
         </NavLink>
       </div>
 
+      
+
       <div className="flex justify-center">
         <NavLink
           to="/podiumvoorvrienden"

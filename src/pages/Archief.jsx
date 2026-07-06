@@ -5,9 +5,6 @@ import { useLoaderData } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import ActivityArchiefActueel from "../components/ActivityArchiefActueel";
 import { ascendingOrder } from "../utils/ascendingOrder";
-import archief_24 from "../archief_24.json";
-import archief_2425 from "../archief_2425.json";
-import archief_2526 from "../archief_2526.json";
 import archives from "../utils/getArchiveData";
 
 export const archiveLoader = () => {
@@ -16,12 +13,10 @@ export const archiveLoader = () => {
 
 const Archief = () => {
   const data = useLoaderData();
-  
+
   const archive_2627 = useMemo(
     () =>
-      (data || [])
-        .slice()
-        .sort((a, b) => new Date(a.date) - new Date(b.date)),
+      (data || []).slice().sort((a, b) => new Date(a.date) - new Date(b.date)),
     [data],
   );
 
@@ -48,22 +43,54 @@ const Archief = () => {
         </div>
 
         {archives.map((archive, index) => (
-          <div className="actueel_info h-auto bg-white px-8 pt-8 rounded-xl max-xxxsm:px-4 pb-8 mb-8" key={index}>
+          <div
+            className="actueel_info h-auto bg-white px-8 pt-8 rounded-xl max-xxxsm:px-4 pb-8 mb-8"
+            key={index}
+          >
             <div className="w-full flex flex-row justify-between items-center max-xxsm:flex-col max-xxsm:items-start border-b border-black pb-2 mb-8">
               <span className="text-[20px] font-semibold  text-black tracking-wide">
                 # {archive.title}
               </span>
               <span>
-                ({archive.activities.length > 0 ? archive.activities.length : 0}{" "}
+                (
+                {archive.activities[0]?.length > 0
+                  ? archive.activities[0].length
+                  : 0}{" "}
                 activiteiten)
               </span>
             </div>
 
             <div className="grid grid-cols-4 max-maxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8">
-              {archive.activities?.map((act) => (
+              {archive.activities[0]?.map((act) => (
                 <ActivityArchiefActueel key={act.id} act={act} url={url} />
               ))}
             </div>
+
+            {archive.activities[1] && (
+              <>
+                <div className="w-full flex flex-row justify-between items-center max-xxsm:flex-col max-xxsm:items-start border-b border-black pb-2 mb-8">
+                  <div className="flex flex-col text-[20px] font-semibold  text-black tracking-wide">
+                    # {archive?.subTitle}
+                    <span className="text-sm font-normal">
+                      (De activiteiten in dit archief vallen niet onder het
+                      Leerhuis)
+                    </span>
+                  </div>
+                  <span>
+                    (
+                    {archive.activities[1]?.length > 0
+                      ? archive.activities[1].length  
+                      : 0}{" "}
+                    activiteiten)
+                  </span>
+                </div>
+                <div className="grid grid-cols-4 max-maxxl:grid-cols-3 max-xl:grid-cols-2 max-xmd:grid-cols-1 gap-8">
+                  {archive.activities[1]?.map((act) => (
+                    <ActivityArchiefActueel key={act.id} act={act} url={url} />
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         ))}
       </div>
