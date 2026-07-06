@@ -106,8 +106,18 @@ return (
         <span>archief</span>
       </NavLink>
 
+<NavLink
+                to="/jaarthemapage"
+                className={({ isActive }) => [
+                  isActive
+            ? "border-b-2 border-black"
+            : "border-b-2 border-transparent"
+                ]}
+              >
+                <span>Jaarthema</span>
+              </NavLink>
      
-              <NavLink
+              {/* <NavLink
                 to="/podiumvoorvrienden"
                 className={({ isActive }) => [
                   isActive
@@ -116,7 +126,7 @@ return (
                 ]}
               >
                 <span>Podium voor vrienden</span>
-              </NavLink>
+              </NavLink> */}
             <div
       className="cursor-pointer flex justify-center"
       onClick={closeMenuOverlay}

@@ -68,7 +68,7 @@ const Archief = () => {
 
             {archive.activities[1] && (
               <>
-                <div className="w-full flex flex-row justify-between items-center max-xxsm:flex-col max-xxsm:items-start border-b border-black pb-2 mb-8">
+                <div className="w-full flex flex-row justify-between items-center max-xxmd:flex-col max-xxmd:items-start border-b border-black pb-2 mb-8">
                   <div className="flex flex-col text-[20px] font-semibold  text-black tracking-wide">
                     # {archive?.subTitle}
                     <span className="text-sm font-normal">

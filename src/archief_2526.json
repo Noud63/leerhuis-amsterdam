@@ -333,7 +333,7 @@
     },
     
     {
-      "id": 35,
+      "id": 34,
       "title": "Bijbels Leerhuis over Jozef en zijn familie",
       "date": {
         "day": "Donderdag",
@@ -361,11 +361,11 @@
       "image": "jozef_jacob.jpg",
       "starting_date": "2026-01-15",
       "closing_date": "2026-03-26",
-      "itemId": "LA-AC36",
+      "itemId": "LA-AC35",
       "cat": "cursus"
     },
     {
-      "id": 36,
+      "id": 35,
       "title": "God, mensen en het kwaad",
       "date": {
         "day": "Maandag",
@@ -406,11 +406,11 @@
       "image": "zondebok.png",
       "starting_date": "2026-03-09",
       "closing_date": "2026-03-30",
-      "itemId": "LA-AC37",
+      "itemId": "LA-AC36",
       "cat": "cursus"
     },
     {
-      "id": 37,
+      "id": 36,
       "title": "Leesproject voor zwart en wit",
       "date": {
         "day": "Vrijdag",
@@ -433,12 +433,12 @@
       "image": "herman_vuijsje.png",
       "starting_date": "2026-02-20",
       "closing_date": "2026-05-15",
-      "itemId": "LA-AC38",
+      "itemId": "LA-AC37",
       "cat": "cursus"
     },
      
     {
-      "id": 38,
+      "id": 37,
       "title": "Hoe zijn we kerk in tijden van oorlog?",
       "date": {
         "day": "Dinsdag",
@@ -462,11 +462,11 @@
       "image": "kiezenvoorvrede.png",
       "starting_date": "2026-03-31",
       "closing_date": "2026-03-31",
-      "itemId": "LA-AC39",
+      "itemId": "LA-AC38",
       "cat": "gesprek"
     },
     {
-      "id": 39,
+      "id": 38,
       "title": "Bijbels Leerhuis",
       "date": {
         "day": "Donderdag",
@@ -484,7 +484,7 @@
       "image": "psalmen.jpg",
       "starting_date": "2026-03-26",
       "closing_date": "2026-06-25",
-      "itemId": "LA-AC40",
+      "itemId": "LA-AC39",
       "cat": "cursus"
     }
 ]

@@ -1187,7 +1187,7 @@
       "cat": "cursus"
     },
     {
-      "id": 0,
+      "id": 39,
       "title": ["Seks, God en Foucault"],
       "date": {
         "day": "Dinsdag",
@@ -1241,7 +1241,7 @@
       "itemId": "P_01"
     },
     {
-      "id": 1,
+      "id": 40,
       "title": ["Bergmanfestival: film, theater en interpretatie"],
       "date": {
         "day": "Donderdag",
@@ -1282,7 +1282,7 @@
       "itemId": "P_02"
     },
     {
-      "id": 2,
+      "id": 41,
       "title": ["Making Love / Church of Contradiction"],
       "date": {
         "day": "Zaterdag",
@@ -1310,7 +1310,7 @@
       "itemId": "P_03"
     },
     {
-      "id": 39,
+      "id": 42,
       "title": "Sing along symposium",
       "date": {
         "day": "Zaterdag",
@@ -1339,7 +1339,7 @@
       "cat": "gesprek"
     },
     {
-      "id": 40,
+      "id": 43,
       "title": "De Encycliek en Moreel Beraad",
       "date": {
         "day": "Zaterdag",
@@ -1362,7 +1362,7 @@
       "cat": "cursus"
     },
     {
-      "id": 41,
+      "id": 44,
       "title": "Mens tussen natuur, ethiek en technologie",
       "date": {
         "day": "Dinsdag",
@@ -1386,11 +1386,11 @@
       "cat": "cursus"
     },
     {
-      "id": 42,
+      "id": 45,
       "title": "Ecologie, duurzaamheid en AI",
       "date": {
-        "day": "Dinsdag",
-        "dates": ["2027-01-23"]
+        "day": "Zaterdag",
+        "dates": ["2027-01-25"]
       },
       "time": "15:00-17.00 uur",
       "contribution": "Vrijwillge bijdrage, richtlijn €10,-",
@@ -1409,7 +1409,7 @@
       "cat": "cursus"
     },
     {
-      "id": 43,
+      "id": 46,
       "title": "Een drone naar vrede: weg uit de systemen",
       "date": {
         "day": "Donderdag",
@@ -1421,7 +1421,7 @@
         "Vierde bijeenkomst in de serie ‘Zie de mens’\n",
         "Rond Hemelvaart gaan we al dauwtrappend door het Oosterpark op zoek naar overwinning, langs zachte krachten, van kunst tot hagenpreek."
       ],
-      "led_by": "",
+      "led_by": "?",
       "location": "Muiderkerk, Linnaeusstraat 37",
       "email": "leerhuisamsterdam@gmail.com",
       "image": "oosterpark.jpg",

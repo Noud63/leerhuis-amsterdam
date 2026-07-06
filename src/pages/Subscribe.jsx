@@ -180,11 +180,7 @@ const Subscribe = () => {
             <div>
               <span className="font-semibold">Bijdrage : </span>
               {contributionTexts[
-                itemId === "LA-AC35"
-                  ? "gratis"
-                  : itemId === "LA-AC41" || itemId === "LA-AC42" || itemId === "LA-AC43" || itemId === "LA-AC44"
-                    ? "gesprek"
-                    : category
+               category
               ] || null}
             </div>
 

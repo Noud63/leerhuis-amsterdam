@@ -12,6 +12,7 @@ import PodiumItem from './pages/PodiumItem';
 import ContactForm from './pages/ContactForm';
 import ContactPage from './pages/ContactPage';
 import Polarisatie from "./pages/Polarisatie";
+import JaarThemaPage from './pages/JaarThemaPage';
 import PolarisatieCalendarItem from "./pages/PolarisatieCalenderItem"
 import ZakelijkPage from './pages/ZakelijkPage';
 import AktueelPage, { currentLoader } from "./pages/AktueelPage";
@@ -105,8 +106,8 @@ const router = createBrowserRouter([
         element: <OveronsPage />,
       },
       {
-        path: "/podiumvoorvrienden",
-        element: <Podiumvoorvrienden />,
+        path: "/jaarthemapage",
+        element: <JaarThemaPage />,
       },
       {
         path: "/calendaritem/:itemId",

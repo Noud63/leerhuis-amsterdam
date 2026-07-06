@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <div
-      className="w-full h-[550px] bg-gradient-to-r from-black via-yellow-900 to-black flex flex-row justify-around items-center relative pb-32 pt-12 
+      className="w-full h-[550px] bg-[linear-gradient(to_right,_theme(colors.black),_theme(colors.red.950),_theme(colors.yellow.800),_theme(colors.red.950),_theme(colors.black))] flex flex-row justify-around items-center relative pb-32 pt-12 
     max-footer:flex-col max-footer:pt-8 max-footer:h-[800px] max-xxsm:h-[850px]"
     >
       <div className="h-full flex-1 flex items-center justify-center max-footer:pt-8 max-footer:pb-10">

@@ -83,6 +83,17 @@ const Menu = ({ color, style, border }) => {
         </NavLink>
       </div>
 
+      <div className="flex justify-center">
+        <NavLink
+          to="/jaarthemapage"
+          className={({ isActive }) => [
+            isActive ? `${border}` : "border-b-2 border-none",
+          ]}
+        >
+          <span>Jaarthema</span>
+        </NavLink>
+      </div>
+
 
 
       {/* <div className="flex justify-center">
