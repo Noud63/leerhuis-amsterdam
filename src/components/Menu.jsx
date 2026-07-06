@@ -83,9 +83,9 @@ const Menu = ({ color, style, border }) => {
         </NavLink>
       </div>
 
-      
 
-      <div className="flex justify-center">
+
+      {/* <div className="flex justify-center">
         <NavLink
           to="/podiumvoorvrienden"
           className={({ isActive }) => [
@@ -94,7 +94,7 @@ const Menu = ({ color, style, border }) => {
         >
           <span>Podium voor vrienden</span>
         </NavLink>
-      </div>
+      </div> */}
     </div>
   );
 };
