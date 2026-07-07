@@ -28,7 +28,6 @@ const CalendarItem = () => {
  const item = activities.activities.find(
   activity => activity.itemId === itemId
 );
-  console.log("ITEM:", item);
   const givenDate = new Date(item.closing_date).getTime() + 86400000;
   const now = new Date().getTime();
 
@@ -123,14 +122,15 @@ const CalendarItem = () => {
               <div className="w-full pl-4 my-2">
                 <div className="font-bold">Datum :</div>
                 <div className="w-full flex flex-row flex-wrap">
-                  <span>{item.date.day}:&nbsp;</span>
+                  <span>{item.date.day}</span>
                   {item.date.dates.map((date, index) => (
                     <span key={index}>
-                      {new Date(date).toLocaleDateString("nl-NL", {
+                      {date !== Date() ? (<span>{date}</span>) : 
+                      (new Date(date)).toLocaleDateString("nl-NL", {
                         month: "long",
                         day: "numeric",
                       })}
-                      ,&nbsp;
+                      
                     </span>
                   ))}
                 </div>

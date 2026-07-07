@@ -102,7 +102,7 @@ const OveronsPage = () => {
                       We bereiden vier bijeenkomsten voor, waarvan één uitmondt
                       in een cursus. Het programma is nog in ontwikkeling. Houd
                       onze website in de gaten voor nieuwe informatie en
-                      aangevullende data!
+                      aanvullende data!
                     </span>
                   </div>
 

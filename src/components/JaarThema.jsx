@@ -49,7 +49,7 @@ const JaarThema = () => {
         kunstmatige intelligentie de mens dienen en niet andersom? We bereiden
         vier bijeenkomsten voor, waarvan één uitmondt in een cursus. Het
         programma is nog in ontwikkeling. Houd onze website in de gaten voor
-        nieuwe informatie en aangevullende data!
+        nieuwe informatie en aanvullende data!
       </span>
     </div>
   );

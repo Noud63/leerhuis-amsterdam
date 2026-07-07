@@ -1389,8 +1389,8 @@
       "id": 45,
       "title": "Ecologie, duurzaamheid en AI",
       "date": {
-        "day": "Zaterdag",
-        "dates": ["2027-01-25"]
+        "day": "",
+        "dates": ["Een zaterdagmiddag in januari 2027"]
       },
       "time": "15:00-17.00 uur",
       "contribution": "Vrijwillge bijdrage, richtlijn €10,-",
@@ -1403,10 +1403,10 @@
       "location": "Muiderkerk, Linnaeusstraat 37",
       "email": "a.nolet@freedom.nl",
       "image": "vanbingen.jpg",
-      "starting_date": "2027-01-23",
-      "closing_date": "2027-01-23",
+      "starting_date": "Een zaterdagmiddag in januari 2027",
+      "closing_date": "2027-01-25",
       "itemId": "LA-AC43",
-      "cat": "cursus"
+      "cat": "gesprek"
     },
     {
       "id": 46,

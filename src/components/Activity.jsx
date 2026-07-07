@@ -30,13 +30,12 @@ const Activity = ({ act }) => {
 
           <div className="w-full flex flex-col">
             <span className="font-semibold">Datum : </span>
-            {new Date(
-              act.itemId === "LA-AC22" ? act.closing_date : act.starting_date,
-            ).toLocaleDateString("nl-NL", {
+             {act.starting_date !== Date() ? <span>{act.starting_date}</span> :
+            (act.starting_date).toLocaleDateString("nl-NL", {
               month: "long",
               day: "numeric",
             })}
-            <br />
+  
           </div>
           <div className="w-full flex flex-col">
             {" "}
