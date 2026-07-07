@@ -1,10 +1,10 @@
 
-import Overons from './Overons'
+import OveronsHome from './OveronsHome'
 
 const Root = () => {
   return (
     <div className="mb-20">
-     <Overons />
+     <OveronsHome />
     </div>
   );
 }
