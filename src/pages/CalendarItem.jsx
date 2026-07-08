@@ -136,7 +136,7 @@ const isDate =
                {new Date(date).toLocaleDateString("nl-NL", {
                   month: "long",
                   day: "numeric",
-                })},
+                })}{index < item.date.dates.length - 1 && ","}
               </span>
             ) : (
               <span>{date}</span>
