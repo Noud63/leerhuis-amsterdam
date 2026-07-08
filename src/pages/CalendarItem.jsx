@@ -28,6 +28,12 @@ const CalendarItem = () => {
  const item = activities.activities.find(
   activity => activity.itemId === itemId
 );
+
+const isDate =
+    item.starting_date &&
+    item.starting_date !== "?" &&
+    !isNaN(Date.parse(item.starting_date));
+
   const givenDate = new Date(item.closing_date).getTime() + 86400000;
   const now = new Date().getTime();
 
@@ -119,21 +125,20 @@ const CalendarItem = () => {
                 </div>
               </div>
 
-              <div className="w-full pl-4 my-2">
-                <div className="font-bold">Datum :</div>
-                <div className="w-full flex flex-row flex-wrap">
-                  <span>{item.date.day}</span>
-                  {item.date.dates.map((date, index) => (
-                    <span key={index}>
-                      {date !== Date() ? (<span>{date}</span>) : 
-                      (new Date(date)).toLocaleDateString("nl-NL", {
-                        month: "long",
-                        day: "numeric",
-                      })}
-                      
-                    </span>
-                  ))}
-                </div>
+              <div className="flex flex-col w-full pl-4 my-2">
+               <div className="flex flex-col"><span className="font-semibold">Datum : </span>
+               <span>{item.date?.day} {isDate ? (
+              <span>
+                {new Date(item.starting_date).toLocaleDateString("nl-NL", {
+                  month: "long",
+                  day: "numeric",
+                })}
+              </span>
+            ) : (
+              <span>{item.starting_date}</span>
+            )}</span>
+               </div> 
+               
               </div>
 
               <div className="w-full pl-4 mb-2">

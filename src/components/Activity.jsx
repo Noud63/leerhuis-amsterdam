@@ -4,6 +4,11 @@ import ActivityItemLink from "./ActivityItemLink";
 import PodiumItemLink from "./PodiumItemLink";
 
 const Activity = ({ act }) => {
+  const isDate =
+    act.starting_date &&
+    act.starting_date !== "?" &&
+    !isNaN(Date.parse(act.starting_date));
+
   return (
     <div className="w-full min-h-full">
       <div className="calendar_item w-full h-full rounded-t-2xl bg-gradient-to-t from-stone-300 to-white flex flex-col justify-between relative">
@@ -29,13 +34,17 @@ const Activity = ({ act }) => {
           )}
 
           <div className="w-full flex flex-col">
-            <span className="font-semibold">Datum : </span>
-             {act.starting_date !== Date() ? <span>{act.starting_date}</span> :
-            (act.starting_date).toLocaleDateString("nl-NL", {
-              month: "long",
-              day: "numeric",
-            })}
-  
+            <span className="font-semibold">Datum :</span>{" "}
+            {isDate ? (
+              <span>
+                {new Date(act.starting_date).toLocaleDateString("nl-NL", {
+                  month: "long",
+                  day: "numeric",
+                })}
+              </span>
+            ) : (
+              <span>{act.starting_date}</span>
+            )}
           </div>
           <div className="w-full flex flex-col">
             {" "}
