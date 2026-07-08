@@ -125,20 +125,25 @@ const isDate =
                 </div>
               </div>
 
-              <div className="flex flex-col w-full pl-4 my-2">
-               <div className="flex flex-col"><span className="font-semibold">Datum : </span>
-               <span>{item.date?.day} {isDate ? (
+             <div className="w-full pl-4 my-2">
+                <div className="font-bold">Datum :</div>
+                <div className="w-full flex flex-row flex-wrap gap-1">
+                  {item.date.day && <span>{item.date.day}:</span>}
+                  {item.date.dates.map((date, index) => (
+                    <span key={index}>
+                       {isDate ? (
               <span>
-                {new Date(item.starting_date).toLocaleDateString("nl-NL", {
+               {new Date(date).toLocaleDateString("nl-NL", {
                   month: "long",
                   day: "numeric",
-                })}
+                })},
               </span>
             ) : (
-              <span>{item.starting_date}</span>
-            )}</span>
-               </div> 
-               
+              <span>{date}</span>
+            )}
+                    </span>
+                  ))}
+                </div>
               </div>
 
               <div className="w-full pl-4 mb-2">
