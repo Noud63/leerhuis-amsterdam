@@ -30,12 +30,12 @@ const Menu = ({ color, style, border }) => {
 
       <div className="flex justify-center">
         <NavLink
-          to="/contactpage"
+          to="/jaarthemapage"
           className={({ isActive }) => [
             isActive ? `${border}` : "border-b-2 border-none",
           ]}
         >
-          <span>Contact</span>
+          <span>Jaarthema</span>
         </NavLink>
       </div>
 
@@ -52,17 +52,6 @@ const Menu = ({ color, style, border }) => {
 
       <div className="flex justify-center">
         <NavLink
-          to="/zakelijkpage"
-          className={({ isActive }) => [
-            isActive ? `${border}` : "border-b-2 border-none",
-          ]}
-        >
-          <span>Aanmelden</span>
-        </NavLink>
-      </div>
-
-      <div className="flex justify-center">
-        <NavLink
           to="/aktueelpage"
           className={({ isActive }) => [
             isActive ? `${border}` : "border-b-2 border-none",
@@ -71,6 +60,8 @@ const Menu = ({ color, style, border }) => {
           <span>Deze week</span>
         </NavLink>
       </div>
+
+      
 
       <div className="flex justify-center">
         <NavLink
@@ -85,27 +76,25 @@ const Menu = ({ color, style, border }) => {
 
       <div className="flex justify-center">
         <NavLink
-          to="/jaarthemapage"
+          to="/zakelijkpage"
           className={({ isActive }) => [
             isActive ? `${border}` : "border-b-2 border-none",
           ]}
         >
-          <span>Jaarthema</span>
+          <span>Aanmelden</span>
         </NavLink>
       </div>
 
-
-
-      {/* <div className="flex justify-center">
+      <div className="flex justify-center">
         <NavLink
-          to="/podiumvoorvrienden"
+          to="/contactpage"
           className={({ isActive }) => [
             isActive ? `${border}` : "border-b-2 border-none",
           ]}
         >
-          <span>Podium voor vrienden</span>
+          <span>Contact</span>
         </NavLink>
-      </div> */}
+      </div>
     </div>
   );
 };

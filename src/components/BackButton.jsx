@@ -5,13 +5,9 @@ const BackButton = ({ url }) => {
   const navigate = useNavigate();
 
   const arr = url.split("/");
-
-  console.log("BackButton array:", arr)
  
   //Navigate back, remove last 2 elements from pathname array
   const newArr = arr.slice(1, -2).join(",").replace(/,/g, "/");
-
-  console.log("New array:", newArr)
 
   let path = "/";
   if (!(arr.length === 2 || arr.length === 3)) {
