@@ -31,7 +31,11 @@ const Layout = () => {
         <Footer />
       </div>
 
-      <MenuOverlay showMenu={showMenu} closeMenuOverlay={closeMenuOverlay} border="border-b-2 border-black" />
+      <MenuOverlay
+        showMenu={showMenu}
+        closeMenuOverlay={closeMenuOverlay}
+        border="border-b-2 border-black"
+      />
       <ScrollToTop />
     </div>
   );

@@ -1,9 +1,9 @@
+//Only use array with current and upcoming activities in this case db.json, the archief has it's own arrays of expired activities in db2.json and polarisatiedb.json. The db2.json is used for the archief page and the polarisatiedb.json is used for the polarisatie page.
 import activities from "../db.json"; //db.json is the main database of current and upcoming activities
-import polarisatie from "../polarisatiedb.json"
+import polarisatie from "../polarisatiedb.json";
 
 const now = new Date().getTime() - 86400000;
 const nextWeek = now + 604800000;
-
 
 // Filtered activities that are expired
 export const filteredExpiredActivities = [];
@@ -13,32 +13,31 @@ const filterActivitiesInThePast = () => {
   activities.activities.forEach((act) => {
     if (new Date(act.closing_date).getTime() < now) {
       filteredExpiredActivities.push({
-          id: act.id,
-          title: act.title,
-          image: act.image,
-          starting_date: act.starting_date
+        id: act.id,
+        itemId: act.itemId,
+        title: act.title,
+        image: act.image,
+        starting_date: act.starting_date,
       });
     }
-   });
+  });
 };
 
 filterActivitiesInThePast();
-
 
 //Filtered activities that are upcoming
 export const upcomingActivities = [];
 
 // Filter Running and upcoming activities
 const upcomingAndRunningActivities = () => {
-   activities.activities.forEach((act) => {
- if (new Date(act.closing_date).getTime() >= now) {
-   upcomingActivities.push(act);
- }
-})
-}
+  activities.activities.forEach((act) => {
+    if (new Date(act.closing_date).getTime() >= now) {
+      upcomingActivities.push(act);
+    }
+  });
+};
 
 upcomingAndRunningActivities();
-
 
 //Filter activities by coming week
 const filteredActivitiesByWeek = [];
@@ -54,6 +53,7 @@ const filterByDate = () => {
       ) {
         filteredActivitiesByWeek.push({
           id: act.id,
+          itemId: act.itemId,
           date: date,
           title: act.title,
           image: act.image,
@@ -65,9 +65,8 @@ const filterByDate = () => {
 filterByDate();
 
 export const filteredByWeek = filteredActivitiesByWeek.toSorted(
-  (a, b) => new Date(a.date) - new Date(b.date)
+  (a, b) => new Date(a.date) - new Date(b.date),
 );
-
 
 // ---------------- Get the current date --------------- //
 // const today = new Date();
@@ -110,4 +109,3 @@ export const filteredByWeek = filteredActivitiesByWeek.toSorted(
 // });
 
 // //Output the separated relevant dates
-

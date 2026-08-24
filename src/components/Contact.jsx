@@ -1,8 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Map from "./Map";
+import { useLocation } from "react-router-dom";
+import BackButton from "./BackButton";
 
 const Contact = ({forwardUrl}) => {
+
+     const url = useLocation().pathname;
+     
   return (
     <div className="w-full h-auto flex flex-col px-8 text-black max-xxsm:px-4 max-xxxsm:px-2 mt-10">
       <div className="w-full flex gap-2 mb-6 border-b border-black pb-2 pt-10 max-xxsm:pt-8">
@@ -53,6 +58,7 @@ const Contact = ({forwardUrl}) => {
           </div>
         </div>
       </div>
+      <BackButton url={url} />
     </div>
   );
 };

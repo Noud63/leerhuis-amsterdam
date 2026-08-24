@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const ActivityArchiefActueel = ({act, url}) => {
-  
+console.log("Url:", url);
   return (
     <div
       className="actueel flex flex-col mb-8 rounded-t-xl bg-gradient-to-t from-stone-400 to-white relative"

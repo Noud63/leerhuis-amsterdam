@@ -1,28 +1,27 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./pages/Layout"
-import './index.css'
-import Archief from "./pages/Archief"
-import Archive2627, {archiveLoader} from "./components/Archive2627"
-import Root from './components/Root';
-import CalendarItem from './pages/CalendarItem';
+import Layout from "./pages/Layout";
+import "./index.css";
+import Archief from "./pages/Archief";
+import Archive2627, { archiveLoader } from "./components/Archive2627";
+import Root from "./components/Root";
+import CalendarItem from "./pages/CalendarItem";
 import OveronsPage from "./pages/OveronsPage";
-import PodiumItem from './pages/PodiumItem';
-import ContactForm from './pages/ContactForm';
-import ContactPage from './pages/ContactPage';
+import PodiumItem from "./pages/PodiumItem";
+import ContactForm from "./pages/ContactForm";
+import ContactPage from "./pages/ContactPage";
 import Polarisatie from "./pages/Polarisatie";
-import JaarThemaPage from './pages/JaarThemaPage';
-import PolarisatieCalendarItem from "./pages/PolarisatieCalenderItem"
-import ZakelijkPage from './pages/ZakelijkPage';
+import JaarThemaPage from "./pages/JaarThemaPage";
+import PolarisatieCalendarItem from "./pages/PolarisatieCalenderItem";
+import ZakelijkPage from "./pages/ZakelijkPage";
 import AktueelPage, { currentLoader } from "./pages/AktueelPage";
-import Subscribe from './pages/Subscribe';
-import AllActivitiesLayout from './pages/AllActivitiesLayout';
-import SubscriptionRules from './pages/SubscriptionRules';
-import ErrorPage from './pages/ErrorPage';
-import { Outlet } from 'react-router-dom';
-import Podiumvoorvrienden from './pages/Podiumvoorvrienden';
-
+import Subscribe from "./pages/Subscribe";
+import AllActivitiesLayout from "./pages/AllActivitiesLayout";
+import SubscriptionRules from "./pages/SubscriptionRules";
+import ErrorPage from "./pages/ErrorPage";
+import { Outlet } from "react-router-dom";
+import Podiumvoorvrienden from "./pages/Podiumvoorvrienden";
 
 const router = createBrowserRouter([
   {
@@ -40,9 +39,8 @@ const router = createBrowserRouter([
           {
             path: "/allactivities",
             async lazy() {
-              let { AllActivities, allActivitiesLoader } = await import(
-                "./pages/AllActivities"
-              );
+              let { AllActivities, allActivitiesLoader } =
+                await import("./pages/AllActivities");
               return {
                 Component: AllActivities,
                 loader: allActivitiesLoader,
@@ -53,7 +51,7 @@ const router = createBrowserRouter([
             path: "/allactivities/calendaritem/:itemId",
             element: <CalendarItem />,
           },
-           {
+          {
             path: "/podiumvoorvrienden/podiumitem/:podium_id",
             element: <PodiumItem />,
           },
@@ -156,7 +154,7 @@ const router = createBrowserRouter([
         element: <Archief />,
       },
       {
-        path: "/archief/calendarItem/:itemId",
+        path: "/archief/calendaritem/:itemId",
         element: <CalendarItem />,
       },
       {
@@ -178,5 +176,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

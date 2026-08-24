@@ -25,11 +25,17 @@ const CalendarItem = () => {
 
   const url = useLocation().pathname;
 
- const item = activities.activities.find(
-  activity => activity.itemId === itemId
-);
+  const item = activities.activities.find(
+    (activity) => activity.itemId === itemId,
+  );
 
-const isDate =
+  console.log("Item", item);
+
+  if (!item) {
+    throw new Response("Activity not found", { status: 404 });
+  }
+
+  const isDate =
     item.starting_date &&
     item.starting_date !== "?" &&
     !isNaN(Date.parse(item.starting_date));
@@ -47,14 +53,19 @@ const isDate =
   }, [givenDate, now]);
 
   const aanmelden = {
-    gratis: (<span>Gratis (vrije bijdrage donatie welkom)</span>),
+    gratis: <span>Gratis (vrije bijdrage donatie welkom)</span>,
     vrijwilligebijdrage: (
       <span>
         Gratis (vrije bijdrage donatie welkom) Voor betaalgegevens en/of het
         inschrijfformulier, klik hieronder op "Schrijf je in"
       </span>
     ),
-     betaald: (<span>Voor betaalgegevens en/of het inschrijfformulier, klik hieronder op "Schrijf je in"</span>),
+    betaald: (
+      <span>
+        Voor betaalgegevens en/of het inschrijfformulier, klik hieronder op
+        "Schrijf je in"
+      </span>
+    ),
   };
 
   return (
@@ -125,22 +136,23 @@ const isDate =
                 </div>
               </div>
 
-             <div className="w-full pl-4 my-2">
+              <div className="w-full pl-4 my-2">
                 <div className="font-bold">Datum :</div>
                 <div className="w-full flex flex-row flex-wrap gap-1">
                   {item.date.day && <span>{item.date.day}:</span>}
                   {item.date.dates.map((date, index) => (
                     <span key={index}>
-                       {isDate ? (
-              <span>
-               {new Date(date).toLocaleDateString("nl-NL", {
-                  month: "long",
-                  day: "numeric",
-                })}{index < item.date.dates.length - 1 && ","}
-              </span>
-            ) : (
-              <span>{date}</span>
-            )}
+                      {isDate ? (
+                        <span>
+                          {new Date(date).toLocaleDateString("nl-NL", {
+                            month: "long",
+                            day: "numeric",
+                          })}
+                          {index < item.date.dates.length - 1 && ","}
+                        </span>
+                      ) : (
+                        <span>{date}</span>
+                      )}
                     </span>
                   ))}
                 </div>
@@ -220,21 +232,35 @@ const isDate =
                 <span className="font-bold">Kenmerk : </span> {item.itemId}
               </div>
 
-              {item.itemId !== "LA-AC38" && item.itemId !== "LA-AC35" ? (<Link
-                to={`subscribe/${item.itemId}`}
-                className="w-full flex justify-center mt-6 mb-4"
-              >
-                <button
-                  type="button"
-                  className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
-                  disabled={expired}
+              {item.itemId !== "LA-AC38" && item.itemId !== "LA-AC35" ? (
+                <Link
+                  to={`subscribe/${item.itemId}`}
+                  className="w-full flex justify-center mt-6 mb-4"
                 >
-                  Schrijf je in
-                </button>
-              </Link>) : (<div className="w-full h-8"></div>)}
+                  <button
+                    type="button"
+                    className="btn w-[150px] text-black font-semibold p-2 border-2 border-black rounded-full cursor-pointer"
+                    disabled={expired}
+                  >
+                    Schrijf je in
+                  </button>
+                </Link>
+              ) : (
+                <div className="w-full h-8"></div>
+              )}
 
               <div className="w-full flex justify-center items-center mt-4 relative">
-                {item.bron && <div className="absolute bottom-2 right-2 text-gray-400"><a href={`${item.bron}`} rel="noopener noreferrer" target="_blank">Afbeelding: {item.bron}</a></div>}
+                {item.bron && (
+                  <div className="absolute bottom-2 right-2 text-gray-400">
+                    <a
+                      href={`${item.bron}`}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Afbeelding: {item.bron}
+                    </a>
+                  </div>
+                )}
                 <img
                   src={`/images/${item.image}`}
                   alt=""
