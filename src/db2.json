@@ -1428,6 +1428,29 @@
       "closing_date": "2027-05-06",
       "itemId": "LA-AC44",
       "cat": "cursus"
+    },
+    {
+      "id": 47,
+      "title": "Bijbels Leerhuis",
+      "date": {
+        "day": "Donderdag",
+        "dates": ["2027-09-10", "2027-09-24", "2027-10-08", "2027-10-22", "2027-11-12", "2027-11-26", "2027-12-10"]
+      },
+      "time": "14:00-16.00 uur",
+      "contribution": "Vrijwillge bijdrage, donatie welkom.",
+      "description": [
+        "We lezen en gaan in gesprek over het bijbelboek Matteüs.\n",
+"Zoals de Rabbijnen ons leerden: elke tekst, elk verhaal heeft zeventig gezichten. Pas als we alle zeventig hebben ‘aangekeken’ kunnen we iets van de ware betekenis gaan vermoeden. Voor die tijd kan niemand de waarheid claimen.\n", 
+"Maar ieder van ons kan de ander wel vertellen wat hij, wat zij gezien heeft! Want wat wij zien doet ertoe! Er zijn daarbij geen domme opmerkingen of vragen. Zo gaan we dus ook met Matteüs in gesprek en we lezen met elkaar de bergrede van Jezus te beginnen bij hoofdstuk 5."
+      ],
+      "led_by": "Gerhard Scholte",
+      "location": "Muiderkerk, Linnaeusstraat 37",
+      "email": "gscholte@dds.nl",
+      "image": "bijbel.jpg",
+      "starting_date": "2027-09-10",
+      "closing_date": "2027-12-10",
+      "itemId": "LA-AC45",
+      "cat": "cursus"
     }
   ]
 }

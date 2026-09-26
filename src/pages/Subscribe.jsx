@@ -76,14 +76,20 @@ const Subscribe = () => {
     ),
     cursus: (
       <span>
-        Per cursusbijeenkomst vragen we van de deelnemers, die het kunnen
-        betalen, een bijdrage van € 5,-.
+        Vrijwillige bijdrage.
         <br />
-        Je kan de cursus ook in een keer voldoen.
-        <br />
-        Betalen kan vooraf via de onderstaande bankgegevens. Of aan de zaal cash
+        Betalen kan vooraf via de onderstaande bankgegevens, of aan de zaal cash
         of via QR-code.
       </span>
+      // <span>
+      //   Per cursusbijeenkomst vragen we van de deelnemers, die het kunnen
+      //   betalen, een bijdrage van € 5,-.
+      //   <br />
+      //   Je kan de cursus ook in een keer voldoen.
+      //   <br />
+      //   Betalen kan vooraf via de onderstaande bankgegevens. Of aan de zaal cash
+      //   of via QR-code.
+      // </span>
     ),
     gesprek: (
       <span>
