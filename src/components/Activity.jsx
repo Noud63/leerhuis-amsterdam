@@ -34,7 +34,7 @@ const Activity = ({ act }) => {
           )}
 
           <div className="w-full flex flex-col">
-            <span className="font-semibold">Datum :</span>{" "}
+            <span className="font-semibold">{act.date.dates.length > 1 ? "Start" : "Datum"} :</span>{" "}
             {isDate ? (
               <span>
                 {new Date(act.starting_date).toLocaleDateString("nl-NL", {

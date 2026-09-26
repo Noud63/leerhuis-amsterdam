@@ -24,7 +24,7 @@ return (
     <div className="w-full flex justify-center items-center flex-col mb-40">
       <div className="w-[95%] flex flex-row mb-8 border-b border-black max-xxmd:mb-4">
         <span className="text-[22px] font-semibold pb-2 font-Assistant tracking-wide">
-          # Alle activiteiten 2025/2026
+          # Alle activiteiten 2026/2027
         </span>
       </div>
 
