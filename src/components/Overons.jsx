@@ -46,7 +46,7 @@ const Overons = () => {
                       className="flex justify-center flex-row font-normal mb-4 gap-2 tracking-wide max-xxsm:items-center 
                      py-1 max-xxsm:flex-col max-xxsm:gap-0"
                     >
-                      <span>Jaarthema 2025-2027 :</span>
+                      <span>Jaarthema 2026-2027 :</span>
                       <span>Zie de mens</span>
                     </SectionTitle>
 
