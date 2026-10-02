@@ -5,12 +5,12 @@ const JaarThema = () => {
   return (
     <div className="w-full flex flex-col max-w-[900px] max-lg:w-full max-xxl:w-full prose-lg">
       <SectionTitle
-        className="flex justify-center flex-row font-normal tracking-wide max-xxsm:items-center 
+                      className="flex justify-center flex-row font-normal mb-4 gap-2 tracking-wide max-xxsm:items-center 
                      py-1 max-xxsm:flex-col max-xxsm:gap-0"
-      >
-        <span>Jaarthema 2026-2027 : Zie de mens</span>
-
-      </SectionTitle>
+                    >
+                      <span>Jaarthema 2026-2027 :</span>
+                      <span>Zie de mens</span>
+                    </SectionTitle>
       <div className="w-full h-auto">
         <img src="/images/paus_ai.jpg" alt="" className="w-full h-auto object-cover mt-4 mb-5"/>
       </div>
