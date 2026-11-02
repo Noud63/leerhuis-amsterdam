@@ -18,13 +18,15 @@ const Verslag = () => {
         <SectionTitle className="w-full max-w-[900px] flex text-lg max-sm:text-xl tracking-wide mb-2 py-1 px-4">
           {report.reporttitle}
         </SectionTitle>
-        <span className="pl-4">{report.subtitle}</span>
+        
         <img
           src={`/images/${report.image}`}
           alt=""
-          className="w-full h-auto block mx-auto my-2 rounded-lg mb-4"
+          className="w-full h-auto block mx-auto my-2 rounded-lg mb-2 mt-4"
           loading="lazy"
         />
+
+        <div className="mb-4 italic">{report.subtitle}</div>
 
        <div className="font-semibold text-lg mb-4">{report.intro}</div>
 
