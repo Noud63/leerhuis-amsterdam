@@ -9,9 +9,11 @@ import Root from "./components/Root";
 import CalendarItem from "./pages/CalendarItem";
 import OveronsPage from "./pages/OveronsPage";
 import PodiumItem from "./pages/PodiumItem";
+import VerslagPage from "./pages/VerslagPage";
 import ContactForm from "./pages/ContactForm";
 import ContactPage from "./pages/ContactPage";
 import Polarisatie from "./pages/Polarisatie";
+import Verslag_241026 from "./pages/Verslag_241026";
 import JaarThemaPage from "./pages/JaarThemaPage";
 import PolarisatieCalendarItem from "./pages/PolarisatieCalenderItem";
 import ZakelijkPage from "./pages/ZakelijkPage";
@@ -152,6 +154,14 @@ const router = createBrowserRouter([
         path: "/archief",
         loader: archiveLoader,
         element: <Archief />,
+      },
+      {
+        path: "/verslagpage",
+        element: <VerslagPage />,
+      },
+      {
+        path: "/verslagpage/Verslag_241026",
+        element: <Verslag_241026 />,
       },
       {
         path: "/archief/calendaritem/:itemId",

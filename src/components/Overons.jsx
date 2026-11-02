@@ -22,7 +22,7 @@ const Overons = () => {
 
               <div className="w-full flex flex-row items-start justify-center max-xxl:flex-col max-xxl:items-center">
                 <div className="max-xxl:w-full max-xxl:flex flex-col items-center max-xxsm:items-start">
-                  <SectionTitle className="w-full max-w-[900px] flex justify-center text-xl max-sm:text-xl tracking-wide mb-4 py-1 ">
+                  <SectionTitle className="w-full max-w-[900px] flex justify-center text-lg max-sm:text-xl tracking-wide mb-4 py-1">
                     Leren in een complexe wereld
                   </SectionTitle>
 
@@ -43,7 +43,7 @@ const Overons = () => {
 
                   <div className="w-full flex flex-col max-w-[900px] max-lg:w-full max-xxl:w-full mt-4 prose-lg">
                     <SectionTitle
-                      className="flex justify-center flex-row font-normal mb-4 gap-2 tracking-wide max-xxsm:items-center 
+                      className="flex justify-center flex-row text-lg font-normal mb-4 gap-2 tracking-wide max-xxsm:items-center 
                      py-1 max-xxsm:flex-col max-xxsm:gap-0"
                     >
                       <span>Jaarthema 2026-2027 :</span>
