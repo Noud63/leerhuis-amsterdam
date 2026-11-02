@@ -29,26 +29,26 @@ const Verslag = () => {
        <div className="font-semibold text-lg mb-4">{report.intro}</div>
 
         {report.paragraphs.map((paragraph, index) => (
-          <div key={index}>
-            <div className="font-semibold text-lg">{paragraph.intro}</div>
-            <div className="text-lg mb-4">{paragraph.alinea1}</div>
-            <div className="text-lg">
+          <div key={index} className="text-lg">
+            <div className="font-semibold ">{paragraph.intro}</div>
+            <div className="mb-4">{paragraph.alinea1}</div>
+            <div>
               <h3 className="font-semibold">{paragraph.header1}</h3>
               <p>{paragraph.alinea2}</p>
             </div>
-            <div className="text-lg">
+            <div>
               <h3 className="font-semibold">{paragraph.header2}</h3>
               <p>{paragraph.alinea3}</p>
             </div>
-            <div className="text-lg">
+            <div>
               <h3 className="font-semibold">{paragraph.header3}</h3>
               <p>{paragraph.alinea4}</p>
             </div>
-            <div className="text-lg">
+            <div>
               <h3 className="font-semibold">{paragraph.header4}</h3>
               <p>{paragraph.alinea5}</p>
             </div>
-            <div className="text-lg">
+            <div>
               <h3 className="font-semibold">{paragraph.header5}</h3>
               <p>{paragraph.alinea6}</p>
             </div>
