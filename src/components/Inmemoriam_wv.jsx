@@ -22,7 +22,7 @@ const Inmemoriam = () => {
         </div>
       </div>
 
-      <p className="prose-lg mb-4">
+      <p className="prose-base text-lg mb-4">
         <span className="font-bold">
           Bij het overlijden van Wilken Veen (&#10013;Amsterdam, 11-02-2025).
         </span>

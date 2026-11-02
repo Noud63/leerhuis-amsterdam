@@ -13,7 +13,7 @@ import VerslagPage from "./pages/VerslagPage";
 import ContactForm from "./pages/ContactForm";
 import ContactPage from "./pages/ContactPage";
 import Polarisatie from "./pages/Polarisatie";
-import Verslag_241026 from "./pages/Verslag_241026";
+import Verslag from "./pages/Verslag";
 import JaarThemaPage from "./pages/JaarThemaPage";
 import PolarisatieCalendarItem from "./pages/PolarisatieCalenderItem";
 import ZakelijkPage from "./pages/ZakelijkPage";
@@ -160,8 +160,8 @@ const router = createBrowserRouter([
         element: <VerslagPage />,
       },
       {
-        path: "/verslagpage/Verslag_241026",
-        element: <Verslag_241026 />,
+        path: "/verslagpage/verslag/:id",
+        element: <Verslag/>,
       },
       {
         path: "/archief/calendaritem/:itemId",

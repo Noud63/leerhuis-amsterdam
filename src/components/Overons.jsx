@@ -26,7 +26,7 @@ const Overons = () => {
                     Leren in een complexe wereld
                   </SectionTitle>
 
-                  <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full prose-lg pt-2 pb-4">
+                  <div className="w-full max-w-[900px] max-lg:w-full max-xxl:w-full prose-base pt-2 pb-4 text-lg">
                     <p>
                       Het Leerhuis Amsterdam, onderdeel van de Muiderkerk/
                       Protestantse Kerk Amsterdam, nodigt kerkelijke en
@@ -41,7 +41,7 @@ const Overons = () => {
                     </p>
                   </div>
 
-                  <div className="w-full flex flex-col max-w-[900px] max-lg:w-full max-xxl:w-full mt-4 prose-lg">
+                  <div className="w-full flex flex-col max-w-[900px] max-lg:w-full max-xxl:w-full mt-4 prose-base text-lg">
                     <SectionTitle
                       className="flex justify-center flex-row text-lg font-normal mb-4 gap-2 tracking-wide max-xxsm:items-center 
                      py-1 max-xxsm:flex-col max-xxsm:gap-0"
