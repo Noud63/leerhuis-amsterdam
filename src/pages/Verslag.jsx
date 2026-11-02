@@ -48,6 +48,10 @@ const Verslag = () => {
               <h3 className="font-semibold">{paragraph.header4}</h3>
               <p>{paragraph.alinea5}</p>
             </div>
+            <div className="text-lg">
+              <h3 className="font-semibold">{paragraph.header5}</h3>
+              <p>{paragraph.alinea6}</p>
+            </div>
           </div>
         ))}
       </div>
