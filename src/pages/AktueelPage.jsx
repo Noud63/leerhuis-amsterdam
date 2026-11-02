@@ -2,22 +2,23 @@ import React from "react";
 import BackButton from "../components/BackButton";
 import { filteredByWeek } from "../utils/filterByDate";
 import { Link, useLoaderData, useLocation } from "react-router-dom";
+import SectionTitle from "../components/SectionTitle";
 
 export const currentLoader = () => {
   return filteredByWeek;
 };
 
-
 const Aktueel = () => {
-  
   let data = useLoaderData();
   const url = useLocation().pathname;
   const now = new Date().getTime();
 
   return (
-    <div className="w-full min-h-screen mt-[170px] flex flex-row justify-center items-start px-8 max-xxxsm:px-2 mb-44">
-      <div className="actueel_info h-auto w-full max-w-[600px] bg-white px-8 pt-8 rounded-xl max-xxxsm:px-4 pb-20">
-        
+    <div className="w-full max-w-[900px] mx-auto min-h-screen flex flex-col pt-[180px] items-start px-4 max-xxxsm:px-2 mb-44">
+      <SectionTitle className="w-full flex text-lg max-sm:text-xl tracking-wide mb-2 py-1 px-4">
+        Aanstaande activiteiten
+      </SectionTitle>
+      <div className="actueel_info h-auto w-full max-w-[900px] bg-white px-4 pt-8 rounded-xl pb-10">
         <div className="text-lg border-b border-slate-700">
           <span className="w-full flex items-center text-xl text-slate-800 font-semibold">
             Deze week :&nbsp;
@@ -51,7 +52,7 @@ const Aktueel = () => {
                   {act.title}
                 </div>
                 <div className="flex items-center text-md text-amber-800 font-semibold">
-                 <span className="max-xxsm:inline hidden pt-1">
+                  <span className="max-xxsm:inline hidden pt-1">
                     {new Date(act.date).toLocaleDateString("nl-NL", {
                       month: "numeric",
                       day: "numeric",

@@ -3,7 +3,7 @@ import SectionTitle from "../components/SectionTitle";
 
 const JaarThema = () => {
   return (
-    <div className="w-full flex flex-col max-w-[900px] max-lg:w-full max-xxl:w-full prose-lg">
+    <div className="w-full flex flex-col max-w-[900px] max-lg:w-full max-xxl:w-full prose-lg px-4">
       <SectionTitle
                       className="flex justify-center flex-row font-normal mb-4 gap-2 tracking-wide max-xxsm:items-center 
                      py-1 max-xxsm:flex-col max-xxsm:gap-0"

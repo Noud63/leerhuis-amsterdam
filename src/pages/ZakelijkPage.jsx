@@ -16,29 +16,29 @@ const url = useLocation().pathname
       <SectionTitle className="flex justify-center text-lg py-1 shadow-md border-b border-yellow-900 mb-4 tracking-wide">
         Aanmelden
       </SectionTitle>
-      
-      <div>
-            <span className="font-semibold underline">Aanmelden:</span><br />
-            <span >Aanmelden doe je via de activiteitenpagina. Onderaan de tekst over de geselecteerde activiteit, zit de knop: Schrijf je in. Hieronder staan ook de gegevens over de (vrijwillige) betaling. </span><br />
-            <span className="font-semibold underline">Locatie van bijeenkomsten:</span><br /> 
-            <span >Muiderkerk, Linnaeusstraat 37, Amsterdam-Oost</span><br />
-            <span >De Thomas, Prinses Irenestraat 36, Amsterdam-Zuid</span><br />
-            <span >De Opgang, Tussen Meer 68, Amsterdam-West</span><br />
-            <span className="font-semibold underline">Kosten:</span><br /> 
-            <span>Meestal vrijwillige bijdragen ter dekking van de kosten (gebruik vergaderruimte, verwarming, toilet, koffie/thee, kopieën), cash of per bank. Richtlijn: €5,- per cursusbijeenkomst, € 10/15 voor lezing</span><br />
-            <span className="font-semibold underline">Bankgegevens: </span><br />
-            <span>NL32 INGB 0000449815 t.a.v. Protestantse gemeente inzake T&E.</span> 
+      <div className="aanmelden bg-white px-4 pt-4 rounded-xl pb-10 shadow-md ">
+      <div className="pt-2">
+            <div className="mb-3">Aanmelden doe je via de activiteitenpagina. Onderaan de tekst over de geselecteerde activiteit, zit de knop: Schrijf je in. Hieronder staan ook de gegevens over de (vrijwillige) betaling. </div>
+            <div className="font-semibold underline">Locatie van bijeenkomsten:</div>
+            <div >Muiderkerk, Linnaeusstraat 37, Amsterdam-Oost</div>
+            <div >De Thomas, Prinses Irenestraat 36, Amsterdam-Zuid</div>
+            <div >De Opgang, Tussen Meer 68, Amsterdam-West</div>
+            <div className="font-semibold underline mt-3">Kosten:</div> 
+            <div>Meestal vrijwillige bijdragen ter dekking van de kosten (gebruik vergaderruimte, verwarming, toilet, koffie/thee, kopieën), cash of per bank. Richtlijn: €5,- per cursusbijeenkomst, € 10/15 voor lezing</div>
+            <div className="font-semibold underline mt-3">Bankgegevens: </div>
+            <div>NL32 INGB 0000449815 t.a.v. Protestantse gemeente inzake T&E.</div> 
         </div>
 
       <div>
         <div className="relative">
           <img src={muiderkerk} alt="muiderkerk" />
-        <div className="w-full absolute -bottom-6 bg-white shadow-md pl-2 py-1 text-gray-500 text-base">Muiderkerk, Linnaeusstraat 37, Amsterdam</div>
+        <div className="w-full absolute -bottom-6 bg-white py-1 text-gray-500 text-base">Muiderkerk, Linnaeusstraat 37, Amsterdam</div>
         </div>
       </div>
 
-      <BackButton url={url} />
-
+      
+</div>
+<BackButton url={url} />
     </div>
   );
 }
