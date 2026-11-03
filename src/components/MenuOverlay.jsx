@@ -21,102 +21,108 @@ const MenuOverlay = ({ showMenu, closeMenuOverlay, border }) => {
            bg-white/60 z-[999] w-full max-w-[50%] max-sm:max-w-full transition ease-in duration-300  overflow-y-scroll pb-12`}
       onClick={closeMenuOverlay}
     >
-      <div className="menu flex flex-col justify-center items-center text-lg font-semibold gap-12 mt-12">
-        <div className="flex justify-center">
-          <NavLink
-            to="/overonspage"
-            className={({ isActive }) => [
-              isActive ? `${border}` : "border-b-2 border-none",
-            ]}
-          >
-            <span>Over ons</span>
-          </NavLink>
+      <div className="menu flex flex-col justify-center items-center text-lg gap-6 font-semibold mt-12">
+        <div className="flex flex-col gap-6">
+          <div className="flex justify-center">
+            <NavLink
+              to="/overonspage"
+              className={({ isActive }) => [
+                isActive ? `${border}` : "border-b-2 border-none",
+              ]}
+            >
+              <span>Over ons</span>
+            </NavLink>
+          </div>
+
+          <div className="flex justify-center">
+            <NavLink
+              to="/jaarthemapage"
+              className={({ isActive }) => [
+                isActive ? `${border}` : "border-b-2 border-none",
+              ]}
+            >
+              <span>Jaarthema</span>
+            </NavLink>
+          </div>
+
+          <div className="flex justify-center">
+            <NavLink
+              to="/allactivities"
+              className={({ isActive }) => [
+                isActive ? `${border}` : "border-b-2 border-none",
+              ]}
+            >
+              <span>Activiteiten</span>
+            </NavLink>
+          </div>
+
+          <div className="flex justify-center">
+            <NavLink
+              to="/aktueelpage"
+              className={({ isActive }) => [
+                isActive ? `${border}` : "border-b-2 border-none",
+              ]}
+            >
+              <span>Deze week</span>
+            </NavLink>
+          </div>
         </div>
 
-        <div className="flex justify-center">
-          <NavLink
-            to="/jaarthemapage"
-            className={({ isActive }) => [
-              isActive ? `${border}` : "border-b-2 border-none",
-            ]}
-          >
-            <span>Jaarthema</span>
-          </NavLink>
+        <div className="flex flex-col gap-6">
+          <div className="flex justify-center">
+            <NavLink
+              to="/archief"
+              className={({ isActive }) => [
+                isActive ? `${border}` : "border-b-2 border-none",
+              ]}
+            >
+              <span>Archief</span>
+            </NavLink>
+          </div>
+
+          <div className="flex justify-center">
+            <NavLink
+              to="/verslagpage"
+              className={({ isActive }) => [
+                isActive ? `${border}` : "border-b-2 border-none",
+              ]}
+            >
+              <span>Verslag</span>
+            </NavLink>
+          </div>
+
+          <div className="flex justify-center">
+            <NavLink
+              to="/zakelijkpage"
+              className={({ isActive }) => [
+                isActive ? `${border}` : "border-b-2 border-none",
+              ]}
+            >
+              <span>Aanmelden</span>
+            </NavLink>
+          </div>
+
+          <div className="flex justify-center">
+            <NavLink
+              to="/contactpage"
+              className={({ isActive }) => [
+                isActive ? `${border}` : "border-b-2 border-none",
+              ]}
+            >
+              <span>Contact</span>
+            </NavLink>
+          </div>
         </div>
 
-        <div className="flex justify-center">
-          <NavLink
-            to="/allactivities"
-            className={({ isActive }) => [
-              isActive ? `${border}` : "border-b-2 border-none",
-            ]}
-          >
-            <span>Activiteiten</span>
-          </NavLink>
-        </div>
+        
+      </div>
 
-        <div className="flex justify-center">
-          <NavLink
-            to="/aktueelpage"
-            className={({ isActive }) => [
-              isActive ? `${border}` : "border-b-2 border-none",
-            ]}
-          >
-            <span>Deze week</span>
-          </NavLink>
-        </div>
-
-        <div className="flex justify-center">
-          <NavLink
-            to="/archief"
-            className={({ isActive }) => [
-              isActive ? `${border}` : "border-b-2 border-none",
-            ]}
-          >
-            <span>Archief</span>
-          </NavLink>
-        </div>
-
-        <div className="flex justify-center">
-          <NavLink
-            to="/verslagpage"
-            className={({ isActive }) => [
-              isActive ? `${border}` : "border-b-2 border-none",
-            ]}
-          >
-            <span>Verslag</span>
-          </NavLink>
-        </div>
-
-        <div className="flex justify-center">
-          <NavLink
-            to="/zakelijkpage"
-            className={({ isActive }) => [
-              isActive ? `${border}` : "border-b-2 border-none",
-            ]}
-          >
-            <span>Aanmelden</span>
-          </NavLink>
-        </div>
-
-        <div className="flex justify-center">
-          <NavLink
-            to="/contactpage"
-            className={({ isActive }) => [
-              isActive ? `${border}` : "border-b-2 border-none",
-            ]}
-          >
-            <span>Contact</span>
-          </NavLink>
-        </div>
-
-        <div
-          className="cursor-pointer flex justify-center"
+      <div
+          className="cursor-pointer flex justify-center mt-6"
           onClick={closeMenuOverlay}
         >
           <img src={close} alt="close" className="w-8" />
         </div>
-      </div>
     </div>
   );
 };

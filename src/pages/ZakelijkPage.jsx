@@ -11,7 +11,7 @@ const ZakelijkPage = () => {
 const url = useLocation().pathname
 
   return (
-    <div className="min-h-screen w-full max-w-[900px] mx-auto max-lg:w-full max-xxl:w-full mt-[180px] prose-lg px-4 mb-24">
+    <div className="min-h-screen w-full max-w-[900px] mx-auto max-lg:w-full max-xxl:w-full pt-[180px] prose-lg px-2 mb-24 max-xxsm:pt-[170px]">
 
       <SectionTitle className="flex justify-center text-lg py-1 shadow-md border-b border-yellow-900 mb-4 tracking-wide">
         Aanmelden

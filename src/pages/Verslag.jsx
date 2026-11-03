@@ -13,9 +13,9 @@ const Verslag = () => {
 
   console.log(report);
   return (
-    <div className="w-full min-h-screen pt-[180px] px-8 max-xxxsm:px-4 mb-32">
+    <div className="w-full min-h-screen pt-[180px] px-8 max-xxsm:px-2 mb-32 max-xxsm:pt-[170px]">
       <div className="w-full max-w-[900px] mx-auto ">
-        <SectionTitle className="w-full max-w-[900px] flex text-lg max-sm:text-xl tracking-wide mb-2 py-1 px-4">
+        <SectionTitle className="w-full max-w-[900px] text-lg max-xxmd:text-md flex tracking-wide mb-2 py-1 px-4">
           {report.reporttitle}
         </SectionTitle>
         
@@ -26,12 +26,12 @@ const Verslag = () => {
           loading="lazy"
         />
 
-        <div className="mb-4 italic">{report.subtitle}</div>
+        <div className="mb-4 italic max-xxxsm:text-sm max-xxxsm:mb-2">{report.subtitle}</div>
 
-       <div className="font-semibold text-lg mb-4">{report.intro}</div>
+       <div className="font-semibold text-lg mb-4 max-xxxsm:text-base">{report.intro}</div>
 
         {report.paragraphs.map((paragraph, index) => (
-          <div key={index} className="text-lg">
+          <div key={index} className="text-lg max-xxxsm:text-base">
             <div className="font-semibold ">{paragraph.intro}</div>
             <div className="mb-4">{paragraph.alinea1}</div>
             <div>

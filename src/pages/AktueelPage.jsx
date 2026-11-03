@@ -14,7 +14,7 @@ const Aktueel = () => {
   const now = new Date().getTime();
 
   return (
-    <div className="w-full max-w-[900px] mx-auto min-h-screen flex flex-col pt-[180px] items-start px-4 max-xxxsm:px-2 mb-44">
+    <div className="w-full max-w-[900px] mx-auto min-h-screen flex flex-col pt-[180px] items-start px-4 max-xxsm:px-2 mb-44 max-xxsm:pt-[170px]">
       <SectionTitle className="w-full flex text-lg max-sm:text-xl tracking-wide mb-2 py-1 px-4">
         Aanstaande activiteiten
       </SectionTitle>

@@ -9,12 +9,12 @@ import SectionTitle from "../components/SectionTitle";
 const Overons = () => {
       const url = useLocation().pathname;
   return (
-    <div className="w-full flex pt-[180px] items-center px-8 relative max-xxxsm:px-4 mb-20">
+    <div className="w-full flex pt-[180px] items-center px-8 relative max-xxsm:px-2 mb-20 max-xxsm:pt-[170px]">
       <div className="w-full min-h-screen">
         <div className="overons flex flex-col">
           <div className="w-full flex flex-row justify-between text-black font-normal gap-12 rounded-lg z-5 max-lg:flex-col">
             <div className="flex flex-1 flex-col leading-2 text-lg max-lg:w-full pb-20">
-              <div className="border-b border-black mb-8 ">
+              <div className="border-b border-black mb-6 max-xsm:mb-4">
                 <span className="flex text-[#000] text-xl font-semibold pb-2">
                   # Over het Leerhuis
                 </span>

@@ -11,8 +11,8 @@ const VerslagPage = () => {
   return (
 
 
-    <div className="w-full min-h-screen flex flex-col pt-[180px] px-8 max-xxxsm:px-4 mb-20">
-      <div className="w-full h-10 border-b border-black mb-8">
+    <div className="w-full min-h-screen flex flex-col pt-[180px] px-8 max-xxsm:px-2 mb-20 max-xxsm:pt-[170px]">
+      <div className="w-full h-10 border-b border-black mb-6">
         <span className="flex text-xl font-semibold pb-2">
           # Verslagen Leerhuis bijeenkomsten
         </span>
