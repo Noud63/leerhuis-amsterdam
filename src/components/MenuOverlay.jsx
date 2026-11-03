@@ -21,8 +21,8 @@ const MenuOverlay = ({ showMenu, closeMenuOverlay, border }) => {
            bg-white/60 z-[999] w-full max-w-[50%] max-sm:max-w-full transition ease-in duration-300  overflow-y-scroll pb-12`}
       onClick={closeMenuOverlay}
     >
-      <div className="menu flex flex-col justify-center items-center text-lg gap-6 font-semibold mt-12">
-        <div className="flex flex-col gap-6">
+      <div className="menu flex flex-col justify-center items-center text-lg gap-8 font-semibold mt-12">
+        <div className="flex flex-col gap-8">
           <div className="flex justify-center">
             <NavLink
               to="/overonspage"
@@ -68,7 +68,7 @@ const MenuOverlay = ({ showMenu, closeMenuOverlay, border }) => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-8">
           <div className="flex justify-center">
             <NavLink
               to="/archief"
