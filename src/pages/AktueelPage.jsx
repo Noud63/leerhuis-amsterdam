@@ -18,7 +18,7 @@ const Aktueel = () => {
       <SectionTitle className="w-full flex text-lg max-sm:text-xl tracking-wide mb-2 py-1 px-4">
         Aanstaande activiteiten
       </SectionTitle>
-      <div className="actueel_info h-auto w-full max-w-[900px] bg-white px-4 pt-8 rounded-xl pb-10">
+      <div className="actueel_info h-auto w-full max-w-[900px] bg-white px-4 pt-8 rounded-xl pb-16">
         <div className="text-lg border-b border-slate-700">
           <span className="w-full flex items-center text-xl text-slate-800 font-semibold">
             Deze week :&nbsp;
@@ -36,7 +36,7 @@ const Aktueel = () => {
           </span>
         </div>
 
-        <div className="w-full max-w-full flex flex-col justify-center flex-wrap">
+        <div className="w-full max-w-full flex flex-col justify-center items-center flex-wrap">
           {data.length === 0 && (
             <div className="w-full flex justify-center mt-12 text-xl font-semibold text-orange-700">
               Geen activiteiten!
@@ -44,7 +44,7 @@ const Aktueel = () => {
           )}
           {data?.map((act) => (
             <div
-              className="actueel flex flex-col rounded-t-lg mt-8 bg-gradient-to-t from-stone-400 to-white relative "
+              className="actueel max-w-[500px] flex flex-col rounded-t-lg mt-8 bg-gradient-to-t from-stone-400 to-white relative"
               key={act.id}
             >
               <div className="flex flex-row py-3 px-3 text-black items-center max-sm:items-start">
@@ -70,7 +70,7 @@ const Aktueel = () => {
                 <img
                   src={`./images/${act.image}`}
                   alt=""
-                  className="w-full max-w-[550px]"
+                  className="w-full ]"
                 />
               </div>
               <div className="bg-gradient-to-t from-slate-900 to-slate-900/50 w flex justify-center py-6 absolute bottom-0 left-0 w-full">
@@ -87,8 +87,9 @@ const Aktueel = () => {
             </div>
           ))}
         </div>
-        <BackButton url={url} />
+        
       </div>
+      <BackButton url={url} />
     </div>
   );
 };

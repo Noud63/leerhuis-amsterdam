@@ -1,7 +1,10 @@
 import React from "react";
 import SectionTitle from "../components/SectionTitle";
-
+import BackButton from "./BackButton";
+import { useLocation } from "react-router-dom";
+  
 const JaarThema = () => {
+  const url = useLocation().pathname
   return (
     <div className="w-full flex flex-col max-w-[900px] max-lg:w-full max-xxl:w-full prose-lg px-4 max-xxsm:px-0">
       <SectionTitle
@@ -51,6 +54,8 @@ const JaarThema = () => {
         programma is nog in ontwikkeling. Houd onze website in de gaten voor
         nieuwe informatie en aanvullende data!
       </span>
+
+      <BackButton url={url} />
     </div>
   );
 };
