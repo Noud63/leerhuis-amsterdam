@@ -18,7 +18,7 @@ const Aktueel = () => {
       <SectionTitle className="w-full flex text-lg max-sm:text-xl tracking-wide mb-2 py-1 px-4">
         Aanstaande activiteiten
       </SectionTitle>
-      <div className="actueel_info h-auto w-full max-w-[900px] bg-white px-4 pt-8 rounded-xl pb-16">
+      <div className="actueel_info h-auto w-full max-w-[900px] bg-gradient-to-t from-stone-100 to-white px-4 pt-8 rounded-xl pb-16">
         <div className="text-lg border-b border-slate-700">
           <span className="w-full flex items-center text-xl text-slate-800 font-semibold">
             Deze week :&nbsp;

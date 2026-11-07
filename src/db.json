@@ -1,6 +1,6 @@
 {
   "activities": [
- {
+    {
       "id": 42,
       "title": "Sing along symposium",
       "date": {
@@ -123,14 +123,25 @@
       "title": "Bijbels Leerhuis",
       "date": {
         "day": "Donderdag",
-        "dates": ["2026-09-10", "2026-09-24", "2026-10-08", "2026-10-22", "2026-11-12", "2026-11-26", "2026-12-10"]
+        "dates": [
+          "2026-09-10",
+          "2026-09-24",
+          "2026-10-08",
+          "2026-10-22",
+          "2026-11-12"
+        ]
+      },
+      "date2": {
+        "day": "Maandag",
+        "dates": ["2026-11-23", "2026-12-07"]
       },
       "time": "14:00-16.00 uur",
+      "time2": "13:30-15.30 uur",
       "contribution": "Vrijwillge bijdrage, donatie welkom.",
       "description": [
         "We lezen en gaan in gesprek over het bijbelboek Matteüs.\n",
-"Zoals de Rabbijnen ons leerden: elke tekst, elk verhaal heeft zeventig gezichten. Pas als we alle zeventig hebben ‘aangekeken’ kunnen we iets van de ware betekenis gaan vermoeden. Voor die tijd kan niemand de waarheid claimen.\n", 
-"Maar ieder van ons kan de ander wel vertellen wat hij, wat zij gezien heeft! Want wat wij zien doet ertoe! Er zijn daarbij geen domme opmerkingen of vragen. Zo gaan we dus ook met Matteüs in gesprek en we lezen met elkaar de bergrede van Jezus te beginnen bij hoofdstuk 5."
+        "Zoals de Rabbijnen ons leerden: elke tekst, elk verhaal heeft zeventig gezichten. Pas als we alle zeventig hebben ‘aangekeken’ kunnen we iets van de ware betekenis gaan vermoeden. Voor die tijd kan niemand de waarheid claimen.\n",
+        "Maar ieder van ons kan de ander wel vertellen wat hij, wat zij gezien heeft! Want wat wij zien doet ertoe! Er zijn daarbij geen domme opmerkingen of vragen. Zo gaan we dus ook met Matteüs in gesprek en we lezen met elkaar de bergrede van Jezus te beginnen bij hoofdstuk 5."
       ],
       "led_by": "Gerhard Scholte",
       "location": "Muiderkerk, Linnaeusstraat 37",

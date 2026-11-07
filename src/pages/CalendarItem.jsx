@@ -138,23 +138,43 @@ const CalendarItem = () => {
 
               <div className="w-full pl-4 my-2">
                 <div className="font-bold">Datum :</div>
-                <div className="w-full flex flex-row flex-wrap gap-1">
-                  {item.date.day && <span>{item.date.day}:</span>}
-                  {item.date.dates.map((date, index) => (
-                    <span key={index}>
-                      {isDate ? (
-                        <span>
-                          {new Date(date).toLocaleDateString("nl-NL", {
-                            month: "long",
-                            day: "numeric",
-                          })}
-                          {index < item.date.dates.length - 1 && ","}
-                        </span>
-                      ) : (
-                        <span>{date}</span>
-                      )}
-                    </span>
-                  ))}
+                <div className="w-full flex flex-col flex-wrap gap-1">
+                  <div className="w-full flex flex-row flex-wrap gap-1">
+                    {item.date.day && <span>{item.date.day}:</span>}
+                    {item.date.dates.map((date, index) => (
+                      <span key={index}>
+                        {isDate ? (
+                          <span>
+                            {new Date(date).toLocaleDateString("nl-NL", {
+                              month: "long",
+                              day: "numeric",
+                            })}
+                            {index < item.date.dates.length - 1 && ","}
+                          </span>
+                        ) : (
+                          <span>{date}</span>
+                        )}
+                      </span>
+                    ))}
+                    </div>
+                  <div className="w-full flex flex-row flex-wrap gap-1">  
+                    {item.date2?.day && <span>{item.date2.day}:</span>}
+                    {item.date2?.dates.map((date, index) => (
+                      <span key={index}>
+                        {isDate ? (
+                          <span>  
+                            {new Date(date).toLocaleDateString("nl-NL", {
+                              month: "long",
+                              day: "numeric",
+                            })}
+                            {index < item.date2.dates.length - 1 && ","}
+                          </span>
+                        ) : (
+                          <span>{date}</span>
+                        )}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
 
@@ -162,7 +182,7 @@ const CalendarItem = () => {
                 {" "}
                 <span className="font-bold">Tijd :</span>
                 <br />
-                {item.time}
+                {!item.time ? item.time2 : item.time}
               </div>
               <div className="w-full px-4">
                 <span className="font-bold">Beschrijving : </span>
